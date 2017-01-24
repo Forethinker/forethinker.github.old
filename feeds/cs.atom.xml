@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Forethinker - cs</title><link href="https://www.4thinker.com/" rel="alternate"></link><link href="https://www.4thinker.com/feeds/cs.atom.xml" rel="self"></link><id>https://www.4thinker.com/</id><updated>2013-09-08T08:42:00-07:00</updated><entry><title>Design Pattern</title><link href="https://www.4thinker.com/design-pattern.html" rel="alternate"></link><published>2013-09-08T08:42:00-07:00</published><updated>2013-09-08T08:42:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-09-08:/design-pattern.html</id><summary type="html">&lt;p&gt;I was asked about Factory Design pattern at a game company for a junior developer position. I had a feeling that the interviewer was asking me that question because that was something he was learning at that time. I gave me him an idea of what I think it was, but he wanted me to tell him the details. I could not, so he schooled me there and I had no way of verifying whether what he was saying was right. I failed that interview so I went back so that I do not ever forget what it is, but …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I was asked about Factory Design pattern at a game company for a junior developer position. I had a feeling that the interviewer was asking me that question because that was something he was learning at that time. I gave me him an idea of what I think it was, but he wanted me to tell him the details. I could not, so he schooled me there and I had no way of verifying whether what he was saying was right. I failed that interview so I went back so that I do not ever forget what it is, but I would never ask that question if I am an interviwer myself - it is far from necessitiy until one gains a lot of experience and observes its needs in practice. &lt;a href="http://www.codinghorror.com/blog/2005/09/head-first-design-patterns.html"&gt;Jeff Atwood also encourages simplicity in his article as well.&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Factory&lt;/h2&gt;
+&lt;p&gt;Many explanation I found around tended to be either too simple or too analogous. Here are few that I would recommend to read, in order. &lt;a href="http://corey.quickshiftconsulting.com/1/post/2009/5/first-post.html"&gt;Corey Broderick&lt;/a&gt;, &lt;a href="http://stackoverflow.com/questions/1001767/what-is-the-basic-difference-between-factory-and-abstract-factory-patterns?lq=1"&gt;StackOverflow - first three answers&lt;/a&gt;, &lt;a href="http://butunclebob.com/ArticleS.UncleBob.AbstractFactoryDanielT"&gt;butUncleBob&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;My summary is as follows:
+- Simple Factory is a class that has a static method, which creates an object of different subclasses given a parameter. The advantage over a simple inheritance is that dependencies and complexity become hidden, so that the underlying details may be changed in the future without breaking the functionality.
+- Factory method does not refer to a function. It is a &lt;code&gt;method&lt;/code&gt; as in English word. A reference to an abstract class is instantiated with one of its subclasses. The subclasses inherist a function, namely, &lt;code&gt;create&lt;/code&gt; that returns an object of a subclass.
+- Abstract Factory is similar to Factory method, but its subclasses are actually Simple Factories, and are refereed as Concrete Factories in this case. The difference between a factory and class is that a factory could return multiple types of subclasses, derieved from different parents.
+is an abstract interface or class on top of multiple simple factories, called concrete factories. The objects that gets returned by concrete factories may inherit from many different parent classes.&lt;/p&gt;
+&lt;h2&gt;Singleton&lt;/h2&gt;
+&lt;p&gt;You make sure that there is only one instance of a class. This comes useful for an application like log where only one instance should be running. The constructor is either private/protected and called by a astic function of the class. There is a private static variable within the class to store an instantition. The static function checks whether the Singleton class has been instantiated. If so, return the prviate static variable, otherwise call the constructor and return it. &lt;/p&gt;
+&lt;h2&gt;Strategy Patterns&lt;/h2&gt;
+&lt;p&gt;Uses composition (using interface as a field)&lt;/p&gt;
+&lt;h2&gt;Decorator Design Pattern&lt;/h2&gt;
+&lt;p&gt;A function is passed in as an argument to a wrapper function that does preprocessing and post-processing. &lt;/p&gt;
+&lt;p&gt;Unable to answer question what the factory pattern is 
+asked about any design pattern, he chose to explain what singleton. Answered that only one instance of a class is created. I then asked for a real life example where this might be used. He was not able to answer this question right away, but he was able to say (logging and caching)&lt;/p&gt;</content><category term="software"></category></entry><entry><title>Terminologies</title><link href="https://www.4thinker.com/terms.html" rel="alternate"></link><published>2013-08-26T01:23:00-07:00</published><updated>2013-08-26T01:23:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-08-26:/terms.html</id><summary type="html">&lt;h2&gt;Memory&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Loitering: holding a reference to an object when it is no longer needed.&lt;/li&gt;
+&lt;li&gt;Shallow memory usage: no content memory is allocated, only the reference&lt;/li&gt;
+&lt;li&gt;Deep memory usage: content memory is allocated, duplicated, or initialized.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Object Oriented Design&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Abstract class: You cannot instantiate an abstract class (make it return an object), although you can call a static method inside of it. It needs at least one abstract method. It is meant to be extended. &lt;/li&gt;
+&lt;li&gt;Abstract method: You cannot make a function call to an abstract method. These can only exist in an abstract class. This cannot have implementation. It is …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;Memory&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Loitering: holding a reference to an object when it is no longer needed.&lt;/li&gt;
+&lt;li&gt;Shallow memory usage: no content memory is allocated, only the reference&lt;/li&gt;
+&lt;li&gt;Deep memory usage: content memory is allocated, duplicated, or initialized.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Object Oriented Design&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Abstract class: You cannot instantiate an abstract class (make it return an object), although you can call a static method inside of it. It needs at least one abstract method. It is meant to be extended. &lt;/li&gt;
+&lt;li&gt;Abstract method: You cannot make a function call to an abstract method. These can only exist in an abstract class. This cannot have implementation. It is meant to be extended.&lt;/li&gt;
+&lt;li&gt;Overloading: There are many functions with the same name, but with different signatures.&lt;/li&gt;
+&lt;li&gt;Overriding: Override a method define in a parent class. The overridden method will be called either by the parent or child object.&lt;/li&gt;
+&lt;li&gt;Virtual: The child class could implement its own version and use it. Without this keyword, the function will be matched by the class type of the assigned variable. Without this keyword, the function will be matched by the assigned class.&lt;/li&gt;
+&lt;li&gt;Pure virtual: The function is set to 0. The subclass that is not abstract must implement this method. &lt;/li&gt;
+&lt;li&gt;Slicing: when a subclass variable is assigned to a superclass variable, the members that are specific to the subclass is lost.&lt;/li&gt;
+&lt;li&gt;Static: A keyword for a member that can be accessed without creating an object. &lt;/li&gt;
+&lt;li&gt;protected: These properties and methods (members) can be referenced only by the objects class methods and those of any subclasses.&lt;/li&gt;
+&lt;li&gt;private: These members can be referenced only by methods within the same class and not by subclasses.&lt;/li&gt;
+&lt;li&gt;final: These members cannot be overridden by subclasses. &lt;/li&gt;
+&lt;li&gt;static: A static method has no access to any object's properties, although it is possible the other way around. &lt;/li&gt;
+&lt;li&gt;parameter vs argument: parameters are the variables that were passed to the current function, and the arguments are the variables that we are about to pass in to another function.&lt;/li&gt;
+&lt;li&gt;field: a private variable to a class&lt;/li&gt;
+&lt;li&gt;property: an intermediate between a file and a method. It is used like a field, but has getter and setter method calls underneath.&lt;/li&gt;
+&lt;li&gt;state: data members&lt;/li&gt;
+&lt;li&gt;implementations: methods&lt;/li&gt;
+&lt;li&gt;interface: a class with only abstract methods, only public static final fields are allowed. If the keyword &lt;code&gt;interface&lt;/code&gt; exists, the keyword &lt;code&gt;abstract&lt;/code&gt; can be omitted from the method declaration. Interface allows inheriantce hierarchy that is not bound to a tree structure. &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;decoupling: encapsulating a concept or a behavior that varies and encapsulating in a class or a interface&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;composition: an object of another interface as a field, so that the functionality is built-in instead of inheriting. The capability of an object can change at run-time. The field is typically set to private and a setter function takes in the instantiation of an interface as the parameter. It is a way for a class to have one-to-many relationship and encourage code-reuse. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;aggregation: unlike composition, even when the containing object is destroyed, it still exists. The distinction happens at the deconstructor, where nothing is done to the aggregated member.&lt;/li&gt;
+&lt;li&gt;vtable: virtual function/method, or dispatch table. One class may have one vtable for dynamic dispathcing. The entries are pointed by vpointers and they are resolved at runtime.&lt;/li&gt;
+&lt;li&gt;dynamic dispatching: needed for virtual functions to resolve which class's implementation to use.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Programming Language:&lt;/h2&gt;
+&lt;p&gt;(Name) Mangling: To modify (an identifier from source code) so as to produce a unique identifier for internal use by the compiler, etc. This prevents attribute name collision should subclasses (inadvertently) contain attributes with the same name.&lt;/p&gt;
+&lt;h2&gt;Uncategorized&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;closure: a closure is a function that has access to a referencing-environment. In Javascript, that means a function that is returned by another function and has access to the original functions scope.&lt;/li&gt;
+&lt;li&gt;subroutine: synonymous with produce, function, routine, method, subprogram, and callable unit. member function is a subroutine defined within a class.&lt;/li&gt;
+&lt;li&gt;POD: Plain Old Data - any primitive types, pointers, &lt;code&gt;struct&lt;/code&gt; or &lt;code&gt;union&lt;/code&gt; - it has no non-static data members.&lt;/li&gt;
+&lt;li&gt;DSL: Domain-specific language: distinguished from general-purpose languages (GPL). Examples include HTML, Verilog, MATLAB, SQL&lt;/li&gt;
+&lt;li&gt;arity: number of arguments to a function -&amp;gt; Unary, Binary, Ternary, Quaternary, Quinary, Senary, Septanary, Octary, Nonary, Nonary, Polyadic, n-ary.&lt;/li&gt;
+&lt;li&gt;First-class citizen: a first-class citizen (also object, entity, or value) in a given programming language is an entity which supports all the operations generally available to other entities. These operations typically include being passed as a parameter, returned from a function, and assigned to a variable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Database&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;sharding: A decomposition of a database into multiple smaller units that can handle requests individually.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="software"></category></entry></feed>

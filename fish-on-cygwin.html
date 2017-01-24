@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li  class="active" >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+    <div class='article'>
+      <div class="row-fluid">
+           <div class="content-title span12">
+             <h1>My attempt to replace Bash with Fish</h1b>
+           </div>
+      </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>August 11, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/shell.html">#shell</a>, <a href="https://www.4thinker.com/tag/cygwin.html">#cygwin</a></span>
+
+  <span>Read in 5 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=My%20attempt%20to%20replace%20Bash%20with%20Fish%20 https%3A//www.4thinker.com/fish-on-cygwin.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/fish-on-cygwin.html&p[images][0]=&p[title]=My%20attempt%20to%20replace%20Bash%20with%20Fish%20&p[summary]=%3Cp%3EI%20was%20quite%20happy%20with%20my%20Bash%20setup%2C%20until%20%3Ca%20href%3D%22http%3A//hackercodex.com/guide/install-fish-shell-mac-ubuntu/%23disqus_thread%22%3Esomeone%3C/a%3E%20took%20my%20blindfold%20away%20and%20revealed%20to%20me%20the%20Fish%20shell.%20So%20I%20went%20on%20to%20check%20if%20there%20is%20something%20better.%20Well%2C%20now%20I%20know%20what%20zsh%20%281990%29%20offers%20and%20that%20fish%20shell%20is%20the%20newest%20shell%20%282005%29.%20If%20you%20use%20Mac%20or%20Ubuntu%2C%20I%20encourage%20you%20to%20look%20at%20%3Ca%20href%3D%22http%3A//hackercodex.com/guide/install-fish-shell-mac-ubuntu/%23disqus_thread%22%3EHacker%20Codex%3C/a%3E%2C%20which%20has%20been%20the%20inspiration%20for%20this%20article.%3C/p%3E%0A%3Cp%3EI%20masochistically%20installed%20it%20on%20my%20Cygwin.%20Here%20is%20how%20it%20went.%20%3Cem%3EUPDATE%3C/em%3E%3A%20The%20conclusion%20is%20that%20fish%20is%20not%20mature%20enough%20for%20me%20to%20use%20it%20full%20time%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/fish-on-cygwin.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=My%20attempt%20to%20replace%20Bash%20with%20Fish%20&body=https%3A//www.4thinker.com/fish-on-cygwin.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      
+      <div class="span10">
+	<p>I was quite happy with my Bash setup, until <a href="http://hackercodex.com/guide/install-fish-shell-mac-ubuntu/#disqus_thread">someone</a> took my blindfold away and revealed to me the Fish shell. So I went on to check if there is something better. Well, now I know what zsh (1990) offers and that fish shell is the newest shell (2005). If you use Mac or Ubuntu, I encourage you to look at <a href="http://hackercodex.com/guide/install-fish-shell-mac-ubuntu/#disqus_thread">Hacker Codex</a>, which has been the inspiration for this article.</p>
+<p>I masochistically installed it on my Cygwin. Here is how it went. <em>UPDATE</em>: The conclusion is that fish is not mature enough for me to use it full time, but its features are very promising and I want people to give it a try... maybe go further than where I have been. </p>
+<h2>Installation</h2>
+<div class="highlight"><pre><span></span><span class="nb">cd</span> /opt
+git clone https://github.com/fish-shell/fish-shell/
+automake <span class="o">&amp;&amp;</span> ./config
+vim fallback.h
+<span class="c1"># remove the following line start on line 89</span>
+
+<span class="c1">##ifdef TPARM_SOLARIS_KLUDGE</span>
+
+<span class="c1">#/**</span>
+<span class="c1">#   Solaris tparm has a set fixed of paramters in it&#39;s curses implementation,</span>
+<span class="c1">#   work around this here.</span>
+<span class="c1">#*/</span>
+
+<span class="c1">##define tparm tparm_solaris_kludge</span>
+<span class="c1">#char *tparm_solaris_kludge(char *str, ...);</span>
+</pre></div>
+
+
+<p>finally install</p>
+<div class="highlight"><pre><span></span>make <span class="o">&amp;&amp;</span> make install
+</pre></div>
+
+
+<h2>Setup "fish.config" == ".bashrc"</h2>
+<p>I changed my Cygwin.bat to be:</p>
+<div class="highlight"><pre><span></span><span class="p">@</span><span class="k">echo</span> off
+
+C<span class="p">:</span>
+<span class="k">chdir</span> C:\cygwin\usr\local\bin
+fish
+</pre></div>
+
+
+<p>and also edit /etc/passwd and change my shell to /usr/local/bin/fish</p>
+<p>Then I opened my mintty console. The color of vim looks aweful in Cygwin or cmd.exe because I do not think they support 256 color. Well I get the following message:</p>
+<div class="highlight"><pre><span></span><span class="n">fish</span><span class="o">:</span> <span class="n">Could</span> <span class="n">not</span> <span class="n">connect</span> <span class="n">to</span> <span class="n">universal</span> <span class="n">variable</span> <span class="n">server</span><span class="o">,</span> <span class="n">already</span> <span class="n">tried</span> <span class="n">manual</span> <span class="n">restart</span> <span class="o">(</span><span class="n">or</span> <span class="n">no</span> <span class="n">command</span> <span class="n">supplied</span><span class="o">).</span> <span class="n">You</span> <span class="n">will</span> <span class="n">not</span> <span class="n">be</span> <span class="n">able</span> <span class="n">to</span> <span class="n">share</span> <span class="n">variable</span> <span class="n">values</span> <span class="n">between</span> <span class="n">fish</span> <span class="n">sessions</span><span class="o">.</span> <span class="n">Is</span> <span class="n">fish</span> <span class="n">properly</span> <span class="n">installed</span><span class="o">?</span>
+<span class="n">Welcome</span> <span class="n">to</span> <span class="n">fish</span><span class="o">,</span> <span class="n">the</span> <span class="n">friendly</span> <span class="n">interactive</span> <span class="n">shell</span>
+<span class="n">Type</span> <span class="n">help</span> <span class="k">for</span> <span class="n">instructions</span> <span class="n">on</span> <span class="n">how</span> <span class="n">to</span> <span class="n">use</span> <span class="n">fish</span>
+</pre></div>
+
+
+<p>Well looking at the document, there is daemon called <code>fishd</code> that is supposed to do its job. Uh... it is not in my PATH? There is one in <code>/opt/fish-shell</code> just symlink it. Then you need to make it run when you launch your shell. I have the following lines in my `~/.config/fish/config.fish</p>
+<div class="highlight"><pre><span></span><span class="nb">set</span> PATH /usr/local/bin <span class="nv">$PATH</span>
+<span class="nb">set</span> PATH /usr/sbin <span class="nv">$PATH</span>
+fishd
+<span class="nb">set</span> -g BROWSER firefox.exe
+<span class="nb">cd</span>
+</pre></div>
+
+
+<p>This is the very minimum, I think, to get fish working properly. While getting fish to work with screen, I kept on getting this message again. Anyway, I had to replace <code>alias</code> to <code>function</code> when I ported my '.bashrc' so that I wouldn't get any warning. I accomplished this with the following vim command:</p>
+<div class="highlight"><pre><span></span>&#39;&lt;,&#39;&gt;s/alias \(\w\{-}\)=&#39;\(.*\)&#39;/function \1\r\t\2\rend\r/g
+</pre></div>
+
+
+<p>My home directory was set to System32, despite setting the home directory on <code>/etc/passwd</code>. My guess is that it is because fish shell is called by cmd.exe, because nothing showed up on a profile dump. Well, hence <code>cd</code> in the last code snippet.</p>
+<h2>Fixing LS</h2>
+<p>The problem is mentioned in the <a href="https://github.com/fish-shell/fish-shell/issues/170">github</a>. In short you get error messages. So I just gutted (commented) the following lines from '/usr/local/share/fish/functions/ls.fish'</p>
+<div class="highlight"><pre><span></span><span class="k">if</span> not <span class="nb">set</span> -q LS_COLORS
+    <span class="k">if</span> <span class="nb">type</span> -f dircolors &gt;/dev/null
+        <span class="nb">eval</span> <span class="o">(</span>dircolors -c<span class="o">)</span>
+    end
+end
+</pre></div>
+
+
+<p>and it went away. I believe the problem is with <code>discolor</code>, which I do not think is needed.</p>
+<p>On a side note, make sure you do not define <code>function ls</code> anywhere. It thinks it is going to get into an infinite loop. To me, this does not seem very robust, as <code>alias</code> is a syntactic sugar for <code>function</code>. I had to modify my ls to exlucde <code>ntuser</code> files which clutters up home directory unnecessarily whenever I <code>ls</code> oh and I had to escape the kleene star <code>*</code></p>
+<div class="highlight"><pre><span></span><span class="nb">set</span> param <span class="nv">$param</span> --indicator-style<span class="o">=</span>classify --time-style<span class="o">=</span>iso --ignore<span class="o">=</span>ntuser<span class="se">\*</span>
+</pre></div>
+
+
+<h2>Vim</h2>
+<p>the directory in <code>PATH</code> is in different order than Cygwin, so I had to add the following line to make sure that <code>gVim</code> is not invoked instead of <code>vim</code>. Otherwise, vim will hang because the shell does not know what to do with the GUI version.</p>
+<div class="highlight"><pre><span></span><span class="k">function</span> vim
+    /bin/vim <span class="nv">$argv</span>
+end
+</pre></div>
+
+
+<h2>GNU Screen</h2>
+<p>I added the following line so that fish will run whenever I create a new window</p>
+<div class="highlight"><pre><span></span>defshell /usr/local/bin/fish
+</pre></div>
+
+
+<h2>Syntax</h2>
+<p>Okay, consult the <a href="http://fishshell.com/docs/2.0/index.html">man</a> page with <code>help</code>, but just know that the command substitution works with just parenthesis. In another word without '$'</p>
+<h2>Bunch of message with x86</h2>
+<p>You will get the following message whenever you try to auto-complete a command. </p>
+<div class="highlight"><pre><span></span><span class="n">fish</span><span class="o">:</span> <span class="n">The</span> <span class="n">file</span> <span class="s1">&#39;x86&#39;</span> <span class="k">is</span> <span class="n">not</span> <span class="n">executable</span> <span class="n">by</span> <span class="k">this</span> <span class="n">user</span>
+<span class="k">in</span> <span class="n">command</span> <span class="n">substitution</span>
+    <span class="n">called</span> <span class="n">on</span> <span class="n">standard</span> <span class="n">input</span><span class="o">,</span>
+</pre></div>
+
+
+<p>The problem is hard coded in the source code and directories with parenthesis are not being parsed correctly. I posted the issue on <a href="https://github.com/fish-shell/fish-shell/issues/952">Github</a>.</p>
+<h2>Other problems</h2>
+<p>Fish does not seem to be snappy at times like Bash. Maybe it has to do with "spawning new thread problem" of Cygwin and it would probably has to do with caching too. For me, hanging shell is a deal breaker. The very reason why I go command line is the speed. Yes it is sad, but I just cannot give up my workflow.</p>
+<!--
+fish is now installed on your system.
+To run fish, type 'fish' in your terminal.
+
+To use fish as your login shell:
+* add the line '/usr/local/bin/fish' to the file '/etc/shells'.
+* use the command 'chsh -s /usr/local/bin/fish'.
+
+To set your colors, run 'fish_config'
+To scan your man pages for completions, run 'fish_update_completions'
+To autocomplete command suggestions press Ctrl + F or right arrow key.
+
+The culprit turns out to be `apropos` program which does not return anything useful. A quick look up shows that running `makewhatis` on **bash** shell creates the database to be used by `apropos` (man -k). Should the problem persist, look into this file:
+
+    /usr/local/share/fish/functions/__fish_describe_command.fish
+But really, I would disable this script, because I do not think command shell is the best place to discover new binaries to use. I could be wrong.
+-->
+
+<!--
+http://fishshell.com/tutorial.html
+http://stackoverflow.com/questions/963148/compiling-fish-shell-under-cygwin
+http://unix.stackexchange.com/questions/81743/command-substitution-handling-in-fish-vs-other-shells-sh-bash-zsh
+http://superuser.com/questions/607144/building-fish-2-0-shell-under-cygwin
+http://superuser.com/questions/328340/how-to-use-fish-shell-in-cygwin
+-->
+	<hr />
+      </div>
+
+      <div class="span8 offset2">
+          <h3>Related Posts</h3>
+            <ul>
+                <li><a href="https://www.4thinker.com/ruby-on-cygwin.html">How to get Ruby, RVM, Jekyll, Octopress, and Heroku working on Cygwin</a></li>
+                <li><a href="https://www.4thinker.com/zsh-over-fish.html"></a></li>
+                <li><a href="https://www.4thinker.com/LAMP-on-cygwin.html">Installing LAMP on Cygwin</a></li>
+                <li><a href="https://www.4thinker.com/python-tricks.html">A collection of useful python scripts</a></li>
+                <li><a href="https://www.4thinker.com/cygwin-setup.html">How I setup my Cygwin</a></li>
+            </ul>
+      </div>
+
+    </div>
+
+      <h3>Comments</h3>
+    
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'forethinker'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

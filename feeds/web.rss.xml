@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Forethinker - web</title><link>https://www.4thinker.com/</link><description></description><lastBuildDate>Sat, 14 Feb 2015 00:00:00 -0800</lastBuildDate><item><title>Grunt makes me smile</title><link>https://www.4thinker.com/grunt.html</link><description>&lt;h2&gt;Some setup&lt;/h2&gt;
+&lt;p&gt;sudo iptables -A INPUT -p tcp --dport 9000 -j ACCEPT
+Edit Grunt.js's host from &lt;code&gt;localhost&lt;/code&gt; to &lt;code&gt;0.0.0.0&lt;/code&gt; to access it from outside&lt;/p&gt;
+&lt;h2&gt;Useful packages&lt;/h2&gt;
+&lt;p&gt;They are pretty much all useful.
+These are the settings I put in &lt;code&gt;grunt.initConfig({})&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;wiredep&lt;/h4&gt;
+&lt;p&gt;First add these meta tags to index.html&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- bower:css --&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- endbower --&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- bower:js --&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- endbower --&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;in gruntFile.js:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grunt.loadNpmTasks(&amp;#39;grunt-wiredep&amp;#39;);
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then in grunt.initConfig:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;wiredep: {
+  target: {
+    src: &amp;#39;index.html&amp;#39; // point to your HTML file.
+  }
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and execute it by:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grunt wiredep
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 14 Feb 2015 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2015-02-14:/grunt.html</guid><category>grunt</category><category>nodejs</category></item><item><title>Coffeescript everwhere</title><link>https://www.4thinker.com/coffeescript.html</link><description>&lt;p&gt;parenthesis for function calls are optional.&lt;/p&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Ubuntu has node package, which makes things interesting. Many of the npm modules likes to refer &lt;code&gt;node&lt;/code&gt;, but the actual nodejs binary is installed as &lt;code&gt;nodejs&lt;/code&gt;. First you have to make sure you don't install &lt;code&gt;node&lt;/code&gt; with apt-get, second you have to make a symlink nodejs to node.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo ln -s /usr/bin/nodejs /usr/bin/node
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Phpstorm&lt;/h2&gt;
+&lt;p&gt;Pycharm (3.1.3) does not work with LiveEdit because it does not have &lt;a href="http://youtrack.jetbrains.com/issue/WI-17044"&gt;a native web server&lt;/a&gt;. I just figured that for anything web-related Phpstorm is going to edge over Pycharm.
+The watcher feature …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 18 Nov 2014 11:49:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-11-18:/coffeescript.html</guid></item><item><title>Javascript Package managers</title><link>https://www.4thinker.com/javascript-package-managers.html</link><description>&lt;h2&gt;NPM&lt;/h2&gt;
+&lt;p&gt;Node package manager for node modules&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;npm insall --save &amp;lt;moduel&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;will also update &lt;code&gt;package.json&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;npm update -g npm
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Bower&lt;/h2&gt;
+&lt;p&gt;none-Node file manager, including files like .js, .css, .html, .png, .ttf. It can be utlized for other framework (e.g. AnguarlJS). &lt;code&gt;bower install&lt;/code&gt; command can be used on bower resgiry, git, any url, or local directory&lt;/p&gt;
+&lt;p&gt;.bowerrc&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;{
+  &amp;quot;directory&amp;quot; : &amp;quot;components&amp;quot;,
+  &amp;quot;json&amp;quot;      : &amp;quot;bower.json&amp;quot;,
+  &amp;quot;endpoint&amp;quot;  : &amp;quot;https://Bower.herokuapp.com&amp;quot;,
+  &amp;quot;searchpath&amp;quot;  : &amp;quot;&amp;quot;,
+  &amp;quot;shorthand_resolver&amp;quot; : &amp;quot;&amp;quot;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;directory - local directory name and location in which the components will be installed.
+json - name of the json file which contains the values describing (i.e. name, version, main, dependencies …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 15 Aug 2014 13:18:06 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-08-15:/javascript-package-managers.html</guid></item><item><title>Pelican Customization</title><link>https://www.4thinker.com/pelican-customization.html</link><description>&lt;p&gt;This weekend you must have had my RSS feed messed up, because I was refreshing my blog with updates, sometimes broken one. Now I am using &lt;a href="https://github.com/jmaister/readtime"&gt;readtime&lt;/a&gt; and &lt;a href="https://github.com/getpelican/pelican-plugins/share_post"&gt;share_post plugins&lt;/a&gt; to show some more stuff in the article side-bar. The other two plugins I use are &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/related_posts"&gt;related_posts&lt;/a&gt; and &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/render_math"&gt;render_math&lt;/a&gt;, formerly 'latex'. I really hesitated on adding the share buttons for various reasons - one of them being I sometimes put inaccurate information inadvertently, but I gave in hoping that my readers would find it useful.&lt;/p&gt;
+&lt;p&gt;Having no &lt;code&gt;www&lt;/code&gt; prepended to &lt;code&gt;CNAME&lt;/code&gt; file will complicate a lot of things for DNS entry …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 28 Jul 2014 01:12:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-07-28:/pelican-customization.html</guid><category>pelican</category><category>blogging</category><category>powershell</category><category>anonymity</category></item><item><title>Learning to use AWS EC2</title><link>https://www.4thinker.com/aws-ec2.html</link><description>&lt;h2&gt;Amazon now offers up to 30GB SSD instead of HDD for free-tier&lt;/h2&gt;
+&lt;p&gt;I didn't check how much hard drive space I had before, but I was using well below 10GB. By default the general purpose SSD is set to 10GB, but the maximum allocation is 30GB for the free-tier t1.micro instance. Before you hit review button, there should be numbered tabs on the top that Amazon setup wizard did not redirect you, go to one of those and make sure to take the full advantage of free-tier service. I definitely noticed the speed up.&lt;/p&gt;
+&lt;h2&gt;There is no password here …&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 20 Jul 2014 10:11:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-07-20:/aws-ec2.html</guid><category>aws</category><category>amazon</category></item><item><title>Web API notes</title><link>https://www.4thinker.com/web-api.html</link><description>&lt;p&gt;stopPropagation() cuts off the flow of capture and bubble at that specified element
+prevenetDefault() allows event propagation but prevents the browser from carrying out its default action (e.g. opening a new tab when a link is clicked)
+addEventListener, removeEventListener, Event.preventDefault and Event.stopPropagation&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 17 Jul 2014 10:33:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-07-17:/web-api.html</guid></item><item><title>nginx is better than apache</title><link>https://www.4thinker.com/nginx.html</link><description>&lt;p&gt;Nginx is an event-driven file server and it is much lighter than apache in resource usage.&lt;/p&gt;
+&lt;p&gt;sudo service nginx start
+update-rc.d nginx defaults&lt;/p&gt;
+&lt;p&gt;There could be two configuration files, but similar to apach, one typically sources another.&lt;/p&gt;
+&lt;p&gt;https://www.digitalocean.com/community/tutorials/how-to-optimize-nginx-configuration&lt;/p&gt;
+&lt;h4&gt;worker_processes:&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grep processor /proc/cpuinfo | wc -l
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;worker_connections:&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ulimit -n
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;override worker_connections&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;events {
+    worker_connections  19000;  # It&amp;#39;s the key to high performance - have a lot of connections available
+}
+worker_rlimit_nofile    20000;  # Each connection needs a filehandle (or 2 if you are proxying)
+# Total amount of users you can serve = worker_processes * worker_connections
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;For most use cases, the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 15 Jun 2014 10:25:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-06-15:/nginx.html</guid></item><item><title></title><link>https://www.4thinker.com/chrome-browser-tools.html</link><description>&lt;h2&gt;Enabling javascript in the debugger&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;var&lt;/span&gt; &lt;span class="nt"&gt;jq&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nt"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;createElement&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;script&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;jq&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;src&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;getElementsByTagName&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;head&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;appendChild&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;jq&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="nt"&gt;give&lt;/span&gt; &lt;span class="nt"&gt;time&lt;/span&gt; &lt;span class="nt"&gt;for&lt;/span&gt; &lt;span class="nt"&gt;script&lt;/span&gt; &lt;span class="nt"&gt;to&lt;/span&gt; &lt;span class="nt"&gt;load&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;then&lt;/span&gt; &lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;span class="nt"&gt;jQuery&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;noConflict&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;final_query = {
+ "status" : "free",
+ "enabled" : True
+}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 19 May 2014 04:37:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-05-19:/chrome-browser-tools.html</guid></item><item><title>Google Chrome Settings</title><link>https://www.4thinker.com/google-chrome-settings.html</link><description>&lt;h2&gt;Block Ads and Facebook iFrames:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom"&gt;AdBlock for Chrome&lt;/a&gt;, but I was keep getting these iFrames that fails to resolve DNS and throwing a huge grey window to block the web page. So I slapped the following line in the AdBlock Options (Under Customize -&amp;gt; Manually edit your filters) and they are no more:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;##IFRAME[src*=&amp;quot;facebook.com&amp;quot;]
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 19 May 2014 03:37:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-05-19:/google-chrome-settings.html</guid><category>chrome</category><category>settings</category></item><item><title>Setting up Pelican for blogging</title><link>https://www.4thinker.com/blogging-on-commandline.html</link><description>&lt;p&gt;At the start of year 2013, I tried to set up a system on a wordpress blog so that I could blog from commandline. The plan became moot when I found out that my web hosting service provider did not have the latest PHP installed and I just could not install &lt;a href="http://wp-cli.org/"&gt;WP-CLI&lt;/a&gt; or &lt;a href="http://wordshell.net/"&gt;wordshell&lt;/a&gt;. Maybe I did not try hard enough, but I had many doubts about its usefulness. Six month after, I gave &lt;a href="ruby-on-cygwin.html"&gt;Jekyll and Octopress&lt;/a&gt; a try. It was quiet easy to set it up. But since I do not use Ruby, I began to worry how much …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 07 Sep 2013 03:53:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-07:/blogging-on-commandline.html</guid><category>blog</category><category>pelican</category></item><item><title>Topography Notes</title><link>https://www.4thinker.com/typography.html</link><description>&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Fundamentals of Design&lt;/a&gt; by Tim Dikun @ codeschool.com&lt;/p&gt;
+&lt;h2&gt;Attributes that Influence Design&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Audience: Age, Race, Gender, Cultural Niche&lt;/li&gt;
+&lt;li&gt;Tone: Casual, Formal, Friendly, Sarcastic&lt;/li&gt;
+&lt;li&gt;Purpose: Informational, Conversations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;Serif&lt;/h2&gt;
+&lt;h4&gt;Humanist - Classic &amp;amp; Traditional&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Emulates calligraphy&lt;/li&gt;
+&lt;li&gt;Contrasting Strokes&lt;/li&gt;
+&lt;li&gt;Journalist and Historical Text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Transitional - Strong, Stylish, &amp;amp; Dynamic&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Sharper Serif&lt;/li&gt;
+&lt;li&gt;More contrasting Strokes&lt;/li&gt;
+&lt;li&gt;Academic and Legal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Modern Serif - Structured, Clear, &amp;amp; Elegant&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Thin, horizontal Serif&lt;/li&gt;
+&lt;li&gt;High Contrast Stroke&lt;/li&gt;
+&lt;li&gt;Art and Cultural&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Egyptian (Slab Serif) - Authoritative, yet friendly&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Heavy, boxy, serifs&lt;/li&gt;
+&lt;li&gt;Very Low Contrast Stroke&lt;/li&gt;
+&lt;li&gt;Marketing and Promotional &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Sans-Serif&lt;/h2&gt;
+&lt;h4&gt;Humanist - Perfect vs imperfect&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Emulates calligraphy&lt;/li&gt;
+&lt;li&gt;contrasting strokes&lt;/li&gt;
+&lt;li&gt;Government, Finance, Education&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Transitional - Unassuming &amp;amp; Modern&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Strong strokes&lt;/li&gt;
+&lt;li&gt;Upright, uniform, characters …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 22 Aug 2013 12:57:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-22:/typography.html</guid></item><item><title>Color Theory Notes</title><link>https://www.4thinker.com/color-theory.html</link><description>&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Fundamentals of Design&lt;/a&gt; by Tim Dikun @ &lt;a href="http://mbsy.co/7sh6q"&gt;codeschool.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Color Types&lt;/h2&gt;
+&lt;p&gt;Subtractive Color (CMYK): based on the white background, printer, physical&lt;/p&gt;
+&lt;p&gt;Additive Color (RGB): Based on the black background, monitor, virtual&lt;/p&gt;
+&lt;p&gt;Human process color based on Hue, Saturation, and Lightness &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hue (x): can be best represented with a color wheel, which enculates the entire RGB space. (Degree)&lt;/li&gt;
+&lt;li&gt;Saturation (y): the variation of the color to gray (%)&lt;/li&gt;
+&lt;li&gt;Lighness (z): the variation of the color with respect to white (100%) and black (0%)&lt;/li&gt;
+&lt;li&gt;These three properties can be best represented as a cylinder &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;First Choose a Base Color&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Red: Heat, Passion, Excitement, Speed …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 22 Aug 2013 04:51:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-22:/color-theory.html</guid></item><item><title>Mobile Web Notes</title><link>https://www.4thinker.com/mobile-web.html</link><description>&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Journey Into Mobile&lt;/a&gt; by Jason Vanlue @ codeschool.com&lt;/p&gt;
+&lt;h2&gt;Fluid Layout: convert &lt;code&gt;px&lt;/code&gt;s to &lt;code&gt;em&lt;/code&gt;s&lt;/h2&gt;
+&lt;p&gt;Default font size is 16 px. &lt;/p&gt;
+&lt;p&gt;Context for .. is ..&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Width: container&lt;/li&gt;
+&lt;li&gt;Margin: container&lt;/li&gt;
+&lt;li&gt;Padding: element itself &lt;/li&gt;
+&lt;li&gt;line-height: font-size&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Adaptive Design using Media Queries:&lt;/h2&gt;
+&lt;p&gt;Break points are determined by viewports in Adaptive Design, so keep in mind the popular device width sizes (e.g. 768px)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;global.css&amp;quot; media=&amp;quot;all&amp;quot; /&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;main.css&amp;quot; media=&amp;quot;screen&amp;quot; /&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;paper.css&amp;quot; media=&amp;quot;print&amp;quot; /&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;mobile.css&amp;quot; media=&amp;quot;handheld&amp;quot;/&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;media&lt;/code&gt; property specifies which media the linked resource …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 21 Aug 2013 01:17:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-21:/mobile-web.html</guid></item><item><title>AJAX notes</title><link>https://www.4thinker.com/jquery-ajax-notes.html</link><description>&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;jQuery - The Return Flight&lt;/a&gt; by Gregg Pollak @ &lt;a href="codeschool.com"&gt;codeschool.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Basic&lt;/h2&gt;
+&lt;p&gt;Asynchronous Javascript And XML - updates the client page by interacting the server without a refresh. jQuery downloads everything beforehand and manipulates CSS for visual effects, AJAX makes seamless interaction with the user by downloading contents on a need-basis. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$.ajax(URL, options)&lt;/code&gt; - first argument specifies the URL to request data from the server, the second argument is a javascript object with properties mentioned below. It requires &lt;code&gt;success&lt;/code&gt; property.&lt;/p&gt;
+&lt;p&gt;Event Delegation, or specifying &lt;code&gt;&amp;lt;target&amp;gt;&lt;/code&gt; argument for &lt;code&gt;on()&lt;/code&gt;, is often necessary for successful AJAX requests, because the target element might not have existed …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 29 Jul 2013 05:07:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-07-29:/jquery-ajax-notes.html</guid><category>javascript</category></item><item><title>jQuery Notes</title><link>https://www.4thinker.com/jquery-notes.html</link><description>&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Try jQuery&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=_iRIPJHrdXg&amp;amp;list=PLBB954DF18DA3F2A5"&gt;jQuery Video Tutorial&lt;/a&gt; by Derek Banas @ &lt;a href="newthinktank.com"&gt;newthinktank.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;The Basic&lt;/h2&gt;
+&lt;p&gt;Get the latest jQuery downloaded:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://code.jquery.com/jquery-latest.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Or Google's version for faster download speed:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;script src=&amp;quot;http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js&amp;quot;&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;jQuery manipulates the DOM, tree-like representation of HTML file. It also handles the difference of JavaScript engine in different browsers.
+The following code waits for the document to finish loading, this is often always used for jQuery:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jQuery(document).ready(function(){
+    &amp;lt;code&amp;gt;
+});
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;jQuery objects are created by surrounding the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 27 Jul 2013 06:35:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-07-27:/jquery-notes.html</guid><category>javascript</category></item></channel></rss>

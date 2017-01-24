@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+        
+
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/interviews-are-hard.html"><h1>Interviewing for a Software Engineer position is Hard</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>May 24, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/career.html">#career</a></span>
+
+  <span>Read in 4 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Interviewing%20for%20a%20Software%20Engineer%20position%20is%20Hard%20 https%3A//www.4thinker.com/interviews-are-hard.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/interviews-are-hard.html&p[images][0]=&p[title]=Interviewing%20for%20a%20Software%20Engineer%20position%20is%20Hard%20&p[summary]=%3Cp%3EThis%20pertains%20to%20my%20experience%20straight%20out%20of%20college.%20Once%20you%20specialize%2C%20things%20may%20differ.%3C/p%3E%0A%3Cp%3EI%20am%20first%20going%20to%20admit%20that%20I%20am%20not%20competent%20in%20program%20interviews.%20It%20is%20something%20that%20I%20need%20to%20work%20extra%20hard%20and%20people%20who%20do%20well%20deserves%20the%20job.%20Computer%20Science%20interview%20questions%20are%20similar%20to%20Science%20Olympiad%2C%20you%20recall%20answers%20to%20questions%20or%20topics%20that%20are%20very%20broad.%20Also%20the%20questions%20tend%20to%20be%20ones%20that%20you%20do%20not%20think%20very%20often%20in%20practice.%20For%20example%2C%20how%20often%20do%20you%20use%20recursion%20in%20your%20work%3F%20%3C/p%3E%0A%3Cp%3EThere%20are%20so%20many%20language%20variations%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/interviews-are-hard.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Interviewing%20for%20a%20Software%20Engineer%20position%20is%20Hard%20&body=https%3A//www.4thinker.com/interviews-are-hard.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>This pertains to my experience straight out of college. Once you specialize, things may differ.</p>
+<p>I am first going to admit that I am not competent in program interviews. It is something that I need to work extra hard and people who do well deserves the job. Computer Science interview questions are similar to Science Olympiad, you recall answers to questions or topics that are very broad. Also the questions tend to be ones that you do not think very often in practice. For example, how often do you use recursion in your work? </p>
+<p>There are so many language variations …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/interviews-are-hard.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/python-on-window.html"><h1>How to install pip, oauth2 on Windows</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>May 10, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/python.html">#python</a></span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=How%20to%20install%20pip%2C%20oauth2%20on%20Windows%20 https%3A//www.4thinker.com/python-on-window.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/python-on-window.html&p[images][0]=&p[title]=How%20to%20install%20pip%2C%20oauth2%20on%20Windows%20&p[summary]=%3Cul%3E%0A%3Cli%3E%3Ccode%3Epip%3C/code%3E%20is%20like%20%3Ccode%3Eapt%3C/code%3E%20of%20debian-based%20system%20for%20python.%20It%20installs%20and%20uninstalls%20packages%3C/li%3E%0A%3Cli%3E%3Ccode%3Edistribute%3C/code%3E%20is%20like%20%3Ccode%3Edpkg%3C/code%3E%20of%20debian-based%20system%20for%20python.%20It%20builds%20and%20distribute%20packages.%3C/li%3E%0A%3Cli%3EIn%20short%2C%20they%20make%20installing%20packages%20for%20python%20much%20easier.%20For%20a%20longer%20explanation%2C%20here%20is%20a%20%3Ca%20href%3D%22http%3A//guide.python-distribute.org/installation.html%22%3Estackoverflow%20answer%3C/a%3E%2C%20and%20the%20official%20description%20can%20be%20found%20the%20%3Ca%20href%3D%22http%3A//guide.python-distribute.org/installation.html%22%3Epython%20website%3C/a%3E%3C/li%3E%0A%3Cli%3ESome%20people%20might%20be%20using%20%3Ccode%3Esetuptools%3C/code%3E%20in%20windows%2C%20but%20it%20is%20outdated.%20%3Ccode%3Esetuptools%3C/code%3E%20is%20not%20available%20for%20Windows%2064-bit%20platform%20anyway%2C%20so%20the%20choice%20is%20limited%20for%20many%20people%20out%20there.%3C/li%3E%0A%3Cli%3E%3Ccode%3Edistribute%3C/code%3E%20replaces%20%3Ccode%3Esetuptools%3C/code%3E%20starting%20from%20python3%2C%20but%20it%20is%20available%20for%20%3Ccode%3Epython2%20%E2%80%A6%3C/code%3E%3C/li%3E%3C/ul%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/python-on-window.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=How%20to%20install%20pip%2C%20oauth2%20on%20Windows%20&body=https%3A//www.4thinker.com/python-on-window.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<ul>
+<li><code>pip</code> is like <code>apt</code> of debian-based system for python. It installs and uninstalls packages</li>
+<li><code>distribute</code> is like <code>dpkg</code> of debian-based system for python. It builds and distribute packages.</li>
+<li>In short, they make installing packages for python much easier. For a longer explanation, here is a <a href="http://guide.python-distribute.org/installation.html">stackoverflow answer</a>, and the official description can be found the <a href="http://guide.python-distribute.org/installation.html">python website</a></li>
+<li>Some people might be using <code>setuptools</code> in windows, but it is outdated. <code>setuptools</code> is not available for Windows 64-bit platform anyway, so the choice is limited for many people out there.</li>
+<li><code>distribute</code> replaces <code>setuptools</code> starting from python3, but it is available for <code>python2 …</code></li></ul> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/python-on-window.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/automation.html"><h1>Why spending more time than you save is okay, and when it is not.</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>May 01, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/life.html">life</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/lifehacker.html">#lifehacker</a>, <a href="https://www.4thinker.com/tag/automation.html">#automation</a></span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Why%20spending%20more%20time%20than%20you%20save%20is%20okay%2C%20and%20when%20it%20is%20not.%20 https%3A//www.4thinker.com/automation.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/automation.html&p[images][0]=&p[title]=Why%20spending%20more%20time%20than%20you%20save%20is%20okay%2C%20and%20when%20it%20is%20not.%20&p[summary]=%3Cp%3E%3Ca%20href%3D%22http%3A//boingboing.net/2013/04/29/how-much-time-should-you-spend.html%22%3E%3Cimg%20alt%3D%22Alt%20XKCD%20Automation%20ROI%20chart%22%20src%3D%22%7Cfilename%7C/images/automation.jpeg%22%3E%20%22XKCD%3A%20How%20Much%20Time%20Should%20You%20Spend%22%3C/a%3E%3C/p%3E%0A%3Cp%3EI%20am%20certainly%20guilty%20of%20trying%20to%20automate%20everything%2C%20including%20keystrokes%2C%20but%20I%20never%20calculate%20the%20time%20I%20invest%20to%20get%20things%20automated.%20This%20is%20because%20the%20benefits%20I%20leap%20is%20not%20just%20the%20time%20I%20save%2C%20but%20the%20knowledge%20and%20expertise%20I%20gain%20in%20the%20process.%20If%20you%20want%20to%20automate%20something%2C%20you%20must%20know%20how%20it%20works%2C%20sometimes%20you%20also%20need%20to%20know%20the%20foundation%20beneath%20that%20makes%20everything%20tick.%3C/p%3E%0A%3Cp%3EThere%20are%20more%20merits.%20In%20this%20society%20where%20sharing%20is%20the%20norm%2C%20you%20may%20never%20know%20who%20can%20expand%20on%20the%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/automation.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Why%20spending%20more%20time%20than%20you%20save%20is%20okay%2C%20and%20when%20it%20is%20not.%20&body=https%3A//www.4thinker.com/automation.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p><a href="http://boingboing.net/2013/04/29/how-much-time-should-you-spend.html"><img alt="Alt XKCD Automation ROI chart" src="|filename|/images/automation.jpeg"> "XKCD: How Much Time Should You Spend"</a></p>
+<p>I am certainly guilty of trying to automate everything, including keystrokes, but I never calculate the time I invest to get things automated. This is because the benefits I leap is not just the time I save, but the knowledge and expertise I gain in the process. If you want to automate something, you must know how it works, sometimes you also need to know the foundation beneath that makes everything tick.</p>
+<p>There are more merits. In this society where sharing is the norm, you may never know who can expand on the …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/automation.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/crashplan.html"><h1>Installing Crashplan on Pogoplug</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>April 22, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/server.html">#server</a>, <a href="https://www.4thinker.com/tag/backup.html">#backup</a></span>
+
+  <span>Read in 4 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Installing%20Crashplan%20on%20Pogoplug%20 https%3A//www.4thinker.com/crashplan.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/crashplan.html&p[images][0]=&p[title]=Installing%20Crashplan%20on%20Pogoplug%20&p[summary]=%3Cp%3EI%20am%20assuming%20that%20you%20have%20Arch%20Linux%20Arm%20running%20on%20your%20Pogoplug.%20My%20pogoplug%20is%20V2%2C%20which%20has%20Marvell%20processor%20in%20it.%20%281.2%20Mhz%29.%20Here%20is%20%3Ca%20href%3D%22http%3A//obihoernchen.net/wordpress/770/plug_computer_arch_linux/%22%3Ean%20excellent%20article%20by%20Obihoernchen%3C/a%3E%20that%20helped%20me%20to%20get%20things%20set%20up%20properly.%3C/p%3E%0A%3Ch2%3EInstalling%20Java%20SE%3C/h2%3E%0A%3Cp%3EDownload%20the%20one%20that%20starts%20with%20%22ARMv5%20Linux%22%20from%20the%20%3Ca%20href%3D%22http%3A//www.oracle.com/technetwork/java/embedded/downloads/javase/index.html%22%3EOracle%20Website%3C/a%3E.%20Unfortunately%2C%20You%20will%20have%20to%20sign%20up%20for%20Oracle%20account%20and%20upload%20the%20file%20to%20your%20server%20via%20SCP%3A%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%3Cspan%20class%3D%22c1%22%3E%23%20cd%20/path/to/your/file%3C/span%3E%0A%3Cspan%20class%3D%22c1%22%3E%23%20nas%20is%20the%20alias%20defined%20in%20.ssh%20file%20for%20my%20server.%20Change%20%26%2339%3Bnas%26%2339%3B%20with%20your%20server%26%2339%3Bs%20ip%20address%20%E2%80%A6%3C/span%3E%3C/pre%3E%3C/div%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/crashplan.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Installing%20Crashplan%20on%20Pogoplug%20&body=https%3A//www.4thinker.com/crashplan.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>I am assuming that you have Arch Linux Arm running on your Pogoplug. My pogoplug is V2, which has Marvell processor in it. (1.2 Mhz). Here is <a href="http://obihoernchen.net/wordpress/770/plug_computer_arch_linux/">an excellent article by Obihoernchen</a> that helped me to get things set up properly.</p>
+<h2>Installing Java SE</h2>
+<p>Download the one that starts with "ARMv5 Linux" from the <a href="http://www.oracle.com/technetwork/java/embedded/downloads/javase/index.html">Oracle Website</a>. Unfortunately, You will have to sign up for Oracle account and upload the file to your server via SCP:</p>
+<div class="highlight"><pre><span></span><span class="c1"># cd /path/to/your/file</span>
+<span class="c1"># nas is the alias defined in .ssh file for my server. Change &#39;nas&#39; with your server&#39;s ip address …</span></pre></div> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/crashplan.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+<div class="pagination">
+<ul>
+    <li class="prev"><a href="https://www.4thinker.com/author/forethinker13.html">&larr; Previous</a></li>
+
+    <li class=""><a href="https://www.4thinker.com/author/forethinker.html">1</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker2.html">2</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker3.html">3</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker4.html">4</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker5.html">5</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker6.html">6</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker7.html">7</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker8.html">8</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker9.html">9</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker10.html">10</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker11.html">11</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker12.html">12</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker13.html">13</a></li>
+    <li class="active"><a href="https://www.4thinker.com/author/forethinker14.html">14</a></li>
+
+    <li class="next disabled"><a href="#">&rarr; Next</a></li>
+
+</ul>
+</div>
+ 
+  
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

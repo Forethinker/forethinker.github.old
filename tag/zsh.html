@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+        
+
+        
+
+    <div class='row-fluid''>
+        <div class="article-title span12">
+            <a href="https://www.4thinker.com/cygwin-setup.html"><h1>How I setup my Cygwin</h1></a>
+        </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>February 14, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/sysadmin.html">sysadmin</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/cygwin.html">#cygwin</a>, <a href="https://www.4thinker.com/tag/zsh.html">#zsh</a>, <a href="https://www.4thinker.com/tag/solarized.html">#solarized</a></span>
+
+  <span>Read in 6 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=How%20I%20setup%20my%20Cygwin%20 https%3A//www.4thinker.com/cygwin-setup.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/cygwin-setup.html&p[images][0]=&p[title]=How%20I%20setup%20my%20Cygwin%20&p[summary]=%3Cp%3EBy%20googling%20around%20I%20found%20%3Ca%20href%3D%22http%3A//randomartifacts.blogspot.com/2012/10/a-proper-cygwin-environment.html%22%3Ea%20pretty%20comprehensive%20guide%20by%20Thomas%20Wheeler%3C/a%3E.%20His%20instruction%20on%20%27Mapping%20Cygdrive%27%20did%20not%20work%20for%20me%20and%20I%20decided%20to%20fork%20an%20instruction%20on%20my%20own%2C%20so%20that%20I%20can%20keep%20adding%20stuff%20if%20I%20want%20to.%3C/p%3E%0A%3Ch2%3EMoving%20your%20home%20directory%20to%20your%20Windows%20profile%20directory%3C/h2%3E%0A%3Cp%3EI%20found%20this%20setup%20to%20be%20consistent%20with%20other%20unix%20systems.%20It%20preserves%20my%20sanity%20in%20the%20long%20run.%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Emkpasswd%20-l%20-d%20-p%20%26quot%3B%24%28cygpath%20-H%29%26quot%3B%20%26gt%3B%20/etc/passwd%0Amkgroup%20-l%20-d%20%26gt%3B%20/etc/group%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Ch2%3EInstalling%20Essential%20Programs%3C/h2%3E%0A%3Cp%3EDownload%20the%20%3Ca%20href%3D%22http%3A//cygwin.com/setup.exe%22%3Esetup.exe%3C/a%3E%20and%20install%20it%20along%20with%20wget.%20We%20will%20be%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/cygwin-setup.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=How%20I%20setup%20my%20Cygwin%20&body=https%3A//www.4thinker.com/cygwin-setup.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="article-content span10">
+	<p>By googling around I found <a href="http://randomartifacts.blogspot.com/2012/10/a-proper-cygwin-environment.html">a pretty comprehensive guide by Thomas Wheeler</a>. His instruction on 'Mapping Cygdrive' did not work for me and I decided to fork an instruction on my own, so that I can keep adding stuff if I want to.</p>
+<h2>Moving your home directory to your Windows profile directory</h2>
+<p>I found this setup to be consistent with other unix systems. It preserves my sanity in the long run.</p>
+<div class="highlight"><pre><span></span>mkpasswd -l -d -p &quot;$(cygpath -H)&quot; &gt; /etc/passwd
+mkgroup -l -d &gt; /etc/group
+</pre></div>
+
+
+<h2>Installing Essential Programs</h2>
+<p>Download the <a href="http://cygwin.com/setup.exe">setup.exe</a> and install it along with wget. We will be using <code>apt-cyg</code>, which is similar to <code>apt-get</code> in Debian-based linux distros. It allows you to specify the packages you want to install right on the terminal:</p>
+<div class="highlight"><pre><span></span>wget https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg
+chmod +x apt-cyg
+mv apt-cyg /usr/local/bin/
+if [ $(uname -m) == &#39;i686&#39; ]; then arch=&quot;x86&quot;; else arch=&quot;x86_64&quot;; fi; sed -i &quot;s/\(wget -N \$mirror\)\(\/setup\..*\)/\1\/$arch\2/&quot; /usr/local/bin/apt-cyg
+/usr/local/bin/apt-cyg ctags curl gcc-g++ install make mintty mysql mysqld openssl tar vim vim-common wget which tmux
+</pre></div>
+
+
+<p>The line that starts with <code>if</code> is to <a href="http://code.google.com/p/apt-cyg/issues/detail?id=26">fix the bug</a> introduced by Cygwin distinguishing x86 and x64 in their setup.ini file. I wrote the script so that it does not accidentally make wrong changes in the future.</p>
+<p><code>-m</code> specifies which server to fetch the installation files from. The default one supplied by <code>apt-cyg</code> does not work. So I substituted it with <code>ftp://ftp.cygwinports.org/pub/cygwinports/</code> which is the most popular choice.</p>
+<h2>Better Terminal</h2>
+<p>I sticky with mintty and screen, because they emulate the terminal environment in other systems and forces me to practice using screen (no tab), but certainly better options are available. <a href="http://sourceforge.net/projects/console/">Console</a> and <a href="http://www.hanselman.com/blog/ConEmuTheWindowsTerminalConsolePromptWeveBeenWaitingFor.aspx">Conemu</a> and <a href="http://www.kevwebdev.com/blog/in-search-of-a-better-windows-console-using-ansicon-console2-and-git-bash.html#console2">Console2</a>. Now I will let you choose, but just heads up: Scott Hanselman chose ConEmu over Console2.</p>
+<h2>Changing Shell from Bash to zsh</h2>
+<div class="highlight"><pre><span></span>apt-cyg install zsh
+</pre></div>
+
+
+<p>On C:/cygwin/Cygwin.bat file or in your Terminal settings, set:</p>
+<div class="highlight"><pre><span></span>cygwin\bin\bash --login -i
+
+to
+
+cygwin\bin\zsh -l -i
+</pre></div>
+
+
+<p>or edit /etc/passwd file so that the shell with your name is set to <code>/bin/bash</code></p>
+<div class="highlight"><pre><span></span>sed -i &quot;s/$USER\:\/bin\/bash/$USER\:\/bin\/zsh/g&quot; /etc/passwd
+</pre></div>
+
+
+<p>Don't use the automatic installer. If you do, you will have to delete the last line in .zshrc, because cygwin populates <code>PATH</code> for you anyway.</p>
+<div class="highlight"><pre><span></span>#Don&#39;t use this
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+</pre></div>
+
+
+<p>Use this instead:</p>
+<div class="highlight"><pre><span></span><span class="nt">git</span> <span class="nt">clone</span> <span class="nt">git</span><span class="o">://</span><span class="nt">github</span><span class="p">.</span><span class="nc">com</span><span class="o">/</span><span class="nt">robbyrussell</span><span class="o">/</span><span class="nt">oh-my-zsh</span><span class="p">.</span><span class="nc">git</span> <span class="o">~/</span><span class="p">.</span><span class="nc">oh-my-zsh</span><span class="o">;</span> <span class="nt">if</span> <span class="cp">[</span> <span class="na">-f</span> <span class="err">~</span><span class="p">/</span><span class="nx">.zshrc</span> <span class="cp">]</span> <span class="o">||</span> <span class="cp">[</span> <span class="na">-h</span> <span class="err">~</span><span class="p">/</span><span class="nx">.zshrc</span> <span class="cp">]</span><span class="o">;</span> <span class="nt">then</span> <span class="nt">cp</span> <span class="o">~/</span><span class="p">.</span><span class="nc">zshrc</span> <span class="o">~/</span><span class="p">.</span><span class="nc">zshrc</span><span class="p">.</span><span class="nc">orig</span><span class="o">;</span> <span class="nt">rm</span> <span class="o">~/</span><span class="p">.</span><span class="nc">zshrc</span><span class="o">;</span> <span class="nt">fi</span>
+<span class="nt">cp</span> <span class="o">~/</span><span class="p">.</span><span class="nc">oh-my-zsh</span><span class="o">/</span><span class="nt">templates</span><span class="o">/</span><span class="nt">zshrc</span><span class="p">.</span><span class="nc">zsh-template</span> <span class="o">~/</span><span class="p">.</span><span class="nc">zshrc</span>
+</pre></div>
+
+
+<h2>Disable bash completion</h2>
+<p>Bash completion, for some reason creates lag on cd. So I just <a href="http://stackoverflow.com/questions/15536212/slow-load-time-of-bash-in-cygwin">disable it by renaming the directory.</a></p>
+<div class="highlight"><pre><span></span>mv /etc/bash_completion.d -v /etc/bash_completion.d_bak
+</pre></div>
+
+
+<h2>Migration</h2>
+<div class="highlight"><pre><span></span>if you are coming from bash shell, you would probably have .bashrc file that you would want to import. In my case importing was pretty easy. I grouped some `export`s and `shopt` under:
+
+if [ -n &quot;$BASH_VERSION&quot; ]; then
+...
+fi
+</pre></div>
+
+
+<p>and then added the following line to .zshrc at the end.</p>
+<div class="highlight"><pre><span></span>if [ -f &quot;$HOME/.bashrc&quot; ]; then
+    . &quot;$HOME/.bashrc&quot;
+fi
+</pre></div>
+
+
+<p>I ignore <code>.ntuser*</code> files in the home directory because there is no way to hide them or move them. I have set the alias in the <code>.bashrc</code> file, but <code>oh-my-zsh</code> has <code>alias</code> to <code>ls</code> as well. Instead of commenting those out, it is simpler to just load <code>.bashrc</code> later.</p>
+<p>Also zsh sources []<code>.zprofile</code> instead of <code>.profile</code>](http://superuser.com/questions/187639/zsh-not-hitting-profile). So I include the following line to launch <code>screen</code> when I open the terminal. (And run it only when screen is not already executing, it's not preference)</p>
+<div class="highlight"><pre><span></span>if [[ $(ps | grep screen | wc -l) == 0 &amp;&amp; (-f /usr/bin/screen.exe || -f /usr/bin/scren) ]] ; then
+    screen -S s
+fi
+</pre></div>
+
+
+<h2>Customizing Zsh</h2>
+<p>I am fan of <code>agnoster</code> as it blends well with the powerline and solarized. Make sure to use <a href="vim-airline.html">a patched up font though.</a>.</p>
+<p><a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins">Plugins</a> for cygwin is a bit limited. Here are the ones I think could be useful:</p>
+<div class="highlight"><pre><span></span>cake coffee fabric gem npm perl per-directory-history pip rvm scala screen ssh-agent vagrant urlencode urldecode virtualenvwrapper web-search
+</pre></div>
+
+
+<p>I personally only added:</p>
+<div class="highlight"><pre><span></span>plugins=(git coffee fabric gem perl per-directory-history pip ssh-agent urlencode urldecode)
+</pre></div>
+
+
+<h2>Multi-language support</h2>
+<p>remove the following line in the 'Cygwin.bat' in the cygwin folder</p>
+<div class="highlight"><pre><span></span>set LANG=en_US.UTF-8
+</pre></div>
+
+
+<p>and add something like the following line:</p>
+<div class="highlight"><pre><span></span>set LANG=ko_KR.eucKR
+</pre></div>
+
+
+<h2>Installing TMux</h2>
+<p>I have recently switched from <a href="4thinker.com/tmux.md">GNU screen to tmux</a>. Four years ago when I was debating between the two, the latter choice was not available. The installation is super simple now, but there is one manual intervention that is necessary. The <code>apt-cyg</code> assumes that all packages it downloads are in bunzip format, but in case for tmux, the file is in  So find the line that does the uncompression and change it temporarily. Oh and make sure to download the latest <a href="https://cygwin.com/install.html">setup.exe from the cygwin website</a> and run it to get the latest libraries.</p>
+<div class="highlight"><pre><span></span>vim $(which apt-cyg)
+</pre></div>
+
+
+<p>replace (around line 350)</p>
+<div class="highlight"><pre><span></span>cat $file | bunzip2 | tar &gt; &quot;/etc/setup/$pkg.lst&quot; xvf - -C /
+</pre></div>
+
+
+<p>to</p>
+<div class="highlight"><pre><span></span>cat $file | tar &gt; &quot;/etc/setup/$pkg.lst&quot; xJf - -C /
+</pre></div>
+
+
+<p>and run</p>
+<div class="highlight"><pre><span></span>apt-cyg install tmux
+</pre></div>
+
+
+<h2>Color</h2>
+<p>I use solarized. The instruction and files are here
+https://github.com/karlin/mintty-colors-solarized</p>
+<h2>Tips for using Bash</h2>
+<p>Should you choose to use bash in cygwin, I recommend you to not use <code>bash_completion</code>. It will slow down your bash a lot. Just comment out a line like this in your <code>.bash_profile</code> or <code>.bashrc</code></p>
+<div class="highlight"><pre><span></span>#if [ -f /etc/bash_completion ] &amp;&amp; ! shopt -oq posix; then
+#    . /etc/bash_completion
+#fi
+</pre></div>
+
+
+<h2>Python pip</h2>
+<p>wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py</p>
+<h2>Other quirks</h2>
+<ul>
+<li>If you use gVim, it is possible that the PATH variable contains path to <code>gVim</code> earlier than the path to <code>cygwin/bin</code>. (If you installed gVim manually, it is recommended that you do add gVim to PATH to make your life easier for executing it) In this case when you execute <code>vim</code> from the command prompt, it will try to execute gvim and it might hang. You can check this by typing <code>alias</code> and seeing which executable is getting called. You do want <code>gvim</code> to be selected</li>
+</ul>
+<p>Also make sure you truncate your <code>PATH</code>, otherwise your cygwin will seemingly hang randomly for a command you execute.</p>
+<div class="highlight"><pre><span></span>if [ `uname -o` = &quot;Cygwin&quot; ]; then
+     PATH=/bin:/usr/bin:/usr/sbin:/usr/local/bin/:/cygdrive/c/Windows:/cygdrive/c/Windows/System32
+fi
+</pre></div>
+
+
+<p>or with the recent cygwin version, there is undocumented <code>CYWGIN_NOWINPATH</code> that you can set to any value and it will omit windows PATH all together. Set this in your Windows environment variable. You can see the if statment in <code>/etc/profile</code></p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/cygwin-setup.html">
+          <i class="icon-comment"></i> Comment </a>
+	<hr />
+      </div>
+      
+    </div>
+    
+<div class="pagination">
+<ul>
+    <li class="prev disabled"><a href="#">&larr; Previous</a></li>
+
+    <li class="active"><a href="https://www.4thinker.com/tag/zsh.html">1</a></li>
+
+    <li class="next disabled"><a href="#">&rarr; Next</a></li>
+
+</ul>
+</div>
+ 
+  
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

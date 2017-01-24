@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Forethinker - algs</title><link>https://www.4thinker.com/</link><description></description><lastBuildDate>Fri, 14 Feb 2014 07:23:00 -0800</lastBuildDate><item><title>Union Find</title><link>https://www.4thinker.com/union-find.html</link><description>&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[Algorithms](https://class.coursera.org/algs4partI-003/) by Rob Sedgewick
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;find whether nodes are have a path to another.&lt;/p&gt;
+&lt;h2&gt;Quick-Find (Naïve implementation):&lt;/h2&gt;
+&lt;p&gt;As the nodes get connected, all nodes in the resulting tree are marked with one of the node's id number. After all union operations, if any two selected nodes have the same ID, they are connected. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;public void uinon(int p, int q)
+{
+    int pid = id[p]; //pid must be extracted because id[p] will change to qid
+    int qid = id[q];
+    for (int i = 0; i &amp;lt; id.length; i++)
+        if (id[i] == pid) id[i] = qid;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Weighted Quick-Union …&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 14 Feb 2014 07:23:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-14:/union-find.html</guid><category>graph</category></item><item><title>Trees</title><link>https://www.4thinker.com/trees.html</link><description>&lt;ul&gt;
+&lt;li&gt;red-black: a self-balancing binary search tree. It is guaranteed to always be balanced, but is complex to implement.&lt;/li&gt;
+&lt;li&gt;B tree: a n-ary search tree in which each node has up to n-1 values and n children.&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 16 Sep 2013 09:39:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-16:/trees.html</guid><category>graphs</category></item><item><title>Efficient ways to do rotation</title><link>https://www.4thinker.com/rotation.html</link><description>&lt;h2&gt;Single array/list&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Q: rotate an array by a particular index size, k&lt;/li&gt;
+&lt;li&gt;A: rotate the entire array first, then rotate first k elements and rotate the rest of elements&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 13 Sep 2013 08:19:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-13:/rotation.html</guid><category>algorithm</category></item><item><title>Algorithm Questions regarding integer lists</title><link>https://www.4thinker.com/integer-list.html</link><description>&lt;ul&gt;
+&lt;li&gt;All questions are started with "Given a list of integers (not sorted)"&lt;/li&gt;
+&lt;li&gt;All numbers include negative numbers.&lt;/li&gt;
+&lt;li&gt;X is an arbitrary number that is predefined&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Q: find 3 numbers that add up to a given number (a+b+c=d)&lt;/p&gt;
+&lt;p&gt;A: Convert the equation to a+b=d-c, make hash tables representing each side of the question. Iterate through each possible pair of numbers (n^2), see if the sum can be found in the difference hash table or if the difference can be found in the sum table. If true for each case. If the exact numbers are needed …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 10 Sep 2013 05:11:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-10:/integer-list.html</guid></item></channel></rss>

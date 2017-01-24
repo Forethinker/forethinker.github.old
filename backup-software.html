@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li  class="active" >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+    <div class='article'>
+      <div class="row-fluid">
+           <div class="content-title span12">
+             <h1>The backup software</h1b>
+           </div>
+      </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>December 02, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/backup.html">#backup</a></span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=The%20backup%20software%20 https%3A//www.4thinker.com/backup-software.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/backup-software.html&p[images][0]=&p[title]=The%20backup%20software%20&p[summary]=%3Cp%3EI%20have%20used%20Acrnois%20Backup%20%282007%29%20and%20Easeus%20Backup%20%282013%29.%20They%20both%20have%20failed%20me.%20The%20failures%20were%20the%20same%20even%20though%20they%20are%20five%20years%20apart%20in%20the%20time%20period%20-%20bootdisk/recovery%20OS%20failure.%20Macrium%20Reflect%20Free%27s%20recovery%20disk%20worked%20and%20it%20supported%20USB%203.0%2C%20but%20then%20it%20failed%20to%20deal%20with%20GPT%20partitions%20that%20Microsoft%20introduced%20with%20Windows%208.%20Paragon%20Hard%20Disk%20Manager%20did%20the%20job%20and%20it%20always%20have%20been%20in%20the%20top%20picks%20in%20the%20reviews%20that%20I%20wanted%20to%20try%2C%20so%20I%20finally%20had%20a%20winner.%3C/p%3E%0A%3Ch2%3EThe%20Most%20Disastrous%20Moment%3A%3C/h2%3E%0A%3Cp%3EComputer%20backup%20is%20the%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/backup-software.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=The%20backup%20software%20&body=https%3A//www.4thinker.com/backup-software.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      
+      <div class="span10">
+	<p>I have used Acrnois Backup (2007) and Easeus Backup (2013). They both have failed me. The failures were the same even though they are five years apart in the time period - bootdisk/recovery OS failure. Macrium Reflect Free's recovery disk worked and it supported USB 3.0, but then it failed to deal with GPT partitions that Microsoft introduced with Windows 8. Paragon Hard Disk Manager did the job and it always have been in the top picks in the reviews that I wanted to try, so I finally had a winner.</p>
+<h2>The Most Disastrous Moment:</h2>
+<p>Computer backup is the insurance that you cannot outsource. So it is a hassle, no matter how automated it is, and it makes you become lazy about it. I have gotten lazy at point and I paid it dearly. I was trying to encrypt my external drive that has all my data without backing it up first. Since Truecrypt is a trusted software, I thought, it should be pretty safe as long as I am not doing anything. Well, not doing anything actually caused the problem. My laptop went to sleep mode while encryption was happening and truecrypt bricked my backup drive. And when your hard drive is half encrypted with a broken header, there is no way to recover it.</p>
+<p>It is a pretty embarrassing story, but nonetheless I still get lazy about backup at times. Like when one software fails me and I have to switch over, or I move and the internet bandwidth is not good enough for off-site backup, or when my computer dies, etc, etc.</p>
+<p>Hardware failures it</p>
+<h2>GPT UUFI</h2>
+<p>It is one mysterious beast that I do not have time to tame. I am so mad that it dethroned Macrium Reflect Free and forced me to use a paid software. I wish well for backup software companies, but whenever there is a migration or re-installation, the license validation becomes a chore. Here are some commands I tried on command-line on Windows 8 recovery disc, but did not fix the problem:</p>
+<div class="highlight"><pre><span></span>Diskpart
+List volume
+Select volume=2 (replace “2″ with the number that is associated with the “ESP” label)
+assign letter=Z
+exit
+bcdboot C:\windows /s Z: /f UEFI (replace C: with the volume letter that is named “OS”)
+</pre></div>
+
+
+<h2>Robocopy</h2>
+<div class="highlight"><pre><span></span>robocopy c:\ d:\ /MIR /R:3 /W:0
+/MIR = Mirror entire directory structure
+/R:0 = 0 retries for read/write failures
+/W:0 = 0 seconds between retries
+</pre></div>
+
+
+<h2>Teracopy</h2>
+<p>Teracopy is faster overall based on anecdotal accounts and unconfirmed tests.</p>
+<div class="highlight"><pre><span></span>https://www.facebook.com/Sup3rs0n1c/posts/557614860952133?stream_ref=10
+http://forums.whirlpool.net.au/forum-replies.cfm?t=1337937&amp;#r4
+http://www.howtogeek.com/73887/battle-of-the-file-copiers-windows-teracopy-and-supercopier/
+http://superuser.com/questions/692775/how-much-faster-is-copying-files-though-teracopy-vs-windows-7-native-copy-funct
+http://serverfault.com/questions/35336/why-hasnt-rsync-caught-on-in-the-windows-world
+</pre></div>
+
+
+<p>It is not suitable for actual backup because it does not have the option to delete the file that are not in the source, but it is worth mentioning.</p>
+<div class="highlight"><pre><span></span>Teracopy Teracopy.exe Copy c:\ D:\
+</pre></div>
+
+
+<p><a href="http://help.codesector.com/TeraCopyCommandLine">More examples</a></p>
+	<hr />
+      </div>
+
+      <div class="span8 offset2">
+          <h3>Related Posts</h3>
+            <ul>
+                <li><a href="https://www.4thinker.com/crashplan.html">Installing Crashplan on Pogoplug</a></li>
+            </ul>
+      </div>
+
+    </div>
+
+      <h3>Comments</h3>
+    
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'forethinker'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+        
+
+        
+
+    <div class='row-fluid''>
+        <div class="article-title span12">
+            <a href="https://www.4thinker.com/linux-setup.html"><h1>Setting Up Linux</h1></a>
+        </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>February 14, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/sysadmin.html">sysadmin</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/linux.html">#linux</a>, <a href="https://www.4thinker.com/tag/setup.html">#setup</a>, <a href="https://www.4thinker.com/tag/laptop.html">#laptop</a></span>
+
+  <span>Read in 5 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Setting%20Up%20Linux%20 https%3A//www.4thinker.com/linux-setup.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/linux-setup.html&p[images][0]=&p[title]=Setting%20Up%20Linux%20&p[summary]=%3Ch2%3EEssential%3C/h2%3E%0A%3Cp%3E%3Cp/%3E%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Esudo%20apt-get%20update%0Asudo%20apt-get%20install%20-y%20vim%20git%20python%20python-pip%20tmux%20zsh%20python-dev%20libxml2-dev%20libxslt-dev%20ssh%0Asudo%20apt-get%20install%20-y%20default-jre%0Asudo%20pip%20install%20virtualenv%20requests%0Asudo%20npm%20install%20-g%20casperjs%20coffee-script%20js2coffee%20coffeelint%20uglify-js%0A%0A%23%20sudo%20apt-get%20install%20gtk2-engines-pixbuf%20vim-gnome%20clipit%20xclip%20xdotool%20xdiskusage%20resolvconf%20acpitool%20xmodmap%20powertop%20zip%20unzip%20curl%0Asudo%20apt-get%20install%20openjdk-7-jre%20openjdk-7-jdk%0A%23%20Laptop-specific%0Asudo%20apt-get%20install%20lsof%0Asudo%20apt-get%20purge%20laptop-mode-tools%0A%23%20Extra%0Asudo%20apt-get%20install%20ia32-libs%20eclipse%20xfce4-settings%20telnet%20ntpdate%20mongodb%0Asudo%20ln%20-s%20/usr/bin/nodejs%20/usr/bin/node%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Ch2%3Enpm%20in%20ubuntu%3C/h2%3E%0A%3Cp%3EIf%20linking%20the%20nodejs%20binary%20to%20node%20is%20not%20sufficient%20for%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/linux-setup.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Setting%20Up%20Linux%20&body=https%3A//www.4thinker.com/linux-setup.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="article-content span10">
+	<h2>Essential</h2>
+<p><p/></p>
+<div class="highlight"><pre><span></span>sudo apt-get update
+sudo apt-get install -y vim git python python-pip tmux zsh python-dev libxml2-dev libxslt-dev ssh
+sudo apt-get install -y default-jre
+sudo pip install virtualenv requests
+sudo npm install -g casperjs coffee-script js2coffee coffeelint uglify-js
+
+# sudo apt-get install gtk2-engines-pixbuf vim-gnome clipit xclip xdotool xdiskusage resolvconf acpitool xmodmap powertop zip unzip curl
+sudo apt-get install openjdk-7-jre openjdk-7-jdk
+# Laptop-specific
+sudo apt-get install lsof
+sudo apt-get purge laptop-mode-tools
+# Extra
+sudo apt-get install ia32-libs eclipse xfce4-settings telnet ntpdate mongodb
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+</pre></div>
+
+
+<h2>npm in ubuntu</h2>
+<p>If linking the nodejs binary to node is not sufficient for making npm and bower work, run the following:</p>
+<div class="highlight"><pre><span></span>sudo apt-get install nodejs-legacy
+</pre></div>
+
+
+<h2>oh-my-zsh</h2>
+<div class="highlight"><pre><span></span>git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+chsh -s $(which zsh)
+</pre></div>
+
+
+<h2>Copy dotfiles from Dropbox</h2>
+<p><p/></p>
+<div class="highlight"><pre><span></span>cdi ~ <span class="err">&amp;&amp;</span> wget --no-check-certificate -O - &quot;https://www.dropbox.com/download?plat=lnx.x86_64&quot; | tar xzf - <span class="err">&amp;&amp;</span> ~/.dropbox-dist/dropboxd
+sudo wget -O /usr/local/bin/dropbox &quot;http://www.dropbox.com/download?dl=packages/dropbox.py&quot;
+sudo chmod 755 /usr/local/bin/dropbox
+# /usr/local/bin/dropbox help
+dropbox autostart y
+dropbox start
+find ~/Dropbox/dev/dotfiles/ -maxdepth 1 -type f -name &#39;.??*&#39; -print0 | xargs -0I{} sh -c &#39;base=&quot;$(basename $0)&quot;; if [ -f <span class="nv">$HOME</span>/&quot;<span class="nv">$base</span>&quot; ]; then  mv <span class="nv">$HOME</span>/&quot;<span class="nv">$base</span>&quot; <span class="nv">$HOME</span>/&quot;<span class="nv">$base</span>&quot;.bak; echo &quot;$0&quot; {}; fi; ln -s &quot;$0&quot; <span class="nv">$HOME</span>/&quot;<span class="cp">${</span><span class="n">base</span><span class="cp">}</span>&quot;&#39; {}
+#Copy the .ssh directory
+rm -rf .ssh <span class="err">&amp;&amp;</span> sudo cp -r ~/Dropbox/dev/dotfiles/.ssh .
+#Link other config files
+ln -s ~/Dropbox/dev/dotfiles/.config ~/
+</pre></div>
+
+
+<p>for more information on command-line Dropbox, visit the <a href="http://www.dropboxwiki.com/tips-and-tricks/install-dropbox-in-an-entirely-text-based-linux-environment">unofficial wiki</a>.</p>
+<h2>Install vundle and other plugins for vim</h2>
+<p><p/></p>
+<div class="highlight"><pre><span></span>git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+vim -c &quot;BundleInstall&quot;
+</pre></div>
+
+
+<h2>Install windows fonts, including Consolas</h2>
+<p><p/></p>
+<div class="highlight"><pre><span></span>sudo apt-get install cabextract
+bash &lt;(curl -s http://plasmasturm.org/code/vistafonts-installer/vistafonts-installer)
+</pre></div>
+
+
+<h2>Power Save</h2>
+<p><p/></p>
+<div class="highlight"><pre><span></span>Follow the instruction from [here](http://okomestudio.net/biboroku/?p=1915#comment-14648)
+</pre></div>
+
+
+<h2>Turn off the discrete graphics card</h2>
+<p>This will save a lot of battery. How much? Almost 30% of your battery capacity depending on your graphics card.</p>
+<div class="highlight"><pre><span></span>sudo su
+apt-get install dkms
+git clone https://github.com/Bumblebee-Project/bbswitch.git
+cd bbswitch
+# compile and install the module
+make -f Makefile.dkms
+#unload the nouveau driver - has accesses discrete graphics card and prevents from turning it off
+modprobe -r nouveau
+# activate the module
+modprobe bbswitch
+
+# to uninstall the module
+make -f Makefile.dmks uninstall
+# check the status of the NVIDA graphics card
+cat /proc/acpi/bbswitch
+# to turn it on
+tee /proc/acpi/bbswitch &lt;&lt;&lt; ON
+# to turn it off
+tee /proc/acpi/bbswitch &lt;&lt;&lt; OFF
+
+# to check for the error
+dmesg | tail -l
+
+# to auto-distable the card on boot
+echo &quot;blacklist nouveau&quot; &gt;&gt; /etc/modprobe.d/blacklist
+echo &quot;bbswitch load_state=0&quot; &gt;&gt; /etc/modules
+update-initramfs -u
+</pre></div>
+
+
+<h2>Korean Font</h2>
+<div class="highlight"><pre><span></span>apt-get install nabi im-switch ttf-nanum ttf-nanum-coding ttf-unfonts-core ttf-unfonts-extra ttf-alee ttf-baekmuk
+im-switch
+#select nabi
+#logout and login
+#remove shift-space keybinding because it is annoying
+</pre></div>
+
+
+<h2>Theme</h2>
+<p>I like <a href="http://killhellokitty.deviantart.com/">delorean theme by killhellokitty</a> and it is pretty well maintained
+move the files to <code>$HOME/.themes</code> or <code>/usr/share/themes</code>.  Select the theme using <code>gtk-chtheme</code> or <code>lxappearance</code></p>
+<h2>Wireless Driver (Broadcom, Debian)</h2>
+<div class="highlight"><pre><span></span>sudo apt-get update
+apt-get install linux-headers-$(uname -r|sed &#39;s,[^-]*-[^-]*-,,&#39;) broadcom-sta-dkms
+modprobe -r b44 b43 b43legacy ssb brcmsmac
+modprobe wl
+</pre></div>
+
+
+<h2>Clipboard</h2>
+<div class="highlight"><pre><span></span>Use Primary Selection, Synchronize clipboard
+</pre></div>
+
+
+<h2>Wireless</h2>
+<p>download the driver from from: <code>http://www.broadcom.com/support/802.11/linux_sta.php</code>
+and read the instruction if you need more details: http://www.broadcom.com/docs/linux_sta/README.txt</p>
+<div class="highlight"><pre><span></span>tar -xvcf *.tar.gz
+make
+</pre></div>
+
+
+<p>To install drive manually (and then lose it after the reboot):</p>
+<div class="highlight"><pre><span></span>sudo rmmod wl
+sudo insmod /lib/modules/3.2.0-4-amd64/kernel/net/wireless/cfg80211.ko
+sudo insmod /lib/modules/3.2.0-4-amd64/kernel/net/wireless/wl.ko
+sudo modprobe wl
+</pre></div>
+
+
+<p>To make the change permanent</p>
+<div class="highlight"><pre><span></span>sudo sh -c &#39;echo -e &quot;lib80211\ncfg80211\nwl&quot; &gt;&gt; /etc/modules&#39;
+sudo update-initramfs -u
+</pre></div>
+
+
+<p>The power saving option for wireless may cause problem. I was getting a bunch of errors on my syslog:</p>
+<div class="highlight"><pre><span></span>crunchbang kernel: [  130.973790] ERROR @wl_cfg80211_get_station : Wrong Mac address
+</pre></div>
+
+
+<p>To temporarily fix the problem, you can do (First check your device with iwconfig and replace wlan0 appropriately):</p>
+<div class="highlight"><pre><span></span>sudo iwconfig wlan0 power off
+</pre></div>
+
+
+<p>To make the change permanent, <a href="http://askubuntu.com/questions/85214/how-can-i-prevent-iwconfig-power-management-from-being-turned-on">the suggested edit is</a>:</p>
+<div class="highlight"><pre><span></span>sudo sh -c &#39;echo -e &quot;HOOK_BLACKLIST=&quot;wireless&quot;&#39; &gt;&gt; /etc/pm/config.d/blacklist
+</pre></div>
+
+
+<h2>Install my preferred file manager</h2>
+<div class="highlight"><pre><span></span>sudo apt-add-repository ppa:alexx2000/doublecmd
+sudo apt-get update
+sudo apt-get install odt2txt doublecmd-gtk
+</pre></div>
+
+
+<h2>Change hostname</h2>
+<div class="highlight"><pre><span></span>edit the file /etc/hostname
+</pre></div>
+
+
+<h2>Modifying grub</h2>
+<div class="highlight"><pre><span></span>sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt-get update
+sudo apt-get install grub-customizer
+sudo grub-customizer
+</pre></div>
+
+
+<h2>Openbox Configuration</h2>
+<p>I am fan of openbox, so I use <a href="https://github.com/tpope/vim-surround">gobang</a> as my primary Linux OS. You install it by invoking <code>ubiquity</code> in the command prompt after booting from the liveCD. Here are some extensive list of custom <a href="http://melp.nl/2011/01/10-must-have-key-and-mouse-binding-configs-in-openbox/">shortcuts for openbox</a>.</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/linux-setup.html">
+          <i class="icon-comment"></i> Comment </a>
+	<hr />
+      </div>
+      
+    </div>
+    
+<div class="pagination">
+<ul>
+    <li class="prev disabled"><a href="#">&larr; Previous</a></li>
+
+    <li class="active"><a href="https://www.4thinker.com/tag/setup.html">1</a></li>
+
+    <li class="next disabled"><a href="#">&rarr; Next</a></li>
+
+</ul>
+</div>
+ 
+  
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

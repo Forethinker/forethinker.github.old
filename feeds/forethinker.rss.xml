@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Forethinker - forethinker</title><link>https://www.4thinker.com/</link><description></description><lastBuildDate>Mon, 06 Jun 2016 14:45:14 -0700</lastBuildDate><item><title>My Choice of Hardware in 2016</title><link>https://www.4thinker.com/gadgets-2016.html</link><description>&lt;h2&gt;Phone | Nexus 5&lt;/h2&gt;
+&lt;p&gt;Still running strong after three years. I am waiting for Nexus 2016 with Android N. My folks are still using Nexus 5 with no problem. They will probably get a refresh once Nexus 2016 price drops in about a year after the release. Nexus 6P dropped about 33% in price after 9 months of release. I can't wait for my phone to replace my credit cards.&lt;/p&gt;
+&lt;h2&gt;Camera | Pentax K-50&lt;/h2&gt;
+&lt;p&gt;Weatherproof and best bang for the buck in the entry-level camera. I use 50mm prime with it.&lt;/p&gt;
+&lt;h2&gt;Laptop | Dell M3800&lt;/h2&gt;
+&lt;p&gt;The best laptop I used and nothing else …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 06 Jun 2016 14:45:14 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2016-06-06:/gadgets-2016.html</guid></item><item><title>Minimalist Camera Setup</title><link>https://www.4thinker.com/dslr-camera-lens.html</link><description>&lt;p&gt;The argument for 35mm vs 50mm is endless and I finally came to peace with my choice.
+I own Pentax K-50, an excellent entry camera for a hobbyist. After playing around with the zoom lens kit (18-55), I bought my first prime lens with 55mm focal length.
+I did feel some uneasiness when I tried to take group photo, or any indoor photo that needed a bit more landscape. &lt;a href="http://www.pentaxforums.com/forums/58-troubleshooting-beginner-help/259160-my-first-prime-lens-pentax-da-50mm-f1-8-vs-da-35mm-f2-4-al.html"&gt;From the Pentax Forum, 2/3 of the users recommended 35mm.&lt;/a&gt;. I was a click away from buying 35mm lens, but then after some research. I decided to invest more money …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 07 Apr 2016 17:44:16 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2016-04-07:/dslr-camera-lens.html</guid><category>camera</category><category>dslr</category><category>lens</category></item><item><title>Ironing out flash issues on Google Chrome</title><link>https://www.4thinker.com/chrome-flash-plugin.html</link><description>&lt;p&gt;Flash plugin was not working and after ticking all possible options in &lt;code&gt;chrome://settings&lt;/code&gt;, &lt;code&gt;chrome://flags&lt;/code&gt;, &lt;code&gt;chrome://components&lt;/code&gt;, and &lt;code&gt;chrome://plugins&lt;/code&gt;, I still was not able to make it work.
+Okay, so even html5 video was not working for me and that turned out to be video driver issue (!). As for &lt;code&gt;PepperFlash&lt;/code&gt;. I had to rename directory &lt;code&gt;C:\Users\john\AppData\Local\Google\Chrome\User Data\PepperFlash&lt;/code&gt; to something else so that I can a fresh copy downloaded via &lt;code&gt;chrome://components&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;So with the absence of NPAPI, some plugins that took advantage of flash plugin's security hole is gone. For …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 23 Mar 2016 14:25:07 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2016-03-23:/chrome-flash-plugin.html</guid></item><item><title>Adjusting input device settings</title><link>https://www.4thinker.com/mouse-settings.html</link><description>&lt;h2&gt;Touchpad&lt;/h2&gt;
+&lt;p&gt;I recently bough a bluetooth keyboard for my laptop, so that I can switch to stand up desk without having to move anything. I have a monitor on my desk and another one on my shelf. But once I connected the new bluetooth keybord, it seems to set its own preference that the manufacturer has pre-programmed into the device. This also affected my
+I am writing specifically about Dell touchpad settings.&lt;/p&gt;
+&lt;p&gt;http://www.askvg.com/fix-charms-bar-randomly-appears-on-windows-88-1-touch-enabled-devices/&lt;/p&gt;
+&lt;p&gt;C:\Program Files\Synaptics\SynTP\DellTpad.exe&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 28 Jan 2016 00:09:34 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2016-01-28:/mouse-settings.html</guid></item><item><title>WebDAV vs FTP</title><link>https://www.4thinker.com/webdav.html</link><description>&lt;p&gt;https://stackoverflow.com/questions/11216884/which-file-access-is-the-best-webdav-or-ftp
+Title: WebDAV vs FTP
+Tags: webdav, ftp&lt;/p&gt;
+&lt;p&gt;https://stackoverflow.com/questions/11216884/which-file-access-is-the-best-webdav-or-ftp
+webdav
+    http://www.southrivertech.com/webdav-vs-ftp/
+    https://serverfault.com/questions/131240/ftp-v-s-sftp-v-s-ftps
+    https://pimatic.org/plugins/pimatic-edimax/
+webdav
+  https://stackoverflow.com/questions/11216884/which-file-access-is-the-best-webdav-or-ftp&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 18 Jan 2016 23:19:30 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2016-01-18:/webdav.html</guid><category>webdav</category><category>ftp</category></item><item><title>What I want in a phone</title><link>https://www.4thinker.com/cellphone.html</link><description>&lt;h2&gt;Wanted Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;stock Android: Google's Android features get updated very frequently. A lot has change since I first got Nexus 5 and it is still updating earlier than other brands'. Software is the heart of a machine and I would rather choose stock Android even if I have to sacrifice other features.&lt;/li&gt;
+&lt;li&gt;fast charging: I am waiting for Snapdragon 820 really badly right now. Reportedly, Huawei is making a successor to Nexus 6P in 2016 with snapdragon 820. I think this is going my next phone.&lt;/li&gt;
+&lt;li&gt;replaceable battery: with the fast charging and a bigger battery, the need for a …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 02 Jan 2016 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2016-01-02:/cellphone.html</guid><category>phone</category><category>android</category><category>google</category><category>features</category><category>hardware</category></item><item><title>I am addicted to perrier and I cannot lie</title><link>https://www.4thinker.com/perrier.html</link><description>&lt;p&gt;So carbonated water is much healthier than other types of drink for your bones and teeth according to [BBC] (http://www.bbc.com/future/story/20150911-is-sparkling-water-really-bad-for-you).&lt;/p&gt;
+&lt;p&gt;That weak acid, however, seems to be beneficial to my digestive system, especially when I eat a lot after a workout or something. And also that refreshing feeling from the carbonation makes my brain happy. Perrier's carbonating technique seems to be a lot superior to its competitors. The kick is much stronger and it lasts longer after the bottle has been opened.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 17 Dec 2015 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2015-12-17:/perrier.html</guid><category>diet</category><category>perrier</category><category>carbonated</category></item><item><title>Why do you bother charging your wireless devices?</title><link>https://www.4thinker.com/charging-devices.html</link><description>&lt;p&gt;I love technology, but there is one trait of a device that is a turn off for me. And that is charging. Okay, I do make a compromise and I understand that I cannot live with just wired devices. Here are a few indispensable devices that need charging in my inventory: laptop and cellphone. My vacuum cleaner does not make it to this list because it has a dock. My kindle... it lasts a month and it gets charged as I think about which book or documents to transfer my laptop.&lt;/p&gt;
+&lt;p&gt;But I skip wireless mouse, headset, selfie-stick, battery pack …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 16 Dec 2015 09:43:50 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2015-12-16:/charging-devices.html</guid></item><item><title>Backup strategy</title><link>https://www.4thinker.com/backup.html</link><description>&lt;p&gt;The following assumes that you have encrypted data, which you should!&lt;/p&gt;
+&lt;h2&gt;NAS&lt;/h2&gt;
+&lt;p&gt;Synology owns in this market. There are free alternatives like XPenology or FreeNAS, but many warned about the lack of security, reliability, and simplicity in use.
+Pros:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;features: there are tones of features you can take advantage of: RAID, encryption, and third party backup solution compatibility&lt;/li&gt;
+&lt;li&gt;simplicity: you set it once and let it do its job&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cost: a good brand NAS like Synology will cost you at least $200 for an entry-level 2-bay NAS without disks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;RAID enabled enclosure&lt;/h2&gt;
+&lt;p&gt;Not really a backup strategy, but the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 23 Nov 2015 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2015-11-23:/backup.html</guid></item><item><title>Network Attached Storage experiments</title><link>https://www.4thinker.com/synology,%20backup,%20nas.html</link><description>&lt;p&gt;I just bought Synology DS215j. It was the best for the buck if I just ditch the video decoding&lt;/p&gt;
+&lt;h2&gt;Reason for a local backup&lt;/h2&gt;
+&lt;p&gt;Simple. I make a backup of my partition so that in case of theft, loss of my device, or a hard drive failure, I could get back my working system setup immediately. The size of these backups are pretty large and I don't want to risk these backups not being uploaded completely to the off-site. Since my primary machine is a laptop and the availability of high-speed internet is not always guaranteed, I want to a …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 23 Nov 2015 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2015-11-23:/synology, backup, nas.html</guid></item><item><title>Construction Communication Tactics in Relationship</title><link>https://www.4thinker.com/relationship.html</link><description>&lt;p&gt;Notes from the book &lt;a href="http://www.amazon.com/Our-Sexuality-Robert-L-Crooks/dp/0495811793/ref=sr_1_2?ie=UTF8&amp;amp;qid=1447982849&amp;amp;sr=8-2&amp;amp;keywords=our+sexuality"&gt;"Our Sexuality" by Robert L. Crooks&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Gottman's Constructive Communication Tactics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Leveling: stating our thought and feelings clearly, simply, and honestly: preferably using "I" language&lt;/li&gt;
+&lt;li&gt;Editing: avoid saying things that are hurtful and expressing only the information that are relevant to the issues&lt;/li&gt;
+&lt;li&gt;Validating: facilitating constructive dialogue by acknowledging the reasonableness of our partner's concern.&lt;/li&gt;
+&lt;li&gt;Volatile Dialogue: some degree of conflict is essential to the long-term happiness of a relationship. For a long-term relationship (&amp;gt; 3 years), the couple who argued occasionally reported significantly more relationship satisfaction.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Gottman's Destructive Communication Tactics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Criticism: "you" statements that attack's one's character …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 19 Nov 2015 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2015-11-19:/relationship.html</guid></item><item><title>Should I get into photography</title><link>https://www.4thinker.com/photography.html</link><description>&lt;p&gt;I have been seriously contemplating buying a DSLR, especially a Pentax k50, because it is weatherproof and accordingly snapsort, it is fairs pretty well compared to other brand names like Canon and Nikkon. I was about to buy a bundle from Adorama.com because they were on sale and then I stopped. I had 2 Point-and-Shoot cameras lingering in the closet. I hardly used them. I hardly got into photography when I bought decent PoS years back.&lt;/p&gt;
+&lt;p&gt;I reasoned with myself. Will I get into photography if I buy a good camera? There was obviously no, but I still was …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 27 Apr 2015 10:11:16 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2015-04-27:/photography.html</guid></item><item><title>Using 64-bit gVim in Windows</title><link>https://www.4thinker.com/gvim-in-windows.html</link><description>&lt;p&gt;I use gVim in Windows that has been compiled by &lt;a href="https://bitbucket.org/Haroogan/vim-for-windows"&gt;Haroogan&lt;/a&gt;. It is the most up-to-date 64-bit Windows gVim that I know of.
+If you are using international keyboard, make sure to set the unicode for your language properly in your "Language Settings" page so that the fonts show up properly.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 25 Apr 2015 20:53:16 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2015-04-25:/gvim-in-windows.html</guid></item><item><title>Operating Systems</title><link>https://www.4thinker.com/operating-systems.html</link><description></description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 16 Mar 2015 13:28:15 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2015-03-16:/operating-systems.html</guid></item><item><title>Every experience I had with a flash drive</title><link>https://www.4thinker.com/flash_drives.html</link><description>&lt;p&gt;First thing, don't do your data processing on a flash drive. Your data is going to get messed up and you will pay. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 06 Mar 2015 12:56:25 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2015-03-06:/flash_drives.html</guid><category>flash</category></item><item><title>Grunt makes me smile</title><link>https://www.4thinker.com/grunt.html</link><description>&lt;h2&gt;Some setup&lt;/h2&gt;
+&lt;p&gt;sudo iptables -A INPUT -p tcp --dport 9000 -j ACCEPT
+Edit Grunt.js's host from &lt;code&gt;localhost&lt;/code&gt; to &lt;code&gt;0.0.0.0&lt;/code&gt; to access it from outside&lt;/p&gt;
+&lt;h2&gt;Useful packages&lt;/h2&gt;
+&lt;p&gt;They are pretty much all useful.
+These are the settings I put in &lt;code&gt;grunt.initConfig({})&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;wiredep&lt;/h4&gt;
+&lt;p&gt;First add these meta tags to index.html&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- bower:css --&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- endbower --&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- bower:js --&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- endbower --&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;in gruntFile.js:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grunt.loadNpmTasks(&amp;#39;grunt-wiredep&amp;#39;);
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then in grunt.initConfig:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;wiredep: {
+  target: {
+    src: &amp;#39;index.html&amp;#39; // point to your HTML file.
+  }
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and execute it by:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grunt wiredep
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 14 Feb 2015 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2015-02-14:/grunt.html</guid><category>grunt</category><category>nodejs</category></item><item><title>Beats Solo 2.0 vs Other earphones</title><link>https://www.4thinker.com/beats-solo-2.0.html</link><description>&lt;p&gt;I am listening to my favorite artist with &lt;a href="http://www.amazon.com/gp/product/B00IYA2YRK/ref=as_li_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=B00IYA2YRK&amp;amp;linkCode=as2&amp;amp;tag=forethinker-20&amp;amp;linkId=RDNR3NB74I6GNALI"&gt;Beats Solo 2.0 Wired On-Ear Headphones&lt;/a&gt; right now. It sounds great. Maybe it is because of the bigger cone, I can tell the dynamic range of the song and the bass is very lively. I have never been a fan of on-ear earphone because of their size. I am a minimalist and I like to keep things simple. Also my ears are sensitive to temperature and on-ear earphone does not help in that regard. The voice-cancelling earphones are good enough for me in most cases, and I tend to opt for …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 07 Jan 2015 14:44:41 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2015-01-07:/beats-solo-2.0.html</guid><category>Earphones</category></item><item><title>Heartache of being a Good Sport</title><link>https://www.4thinker.com/heartache.html</link><description>&lt;p&gt;I go through my own share of heartaches. For me, I see an heartache as feeling the emptiness in my heart. It is like hunger, you've got to stuff your heart with something in order to avoid the pain. Unfortunately, often life is not in your control and things are taken away from you, or the things that you were expecting never comes.&lt;/p&gt;
+&lt;p&gt;People try very hard to fill up this space, because if they don't they would get depressed or even suicidal. Some people do it with alcohol, sex, drugs, food, work, fame, TV, and while others do it …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 18 Dec 2014 21:04:33 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-12-18:/heartache.html</guid></item><item><title>lighter fonts on darker screen</title><link>https://www.4thinker.com/black-on-white.html</link><description>&lt;p&gt;I have been debating whether I should have a black background on white. I used to have a superstition that a dark background is always better than a white background. I was so obsessive with this configuration that I changed everything, including a web browser to have a black background. I achieved this by various methods, but I was crazy enough to define color scheme for every tag combination on Firefox Stylish. When I couldn't use Firefox Stylish, I tired CSS inverse method on Google Chrome.&lt;/p&gt;
+&lt;p&gt;Then it got annoying, because they just wouldn't work perfectly. For example, The Google …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 06 Dec 2014 15:46:39 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-12-06:/black-on-white.html</guid><category>ux</category></item><item><title>Daily Devotional Every Night</title><link>https://www.4thinker.com/daily-devotional.html</link><description>&lt;p&gt;I try to read &lt;a href="http://www.baptistbiblehour.org/resources/devotionals/"&gt;bbh Daily Devotion&lt;/a&gt; every night &lt;a href="http://www.baptistbiblehour.org/resources/blog/daily-devotion-app-iphone-and-android/"&gt;with this app on my phone&lt;/a&gt;. I used to do Our Daily Bread, but I wanted some more challenging words, so I went to download all devotional apps available on Android and tried them all and picked bbh as the winner. Anyway, doing devotional is a habit I formed in college, because when I spend entire day working with numbers and figures, my mind is still in the state of "momentum". As in, sometimes I would wake up in the middle of the night with an headache because I would be …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 24 Nov 2014 15:33:41 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-11-24:/daily-devotional.html</guid><category>devotional</category><category>christian</category><category>sleep</category><category>habit</category></item><item><title>Coffeescript everwhere</title><link>https://www.4thinker.com/coffeescript.html</link><description>&lt;p&gt;parenthesis for function calls are optional.&lt;/p&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Ubuntu has node package, which makes things interesting. Many of the npm modules likes to refer &lt;code&gt;node&lt;/code&gt;, but the actual nodejs binary is installed as &lt;code&gt;nodejs&lt;/code&gt;. First you have to make sure you don't install &lt;code&gt;node&lt;/code&gt; with apt-get, second you have to make a symlink nodejs to node.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo ln -s /usr/bin/nodejs /usr/bin/node
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Phpstorm&lt;/h2&gt;
+&lt;p&gt;Pycharm (3.1.3) does not work with LiveEdit because it does not have &lt;a href="http://youtrack.jetbrains.com/issue/WI-17044"&gt;a native web server&lt;/a&gt;. I just figured that for anything web-related Phpstorm is going to edge over Pycharm.
+The watcher feature …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 18 Nov 2014 11:49:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-11-18:/coffeescript.html</guid></item><item><title>Vagrant</title><link>https://www.4thinker.com/vagrant.html</link><description>&lt;p&gt;I first encountered the world vagrant from JetBrains' documentation on remote interpreter for PyCharm. Vagrant is a way to deploy VMs in already configured state quickly and programmatically. It is built on Oracle VirtualBox and writeen in ruby. I still do not find a good use case for it yet for my workflow, because I create very few custom VMs that I recycle. I have not had to reproduce other people's working environment for troubleshooting yet. And I have created 6 VMs  But it can be used with docker to automate deployment of applications too.&lt;/p&gt;
+&lt;p&gt;If the box is predefined …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 18 Nov 2014 00:08:53 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-11-18:/vagrant.html</guid></item><item><title>Using git for hg repository.</title><link>https://www.4thinker.com/hg-to-git.html</link><description>&lt;p&gt;I recently had to work with a project that is in mercurial, but I know that git is more powerful and is more widely used. So I looked around and there is a way to use &lt;a href="http://stackoverflow.com/questions/883452/git-interoperability-with-a-mercurial-repository"&gt;git on hg repository.&lt;/a&gt;. Sorry if I am late to the party, but I am so happy. Because seriously, when there are two alternatives, &lt;a href="http://blogs.atlassian.com/2012/03/git-vs-mercurial-why-git/"&gt;I would like to stick to the best one. wink wink.&lt;/a&gt; If you must use mercurial. There is an excellent article written by &lt;a href="http://jamie-wong.com/2012/07/11/my-mercurial-setup-and-workflow-at-khan-academy/"&gt;Jamie Wong about setting up mercurial like pro&lt;/a&gt;, but make sure you check out &lt;a href="https://github.com/ludovicchabant/vim-lawrencium"&gt;lawrencium&lt;/a&gt; instead of …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 17 Oct 2014 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-10-17:/hg-to-git.html</guid><category>versioning</category><category>git</category><category>hg</category></item><item><title>Sendmail on Ubuntu</title><link>https://www.4thinker.com/hostname.html</link><description>&lt;p&gt;There are several options available for sending emails from your server: SMTP, postfix, and sendmail. I choose sendmail because it is the easiest to setup and I only need it to send out emails. &lt;/p&gt;
+&lt;h2&gt;Changing hostname temporarily for now&lt;/h2&gt;
+&lt;p&gt;This is the name that will end up after &lt;code&gt;@&lt;/code&gt; character in the email. It is also the name that shows up on your command shell prompt. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;hostname NEW_HOST_NAME
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Your prompt will not reflect the change until you reboot.&lt;/p&gt;
+&lt;h2&gt;Changing the hostname for when the system boots:&lt;/h2&gt;
+&lt;p&gt;/etc/hosts&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;127.0.0.1 myhostname localhost.localdomain localhost
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;Just say yes. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo …&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 26 Aug 2014 16:15:03 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-08-26:/hostname.html</guid></item><item><title>Javascript Package managers</title><link>https://www.4thinker.com/javascript-package-managers.html</link><description>&lt;h2&gt;NPM&lt;/h2&gt;
+&lt;p&gt;Node package manager for node modules&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;npm insall --save &amp;lt;moduel&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;will also update &lt;code&gt;package.json&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;npm update -g npm
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Bower&lt;/h2&gt;
+&lt;p&gt;none-Node file manager, including files like .js, .css, .html, .png, .ttf. It can be utlized for other framework (e.g. AnguarlJS). &lt;code&gt;bower install&lt;/code&gt; command can be used on bower resgiry, git, any url, or local directory&lt;/p&gt;
+&lt;p&gt;.bowerrc&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;{
+  &amp;quot;directory&amp;quot; : &amp;quot;components&amp;quot;,
+  &amp;quot;json&amp;quot;      : &amp;quot;bower.json&amp;quot;,
+  &amp;quot;endpoint&amp;quot;  : &amp;quot;https://Bower.herokuapp.com&amp;quot;,
+  &amp;quot;searchpath&amp;quot;  : &amp;quot;&amp;quot;,
+  &amp;quot;shorthand_resolver&amp;quot; : &amp;quot;&amp;quot;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;directory - local directory name and location in which the components will be installed.
+json - name of the json file which contains the values describing (i.e. name, version, main, dependencies …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 15 Aug 2014 13:18:06 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-08-15:/javascript-package-managers.html</guid></item><item><title>Pelican Customization</title><link>https://www.4thinker.com/pelican-customization.html</link><description>&lt;p&gt;This weekend you must have had my RSS feed messed up, because I was refreshing my blog with updates, sometimes broken one. Now I am using &lt;a href="https://github.com/jmaister/readtime"&gt;readtime&lt;/a&gt; and &lt;a href="https://github.com/getpelican/pelican-plugins/share_post"&gt;share_post plugins&lt;/a&gt; to show some more stuff in the article side-bar. The other two plugins I use are &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/related_posts"&gt;related_posts&lt;/a&gt; and &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/render_math"&gt;render_math&lt;/a&gt;, formerly 'latex'. I really hesitated on adding the share buttons for various reasons - one of them being I sometimes put inaccurate information inadvertently, but I gave in hoping that my readers would find it useful.&lt;/p&gt;
+&lt;p&gt;Having no &lt;code&gt;www&lt;/code&gt; prepended to &lt;code&gt;CNAME&lt;/code&gt; file will complicate a lot of things for DNS entry …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 28 Jul 2014 01:12:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-07-28:/pelican-customization.html</guid><category>pelican</category><category>blogging</category><category>powershell</category><category>anonymity</category></item><item><title>Learning to use AWS EC2</title><link>https://www.4thinker.com/aws-ec2.html</link><description>&lt;h2&gt;Amazon now offers up to 30GB SSD instead of HDD for free-tier&lt;/h2&gt;
+&lt;p&gt;I didn't check how much hard drive space I had before, but I was using well below 10GB. By default the general purpose SSD is set to 10GB, but the maximum allocation is 30GB for the free-tier t1.micro instance. Before you hit review button, there should be numbered tabs on the top that Amazon setup wizard did not redirect you, go to one of those and make sure to take the full advantage of free-tier service. I definitely noticed the speed up.&lt;/p&gt;
+&lt;h2&gt;There is no password here …&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 20 Jul 2014 10:11:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-07-20:/aws-ec2.html</guid><category>aws</category><category>amazon</category></item><item><title>Converting and Transferring Various Media Files</title><link>https://www.4thinker.com/media-conversion.html</link><description>&lt;h2&gt;Join mp4 videos in minutes with MP4Joiner&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.mp4joiner.org/en/"&gt;Mp4Joiner&lt;/a&gt; is the best program for joining two MP4 files together. Most of the camcorders and cell phones have file size limited to 4GB which translates to approximately 33 minutes for 1080p videos. If you try to merge two videos together with Sony Vegas or Adobe Premiere Pro, they re-render the entire video, taking more than four hours(!). But this program merely slice the metadata and merge the video together, taking less than 10 minutes. You can do the same thing with ffmpeg, but I like the optino of dragging and seeing the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 20 Jul 2014 09:23:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-07-20:/media-conversion.html</guid><category>media</category><category>mp4</category><category>audio</category><category>video</category></item><item><title>Web API notes</title><link>https://www.4thinker.com/web-api.html</link><description>&lt;p&gt;stopPropagation() cuts off the flow of capture and bubble at that specified element
+prevenetDefault() allows event propagation but prevents the browser from carrying out its default action (e.g. opening a new tab when a link is clicked)
+addEventListener, removeEventListener, Event.preventDefault and Event.stopPropagation&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 17 Jul 2014 10:33:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-07-17:/web-api.html</guid></item><item><title>Food for thought if you are learning a new language</title><link>https://www.4thinker.com/learning-a-new-language.html</link><description>&lt;p&gt;You know, I see all these videos for learning English, breaking down the grammar structure and vocabulary for every sentence. Then I wonder, how would a baby take in those lessons? I mean 1 year old baby is no smarter than most of you out there. Okay, my smarter I mean, his/her knowledge base is much less than most of you. Maybe someone could argue that knowing less is an advantage, but in my opinion, such academic way of learning a new language is horribly inefficient. Even if you cannot afford to live in the native country for a …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 16 Jul 2014 04:46:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-07-16:/learning-a-new-language.html</guid><category>language</category><category>learning</category></item><item><title>What should I strive to do as a young software engineer?</title><link>https://www.4thinker.com/young-programmer-career.html</link><description>&lt;p&gt;In college, I took classes that interested me and I think it was the best choice I made for my education. People do not look at my grades anymore and a lot of knowledge I gained in college turned out to be exercise for my brain. So what I see is that the depth of your knowledge pays, but the breadth of your knowledge pays even more if you know how to knit them together.&lt;/p&gt;
+&lt;p&gt;In college, I lived as busy as I could be and I had not much room to juggle around once I set the schedule for …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 13 Jul 2014 21:32:50 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-07-13:/young-programmer-career.html</guid><category>career</category><category>engineer</category></item><item><title>Advices that worked for me in my 20s</title><link>https://www.4thinker.com/advices-for-20s.html</link><description>&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look for a job that offers free (healthy) food&lt;/li&gt;
+&lt;li&gt;Join a startup company to get the visibility in the company and feel satisfied with your work&lt;/li&gt;
+&lt;li&gt;Even when the rent price is expensive, pay the price to not own/need a car. &lt;/li&gt;
+&lt;li&gt;Instead of trying to form good habits, block all distractions first.&lt;/li&gt;
+&lt;li&gt;Talk to your imaginary self from 10 years future - then choose your habits.&lt;/li&gt;
+&lt;li&gt;Don't travel too much. Save that for your retirement.&lt;/li&gt;
+&lt;li&gt;Ask for an advice from everyone.&lt;/li&gt;
+&lt;li&gt;Don't be afraid to skip things.&lt;/li&gt;
+&lt;li&gt;Keep your expectations low.&lt;/li&gt;
+&lt;li&gt;Read news headlines everyday.&lt;/li&gt;
+&lt;li&gt;Keep things simple. This allows …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 13 Jul 2014 09:30:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-07-13:/advices-for-20s.html</guid><category>career</category><category>habits</category></item><item><title>Setting up a filter on your (unrooted) phone</title><link>https://www.4thinker.com/parental-control-mobile.html</link><description>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I do not want to root my phone because then I have to update my phone manually. And rooting my phone is the best way to kill my weekend time. I am going to have fun, but I am not going to get much done - I know because that is what I did with PDAs back in high school. So I was looking for a way to filter some &lt;a href="http://en.wikipedia.org/wiki/Social_networking_service"&gt;Social Networking Services(SNS)&lt;/a&gt;. I know that it is difficult to block the access completely, because at the end of the day, if I am determined, I can break anything …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 12 Jul 2014 22:30:12 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-07-12:/parental-control-mobile.html</guid></item><item><title>Using Windows Tasks Scheduler</title><link>https://www.4thinker.com/windows-tasks-scheduler.html</link><description>&lt;p&gt;I hardly ever use Windows Tasks Scheduler. Because I spend most of my time on computer within a few selected applications, I tend to forget about it. Well, setting once and forgetting is the whole point of task scheduling, I find myself updating things constatntly, and when I can't update with a text editor, I end up not doing the update.
+Anyway, I had this idea of firing up a remote desktop viewer and also my IDE when I get to work. When I was messing with &lt;a href="https://play.google.com/store/apps/details?id=il.co.kix.minitasker&amp;amp;hl=en"&gt;Condi&lt;/a&gt; on my phone, I got the idea and it was very easy …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 11 Jul 2014 03:12:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-07-11:/windows-tasks-scheduler.html</guid><category>automation</category></item><item><title>Porn is like cigarettes/cocaine to your psychological health.</title><link>https://www.4thinker.com/better-without-porn.html</link><description>&lt;p&gt;I never did drugs in my life, but I have seen their effects, so I am making the comparison. I am not the expert on the topic, but here is the best video I could find on the web: &lt;a href="https://www.youtube.com/watch?v=wSF82AwSDiU"&gt;The Great Porn Experiment: Gary Wilson at TEDxGlasgow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once in my life, I thought I could never get away from it. I mean the pleasure (the release of dopamine) is just feels so irresistible because our brain is wired that way. But just as you are able to form a habit (addiction) to it, the steps also can be reversed. You …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 27 Jun 2014 01:01:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-06-27:/better-without-porn.html</guid><category>security</category><category>psychology</category><category>habit</category></item><item><title>nginx is better than apache</title><link>https://www.4thinker.com/nginx.html</link><description>&lt;p&gt;Nginx is an event-driven file server and it is much lighter than apache in resource usage.&lt;/p&gt;
+&lt;p&gt;sudo service nginx start
+update-rc.d nginx defaults&lt;/p&gt;
+&lt;p&gt;There could be two configuration files, but similar to apach, one typically sources another.&lt;/p&gt;
+&lt;p&gt;https://www.digitalocean.com/community/tutorials/how-to-optimize-nginx-configuration&lt;/p&gt;
+&lt;h4&gt;worker_processes:&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grep processor /proc/cpuinfo | wc -l
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;worker_connections:&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ulimit -n
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;override worker_connections&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;events {
+    worker_connections  19000;  # It&amp;#39;s the key to high performance - have a lot of connections available
+}
+worker_rlimit_nofile    20000;  # Each connection needs a filehandle (or 2 if you are proxying)
+# Total amount of users you can serve = worker_processes * worker_connections
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;For most use cases, the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 15 Jun 2014 10:25:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-06-15:/nginx.html</guid></item><item><title></title><link>https://www.4thinker.com/chrome-browser-tools.html</link><description>&lt;h2&gt;Enabling javascript in the debugger&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;var&lt;/span&gt; &lt;span class="nt"&gt;jq&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nt"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;createElement&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;script&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;jq&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;src&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;getElementsByTagName&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;head&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;appendChild&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;jq&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="nt"&gt;give&lt;/span&gt; &lt;span class="nt"&gt;time&lt;/span&gt; &lt;span class="nt"&gt;for&lt;/span&gt; &lt;span class="nt"&gt;script&lt;/span&gt; &lt;span class="nt"&gt;to&lt;/span&gt; &lt;span class="nt"&gt;load&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;then&lt;/span&gt; &lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;span class="nt"&gt;jQuery&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;noConflict&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;final_query = {
+ "status" : "free",
+ "enabled" : True
+}&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 19 May 2014 04:37:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-05-19:/chrome-browser-tools.html</guid></item><item><title>Google Chrome Settings</title><link>https://www.4thinker.com/google-chrome-settings.html</link><description>&lt;h2&gt;Block Ads and Facebook iFrames:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom"&gt;AdBlock for Chrome&lt;/a&gt;, but I was keep getting these iFrames that fails to resolve DNS and throwing a huge grey window to block the web page. So I slapped the following line in the AdBlock Options (Under Customize -&amp;gt; Manually edit your filters) and they are no more:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;##IFRAME[src*=&amp;quot;facebook.com&amp;quot;]
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 19 May 2014 03:37:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-05-19:/google-chrome-settings.html</guid><category>chrome</category><category>settings</category></item><item><title>CentOS fixes</title><link>https://www.4thinker.com/centos-fixes.html</link><description>&lt;p&gt;My company is forcing me to use CentOS. I was in a state of shock for a few days and pretend it did not happen, but I have to live with it. Here are the fixes I had to go through:&lt;/p&gt;
+&lt;h2&gt;The permission on ~/.ssh&lt;/h2&gt;
+&lt;p&gt;This seems to be a bit more strict. I had to set ~/.ssh permission to 600 and ~/.ssh/authorized_keys to &lt;code&gt;700&lt;/code&gt; to make &lt;code&gt;ssh-copy-id&lt;/code&gt; to make it work&lt;/p&gt;
+&lt;h2&gt;Installing&lt;/h2&gt;
+&lt;h2&gt;Allowing to run commands as sudo&lt;/h2&gt;
+&lt;p&gt;e.g. &lt;code&gt;sudo vim /etc/profile&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo bash -c &amp;quot;echo &amp;#39;%wheel  ALL=(ALL)       SETENV: ALL&amp;#39; &amp;gt;&amp;gt; /etc/sudoer&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="http://superuser.com/questions/548508/why-cant-i-sudo-some-commands-e-g-vim"&gt;explantion here on …&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 13 May 2014 01:53:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-05-13:/centos-fixes.html</guid></item><item><title>Linux Eye Openers</title><link>https://www.4thinker.com/linux-eye-openers.html</link><description>&lt;h2&gt;Drawback of using mount --bind&lt;/h2&gt;
+&lt;p&gt;I could have said it better than the &lt;a href="http://unix.stackexchange.com/a/49639/16814"&gt;answer by Gilles from Unix staackexchange&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 02 May 2014 01:42:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-05-02:/linux-eye-openers.html</guid><category>linux</category></item><item><title>Network File System</title><link>https://www.4thinker.com/nfs.html</link><description>&lt;p&gt;after modifying &lt;code&gt;/etc/exports&lt;/code&gt;, &lt;code&gt;nfs&lt;/code&gt; needs to be restarted:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo /etc/init.d/nfs-kernel-server restart
+&amp;lt;!--sudo exportfs--&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;modify the fstab to mount the NFS automatically when it reboots. The first time, you do it, you will need to execute:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo mount -a
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 02 May 2014 01:04:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-05-02:/nfs.html</guid></item><item><title>My Pocketbook for Python libraries</title><link>https://www.4thinker.com/python-libraries.html</link><description>&lt;ul&gt;
+&lt;li&gt;gevent: networking library for event loop and execution&lt;/li&gt;
+&lt;li&gt;gevent: monkey. The gevent library would uses standard modules, which are sequential. &lt;a href="http://www.gevent.org/gevent.monkey.html"&gt;monkey&lt;/a&gt; fixes this by patching. (gevent.monkey.patch_all())&lt;/li&gt;
+&lt;li&gt;greenlet:&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 29 Apr 2014 11:06:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-04-29:/python-libraries.html</guid><category>python</category></item><item><title>Ubuntu configurations and fixes</title><link>https://www.4thinker.com/ubnutu-fixes.html</link><description>&lt;h2&gt;Simplifying the Message of the Day:&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo vim /etc/update-motd.d/50-landscape-sysinfo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;add this flag: &lt;code&gt;--exclude-sysinfo-plugins=LandscapeLink&lt;/code&gt; to&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/usr/bin/landscape-sysinfo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and see the change with: &lt;code&gt;/etc/update-motd.d/50-landscape-sysinfo&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 25 Apr 2014 11:56:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-04-25:/ubnutu-fixes.html</guid></item><item><title>My thoughts and predictions on bitcoin</title><link>https://www.4thinker.com/bitcoin-rant.html</link><description>&lt;p&gt;I never owned any bitcoin. I read about it and understand its technical achievements, but I do not see it replacing our current currency system. For our intend and purposes, lets say bitcoin's market price becomes somewhat stable and it has been all mined up. Even at this point, the government has no way of tracking its transactions and therefore cannot back it up or protect any of its financial transactions. Well, that is the whole point of the cryptocurrrency. It cannot be used to provide FDIC insurance ($250,000 per account per person in case of bank run-ons). So …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 30 Mar 2014 09:45:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-03-30:/bitcoin-rant.html</guid><category>finance</category><category>rant</category></item><item><title>My Simplified Investment Guide for Retirement</title><link>https://www.4thinker.com/retirement-investment.html</link><description>&lt;p&gt;I have at least a dozen books on investment and for me, they boil down to the summary below:&lt;/p&gt;
+&lt;h2&gt;Summary Chart&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; |                     | Roth 401K | Roth IRA           | HSA           | 401K              |
+ | Contributions       | Taxed     | Taxed              | Not Taxed     | Not Taxed         |
+ | Lowers AGI          | No        | No                 | Yes           | Yes               |
+ | Withdrawals         | Not Taxed | Not Taxed          | Not for med.  | Taxed             |
+ | Limit (/&amp;gt;50)        | 17.5/23k  | 5.5/6.5k           | 33/65k        | 52k/57.5k (Taxed) |
+ | Income Limits (S/M) | None      | 112-127/178-188k   | None          | None              |
+ | Distribution        | 59.5      | 59.5               | 65            | 59.5              |
+ | Required Minimum    | 70.5      | None               | None          | 70.5              |
+ | Maintained by       | Employer  | Self               | Self/Employer | Employer          |
+ | Early Withdrawals   | 10%       | 10 …&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 29 Mar 2014 01:31:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-03-29:/retirement-investment.html</guid><category>investment</category><category>finance</category><category>retirement</category></item><item><title>Learning Latex</title><link>https://www.4thinker.com/latex.html</link><description>&lt;p&gt;LaTeX is a markup language to put diagrams, mathematical equations, and edit documents in a programmatic way. If you are familiar with markdown, LaTex is markdown on steroids and viagra. Latex is safe for adults.&lt;/p&gt;
+&lt;p&gt;If you are in the academia (i.e. Ph.D, Post-Doctocral), you really cannot live without latex. Unfortunately, no body actually teach you to use Latex, you pick it up as you go. But unlike some simple markup language, markdown, the syntax is not something you can pick up in a day (okay, if you have, good for you). Still, It is just a such …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 17 Mar 2014 12:53:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-03-17:/latex.html</guid><category>latex</category></item><item><title>Setting up latex</title><link>https://www.4thinker.com/latex-setup.html</link><description>&lt;p&gt;The OS I am using is Windows 7&lt;/p&gt;
+&lt;p&gt;Install &lt;a href="miktex.org/download"&gt;MikTex&lt;/a&gt; and &lt;a href="http://www.xm1math.net/texmaker/download.html"&gt;TexMaker&lt;/a&gt; in that order.&lt;/p&gt;
+&lt;p&gt;If you get a weird error like 'Could not start the command', just reset the settings under:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Options--&amp;gt;Settings file--&amp;gt;Reset settings
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;or re-install the program. I had to do this once before.&lt;/p&gt;
+&lt;p&gt;MikTex has it own executable for updating its packages. In case you have installed MikTex for all users on your machine, just make sure to use &lt;code&gt;mitex-update.exe&lt;/code&gt; instead of &lt;code&gt;miktex-udpate_admin.exe&lt;/code&gt;. If you have not run it for a long time, it will first attempt to remove the packages. Apparently (as …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 17 Mar 2014 06:10:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-03-17:/latex-setup.html</guid><category>latex</category></item><item><title>Time synchronization</title><link>https://www.4thinker.com/time.html</link><description>&lt;p&gt;All Operating Systems have time synchronization, because computer clock is not very reliable. Unfortunately the time jumps when the synchronization happens, and with the advent of the age of the Internet, this is not a good thing for most time critical operations. Goolge implemented something called &lt;a href="http://googleblog.blogspot.com/2011/09/time-technology-and-leaping-seconds.html"&gt;leap smear&lt;/a&gt; which slows down the time on the computer to count for the leap second (or extra second) that occurs due to fluctuation in Earth's rotation speed. This got me thinking, what if Google open-sourced this technology so that all the major data centers (and even personal computer) use this technology to correct …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 12 Mar 2014 02:35:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-03-12:/time.html</guid><category>rant</category></item><item><title>Apache Notes</title><link>https://www.4thinker.com/apache.html</link><description>&lt;p&gt;Apache is pretty well documented, but I can't remember things until I make a note of it&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;UseCanonicalName On
+#DocumentRoot &amp;quot;/var/www/html&amp;quot;
+#&lt;span class="nt"&gt;&amp;lt;Directory&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+#    Options FollowSymLinks
+#    AllowOverride None
+#&lt;span class="nt"&gt;&amp;lt;/Directory&amp;gt;&lt;/span&gt;
+
+#&lt;span class="nt"&gt;&amp;lt;Directory&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;/var/www/html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+#    Options Indexes FollowSymLinks
+#    AllowOverride None
+#    Order allow,deny
+#    Allow from all
+#&lt;span class="nt"&gt;&amp;lt;/Directory&amp;gt;&lt;/span&gt;
+#ErrorLog logs/error_log 
+#CustomLog logs/access_log combined
+NameVirtualHost *:80
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Error logs that are of relative path are stored under &lt;code&gt;/etc/httpd&lt;/code&gt;. Without the path, the default location of the logs depend:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;RHEL / Red Hat / CentOS / Fedora - /var/log/httpd/
+Debian / Ubuntu - /var/log/apache2/
+FreeBSD - /var/log/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The second argument to CustomLog can be &lt;code&gt;common …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 08 Mar 2014 05:44:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-03-08:/apache.html</guid></item><item><title>Things I had to lookup while using Python</title><link>https://www.4thinker.com/python-fixes.html</link><description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;problem:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;bson.objectid&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;ObjectId&lt;/span&gt;
+&lt;span class="n"&gt;bson&lt;/span&gt; &lt;span class="n"&gt;error&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="ne"&gt;ImportError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt; &lt;span class="n"&gt;module&lt;/span&gt; &lt;span class="n"&gt;named&lt;/span&gt; &lt;span class="n"&gt;objectid&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;solution:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip uninstall bson
+pip install pymongo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 05 Mar 2014 09:01:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-03-05:/python-fixes.html</guid><category>troubleshoot</category></item><item><title>Having a great conversation is like playing a great tennis game</title><link>https://www.4thinker.com/conversation.html</link><description>&lt;p&gt;A great relationship starts with a great conversation, and frankly I am not a great conversation holder by nature. My brother used to get so mad at me for asking boring, straightforward questions that seem to lead no where. But when I think of a conversation as a tennis game, it makes things a bit easier for me to be more sociable person. At the basic level, a conversation is compromised of questioning and answering. Likewise, a tennis game is compromised of serving and returning.  Here is the set of rules I keep in my head:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Tennis =&amp;gt; Conversation
+Server =&amp;gt; Questioner …&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 03 Mar 2014 09:38:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-03-03:/conversation.html</guid><category>relationship</category></item><item><title>Samba Quick Setup Guide</title><link>https://www.4thinker.com/samba.html</link><description>&lt;h2&gt;Install smaba and configure&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install samba
+sudo vim /etc/samba/smb.conf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Configuring smb.conf&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;security = user
+
+[homes]
+   comment = Home Directories
+   browseable = yes
+   valid users = %S
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;valid users = %S means that only you, or anyone with your login account, can connect to your own Home folder via Samba.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[share]&lt;/span&gt;
+    &lt;span class="na"&gt;comment&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;New Share Path&lt;/span&gt;
+&lt;span class="s"&gt;    path = /path/to/share/folder&lt;/span&gt;
+&lt;span class="s"&gt;    browsable = yes&lt;/span&gt;
+&lt;span class="s"&gt;    guest ok = yes&lt;/span&gt;
+&lt;span class="s"&gt;    read only = no&lt;/span&gt;
+&lt;span class="s"&gt;    create mask = 0755&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Adding a user to the samba user list:&lt;/h2&gt;
+&lt;p&gt;If you want to add a user (adding a dedicated user for server administration is a good security measure), do&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;useradd …&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 21 Feb 2014 07:04:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-21:/samba.html</guid><category>server</category></item><item><title>VMWare Tools Manual Installation</title><link>https://www.4thinker.com/vmware-tools.html</link><description>&lt;p&gt;TL;DR;
+If you have VMWare Player, you can go to the setting and download the VMWareTools for different distros in ISOs. Mount that to your virtual machine and install it.&lt;/p&gt;
+&lt;p&gt;My sob story:
+VMWare makes it easy to virtualize a partition of your disk. Depending on how the boot record is set up, though, you might have to do some more hacking. Anyway, I was tinkering with my init scripts and other scripts for power (hibernate, standby) and somehow my VMWare tool got messed up. So when I booted up my linux partition from Windows, I could not share …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 20 Feb 2014 03:44:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-20:/vmware-tools.html</guid><category>vmware</category></item><item><title>My messy, incomplete programming languages comparison chart</title><link>https://www.4thinker.com/language-comparisons.html</link><description>&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;feature&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;PHP&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Bash&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Javascript&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Perl&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Java&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="c1"&gt;#                       |&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;lanauge&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dyanamic&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dynamic&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dynamic&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dynamic&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;semi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;colon&lt;/span&gt; &lt;span class="p"&gt;(;)&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Only&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;concanated&lt;/span&gt; &lt;span class="n"&gt;stmts&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Only&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;concanated&lt;/span&gt; &lt;span class="n"&gt;stmts&lt;/span&gt;    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;yes&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;yes&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;yes&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;comment&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="sr"&gt;/ /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/ #                  | #                          | #                        | &amp;lt;-- // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/ --&amp;gt;            | =begin cmt  =end cmt  =cut | // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/              | // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/               | // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*/&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;separator&lt;/span&gt; &lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;str&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitespace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;\&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;\&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;\&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;\&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitespace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitespace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitepsace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;None&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;undefined&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;             &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Undef&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;variable&lt;/span&gt; &lt;span class="n"&gt;declartion&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nv"&gt;$varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;my&lt;/span&gt; &lt;span class="nv"&gt;$varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;              &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;scope&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;def&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;cascaded&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;increment&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt; &lt;span class="n"&gt;within&lt;/span&gt; &lt;span class="p"&gt;(())&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;concatenataion&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;implied&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;implied&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                           &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;print&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;echo …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 16 Feb 2014 05:02:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-16:/language-comparisons.html</guid><category>programming</category></item><item><title>Going back to Windows as my primary OS</title><link>https://www.4thinker.com/windows-over-linux.html</link><description>&lt;p&gt;Windows is on a downhill since the new &lt;a href="https://twitter.com/thurrott/status/424172005475500032"&gt;Windows Vista&lt;/a&gt; and I have considered to switch to Linux full time and I almost have, but now I am getting a bit sick of going after drivers to make everything run properly. Windows 7 still provides a great user experience (in terms of productivity, at least) out of the box.&lt;/p&gt;
+&lt;p&gt;Here are few things I miss dearly:
+1. device/hardware support (wifi, trackpad): I managed to get them to work, but I spent like 30 hours.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Everything Search: I have improved my &lt;code&gt;find&lt;/code&gt; skill &lt;code&gt;grep&lt;/code&gt; skill with Linux, but I miss …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 16 Feb 2014 05:02:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-16:/windows-over-linux.html</guid><category>rant</category></item><item><title>Unix Tar</title><link>https://www.4thinker.com/unix-tar.html</link><description>&lt;p&gt;Like &lt;code&gt;ln&lt;/code&gt;, the file that gets creates come first. This for me is confusing. I expect all linux to follow &lt;src&gt; &lt;target&gt; pattern, but free-rider can't be a chooser, I guess. &lt;/p&gt;
+&lt;p&gt;Another thing that bugs about &lt;code&gt;tar&lt;/code&gt; utility is that you have to specify the extension and tar does not do it for you automatically. This probably probably has wasted a lot of time over decades.&lt;/p&gt;
+&lt;p&gt;using &lt;code&gt;.&lt;/code&gt; as &lt;dst&gt; will unpack files to current directory when uncompressed. This is kind of a naughty behavior if you are distributing your files to public, and especially so if there are lots of files. If you …&lt;/dst&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 14 Feb 2014 08:24:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-14:/unix-tar.html</guid></item><item><title>Setting Up Linux</title><link>https://www.4thinker.com/linux-setup.html</link><description>&lt;h2&gt;Essential&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get update
+sudo apt-get install -y vim git python python-pip tmux zsh python-dev libxml2-dev libxslt-dev ssh
+sudo apt-get install -y default-jre
+sudo pip install virtualenv requests
+sudo npm install -g casperjs coffee-script js2coffee coffeelint uglify-js
+
+# sudo apt-get install gtk2-engines-pixbuf vim-gnome clipit xclip xdotool xdiskusage resolvconf acpitool xmodmap powertop zip unzip curl
+sudo apt-get install openjdk-7-jre openjdk-7-jdk
+# Laptop-specific
+sudo apt-get install lsof
+sudo apt-get purge laptop-mode-tools
+# Extra
+sudo apt-get install ia32-libs eclipse xfce4-settings telnet ntpdate mongodb
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;npm in ubuntu&lt;/h2&gt;
+&lt;p&gt;If linking the nodejs binary to node is not sufficient for …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 14 Feb 2014 08:00:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-14:/linux-setup.html</guid><category>linux</category><category>setup</category><category>laptop</category></item><item><title>How I setup my Cygwin</title><link>https://www.4thinker.com/cygwin-setup.html</link><description>&lt;p&gt;By googling around I found &lt;a href="http://randomartifacts.blogspot.com/2012/10/a-proper-cygwin-environment.html"&gt;a pretty comprehensive guide by Thomas Wheeler&lt;/a&gt;. His instruction on 'Mapping Cygdrive' did not work for me and I decided to fork an instruction on my own, so that I can keep adding stuff if I want to.&lt;/p&gt;
+&lt;h2&gt;Moving your home directory to your Windows profile directory&lt;/h2&gt;
+&lt;p&gt;I found this setup to be consistent with other unix systems. It preserves my sanity in the long run.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkpasswd -l -d -p &amp;quot;$(cygpath -H)&amp;quot; &amp;gt; /etc/passwd
+mkgroup -l -d &amp;gt; /etc/group
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Installing Essential Programs&lt;/h2&gt;
+&lt;p&gt;Download the &lt;a href="http://cygwin.com/setup.exe"&gt;setup.exe&lt;/a&gt; and install it along with wget. We will be …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 14 Feb 2014 07:23:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-14:/cygwin-setup.html</guid><category>cygwin</category><category>zsh</category><category>solarized</category></item><item><title>Union Find</title><link>https://www.4thinker.com/union-find.html</link><description>&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[Algorithms](https://class.coursera.org/algs4partI-003/) by Rob Sedgewick
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;find whether nodes are have a path to another.&lt;/p&gt;
+&lt;h2&gt;Quick-Find (Naïve implementation):&lt;/h2&gt;
+&lt;p&gt;As the nodes get connected, all nodes in the resulting tree are marked with one of the node's id number. After all union operations, if any two selected nodes have the same ID, they are connected. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;public void uinon(int p, int q)
+{
+    int pid = id[p]; //pid must be extracted because id[p] will change to qid
+    int qid = id[q];
+    for (int i = 0; i &amp;lt; id.length; i++)
+        if (id[i] == pid) id[i] = qid;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Weighted Quick-Union …&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 14 Feb 2014 07:23:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-14:/union-find.html</guid><category>graph</category></item><item><title>Trucrypt</title><link>https://www.4thinker.com/truecrypt.html</link><description>&lt;p&gt;Here are some of the scripts I run to make my life easy with Trucrypt on linux.&lt;/p&gt;
+&lt;h2&gt;Remove 'You need to format the disk' message in Windows&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://superuser.com/questions/197765/how-to-turn-off-the-you-need-to-format-the-disk-do-you-want-to-format-it-m"&gt;Solution by Casual Coder&lt;/a&gt; from superuser.com&lt;/p&gt;
+&lt;p&gt;Right-click the 'Computer' (or 'My Computer') icon on your desktop or in the Start Menu and select Manage. The 'Computer Management' window should appear.&lt;/p&gt;
+&lt;p&gt;From the list on the left, select 'Disk Management' (within the Storage sub-tree).&lt;/p&gt;
+&lt;p&gt;Right-click the encrypted partition/device and select Change Drive Letter and Paths.&lt;/p&gt;
+&lt;p&gt;Click Remove.&lt;/p&gt;
+&lt;p&gt;If Windows prompts you to confirm the action, click Yes.&lt;/p&gt;
+&lt;h2&gt;Auto dismount&lt;/h2&gt;
+&lt;p&gt;on /etc/rc …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 13 Feb 2014 02:34:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-13:/truecrypt.html</guid><category>security</category></item><item><title>My Choice of Hardware</title><link>https://www.4thinker.com/gadgets.html</link><description>&lt;p&gt;My choice of hardware is typically based on the software. But there are other reasons too. I tend to overlook the price tag if possible, because I use my devices often enough that the productivity is actually more bigger factor in my choices, but I actually found that the most productive combination I found tends to be economical as well.&lt;/p&gt;
+&lt;h2&gt;Phone + Camera | Nexus 5&lt;/h2&gt;
+&lt;p&gt;Stock Android Experience all the way.&lt;/p&gt;
+&lt;h2&gt;Tablet | iPad2 Wifi&lt;/h2&gt;
+&lt;p&gt;This is the only Apple product I use. Its purpose is to replace paper. All my music sheets and books are stored there. None of the Android …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 13 Feb 2014 01:53:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-13:/gadgets.html</guid><category>best</category></item><item><title>SSH recipes</title><link>https://www.4thinker.com/ssh.html</link><description>&lt;h2&gt;SSH keyless entry does not work&lt;/h2&gt;
+&lt;p&gt;Check the logs on &lt;code&gt;/var/log/auth/log&lt;/code&gt; or &lt;code&gt;/var/log/secure&lt;/code&gt; (CentOS). You probably have a permission issue.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;chmod 700 ~/
+chmod 700 ~/.ssh/
+chmod 600 ~/.ssh/authorized_keys
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;make sure the options are set properly on &lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt; - it needs root permission&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;RSAAuthentication yes
+PubkeyAuthentication yes
+AuthorizedKeysFile      %h/.ssh/authorized_keys
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then restart&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo service sshd restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Diff files over remote&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh &amp;lt;remote-host&amp;gt; &lt;span class="s2"&gt;&amp;quot;cat /path/to/remotefile&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; diff - /path/to/localfile
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Copy over SSH key so you don't have to type password every time:&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sshk&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    ssh-copy-id -i ~/.ssh/id_rsa.pub &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Add keys to ssh …&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 25 Jan 2014 11:23:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-01-25:/ssh.html</guid><category>shell</category></item><item><title>Windows is the best OS for Personal Use</title><link>https://www.4thinker.com/windows-over-mac.html</link><description>&lt;p&gt;&lt;a href="http://blog.hunch.com/?p=45344"&gt;&lt;img alt="Alt Mac Person vs. PC Comparison Chart" src="|filename|/images/mac-vs-pc.jpg"&gt; "Computer User Survery"&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When I was a senior in college, I asked all of my professors why they chose to use Mac (except one professor who was a respected contributor in Linux world and was a Ubuntu fan). Their reasons were convenience and reliability for the most part. Well, I find my time pretty valuable too, but I am sticking with Windows and here are Why. I am biased in my article, because I never actually owned a mac, just used them from time to time.&lt;/p&gt;
+&lt;h2&gt;Operating System&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Accessibility: Window's High Contrast Mode is quite good. I like it more …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 25 Jan 2014 08:32:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-01-25:/windows-over-mac.html</guid><category>windows</category></item><item><title>How to install VMWare View on Debian</title><link>https://www.4thinker.com/vmware-view.html</link><description>&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install gebi
+
+&lt;span class="c1"&gt;# I wanted to get the latest versions, but these are the latest as of January 16, 2013&lt;/span&gt;
+wget http://mirrors.kernel.org/ubuntu/pool/universe/o/openssl098/libssl0.9.8_0.9.8o-7ubuntu3.1_i386.deb
+wget http://archive.canonical.com/ubuntu/pool/partner/v/vmware-view-client/vmware-view-client_2.1.0-0ubuntu0.12.10_i386.deb
+sudo dpkg -i libssl*
+sudo dpkg -i vmware-view*
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The username of the username I used was stuck on login window and I could not change it from GUI. The option to change some preferences are available at:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;~/.view/view-preferences …&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 23 Jan 2014 01:28:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-01-23:/vmware-view.html</guid><category>vmware</category></item><item><title>PPA in Debian</title><link>https://www.4thinker.com/ppa-in-debian.html</link><description>&lt;p&gt;&lt;code&gt;sudo apt-get install python-software-properties&lt;/code&gt; does not work. You get an error like the following when you try to update:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Fetched 563 kB in 8s (63.0 kB/s)
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/source/Sources  404  Not Found
+
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/binary-amd64/Packages  404  Not Found
+
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/binary-i386/Packages  404  Not Found
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As you can see, python script adds debian name &lt;code&gt;wheezy&lt;/code&gt; into the URL, which obvious …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 03 Jan 2014 01:02:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-01-03:/ppa-in-debian.html</guid><category>linux</category></item><item><title>Setting Auto-brightness with Calise and brightness.py</title><link>https://www.4thinker.com/auto-brightness.html</link><description>&lt;p&gt;After following this tutorial you will have a laptop and an external monitor that changes brightness depending on the ambient brightness detected by a webcam.
+Requirements: a laptop with a webcam and linux OS (untested on a desktop with a webcam)&lt;/p&gt;
+&lt;h2&gt;Calise&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://calise.sourceforge.net/wordpress/"&gt;Calise&lt;/a&gt; takes care of ambient brightness using a webcam and this is all you really need if you do not have an external monitor.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pip install pyephem
+sudo apt-get install python-qt4 python-distutils-extra
+cd ~/downloads/calise-*
+sudo env python setup.py build
+sudo env python setup.py install --install-layout=deb --prefix=/usr
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You will get some errors about …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 01 Jan 2014 11:26:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-01-01:/auto-brightness.html</guid><category>automation</category></item><item><title>Serious Internet Filtering (Parental Control) with DD-WRT + OpenDNS + IPTables</title><link>https://www.4thinker.com/parental-control.html</link><description>&lt;h2&gt;The story&lt;/h2&gt;
+&lt;p&gt;Skip this section if you think your life is short.&lt;/p&gt;
+&lt;p&gt;I tried to block myself out of pornography ever since I was a teenager. My first attempt was using &lt;a href="http://www1.k9webprotection.com/"&gt;K9 Web Protection&lt;/a&gt;. I took a lot of time to filter false-positive websites, but I was not satisfied for long. I had trouble connecting to wifi on college campus and it also did not filter SSL connections properly, which meant I had unprotected Google images access. Oh my. Also I now knew Linux pretty well, so I was loose on the web. They have improved quite a bit when …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 22 Dec 2013 10:40:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-12-22:/parental-control.html</guid><category>security</category></item><item><title>How your perception of negotiation could hurt you</title><link>https://www.4thinker.com/negotiation.html</link><description>&lt;p&gt;Book-taught negotiation skill and in-practice negotiation are different ball-game. The book you buy from Amazon, despite its wisdom and anecdotes, fails to address the context that you are in. Yes, it is good to read one, but knowing the value of what you can offer and your alternatives or calculating the risks on a spot is a skill that is difficult to acquire.&lt;/p&gt;
+&lt;p&gt;So no, I can't teach you to acquire that skill, but just tell you my experience. First time out of college, I called for a 6-figure income. I high balled quite bit and I thought the company …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 18 Dec 2013 09:00:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-12-18:/negotiation.html</guid></item><item><title>vSphere Client Quirks</title><link>https://www.4thinker.com/vsphere-quirks.html</link><description>&lt;p&gt;vSphere Client is a client program to monitor and configure VMWare cluster. The configuration options are significantly lacking compared to VMWare Station (Paid) or VMWare Player (Free), a software for the local virtualization. I cannot comment on all features, but I will list some that I thought were lacking&lt;/p&gt;
+&lt;h2&gt;VMWare Tools&lt;/h2&gt;
+&lt;p&gt;VMWare Tool allows a easier VM shutdown, directory/filesystem sharing, clipboard sharing, and much more. VMWare tool installation is a breeze on Station and Player. I had to do manual installation with vSphere.&lt;/p&gt;
+&lt;h2&gt;Clipboard Sharing (fixed)&lt;/h2&gt;
+&lt;p&gt;I had to go to Options-&amp;gt;Advanced-&amp;gt;Configuration Parameter and add following options …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 13 Dec 2013 06:56:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-12-13:/vsphere-quirks.html</guid><category>cloud</category></item><item><title>The backup software</title><link>https://www.4thinker.com/backup-software.html</link><description>&lt;p&gt;I have used Acrnois Backup (2007) and Easeus Backup (2013). They both have failed me. The failures were the same even though they are five years apart in the time period - bootdisk/recovery OS failure. Macrium Reflect Free's recovery disk worked and it supported USB 3.0, but then it failed to deal with GPT partitions that Microsoft introduced with Windows 8. Paragon Hard Disk Manager did the job and it always have been in the top picks in the reviews that I wanted to try, so I finally had a winner.&lt;/p&gt;
+&lt;h2&gt;The Most Disastrous Moment:&lt;/h2&gt;
+&lt;p&gt;Computer backup is the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 02 Dec 2013 09:53:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-12-02:/backup-software.html</guid><category>backup</category></item><item><title>pdbedit to configure samba on linux machine</title><link>https://www.4thinker.com/user-management.html</link><description>&lt;h2&gt;Group&lt;/h2&gt;
+&lt;p&gt;Create a group&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gropuadd groupName
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Delete a group&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;groupdel groupName
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Users&lt;/h2&gt;
+&lt;p&gt;Create a user&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;useradd -m -g groupName -s /sbin/nologin userName
+do
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;-m&lt;/code&gt; create home, &lt;code&gt;-g&lt;/code&gt; specify group, &lt;code&gt;-s'&lt;/code&gt; specify shell&lt;/p&gt;
+&lt;p&gt;Add User to samba and create a new password:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pdbedit -a -u userName
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Remove User from samba (modify the user by adding a new one):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pdbedit -x -u userName
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 02 Dec 2013 09:53:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-12-02:/user-management.html</guid><category>samba</category></item><item><title>Global Regular Expression Print</title><link>https://www.4thinker.com/unix-grep.html</link><description>&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grep &amp;quot;.*\.zip$&amp;quot;
+
+find $dir -type f -name &amp;#39;*.log&amp;#39; -exec grep -o $pattern {} \;
+
+grep -r --include=&amp;quot;*.php&amp;quot; &amp;quot;public auction&amp;quot; ./
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;-i  Case insensitive match.
+-c  Count of matches; suppressing normal output. One line per file match.
+-o  Show only the part of a matching line that matches.
+-v  not
+-e or&lt;/p&gt;
+&lt;p&gt;-a processes binary file.
+-f read the matches from a file.
+-o show only the matched portion.
+-z a line is terminated by null byte instead of a new line character.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;grep -E&lt;/code&gt; extends the functionality of grep, allowing the usage of ?, +, {, |, (, and ) wihtout having to have a blackslash in front …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 02 Dec 2013 08:04:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-12-02:/unix-grep.html</guid></item><item><title>Unix Utility Find</title><link>https://www.4thinker.com/unix-find.html</link><description>&lt;h2&gt;Default&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;breadth-first-search&lt;/li&gt;
+&lt;li&gt;search starts from 24 hours ago&lt;/li&gt;
+&lt;li&gt;search the current directory&lt;/li&gt;
+&lt;li&gt;-P: never follow symlink (Default)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; match any characters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Patterns&lt;/h2&gt;
+&lt;p&gt;Each option has optional prefix &lt;code&gt;-i&lt;/code&gt; for case-insensitivity
+- name
+- regex
+- path&lt;/p&gt;
+&lt;h2&gt;Numbers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;inum: inode number&lt;/li&gt;
+&lt;li&gt;links: number of links&lt;/li&gt;
+&lt;li&gt;gid: group ID&lt;/li&gt;
+&lt;li&gt;uid: user ID&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Attributes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;mount: do no search through mounted directories (CD, USB, remote drive)&lt;/li&gt;
+&lt;li&gt;nogroup&lt;/li&gt;
+&lt;li&gt;nouser&lt;/li&gt;
+&lt;li&gt;readable&lt;/li&gt;
+&lt;li&gt;empty&lt;/li&gt;
+&lt;li&gt;exectuable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Others&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;samefile&lt;/li&gt;
+&lt;li&gt;user&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;size&lt;/h2&gt;
+&lt;h2&gt;Negating Search Query&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;!&lt;/code&gt; and &lt;code&gt;-not&lt;/code&gt; does the same thing, except that &lt;code&gt;-not&lt;/code&gt; is POSIX-compliant. The expression that comes after is affected and it needs to be escaped &lt;code&gt;\( ... \)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Expression&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Expressions are logically &lt;code&gt;or&lt;/code&gt;ed …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 02 Dec 2013 06:46:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-12-02:/unix-find.html</guid><category>shell</category></item><item><title>This is Awk. Word.</title><link>https://www.4thinker.com/awk.html</link><description>&lt;h2&gt;conditional&lt;/h2&gt;
+&lt;p&gt;if statement&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;if (cond)
+    expr
+else if(cond)
+    expr
+else
+    expr
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Comparison&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; &amp;gt;=, ==, &amp;lt;=, &amp;gt;, &amp;lt;,
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;boolean&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;amp;&amp;amp;, ||,
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;crement&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;++ --
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Tertiary&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;expr ? expr : expr
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;primitives&lt;/h2&gt;
+&lt;p&gt;variable names, numbers, string
+each statement is ended with semi-colon&lt;/p&gt;
+&lt;h2&gt;variable&lt;/h2&gt;
+&lt;p&gt;var=value
+- &lt;code&gt;$1, $2, $NF&lt;/code&gt;: Arguments - nth value from the line. &lt;code&gt;$&lt;/code&gt; is an operator that can be applied to any number (primitive or variable) and gets the field corresponding to that number.
+- &lt;code&gt;,&lt;/code&gt;: string concatenation 
+- &lt;code&gt;FS&lt;/code&gt;, &lt;code&gt;OFS&lt;/code&gt;, &lt;code&gt;RS&lt;/code&gt; &lt;code&gt;ORS&lt;/code&gt;, &lt;code&gt;NR&lt;/code&gt; &lt;code&gt;NF&lt;/code&gt;: field separator, output field separator, record separator, output record separator, number of records, number of fields. &lt;/p&gt;
+&lt;p&gt;action is by default, &lt;code&gt;print&lt;/code&gt;
+    '/pattern/action'&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;#39;/pattern/
+/pattern/&amp;#39;
+
+&amp;#39;$var ~/pattern/&amp;#39;
+
+&amp;#39;condition&amp;#39;
+
+&amp;#39;function …&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 20 Nov 2013 08:18:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-11-20:/awk.html</guid><category>unix</category></item><item><title>Unix resource management</title><link>https://www.4thinker.com/unix-resource-management.html</link><description>&lt;p&gt;Free memory&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;free -m
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 20 Nov 2013 08:17:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-11-20:/unix-resource-management.html</guid><category>shell</category></item><item><title>Top cheat sheet</title><link>https://www.4thinker.com/unix-top.html</link><description>&lt;p&gt;&lt;code&gt;A&lt;/code&gt; - split (default RES, PID, MEM, USER) 
+&lt;code&gt;a&lt;/code&gt; - iterate
+&lt;code&gt;M&lt;/code&gt; - sort by memory
+&lt;code&gt;O&lt;/code&gt; - sort by something else
+&lt;code&gt;k&lt;/code&gt; - kill the selected process
+&lt;code&gt;r&lt;/code&gt; - renice (asks for pid)
+&lt;code&gt;u&lt;/code&gt; - username
+&lt;code&gt;1&lt;/code&gt; - toggle display of all CPU/cores
+&lt;code&gt;l&lt;/code&gt; - toggle cpu load display
+&lt;code&gt;t&lt;/code&gt; - toggle cpu state display
+&lt;code&gt;m&lt;/code&gt; - toggle memory info display
+&lt;code&gt;n&lt;/code&gt; - limit number of process on display
+&lt;code&gt;c&lt;/code&gt; - toggle command path, argument
+&lt;code&gt;z&lt;/code&gt; - toggle color highlight&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;top -u username&lt;/code&gt; - for a specific user
+&lt;code&gt;top -p pid, pids&lt;/code&gt; - for specific processes&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 20 Nov 2013 08:13:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-11-20:/unix-top.html</guid><category>Administration</category></item><item><title>Unix job management</title><link>https://www.4thinker.com/unix-job-management.html</link><description>&lt;p&gt;&lt;code&gt;&amp;amp;&lt;/code&gt; at the end of the command - run in the background, free up the command prompt
+&lt;code&gt;nohup&lt;/code&gt; - suppress the output to nohup.out 
+&lt;code&gt;nohup&lt;/code&gt; + &lt;code&gt;&amp;amp;&lt;/code&gt; allows user to run the command even after logging out
+&lt;code&gt;C-z&lt;/code&gt; put the running process in the background
+&lt;code&gt;jobs&lt;/code&gt; - list the jobs for the current shell
+&lt;code&gt;kill %1&lt;/code&gt; - kill the job listed by &lt;code&gt;jobs&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 20 Nov 2013 06:31:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-11-20:/unix-job-management.html</guid><category>administration</category></item><item><title>Sed, not sad</title><link>https://www.4thinker.com/sed.html</link><description>&lt;p&gt;The separator can be any character as long as they are consistent&lt;/p&gt;
+&lt;p&gt;sed 'ADDRESS'Command fileName
+sed /PATTERN/AddressCommand fileName&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-i&lt;/code&gt;: makes changes on the file, suppresses output. A file extension &lt;code&gt;.bak&lt;/code&gt; can be used to redirect othe output.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;;&lt;/code&gt;: is to separate command within quotes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-e&lt;/code&gt;: is to connect two separate commands in quotes.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-n&lt;/code&gt;: suppresses output, useful when using custom output commands&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-f&lt;/code&gt;: read the sed script from a file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Line Address&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;#,#&lt;/code&gt;: range
+&lt;code&gt;,#&lt;/code&gt;: range from the matching line
+    -&lt;code&gt;,+#&lt;/code&gt;: # lines after the current ilne
+    -&lt;code&gt;,-#&lt;/code&gt;: # lines before the current line
+&lt;code&gt;,$&lt;/code&gt;: to the end of the matching line
+&lt;code&gt;#!&lt;/code&gt;: negation
+&lt;code&gt;$&lt;/code&gt;: last line
+&lt;code&gt;~#&lt;/code&gt;: every # line …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 20 Nov 2013 06:21:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-11-20:/sed.html</guid><category>linux</category></item><item><title>Printing on Linux</title><link>https://www.4thinker.com/printing-on-linux.html</link><description>&lt;p&gt;Both major printer manufacturers support Linux drivers: Canon and Brother. They can be downloaded from their support pages. Depending on the printer driver, you probably will need &lt;code&gt;lpr&lt;/code&gt;, but definitely &lt;code&gt;cups&lt;/code&gt; to keep your sanity intact.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install lpr cups
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;cups works well with &lt;code&gt;root&lt;/code&gt; and not other privileged account and if you do not have any password on the account, you need to create one.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo su
+passwd
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;or simply &lt;code&gt;sudo passwd root&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Common commands&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;restart&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 18 Nov 2013 07:06:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-11-18:/printing-on-linux.html</guid></item><item><title>What does it mean to "have no life"?</title><link>https://www.4thinker.com/have-no-life.html</link><description>&lt;p&gt;I began to hear this term since college. From my experience, it was used as an excuse for something or just a attempt to gain sympathy from peers (who doesn't want to play victim?). I was reading a post by an investment banker on Quora who confessed to become wealthy at the cost of having no life. He was trying to send a message that money is not everything, but that got me thinking... do I have a life? I do not watch TV or video games, but the only place I go on weekends is church. Otherwise, I just …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 17 Nov 2013 10:38:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-11-17:/have-no-life.html</guid><category>lifestyle</category></item><item><title>Use Ondir to change SSH config file based on the current directory</title><link>https://www.4thinker.com/ondir.html</link><description>&lt;p&gt;When I work, I work in a particular directory. And when I work, I also SSH with a particular username and a SSH key (to different machines). There are too many machines that I do not want to bother hard coding them to &lt;code&gt;.ssh/config&lt;/code&gt;. Rather, I want something to change the default values for me. Wouldn't it be nice if &lt;code&gt;ssh&lt;/code&gt; picked up different config files depending on where it was executed? Yes! It would allow me to easily manage different config files. Thankfully, &lt;a href="http://swapoff.org/"&gt;Alec Thomas&lt;/a&gt; wrote &lt;a href="http://swapoff.org/ondir.html"&gt;ondir&lt;/a&gt; which was exactly I was looking for!&lt;/p&gt;
+&lt;p&gt;My idea is to …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 04 Nov 2013 05:27:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-11-04:/ondir.html</guid><category>automation</category></item><item><title>Learning Chinese</title><link>https://www.4thinker.com/learning-chinese.html</link><description>&lt;h2&gt;Why learn Mandarin?&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.ihs.com/info/ecc/a/economic-predictions-2013.aspx"&gt;China's economy is gaining momentum&lt;/a&gt; and there are a lot of people who will use Mandarin.
+Frankly, I studied Spanish for four years and I still do not think I do not have positive ROI of my time. I managed to get better services and find my way in Los Angeles downtown with my rusty Spanish, but I never had to speak the language in social settings or at work. When I was in college I met a lot of Chinese people and I felt left out whenever I joined their social group. Because East Asia countries …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 30 Oct 2013 07:24:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-30:/learning-chinese.html</guid><category>language</category><category>chinese</category><category>learning</category></item><item><title>Windows Quirks</title><link>https://www.4thinker.com/windows-quirks.html</link><description>&lt;p&gt;Window's is &lt;a href="windows-over-mac.html"&gt;nice&lt;/a&gt;, but it is not perfect. And when I Googled to find a way to file a bug report, I read someone saying that there isn't one for consumers, because more often consumers cannot distinguish OS bugs from their own mistakes/problems. Anyway, Here are my problems that I encountered and haven't found a solution to.&lt;/p&gt;
+&lt;h2&gt;Windows 7&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ctrl, Shift, Win keys become sticky sometimes when I have completely disabled them.&lt;/li&gt;
+&lt;li&gt;The cmd program steals the focus of the window and there is &lt;a href="http://superuser.com/questions/18383/preventing-applications-from-stealing-focus"&gt;nothing I can do about it.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Windows 8&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There is no option to turn off …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 29 Oct 2013 04:39:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-29:/windows-quirks.html</guid><category>windows</category><category>complaints</category></item><item><title>Moving Home Directory</title><link>https://www.4thinker.com/moving-home-directory.html</link><description>&lt;p&gt;The following commnads changes the username and moves the home directory over:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;usermod -l newuser -d /home/newuser -m olduser
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;but if you are like me and have the config files symlinked, they will break.
+Here is the command that will relink the symlinks for files:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find /home/user -type l -lname &amp;#39;/home/oldname/*&amp;#39; -print0 | xargs -0 -I{} -sh &amp;#39;ln -nsf &amp;quot;$(readlink $1 | sed -e &amp;quot;s/$2/$3/&amp;quot;)&amp;quot; &amp;quot;$1&amp;quot;&amp;#39; {} oldname newname
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;They will not however, relink the directory symlinks. That is more complicated. So I make organize the source directories and make systematic change with the following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ln -sf $HOME …&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 25 Oct 2013 09:41:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-25:/moving-home-directory.html</guid></item><item><title>Links</title><link>https://www.4thinker.com/links.html</link><description>&lt;p&gt;symlink: for both file and directory; can point to remote directoy (SMB) and different file-system; resolved on the client, replaces Junction.
+hardlink: file only
+junction: directory only; resolved on the server;&lt;/p&gt;
+&lt;p&gt;Unix commands are always followed by src and dest
+Windows commands are always followed by dest and src
+|                    | hardlink    | symlink     | symlink (directory) | junction          |
+| creation (Unix)    | ln          | ln -s       | ln                  |                   |
+| endpoint           | same volume | anywhere    | anywhere            | different volumes |
+| resolution         | local       | local       | local               | remote            |
+| creation (Windows) | mklink /J   | mklink      | mklink /D           | mklink /J         |
+| endpoint           | same volume | same volume | same volume         | different volume  |&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 22 Oct 2013 03:42:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-22:/links.html</guid></item><item><title>PowerShell Notes</title><link>https://www.4thinker.com/powershell-notes.html</link><description>&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;|                           | Powershell                          | Bash             |&lt;/span&gt;
+&lt;span class="x"&gt;| Help page                 | Get-Help                            | man              |&lt;/span&gt;
+&lt;span class="x"&gt;| History Search            | #Str                                | &amp;lt;C-r&amp;gt;str         |&lt;/span&gt;
+&lt;span class="x"&gt;| History Search (num) #Num | #Num                                | !Num             |&lt;/span&gt;
+&lt;span class="x"&gt;| Creating new file         | ni (New-Item)                       | touch            |&lt;/span&gt;
+&lt;span class="x"&gt;| semi-colon                | No                                  | Yes              |&lt;/span&gt;
+&lt;span class="x"&gt;| print file                | cat (Get-Content)                   | cat              |&lt;/span&gt;
+&lt;span class="x"&gt;| print                     | echo (Write-Content)                | echo             |&lt;/span&gt;
+&lt;span class="x"&gt;| Help Page                 | Get-Help                            | man              |&lt;/span&gt;
+&lt;span class="x"&gt;| Array Index Lookup        | $array[0]                           | array[0]         |&lt;/span&gt;
+&lt;span class="x"&gt;| String Concatenation      | . for &amp;#39;&amp;#39;, + for                     | + or nothing     |&lt;/span&gt;
+&lt;span class="x"&gt;|                           | select -First #                     | Head -#          |&lt;/span&gt;
+&lt;span class="x"&gt;|                           | select -Last $                      | Tail -#          |&lt;/span&gt;
+&lt;span class="x"&gt;| check on a log file       | cat -Wait                           | tail -f          |&lt;/span&gt;
+&lt;span class="x"&gt;| While Loop                | while (cond) &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;                     |&lt;/span&gt;
+&lt;span class="x"&gt;| Foreach                   | foreach ($var in $object)           | -                |&lt;/span&gt;
+&lt;span class="x"&gt;| If-statement              | if (cond &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;)                        |&lt;/span&gt;
+&lt;span class="x"&gt;| Number Expansion          | 1..10                               | &lt;/span&gt;&lt;span class="cp"&gt;{&lt;/span&gt;&lt;span class="m"&gt;1.&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;10&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="x"&gt;          |&lt;/span&gt;
+&lt;span class="x"&gt;| Parameter                 | param($arg = Val)                   | $1, $2 ...       |&lt;/span&gt;
+&lt;span class="x"&gt;| function                  | function name &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;                    |                  |&lt;/span&gt;
+&lt;span class="x"&gt;| clipboard                 | pipe to clip                        | pipe to …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 22 Oct 2013 01:38:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-22:/powershell-notes.html</guid><category>shell</category></item><item><title>Problems that can be solved with a simple installation</title><link>https://www.4thinker.com/linux-install-to-fix.html</link><description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;python-gpgme
+dropbox is not syncing and stuck on downloading for hours. May need to repeat the following command a couple of times.&lt;/p&gt;
+&lt;p&gt;dropbox stop; rm -rf .dropbox-dist; dropbox start -i;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;gtk2-engines-pixbuf
+(dropbox:12492): Gtk-WARNING **: Unable to locate theme engine in module_path: "pixmap",&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 15 Oct 2013 09:13:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-15:/linux-install-to-fix.html</guid></item><item><title>Firefox Configuration</title><link>https://www.4thinker.com/firefox.html</link><description>&lt;p&gt;All-in-One Sidebar&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;General &amp;gt; Behavior &amp;gt; Full Screen Mode &amp;gt; Uncheck &amp;quot;Close Sidebar&amp;quot;
+General &amp;gt; Sidebar Switch &amp;gt; Apperance &amp;gt; Uncheck &amp;quot;Enable Thin Sidebar Switch&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Use &lt;a href="http://webdesigns.ms11.net/chromeditp.html"&gt;ChromeEdit&lt;/a&gt; to edit configurations easily. Save the following under the &lt;code&gt;user.js&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;user_pref&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;browser.cache.memory.capacity&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;65536&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;user_pref&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;browser.cache.new_backend&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;1&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;user_pref&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;browser.cache.disk_cache_ssl&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;true&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;user_pref&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;browser.xul.error_pages.enabled&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;true&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;user_pref&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;content.interrupt.parsing&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;true&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;user_pref&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;content.max.tokenizing.time&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;2250000&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;user_pref&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;content.maxtextrun&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;8191&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;user_pref&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;content.notify.backoffcount&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;5&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;user_pref&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;content.notify.interval&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;750000&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;user_pref&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;content.notify.ontimer&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;true&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;user_pref&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;content.switch.threshold&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;750000&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;user_pref&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;network.http.max-connections&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;48&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;user_pref&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;network.http.max-connections-per-server&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;16&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;user_pref …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 14 Oct 2013 11:27:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-14:/firefox.html</guid></item><item><title>Unix Utility DU</title><link>https://www.4thinker.com/unix-du.html</link><description>&lt;p&gt;&lt;code&gt;-s&lt;/code&gt;: output the current directory's size
+&lt;code&gt;-h&lt;/code&gt;: human readable (size in KB, MB or GB)
+&lt;code&gt;-a&lt;/code&gt;: all files, by default, &lt;code&gt;du&lt;/code&gt; shows the size of the directories recursively&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 14 Oct 2013 11:04:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-14:/unix-du.html</guid><category>shell</category></item><item><title>MongoDB Notes</title><link>https://www.4thinker.com/mongodb.html</link><description>&lt;p&gt;MongoDB is dynamically typed, meaning you can insert any data type as long as they are well-formated.
+Each object is associated with an ObjectId.&lt;/p&gt;
+&lt;p&gt;Cursor object is a Python dict once it has been assigned to a variable. &lt;/p&gt;
+&lt;h2&gt;installation&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install ruby1.9.1-dev rubygems
+sudo gem install require genghisapp bson_ext rake
+sudo gem install bson_ext -v 1.9.2
+genghisapp
+genghisapp --kill; genghisapp
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;NOTE: You might run into the following error message:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Invalid gemspec in [/var/lib/gems/1.8/specifications/vegas-0.1.11.gemspec]: invalid date format in specification: &amp;quot;2009-08-30 00:00:00.000000000Z&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To workaround the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 12 Oct 2013 12:14:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-12:/mongodb.html</guid><category>python</category></item><item><title>Single Monitor rules</title><link>https://www.4thinker.com/single-monitor.html</link><description>&lt;p&gt;No matter how good of a peripheral vision you have, you cannot possibly focus on entire surface of 24" monitor. So why then would you want a big monitor or even multiple monitors? Because you have a less-than-optimal setup where turning your head is faster than switching tasks with your hands. If you want to be an expert, you got to become a shortcut-foo master. Just like an expert pianists do not rely on their eyes but their senses, your computer and you must become one via keyboard. Muscle memory is much more efficient than a computer. I have written …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 11 Oct 2013 01:14:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-11:/single-monitor.html</guid><category>productivity</category></item><item><title>OpenVPN Notes</title><link>https://www.4thinker.com/openvpn.html</link><description>&lt;h2&gt;Running OpenVPN with an alias&lt;/h2&gt;
+&lt;p&gt;OpeVPN configuration comes in many different files: &lt;code&gt;.crt&lt;/code&gt;, &lt;code&gt;.key&lt;/code&gt;, &lt;code&gt;.ovpn&lt;/code&gt;, &lt;code&gt;.key&lt;/code&gt;. If you &lt;code&gt;cd&lt;/code&gt; into the directory containing these files and &lt;code&gt;sudo openvpn ***.ovpn&lt;/code&gt;, you are good to go. I wanted to set up an alias for this, omitting &lt;code&gt;cd&lt;/code&gt; part. The trick is to add &lt;code&gt;--config&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo openvpn --config /path/to/myopen.ovpn
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Let's say you have a password file associated with your OpenVpn connection. You would save your username and password to some file , say &lt;code&gt;password.txt&lt;/code&gt; and store it along with other files. With the previous command, &lt;code&gt;OpenVPN&lt;/code&gt; will complain and fail …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 10 Oct 2013 04:14:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-10:/openvpn.html</guid><category>security</category></item><item><title>Installing to</title><link>https://www.4thinker.com/teamviewer-on-linux.html</link><description>&lt;p&gt;This article actually pertains to any linux problem involving installing &lt;code&gt;ia32-libs&lt;/code&gt;.  &lt;code&gt;ia32-libs&lt;/code&gt; are 32-bit libraries that became orphaned in 64-bit linux distros. In order to get them one must specify it in source listing.&lt;/p&gt;
+&lt;p&gt;if you found this article after trying to install something, make sure it is deleted, or you will be getting the error messages and get no where. &lt;code&gt;teamviwer&lt;/code&gt; was the application I was trying to install.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo dpkg --remove teamviewer
+
+sudo dpkg --add-architecture i386
+sudo sed -i &amp;#39;s/deb /\0[arch=amd64,i386] /g&amp;#39; /etc/apt/sources.list
+sudo apt-get update ; apt-get dist-upgrade
+sudo apt-get install …&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 09 Oct 2013 04:58:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-09:/teamviewer-on-linux.html</guid></item><item><title>Moving a linux (crunchbang) partition</title><link>https://www.4thinker.com/moving-partition.html</link><description>&lt;p&gt;I spent nearly six hours figuring stuff out. In Windows, this is easy. You pick a software of your choice and let it do it for you. With Linux, especially if you are duel booting. It is not as easy as clone and restore.&lt;/p&gt;
+&lt;p&gt;Things to consider
+1. Hardware Drivers - they needed to be stripped down so that they do not create collision when installed
+2. Grub - boot manager needs to figure out the &lt;/p&gt;
+&lt;p&gt;Gparted (if you are moving the partition to a smaller allocation)
+Clonezilla &lt;/p&gt;
+&lt;p&gt;My source partition was &lt;code&gt;sda5&lt;/code&gt;, which roughly translates to fifth partition on the first …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 08 Oct 2013 05:34:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-08:/moving-partition.html</guid></item><item><title>Eclipse Settings</title><link>https://www.4thinker.com/eclipse-settings.html</link><description>&lt;h2&gt;Traditional Style Tabs&lt;/h2&gt;
+&lt;p&gt;Window &amp;gt; Preferences &amp;gt; General &amp;gt; Appearance &amp;gt; Show traditional style tabs.&lt;/p&gt;
+&lt;p&gt;Go to [eclipse_folder]\plugins\org.eclipse.platform_4.2.1.v201209141800\css
+Open the css file that corresponds to your selected theme, e.g. e4_default_win7.css
+Then find the selector .MPartStack and set swt-simple to true&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 05 Oct 2013 08:10:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-05:/eclipse-settings.html</guid></item><item><title>Java Installation Files / Alterantatives Selection</title><link>https://www.4thinker.com/java-installation.html</link><description>&lt;p&gt;Java versioning comes natural to you after you go through many installation process, but it is not clear right off the bat.
+- JDK is needed if you are a developer and compile Java program, JRE gives you the Java Virtual Machine so you can use the software. Most people just needs the latter.
+- If you install JDK, JRE is included ($JAVA_HOME/jre) so you do not need to install it separately.
+- OpenJDK and JavaJDK are different. The former is open source and rolls out features faster and the latter is proprietary by Oracle and is more stable.
+- IcedTea is a …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 01 Oct 2013 11:13:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-01:/java-installation.html</guid><category>java</category></item><item><title>Cruncifying-mint</title><link>https://www.4thinker.com/crunchifying-mint.html</link><description>&lt;p&gt;I got myself in a situation where I was forced to use mint. I missed Crunchbang and Openbox dearly right off the bat. So I decided to fix this. In order to get &lt;code&gt;crunchbang&lt;/code&gt; specific functionality, you need their exectuable scripts. I copy them to my dropbox so I can just symlink them.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install openbox dmenu tint2 terminator thunar wmctrl conky nitrogen clipit gtk-chtheme xscreensaver vim-gnome
+ln $HOME/Dropbox/linux/crunchbang/openbox/* $HOME/.config/openbox
+ln $HOME/Dropbox/linux/crunchbang/* $HOME/.config/
+sudo chmod 755 /usr/bin/cb*
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Openbox is the window manager itself.&lt;/li&gt;
+&lt;li&gt;Openbox-themes installs some skins …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 30 Sep 2013 07:04:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-30:/crunchifying-mint.html</guid><category>linux</category></item><item><title>Zenburn to Solarized</title><link>https://www.4thinker.com/colorscheme-solarized.html</link><description>&lt;p&gt;&lt;a href="http://www.newscientist.com/article/mg21428710.300-better-than-sunshine-see-life-in-an-improved-light.html"&gt;![Alt Natural Ligtht Color Chart](|filename|/images/natural-light.jpg&lt;/a&gt;
+"Better than Sunshine: See Life in an Improved Light"&lt;/p&gt;
+&lt;p&gt;I switched to solarized color theme while &lt;a href="vim-airline.html"&gt;installing airilne&lt;/a&gt;. Solarized is a very beautiful theme. I am partial to darker version, but light version is fine too. They both give modern looks, but the darker version, however, is more comfortable to my eyes. I would say Zenburn is still good if you are about to go to bed, &lt;a href="http://www.washingtonpost.com/wp-dyn/content/article/2011/02/14/AR2011021404136.html"&gt;because that orangish color is supposed to relax you while bluish colors excites you&lt;/a&gt;. Anyway, I knew solarized was a popular choice, but like …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 30 Sep 2013 06:45:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-30:/colorscheme-solarized.html</guid><category>design</category></item><item><title>Dotfiles management</title><link>https://www.4thinker.com/dotfiles.html</link><description>&lt;p&gt;I guess the conventional way to control dotfile is using &lt;a href="http://www.github.com"&gt;github&lt;/a&gt;. It is not a bad idea, but I stick with Dropbox for versioning. Yes, it is a version control for non-power user, but it is pretty handy to have your &lt;code&gt;.vimrc&lt;/code&gt; every time you edit it. I typically document my dotfiles in the code and I have not found the commmit message to be useful for dotfiles.&lt;/p&gt;
+&lt;h2&gt;Windows&lt;/h2&gt;
+&lt;p&gt;Symlink dotfiles using &lt;a href="http://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html"&gt;Link Shell Extension&lt;/a&gt;. This allows me to edit dotfiles in either &lt;code&gt;Dropbox&lt;/code&gt; or in my profile without worry about copying them over. I found &lt;code&gt;hardlinks&lt;/code&gt; to not work …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 27 Sep 2013 03:55:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-27:/dotfiles.html</guid><category>shell</category></item><item><title>Reinstall Laptop Screen Driver</title><link>https://www.4thinker.com/screen-reset.html</link><description>&lt;p&gt;http://download.microsoft.com/download/1/1/f/11f7dd10-272d-4cd2-896f-9ce67f3e0240/devcon.exe
+http://support.microsoft.com/kb/311272&lt;/p&gt;
+&lt;p&gt;Once you extract, there are two folders, &lt;code&gt;I386&lt;/code&gt; and &lt;code&gt;Ia64&lt;/code&gt;, which contains &lt;code&gt;DevCon.exe&lt;/code&gt;. The archiecture depends on your &lt;code&gt;cmd.exe&lt;/code&gt; instead of your machine. &lt;/p&gt;
+&lt;p&gt;devcon.exe --remove =monitor
+devcon.exe --update =monitor&lt;/p&gt;
+&lt;p&gt;Now I just put that into my auothotkey script and I am good to go. This is much better and simpler approach than &lt;a href="http://www.autohotkey.com/board/topic/49386-launching-a-script-when-a-specific-usb-device-is-connected/"&gt;the one that uses only auothotkey script&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you need more &lt;a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff544746(v=vs.85).aspx"&gt;examples of DevCon, Microsoft provides them in their Dev Center page&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 23 Sep 2013 08:52:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-23:/screen-reset.html</guid></item><item><title></title><link>https://www.4thinker.com/zsh-over-fish.html</link><description>&lt;h2&gt;Zsh + Oh-My-Zsh&lt;/h2&gt;
+&lt;p&gt;In the order of awesomeness:
+- fast
+- remote auto-completion: &lt;code&gt;scp serverName:&amp;lt;tab&amp;gt;&lt;/code&gt; you can have auto-completion on your server.
+- faster completion compared to &lt;code&gt;bash_completion&lt;/code&gt;
+- auto-correction of commands
+- easy customization with oh-my-zsh. Many themes are available.
+- substantial community support and active development
+- extended globbing
+- shared history (out of the box)
+- improved path expansion
+- variable expansion: &lt;code&gt;$PATH&amp;lt;tab&amp;gt;&lt;/code&gt;
+- Extending globbing: &lt;code&gt;**/*.c&lt;/code&gt; matches directories recursively; &lt;code&gt;zmv '(*).mp3' '$1.wma'&lt;/code&gt; renames extension
+- suffix alias: &lt;code&gt;alias -s c=vim&lt;/code&gt; =&amp;gt; &lt;code&gt;./program.c&lt;/code&gt; now opens the file in vim
+- argument history traversal with &lt;code&gt;Alt-/&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Fish&lt;/h2&gt;
+&lt;p&gt;In the order of painfulness:
+- slow
+- not compatible wish bash
+- development …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 21 Sep 2013 01:43:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-21:/zsh-over-fish.html</guid><category>shell</category></item><item><title>Vim Essential Fixes</title><link>https://www.4thinker.com/vim-fixes.html</link><description>&lt;h2&gt;Use Ctrlp's &lt;code&gt;g:ctrlp_switch_buffer&lt;/code&gt; instead of &lt;code&gt;tab drop&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;tab drop&lt;/code&gt; allows you to switch to the tab with the specified name if it is already open. But it is very inefficiently done. It iterates through each tab until it finds the matching file. It is slow, and a custom function like 'switch to the last used tab' fails. &lt;code&gt;ctrlp&lt;/code&gt; however has an option which fixes this. ctrp is a plugin that searches and opens recent files, files in the current directory, and files opened in the buffer. I use&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;g&lt;/span&gt;:ctrlp_switch_buffer &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;t&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;to switch to the tab if it is …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 20 Sep 2013 12:19:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-20:/vim-fixes.html</guid><category>vim</category></item><item><title>Life Hacking for Thinkers</title><link>https://www.4thinker.com/lifehack.html</link><description>&lt;p&gt;In my &lt;a href="pages/aboutme.html"&gt;aboutme page&lt;/a&gt;, I say I am a lifehacker graduate. There is a profound meaning in those words. Back in 2008, when lifehacker.com was gaining a greater public attraction, I was there. I subscribed to their RSS feed and went through most of the articles for almost three years. I became more knowledgeable and wiser with each article, but it also cost me a great deal of time. Now their articles seem recycled to me and now I see that they are not the most efficient ways to get things done. (&lt;a href="http://www.codinghorror.com/blog/2012/10/todont.html"&gt;Jeff Atwood also complains about their todo …&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 19 Sep 2013 11:50:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-19:/lifehack.html</guid></item><item><title>Vim-Airline is here!</title><link>https://www.4thinker.com/vim-airline.html</link><description>&lt;p&gt;Airline is the latest and hottest putting skins on statusline. There are at least a dozen of websites that explains how to install powerline fonts, but I found them confusing and felt like I was dealing with a bad customer service ("follow this link"). So here is how I got vim-airline to work with powerline fonts. &lt;/p&gt;
+&lt;p&gt;John Chain wrote about &lt;a href="http://jchain.github.io/blog/2013/07/17/fly-with-vim-airline/"&gt;why airline is better&lt;/a&gt;. In short, vim-arline uses less code (1/12th of powerline, 1/3 of vim-powerline) and it is not python dependent. On a side note, I did not have to follow his advice on &lt;code&gt;set lazydraw&lt;/code&gt; to …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 17 Sep 2013 10:53:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-17:/vim-airline.html</guid><category>vim</category></item><item><title>Shougo's Neocomplcache + Neosnippet + Vimproc + Vimshell</title><link>https://www.4thinker.com/vim-shougo.html</link><description>&lt;p&gt;I am very reluctant to write about my vim configuration, because it changes so frequently. But I really using vim plugins by Shougo, I could not help writing something about it.&lt;/p&gt;
+&lt;h2&gt;Neocomplcache&lt;/h2&gt;
+&lt;p&gt;IMHO, the best autocompletion plugin around. I use the generic configuration as shown on &lt;a href="https://github.com/Shougo/neocomplcache.vim"&gt;the github page&lt;/a&gt;, with exception to two lines.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="k"&gt;g&lt;/span&gt;:neocomplcache_dictionary_filetype_lists &lt;span class="p"&gt;=&lt;/span&gt; {
+\ &lt;span class="s1"&gt;&amp;#39;javascript&amp;#39;&lt;/span&gt; : expand&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;~/Dropbox/dev/dotfiles/others/javascript.dict&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; .&lt;span class="s1"&gt;&amp;#39;,&amp;#39;&lt;/span&gt;. expand&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;~/.vim/bundle/vim-node/dict/node.dict&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+\ }
+
+&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="k"&gt;g&lt;/span&gt;:neosnippet#snippets_directory&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;~/.vim/bundle/vim-snippets/snippets, ~/Dropbox/dev/dotfiles/snippets&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The first line allows me to add dictionaries that are not part of the installation. One …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 16 Sep 2013 09:53:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-16:/vim-shougo.html</guid><category>vim</category></item><item><title>Trees</title><link>https://www.4thinker.com/trees.html</link><description>&lt;ul&gt;
+&lt;li&gt;red-black: a self-balancing binary search tree. It is guaranteed to always be balanced, but is complex to implement.&lt;/li&gt;
+&lt;li&gt;B tree: a n-ary search tree in which each node has up to n-1 values and n children.&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 16 Sep 2013 09:39:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-16:/trees.html</guid><category>graphs</category></item><item><title>Desktop Customization is a waste of time</title><link>https://www.4thinker.com/desktop-customization.html</link><description>&lt;p&gt;There are designs that are useful, and there are designs that are unnecessary. When desiging something, let each element have a purpose and serve it well. Making a "in-between" design might make it a good marketing-gimick, but it will end up being a waste of time. Yes there is an exception to this rule, like a big phone, but I think it is very difficult to make the case for desktop customization. I would even argue that desktop customization as a harem of design (notorious MySpace customization back in 2007 fall under this category). It's flashy and desriable, but it …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 15 Sep 2013 11:16:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-15:/desktop-customization.html</guid><category>design</category><category>complaints</category></item><item><title>Efficient ways to do rotation</title><link>https://www.4thinker.com/rotation.html</link><description>&lt;h2&gt;Single array/list&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Q: rotate an array by a particular index size, k&lt;/li&gt;
+&lt;li&gt;A: rotate the entire array first, then rotate first k elements and rotate the rest of elements&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 13 Sep 2013 08:19:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-13:/rotation.html</guid><category>algorithm</category></item><item><title>A collection of useful python scripts</title><link>https://www.4thinker.com/python-tricks.html</link><description>&lt;h4&gt;Mark PDFs with the number from the file name, on the right top corner of the page&lt;/h4&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os.path&lt;/span&gt;
+&lt;span class="nb"&gt;dir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;c:\Users\User\Desktop\Songs&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;listdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;listdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;fullpath&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;command&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;convert &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;fullpath&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; -fill black -gravity South -pointSize 20 -annotate +0+5 &amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;fullpath&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Using defaultdict without importing one:&lt;/h4&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;my_dict&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;some_key&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;my_dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;some_key&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Copying code to Python REPL and avoid Indentation error&lt;/h4&gt;
+&lt;p&gt;REPL stands for &lt;a href="en.wikipedia.org/wiki/Read–eval–print_loop"&gt;Read-eval-print loop&lt;/a&gt; for those who are uninitiated. It the prompt that shows up when you type &lt;code&gt;python&lt;/code&gt; on your command …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 12 Sep 2013 12:10:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-12:/python-tricks.html</guid><category>python</category><category>shell</category></item><item><title>Companies that raised red flags during my interview process</title><link>https://www.4thinker.com/companies-red-flag.html</link><description>&lt;p&gt;Hey you should take my experience with a grain of salt, but these are the rules I will bind by in the future.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Honesty is one of the requirements in the job description: No one can test honesty, so listing it on a job description is kind of funny thing. I found these companies to be less transparent, actually. I guess they need more honest people because they are not.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You cannot get any information on the company's salary range: if a company does does not ask for your desired/minimum salary, they will not pay you well, treat you …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 11 Sep 2013 09:03:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-11:/companies-red-flag.html</guid><category>career</category></item><item><title>Algorithm Questions regarding integer lists</title><link>https://www.4thinker.com/integer-list.html</link><description>&lt;ul&gt;
+&lt;li&gt;All questions are started with "Given a list of integers (not sorted)"&lt;/li&gt;
+&lt;li&gt;All numbers include negative numbers.&lt;/li&gt;
+&lt;li&gt;X is an arbitrary number that is predefined&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Q: find 3 numbers that add up to a given number (a+b+c=d)&lt;/p&gt;
+&lt;p&gt;A: Convert the equation to a+b=d-c, make hash tables representing each side of the question. Iterate through each possible pair of numbers (n^2), see if the sum can be found in the difference hash table or if the difference can be found in the sum table. If true for each case. If the exact numbers are needed …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 10 Sep 2013 05:11:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-10:/integer-list.html</guid></item><item><title>Specializing as a software engineer</title><link>https://www.4thinker.com/specialization.html</link><description>&lt;p&gt;&lt;a href="http://wesleyvanderpool.com/?portfolio=leatherman-multi-tools"&gt;&lt;img alt="Alt Leatherman multi-purpose tools" src="|filename|/images/leatherman.jpg"&gt; "This guy ain't going to the Olympics"&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I always feel insecure about my skill set, but in a good way. It motivates me to learn. Up until now, I just learned anything that was flashing before my eyes. I think this step was necessary because I would never know what I am good at or like until I try! But I have not really thought about how I want to specialize. So I compiled a list so that I could look out for my career and see whether I am honing the same skill. Because more specialized you are, the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 10 Sep 2013 04:32:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-10:/specialization.html</guid><category>career</category></item><item><title>Preview Markdown from Vim</title><link>https://www.4thinker.com/vim-markdown-preview.html</link><description>&lt;p&gt;In the beginning, I was looking for a solution where I could lookup markdown from vim with python or ruby, but then I &lt;a href="http://blog.natesilva.com/post/5256838248/how-to-preview-a-markdown-document-in-vim"&gt;found a vim script&lt;/a&gt; by Nate Silva that does this and it works well across many different platforms. I had to make minor changes.&lt;/p&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Since I use &lt;a href="blogging-on-commandline.html"&gt;pelican&lt;/a&gt; for blogging, I have python markdown installed, so I use that and make a symlink as &lt;code&gt;markdown&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install markdown
+ln -s /usr/local/bin/markdown_py /usr/local/bin/markdown
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then I just add the following scripts and I can get a markdown preview. Notice that I hardcoded …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 08 Sep 2013 12:55:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-08:/vim-markdown-preview.html</guid><category>vim</category></item><item><title>finding key codes to use for bindkey</title><link>https://www.4thinker.com/keybindings.html</link><description>&lt;p&gt;You can find keys in shell using &lt;code&gt;.inputrc&lt;/code&gt; or &lt;code&gt;.screenrc&lt;/code&gt;. In order to find the key codes to use, you can use either &lt;code&gt;read&lt;/code&gt; command or press &lt;code&gt;C-v&lt;/code&gt; and then enter in the key you like to map.&lt;/p&gt;
+&lt;p&gt;I have the following code in my &lt;code&gt;.bashrc&lt;/code&gt; to figure out how keys are mapped. It excludes mapping with keywords which we are not interested with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;alias bindp=&amp;#39;bind -p | grep -E -v &amp;quot;vi|bound| self|lowercase|argument&amp;quot;&amp;#39;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;bound&lt;/code&gt; only shows up if the key is not bound
+&lt;code&gt;self&lt;/code&gt; prints itself, so it tends to be important
+&lt;code&gt;lowercase&lt;/code&gt; is for commands that …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 08 Sep 2013 12:48:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-08:/keybindings.html</guid><category>shell</category></item><item><title>Design Pattern</title><link>https://www.4thinker.com/design-pattern.html</link><description>&lt;p&gt;I was asked about Factory Design pattern at a game company for a junior developer position. I had a feeling that the interviewer was asking me that question because that was something he was learning at that time. I gave me him an idea of what I think it was, but he wanted me to tell him the details. I could not, so he schooled me there and I had no way of verifying whether what he was saying was right. I failed that interview so I went back so that I do not ever forget what it is, but …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 08 Sep 2013 08:42:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-08:/design-pattern.html</guid><category>software</category></item><item><title>Setting up Pelican for blogging</title><link>https://www.4thinker.com/blogging-on-commandline.html</link><description>&lt;p&gt;At the start of year 2013, I tried to set up a system on a wordpress blog so that I could blog from commandline. The plan became moot when I found out that my web hosting service provider did not have the latest PHP installed and I just could not install &lt;a href="http://wp-cli.org/"&gt;WP-CLI&lt;/a&gt; or &lt;a href="http://wordshell.net/"&gt;wordshell&lt;/a&gt;. Maybe I did not try hard enough, but I had many doubts about its usefulness. Six month after, I gave &lt;a href="ruby-on-cygwin.html"&gt;Jekyll and Octopress&lt;/a&gt; a try. It was quiet easy to set it up. But since I do not use Ruby, I began to worry how much …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 07 Sep 2013 03:53:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-07:/blogging-on-commandline.html</guid><category>blog</category><category>pelican</category></item><item><title>Terminologies</title><link>https://www.4thinker.com/terms.html</link><description>&lt;h2&gt;Memory&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Loitering: holding a reference to an object when it is no longer needed.&lt;/li&gt;
+&lt;li&gt;Shallow memory usage: no content memory is allocated, only the reference&lt;/li&gt;
+&lt;li&gt;Deep memory usage: content memory is allocated, duplicated, or initialized.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Object Oriented Design&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Abstract class: You cannot instantiate an abstract class (make it return an object), although you can call a static method inside of it. It needs at least one abstract method. It is meant to be extended. &lt;/li&gt;
+&lt;li&gt;Abstract method: You cannot make a function call to an abstract method. These can only exist in an abstract class. This cannot have implementation. It is …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 26 Aug 2013 01:23:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-26:/terms.html</guid><category>software</category></item><item><title>Topography Notes</title><link>https://www.4thinker.com/typography.html</link><description>&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Fundamentals of Design&lt;/a&gt; by Tim Dikun @ codeschool.com&lt;/p&gt;
+&lt;h2&gt;Attributes that Influence Design&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Audience: Age, Race, Gender, Cultural Niche&lt;/li&gt;
+&lt;li&gt;Tone: Casual, Formal, Friendly, Sarcastic&lt;/li&gt;
+&lt;li&gt;Purpose: Informational, Conversations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;Serif&lt;/h2&gt;
+&lt;h4&gt;Humanist - Classic &amp;amp; Traditional&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Emulates calligraphy&lt;/li&gt;
+&lt;li&gt;Contrasting Strokes&lt;/li&gt;
+&lt;li&gt;Journalist and Historical Text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Transitional - Strong, Stylish, &amp;amp; Dynamic&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Sharper Serif&lt;/li&gt;
+&lt;li&gt;More contrasting Strokes&lt;/li&gt;
+&lt;li&gt;Academic and Legal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Modern Serif - Structured, Clear, &amp;amp; Elegant&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Thin, horizontal Serif&lt;/li&gt;
+&lt;li&gt;High Contrast Stroke&lt;/li&gt;
+&lt;li&gt;Art and Cultural&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Egyptian (Slab Serif) - Authoritative, yet friendly&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Heavy, boxy, serifs&lt;/li&gt;
+&lt;li&gt;Very Low Contrast Stroke&lt;/li&gt;
+&lt;li&gt;Marketing and Promotional &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Sans-Serif&lt;/h2&gt;
+&lt;h4&gt;Humanist - Perfect vs imperfect&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Emulates calligraphy&lt;/li&gt;
+&lt;li&gt;contrasting strokes&lt;/li&gt;
+&lt;li&gt;Government, Finance, Education&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Transitional - Unassuming &amp;amp; Modern&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Strong strokes&lt;/li&gt;
+&lt;li&gt;Upright, uniform, characters …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 22 Aug 2013 12:57:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-22:/typography.html</guid></item><item><title>Color Theory Notes</title><link>https://www.4thinker.com/color-theory.html</link><description>&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Fundamentals of Design&lt;/a&gt; by Tim Dikun @ &lt;a href="http://mbsy.co/7sh6q"&gt;codeschool.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Color Types&lt;/h2&gt;
+&lt;p&gt;Subtractive Color (CMYK): based on the white background, printer, physical&lt;/p&gt;
+&lt;p&gt;Additive Color (RGB): Based on the black background, monitor, virtual&lt;/p&gt;
+&lt;p&gt;Human process color based on Hue, Saturation, and Lightness &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hue (x): can be best represented with a color wheel, which enculates the entire RGB space. (Degree)&lt;/li&gt;
+&lt;li&gt;Saturation (y): the variation of the color to gray (%)&lt;/li&gt;
+&lt;li&gt;Lighness (z): the variation of the color with respect to white (100%) and black (0%)&lt;/li&gt;
+&lt;li&gt;These three properties can be best represented as a cylinder &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;First Choose a Base Color&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Red: Heat, Passion, Excitement, Speed …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 22 Aug 2013 04:51:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-22:/color-theory.html</guid></item><item><title>Mobile Web Notes</title><link>https://www.4thinker.com/mobile-web.html</link><description>&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Journey Into Mobile&lt;/a&gt; by Jason Vanlue @ codeschool.com&lt;/p&gt;
+&lt;h2&gt;Fluid Layout: convert &lt;code&gt;px&lt;/code&gt;s to &lt;code&gt;em&lt;/code&gt;s&lt;/h2&gt;
+&lt;p&gt;Default font size is 16 px. &lt;/p&gt;
+&lt;p&gt;Context for .. is ..&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Width: container&lt;/li&gt;
+&lt;li&gt;Margin: container&lt;/li&gt;
+&lt;li&gt;Padding: element itself &lt;/li&gt;
+&lt;li&gt;line-height: font-size&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Adaptive Design using Media Queries:&lt;/h2&gt;
+&lt;p&gt;Break points are determined by viewports in Adaptive Design, so keep in mind the popular device width sizes (e.g. 768px)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;global.css&amp;quot; media=&amp;quot;all&amp;quot; /&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;main.css&amp;quot; media=&amp;quot;screen&amp;quot; /&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;paper.css&amp;quot; media=&amp;quot;print&amp;quot; /&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;mobile.css&amp;quot; media=&amp;quot;handheld&amp;quot;/&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;media&lt;/code&gt; property specifies which media the linked resource …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 21 Aug 2013 01:17:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-21:/mobile-web.html</guid></item><item><title>Don't give up on your anonymity</title><link>https://www.4thinker.com/anonymity.html</link><description>&lt;blockquote&gt;
+&lt;p&gt;"People behave a lot better when they have their real names down. I think people hide behind anonymity and they feel like they can say whatever they want behind closed doors." - Randi Zuckerberg (Sister of Mark Zuckerberg)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I agree with everything she says, but I endorse anonymity in a learning/development/professional environment.  I have a lot of people who holds me accountable for what I do. Good thing is that they do not write down everything I say or do. The Internet can. The internet is a difficult place to please everyone and I think that you can lose …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 12 Aug 2013 11:53:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-12:/anonymity.html</guid><category>career</category></item><item><title>My attempt to replace Bash with Fish</title><link>https://www.4thinker.com/fish-on-cygwin.html</link><description>&lt;p&gt;I was quite happy with my Bash setup, until &lt;a href="http://hackercodex.com/guide/install-fish-shell-mac-ubuntu/#disqus_thread"&gt;someone&lt;/a&gt; took my blindfold away and revealed to me the Fish shell. So I went on to check if there is something better. Well, now I know what zsh (1990) offers and that fish shell is the newest shell (2005). If you use Mac or Ubuntu, I encourage you to look at &lt;a href="http://hackercodex.com/guide/install-fish-shell-mac-ubuntu/#disqus_thread"&gt;Hacker Codex&lt;/a&gt;, which has been the inspiration for this article.&lt;/p&gt;
+&lt;p&gt;I masochistically installed it on my Cygwin. Here is how it went. &lt;em&gt;UPDATE&lt;/em&gt;: The conclusion is that fish is not mature enough for me to use it full time …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 11 Aug 2013 07:09:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-11:/fish-on-cygwin.html</guid><category>shell</category><category>cygwin</category></item><item><title>Using Node.js and NPM on Cygwin</title><link>https://www.4thinker.com/node-on-cygwin.html</link><description>&lt;p&gt;&lt;a href="http://nodejs.org/download/"&gt;Node.js&lt;/a&gt; does support Cygwin, though it is not well publicized and maybe have lost the support in some of the later versions, but that is in the past! One has to install the Windows version of node.js and &lt;code&gt;npm&lt;/code&gt; is install along with it. Both binaries are added to windows PATH, which should be accessible by a cygwin prompt unless one changed Cygwin's PATH in .bashrc. I used to redefine PATH in .bashrc because Git would not work for some reason, but this problem is no longer exists. Another thing to watch out for is using &lt;code&gt;npm.cmd …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 08 Aug 2013 12:20:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-08:/node-on-cygwin.html</guid><category>cygwin javascript</category></item><item><title>How to get Ruby, RVM, Jekyll, Octopress, and Heroku working on Cygwin</title><link>https://www.4thinker.com/ruby-on-cygwin.html</link><description>&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt;: I do not use Ruby frequently enough and the following has been an exercise for me to just test &lt;a href="http://octopress.org/docs/setup/"&gt;Octopress&lt;/a&gt; and &lt;a href="http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/?search_index=1"&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Installing Ruby&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ruby&lt;/code&gt; can be installed easily on cygwin via setup.exe or &lt;code&gt;apt-cyg&lt;/code&gt;, but &lt;code&gt;gem&lt;/code&gt; that comes with it seems to be outdated and does not work properly. This can be easily fixed with &lt;code&gt;gem update --system&lt;/code&gt;. The dependencies, however, must be met by Cygwin installation. Make sure to install 'wget', 'gcc', and 'makefile'.&lt;/p&gt;
+&lt;h2&gt;Installing RVM&lt;/h2&gt;
+&lt;p&gt;RVM has dependency of 'patch' and its installer needs to be modified because it fails the bash version check. Matt …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 08 Aug 2013 12:20:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-08:/ruby-on-cygwin.html</guid><category>ruby</category><category>cygwin</category></item><item><title>A collection of Useful Shell commands</title><link>https://www.4thinker.com/bash-tricks.html</link><description>&lt;p&gt;Here are some Bash commands that I used&lt;/p&gt;
+&lt;h2&gt;Rename&lt;/h2&gt;
+&lt;p&gt;Rename using &lt;code&gt;find&lt;/code&gt; and &lt;code&gt;sed&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find . -name &amp;quot;*syntax.md&amp;quot; | sed -e &amp;quot;p;s/syntax/notes/&amp;quot; | xargs -n2 mv
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Execute some commands based on the filename or extension &lt;a href="http://stackoverflow.com/questions/10803296/modifying-replace-string-in-xargs"&gt;1&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find . -name &lt;span class="s2"&gt;&amp;quot;*.txt&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; xargs -I&lt;span class="o"&gt;{}&lt;/span&gt; sh -c &lt;span class="s1"&gt;&amp;#39;base=$(basename $0) ; name=${base%.*} ; ext=${base##*.} ; mv &amp;quot;$0&amp;quot; &amp;quot;foo/${name}.bar.${ext}&amp;quot;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;{}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;note: the variable name referenced by -I argument, which in this example is &lt;code&gt;{}&lt;/code&gt; cannot be reference used for variable expansion. It must be assigned to another variable first.&lt;/p&gt;
+&lt;p&gt;Clean up the filename extension so that there is no trailing characters after.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# IFS=&amp;#39;\n …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 05 Aug 2013 01:54:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-05:/bash-tricks.html</guid><category>shell</category></item><item><title>AJAX notes</title><link>https://www.4thinker.com/jquery-ajax-notes.html</link><description>&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;jQuery - The Return Flight&lt;/a&gt; by Gregg Pollak @ &lt;a href="codeschool.com"&gt;codeschool.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Basic&lt;/h2&gt;
+&lt;p&gt;Asynchronous Javascript And XML - updates the client page by interacting the server without a refresh. jQuery downloads everything beforehand and manipulates CSS for visual effects, AJAX makes seamless interaction with the user by downloading contents on a need-basis. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$.ajax(URL, options)&lt;/code&gt; - first argument specifies the URL to request data from the server, the second argument is a javascript object with properties mentioned below. It requires &lt;code&gt;success&lt;/code&gt; property.&lt;/p&gt;
+&lt;p&gt;Event Delegation, or specifying &lt;code&gt;&amp;lt;target&amp;gt;&lt;/code&gt; argument for &lt;code&gt;on()&lt;/code&gt;, is often necessary for successful AJAX requests, because the target element might not have existed …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 29 Jul 2013 05:07:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-07-29:/jquery-ajax-notes.html</guid><category>javascript</category></item><item><title>jQuery Notes</title><link>https://www.4thinker.com/jquery-notes.html</link><description>&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Try jQuery&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=_iRIPJHrdXg&amp;amp;list=PLBB954DF18DA3F2A5"&gt;jQuery Video Tutorial&lt;/a&gt; by Derek Banas @ &lt;a href="newthinktank.com"&gt;newthinktank.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;The Basic&lt;/h2&gt;
+&lt;p&gt;Get the latest jQuery downloaded:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://code.jquery.com/jquery-latest.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Or Google's version for faster download speed:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;script src=&amp;quot;http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js&amp;quot;&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;jQuery manipulates the DOM, tree-like representation of HTML file. It also handles the difference of JavaScript engine in different browsers.
+The following code waits for the document to finish loading, this is often always used for jQuery:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jQuery(document).ready(function(){
+    &amp;lt;code&amp;gt;
+});
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;jQuery objects are created by surrounding the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 27 Jul 2013 06:35:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-07-27:/jquery-notes.html</guid><category>javascript</category></item><item><title>Vim Plugins I use</title><link>https://www.4thinker.com/vim-plugins-alternatives.html</link><description>&lt;p&gt;I consider myself an intermediate vim power user. Here are my observations about vim-plugins&lt;/p&gt;
+&lt;p&gt;1) Some plugins are very stable, so they may not be very active but still are awesome plugins
+2) If a plugin is complicated to use/setup/buggy. There is a better one coming around the corner
+3) Good plugins work across different OS platforms
+4) Good plugins are comptaible with other plugins
+5) Github stars or vim.org's user ratings help, but they fail to distinguish the best plugins.&lt;/p&gt;
+&lt;p&gt;Lastly, vim user's should not be afraid to try to plugin, because essentially the similar concepts …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 24 Jul 2013 12:32:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-07-24:/vim-plugins-alternatives.html</guid><category>vim</category></item><item><title>Intuitive and Natural Windows Management Setup</title><link>https://www.4thinker.com/windows-management.html</link><description>&lt;p&gt;This is the final result after five years of searching for an efficient windows management system that works with 30+ instances of windows.&lt;/p&gt;
+&lt;h2&gt;The Search&lt;/h2&gt;
+&lt;p&gt;The first windows manager that I tried beyond the basic one supplied on OS was &lt;a href="awesome.naquadah.org"&gt;Awesome Windows Manager&lt;/a&gt; in &lt;a href="http://lifehacker.com/5993297/ubuntu-vs-mint-which-linux-distro-is-better-for-beginners"&gt;Linux Mint&lt;/a&gt;. AWM is a titling windows manager, so that you can use the most out of the screen estate without having to resize windows every time. Combined with multiple workspace, you could move and group windows without too much hassle. I liked AWM so much that I installed it also on Ubuntu when gnome2 vs …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 06 Jun 2013 03:16:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-06-06:/windows-management.html</guid><category>windows</category></item><item><title>Installing LAMP on Cygwin</title><link>https://www.4thinker.com/LAMP-on-cygwin.html</link><description>&lt;p&gt;Installing LAMP on cygwin can be handy if you want to just test a quick web service on your machine.&lt;/p&gt;
+&lt;p&gt;Download the &lt;a href="http://cygwin.com/setup.exe"&gt;setup.exe&lt;/a&gt; and install it along with wget. We will be using &lt;code&gt;apt-cyg&lt;/code&gt;, which is similar to &lt;code&gt;apt-get&lt;/code&gt; in Debian-based linux distros. It allows you to specify the packages you want to install right on the terminal:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;wget http://apt-cyg.googlecode.com/svn/trunk/apt-cyg
+if [ $(uname -m) == &amp;#39;i686&amp;#39; ]; then arch=&amp;quot;x86&amp;quot;; else arch=&amp;quot;x86_64&amp;quot;; fi; sed -i &amp;quot;s/\(wget -N \$mirror\)\(\/setup\..*\)/\1\/$arch\2/&amp;quot; /usr/local/bin/apt-cyg
+chmod +x apt-cyg
+mv apt-cyg /usr/local/bin …&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 29 May 2013 11:28:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-05-29:/LAMP-on-cygwin.html</guid><category>cygwin</category><category>php</category><category>mysql</category><category>apache</category><category>ssh</category></item><item><title>Interviewing for a Software Engineer position is Hard</title><link>https://www.4thinker.com/interviews-are-hard.html</link><description>&lt;p&gt;This pertains to my experience straight out of college. Once you specialize, things may differ.&lt;/p&gt;
+&lt;p&gt;I am first going to admit that I am not competent in program interviews. It is something that I need to work extra hard and people who do well deserves the job. Computer Science interview questions are similar to Science Olympiad, you recall answers to questions or topics that are very broad. Also the questions tend to be ones that you do not think very often in practice. For example, how often do you use recursion in your work? &lt;/p&gt;
+&lt;p&gt;There are so many language variations …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 24 May 2013 02:49:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-05-24:/interviews-are-hard.html</guid><category>career</category></item><item><title>How to install pip, oauth2 on Windows</title><link>https://www.4thinker.com/python-on-window.html</link><description>&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pip&lt;/code&gt; is like &lt;code&gt;apt&lt;/code&gt; of debian-based system for python. It installs and uninstalls packages&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;distribute&lt;/code&gt; is like &lt;code&gt;dpkg&lt;/code&gt; of debian-based system for python. It builds and distribute packages.&lt;/li&gt;
+&lt;li&gt;In short, they make installing packages for python much easier. For a longer explanation, here is a &lt;a href="http://guide.python-distribute.org/installation.html"&gt;stackoverflow answer&lt;/a&gt;, and the official description can be found the &lt;a href="http://guide.python-distribute.org/installation.html"&gt;python website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Some people might be using &lt;code&gt;setuptools&lt;/code&gt; in windows, but it is outdated. &lt;code&gt;setuptools&lt;/code&gt; is not available for Windows 64-bit platform anyway, so the choice is limited for many people out there.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;distribute&lt;/code&gt; replaces &lt;code&gt;setuptools&lt;/code&gt; starting from python3, but it is available for &lt;code&gt;python2 …&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 10 May 2013 11:33:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-05-10:/python-on-window.html</guid><category>python</category></item><item><title>Why spending more time than you save is okay, and when it is not.</title><link>https://www.4thinker.com/automation.html</link><description>&lt;p&gt;&lt;a href="http://boingboing.net/2013/04/29/how-much-time-should-you-spend.html"&gt;&lt;img alt="Alt XKCD Automation ROI chart" src="|filename|/images/automation.jpeg"&gt; "XKCD: How Much Time Should You Spend"&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I am certainly guilty of trying to automate everything, including keystrokes, but I never calculate the time I invest to get things automated. This is because the benefits I leap is not just the time I save, but the knowledge and expertise I gain in the process. If you want to automate something, you must know how it works, sometimes you also need to know the foundation beneath that makes everything tick.&lt;/p&gt;
+&lt;p&gt;There are more merits. In this society where sharing is the norm, you may never know who can expand on the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 01 May 2013 06:34:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-05-01:/automation.html</guid><category>lifehacker</category><category>automation</category></item><item><title>Installing Crashplan on Pogoplug</title><link>https://www.4thinker.com/crashplan.html</link><description>&lt;p&gt;I am assuming that you have Arch Linux Arm running on your Pogoplug. My pogoplug is V2, which has Marvell processor in it. (1.2 Mhz). Here is &lt;a href="http://obihoernchen.net/wordpress/770/plug_computer_arch_linux/"&gt;an excellent article by Obihoernchen&lt;/a&gt; that helped me to get things set up properly.&lt;/p&gt;
+&lt;h2&gt;Installing Java SE&lt;/h2&gt;
+&lt;p&gt;Download the one that starts with "ARMv5 Linux" from the &lt;a href="http://www.oracle.com/technetwork/java/embedded/downloads/javase/index.html"&gt;Oracle Website&lt;/a&gt;. Unfortunately, You will have to sign up for Oracle account and upload the file to your server via SCP:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# cd /path/to/your/file&lt;/span&gt;
+&lt;span class="c1"&gt;# nas is the alias defined in .ssh file for my server. Change &amp;#39;nas&amp;#39; with your server&amp;#39;s ip address …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 22 Apr 2013 09:27:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-04-22:/crashplan.html</guid><category>server</category><category>backup</category></item></channel></rss>

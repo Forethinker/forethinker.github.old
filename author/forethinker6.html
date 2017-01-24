@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+        
+
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/conversation.html"><h1>Having a great conversation is like playing a great tennis game</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>March 03, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/life.html">life</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/relationship.html">#relationship</a></span>
+
+  <span>Read in 4 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Having%20a%20great%20conversation%20is%20like%20playing%20a%20great%20tennis%20game%20 https%3A//www.4thinker.com/conversation.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/conversation.html&p[images][0]=&p[title]=Having%20a%20great%20conversation%20is%20like%20playing%20a%20great%20tennis%20game%20&p[summary]=%3Cp%3EA%20great%20relationship%20starts%20with%20a%20great%20conversation%2C%20and%20frankly%20I%20am%20not%20a%20great%20conversation%20holder%20by%20nature.%20My%20brother%20used%20to%20get%20so%20mad%20at%20me%20for%20asking%20boring%2C%20straightforward%20questions%20that%20seem%20to%20lead%20no%20where.%20But%20when%20I%20think%20of%20a%20conversation%20as%20a%20tennis%20game%2C%20it%20makes%20things%20a%20bit%20easier%20for%20me%20to%20be%20more%20sociable%20person.%20At%20the%20basic%20level%2C%20a%20conversation%20is%20compromised%20of%20questioning%20and%20answering.%20Likewise%2C%20a%20tennis%20game%20is%20compromised%20of%20serving%20and%20returning.%20%20Here%20is%20the%20set%20of%20rules%20I%20keep%20in%20my%20head%3A%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3ETennis%20%3D%26gt%3B%20Conversation%0AServer%20%3D%26gt%3B%20Questioner%20%E2%80%A6%3C/pre%3E%3C/div%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/conversation.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Having%20a%20great%20conversation%20is%20like%20playing%20a%20great%20tennis%20game%20&body=https%3A//www.4thinker.com/conversation.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>A great relationship starts with a great conversation, and frankly I am not a great conversation holder by nature. My brother used to get so mad at me for asking boring, straightforward questions that seem to lead no where. But when I think of a conversation as a tennis game, it makes things a bit easier for me to be more sociable person. At the basic level, a conversation is compromised of questioning and answering. Likewise, a tennis game is compromised of serving and returning.  Here is the set of rules I keep in my head:</p>
+<div class="highlight"><pre><span></span>Tennis =&gt; Conversation
+Server =&gt; Questioner …</pre></div> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/conversation.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/samba.html"><h1>Samba Quick Setup Guide</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>February 21, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/sysadmin.html">sysadmin</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/server.html">#server</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Samba%20Quick%20Setup%20Guide%20 https%3A//www.4thinker.com/samba.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/samba.html&p[images][0]=&p[title]=Samba%20Quick%20Setup%20Guide%20&p[summary]=%3Ch2%3EInstall%20smaba%20and%20configure%3C/h2%3E%0A%3Cp%3E%3Cp/%3E%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Esudo%20apt-get%20install%20samba%0Asudo%20vim%20/etc/samba/smb.conf%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Ch2%3EConfiguring%20smb.conf%3C/h2%3E%0A%3Cp%3E%3Cp/%3E%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Esecurity%20%3D%20user%0A%0A%5Bhomes%5D%0A%20%20%20comment%20%3D%20Home%20Directories%0A%20%20%20browseable%20%3D%20yes%0A%20%20%20valid%20users%20%3D%20%25S%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3Evalid%20users%20%3D%20%25S%20means%20that%20only%20you%2C%20or%20anyone%20with%20your%20login%20account%2C%20can%20connect%20to%20your%20own%20Home%20folder%20via%20Samba.%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%3Cspan%20class%3D%22k%22%3E%5Bshare%5D%3C/span%3E%0A%20%20%20%20%3Cspan%20class%3D%22na%22%3Ecomment%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%3D%3C/span%3E%20%3Cspan%20class%3D%22s%22%3ENew%20Share%20Path%3C/span%3E%0A%3Cspan%20class%3D%22s%22%3E%20%20%20%20path%20%3D%20/path/to/share/folder%3C/span%3E%0A%3Cspan%20class%3D%22s%22%3E%20%20%20%20browsable%20%3D%20yes%3C/span%3E%0A%3Cspan%20class%3D%22s%22%3E%20%20%20%20guest%20ok%20%3D%20yes%3C/span%3E%0A%3Cspan%20class%3D%22s%22%3E%20%20%20%20read%20only%20%3D%20no%3C/span%3E%0A%3Cspan%20class%3D%22s%22%3E%20%20%20%20create%20mask%20%3D%200755%3C/span%3E%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Ch2%3EAdding%20a%20user%20to%20the%20samba%20user%20list%3A%3C/h2%3E%0A%3Cp%3EIf%20you%20want%20to%20add%20a%20user%20%28adding%20a%20dedicated%20user%20for%20server%20administration%20is%20a%20good%20security%20measure%29%2C%20do%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Euseradd%20%E2%80%A6%3C/pre%3E%3C/div%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/samba.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Samba%20Quick%20Setup%20Guide%20&body=https%3A//www.4thinker.com/samba.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<h2>Install smaba and configure</h2>
+<p><p/></p>
+<div class="highlight"><pre><span></span>sudo apt-get install samba
+sudo vim /etc/samba/smb.conf
+</pre></div>
+
+
+<h2>Configuring smb.conf</h2>
+<p><p/></p>
+<div class="highlight"><pre><span></span>security = user
+
+[homes]
+   comment = Home Directories
+   browseable = yes
+   valid users = %S
+</pre></div>
+
+
+<p>valid users = %S means that only you, or anyone with your login account, can connect to your own Home folder via Samba.</p>
+<div class="highlight"><pre><span></span><span class="k">[share]</span>
+    <span class="na">comment</span> <span class="o">=</span> <span class="s">New Share Path</span>
+<span class="s">    path = /path/to/share/folder</span>
+<span class="s">    browsable = yes</span>
+<span class="s">    guest ok = yes</span>
+<span class="s">    read only = no</span>
+<span class="s">    create mask = 0755</span>
+</pre></div>
+
+
+<h2>Adding a user to the samba user list:</h2>
+<p>If you want to add a user (adding a dedicated user for server administration is a good security measure), do</p>
+<div class="highlight"><pre><span></span>useradd …</pre></div> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/samba.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/vmware-tools.html"><h1>VMWare Tools Manual Installation</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>February 20, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/vmware.html">#vmware</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=VMWare%20Tools%20Manual%20Installation%20 https%3A//www.4thinker.com/vmware-tools.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/vmware-tools.html&p[images][0]=&p[title]=VMWare%20Tools%20Manual%20Installation%20&p[summary]=%3Cp%3ETL%3BDR%3B%0AIf%20you%20have%20VMWare%20Player%2C%20you%20can%20go%20to%20the%20setting%20and%20download%20the%20VMWareTools%20for%20different%20distros%20in%20ISOs.%20Mount%20that%20to%20your%20virtual%20machine%20and%20install%20it.%3C/p%3E%0A%3Cp%3EMy%20sob%20story%3A%0AVMWare%20makes%20it%20easy%20to%20virtualize%20a%20partition%20of%20your%20disk.%20Depending%20on%20how%20the%20boot%20record%20is%20set%20up%2C%20though%2C%20you%20might%20have%20to%20do%20some%20more%20hacking.%20Anyway%2C%20I%20was%20tinkering%20with%20my%20init%20scripts%20and%20other%20scripts%20for%20power%20%28hibernate%2C%20standby%29%20and%20somehow%20my%20VMWare%20tool%20got%20messed%20up.%20So%20when%20I%20booted%20up%20my%20linux%20partition%20from%20Windows%2C%20I%20could%20not%20share%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/vmware-tools.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=VMWare%20Tools%20Manual%20Installation%20&body=https%3A//www.4thinker.com/vmware-tools.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>TL;DR;
+If you have VMWare Player, you can go to the setting and download the VMWareTools for different distros in ISOs. Mount that to your virtual machine and install it.</p>
+<p>My sob story:
+VMWare makes it easy to virtualize a partition of your disk. Depending on how the boot record is set up, though, you might have to do some more hacking. Anyway, I was tinkering with my init scripts and other scripts for power (hibernate, standby) and somehow my VMWare tool got messed up. So when I booted up my linux partition from Windows, I could not share …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/vmware-tools.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/language-comparisons.html"><h1>My messy, incomplete programming languages comparison chart</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>February 16, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/programming.html">#programming</a></span>
+
+  <span>Read in 4 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=My%20messy%2C%20incomplete%20programming%20languages%20comparison%20chart%20 https%3A//www.4thinker.com/language-comparisons.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/language-comparisons.html&p[images][0]=&p[title]=My%20messy%2C%20incomplete%20programming%20languages%20comparison%20chart%20&p[summary]=%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Efeature%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EPHP%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EBash%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EPython%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EJavascript%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EPerl%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EC%3C/span%3E%3Cspan%20class%3D%22o%22%3E%2B%2B%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EJava%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Ec%3C/span%3E%3Cspan%20class%3D%22c1%22%3E%23%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%3C/span%3E%0A%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Elanauge%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Edyanamic%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Edynamic%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Edynamic%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Estatic%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Edynamic%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Estatic%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Estatic%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Estatic%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%0A%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Esemi%3C/span%3E%3Cspan%20class%3D%22o%22%3E-%3C/span%3E%3Cspan%20class%3D%22n%22%3Ecolon%3C/span%3E%20%3Cspan%20class%3D%22p%22%3E%28%3B%29%3C/span%3E%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EYes%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EOnly%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eon%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Econcanated%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Estmts%3C/span%3E%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3ENo%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EOnly%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eon%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Econcanated%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Estmts%3C/span%3E%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EYes%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eyes%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eyes%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eyes%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%0A%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Ecomment%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22sr%22%3E/%20/%3C/span%3E%3Cspan%20class%3D%22o%22%3E%2A%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%2A%3C/span%3E%3Cspan%20class%3D%22sr%22%3E/%20%23%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20%23%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20%23%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20%26lt%3B--%20//%20/%3C/span%3E%3Cspan%20class%3D%22o%22%3E%2A%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%2A%3C/span%3E%3Cspan%20class%3D%22sr%22%3E/%20--%26gt%3B%20%20%20%20%20%20%20%20%20%20%20%20%7C%20%3Dbegin%20cmt%20%20%3Dend%20cmt%20%20%3Dcut%20%7C%20//%20/%3C/span%3E%3Cspan%20class%3D%22o%22%3E%2A%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%2A%3C/span%3E%3Cspan%20class%3D%22sr%22%3E/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20//%20/%3C/span%3E%3Cspan%20class%3D%22o%22%3E%2A%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%2A%3C/span%3E%3Cspan%20class%3D%22sr%22%3E/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20//%20/%3C/span%3E%3Cspan%20class%3D%22o%22%3E%2A%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%2A/%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%0A%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eline%3C/span%3E%3Cspan%20class%3D%22o%22%3E-%3C/span%3E%3Cspan%20class%3D%22n%22%3Eseparator%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Ecom%3C/span%3E%3Cspan%20class%3D%22p%22%3E%2C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Estr%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Ewhitespace%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eagnostic%3C/span%3E%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%5C%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%5C%3C/span%3E%20%3Cspan%20class%3D%22s%22%3E%26quot%3B%26quot%3B%3C/span%3E%3Cspan%20class%3D%22o%22%3E%5C%3C/span%3E%3Cspan%20class%3D%22s%22%3E%26quot%3B%26quot%3B%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%5C%3C/span%3E%20%3Cspan%20class%3D%22s%22%3E%26quot%3B%26quot%3B%3C/span%3E%20%3Cspan%20class%3D%22s%22%3E%26quot%3B%26quot%3B%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E.%3C/span%3E%20%3Cspan%20class%3D%22p%22%3E%2C%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Ewhitespace%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eagnostic%3C/span%3E%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Ewhitespace%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eagnostic%3C/span%3E%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Ewhitepsace%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eagnostic%3C/span%3E%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%0A%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Enull%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Enull%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3En%3C/span%3E%3Cspan%20class%3D%22o%22%3E/%3C/span%3E%3Cspan%20class%3D%22n%22%3Ea%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3ENone%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eundefined%3C/span%3E%3Cspan%20class%3D%22p%22%3E%2C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Enull%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EUndef%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Enull%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Enull%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Enull%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%0A%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Evariable%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Edeclartion%3C/span%3E%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22nv%22%3E%24varName%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%3D%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EvarName%3C/span%3E%3Cspan%20class%3D%22o%22%3E%3D%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EvarName%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%3D%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Evar%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EvarName%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%3D%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22k%22%3Emy%3C/span%3E%20%3Cspan%20class%3D%22nv%22%3E%24varName%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%3D%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EdataType%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EvarName%3C/span%3E%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EdataType%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EvarName%3C/span%3E%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EdataType%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EvarName%3C/span%3E%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%0A%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Escope%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22p%22%3E%7B%7D%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22p%22%3E%7B%7D%3C/span%3E%20%3Cspan%20class%3D%22k%22%3Efor%3C/span%3E%20%3Cspan%20class%3D%22nb%22%3Elocal%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EvarName%3C/span%3E%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Edef%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Ecascaded%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22p%22%3E%7B%7D%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22p%22%3E%7B%7D%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22p%22%3E%7B%7D%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22p%22%3E%7B%7D%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%0A%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eincrement%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%2B%2B%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E--%3C/span%3E%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EYes%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EYes%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Ewithin%3C/span%3E%20%3Cspan%20class%3D%22p%22%3E%28%28%29%29%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3ENo%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EYes%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EYes%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EYes%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EYes%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3EYes%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%0A%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Estring%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Econcatenataion%3C/span%3E%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E.%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eimplied%3C/span%3E%3Cspan%20class%3D%22p%22%3E%2C%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%2B%3D%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eimplied%3C/span%3E%3Cspan%20class%3D%22p%22%3E%2C%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%2B%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%2B%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E.%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%2B%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%2B%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22o%22%3E%2B%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%0A%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22k%22%3Eprint%3C/span%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22o%22%3E%7C%3C/span%3E%20%3Cspan%20class%3D%22n%22%3Eecho%20%E2%80%A6%3C/span%3E%3C/pre%3E%3C/div%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/language-comparisons.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=My%20messy%2C%20incomplete%20programming%20languages%20comparison%20chart%20&body=https%3A//www.4thinker.com/language-comparisons.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<div class="highlight"><pre><span></span><span class="o">|</span> <span class="n">feature</span>                 <span class="o">|</span> <span class="n">PHP</span>                        <span class="o">|</span> <span class="n">Bash</span>                       <span class="o">|</span> <span class="n">Python</span>                   <span class="o">|</span> <span class="n">Javascript</span>                  <span class="o">|</span> <span class="n">Perl</span>                       <span class="o">|</span> <span class="n">C</span><span class="o">++</span>                   <span class="o">|</span> <span class="n">Java</span>                   <span class="o">|</span> <span class="n">c</span><span class="c1">#                       |</span>
+<span class="o">|</span> <span class="n">lanauge</span>                 <span class="o">|</span> <span class="n">dyanamic</span>                   <span class="o">|</span> <span class="n">dynamic</span>                    <span class="o">|</span> <span class="n">dynamic</span>                  <span class="o">|</span> <span class="n">static</span>                      <span class="o">|</span> <span class="n">dynamic</span>                    <span class="o">|</span> <span class="n">static</span>                <span class="o">|</span> <span class="n">static</span>                 <span class="o">|</span> <span class="n">static</span>                   <span class="o">|</span>
+<span class="o">|</span> <span class="n">semi</span><span class="o">-</span><span class="n">colon</span> <span class="p">(;)</span>          <span class="o">|</span> <span class="n">Yes</span>                        <span class="o">|</span> <span class="n">Only</span> <span class="n">on</span> <span class="n">concanated</span> <span class="n">stmts</span>   <span class="o">|</span> <span class="n">No</span>                       <span class="o">|</span> <span class="n">Only</span> <span class="n">on</span> <span class="n">concanated</span> <span class="n">stmts</span>    <span class="o">|</span> <span class="n">Yes</span>                        <span class="o">|</span> <span class="n">yes</span>                   <span class="o">|</span> <span class="n">yes</span>                    <span class="o">|</span> <span class="n">yes</span>                      <span class="o">|</span>
+<span class="o">|</span> <span class="n">comment</span>                 <span class="o">|</span> <span class="sr">/ /</span><span class="o">*</span> <span class="o">*</span><span class="sr">/ #                  | #                          | #                        | &lt;-- // /</span><span class="o">*</span> <span class="o">*</span><span class="sr">/ --&gt;            | =begin cmt  =end cmt  =cut | // /</span><span class="o">*</span> <span class="o">*</span><span class="sr">/              | // /</span><span class="o">*</span> <span class="o">*</span><span class="sr">/               | // /</span><span class="o">*</span> <span class="o">*/</span>                 <span class="o">|</span>
+<span class="o">|</span> <span class="n">line</span><span class="o">-</span><span class="n">separator</span> <span class="n">com</span><span class="p">,</span> <span class="n">str</span> <span class="o">|</span> <span class="n">whitespace</span> <span class="n">agnostic</span>        <span class="o">|</span> <span class="o">\</span>                          <span class="o">|</span> <span class="o">\</span> <span class="s">&quot;&quot;</span><span class="o">\</span><span class="s">&quot;&quot;</span>                  <span class="o">|</span> <span class="o">\</span> <span class="s">&quot;&quot;</span> <span class="s">&quot;&quot;</span>                     <span class="o">|</span> <span class="o">.</span> <span class="p">,</span>                        <span class="o">|</span> <span class="n">whitespace</span> <span class="n">agnostic</span>   <span class="o">|</span> <span class="n">whitespace</span> <span class="n">agnostic</span>    <span class="o">|</span> <span class="n">whitepsace</span> <span class="n">agnostic</span>      <span class="o">|</span>
+<span class="o">|</span> <span class="n">null</span>                    <span class="o">|</span> <span class="n">null</span>                       <span class="o">|</span> <span class="n">n</span><span class="o">/</span><span class="n">a</span>                        <span class="o">|</span> <span class="n">None</span>                     <span class="o">|</span> <span class="n">undefined</span><span class="p">,</span> <span class="n">null</span>             <span class="o">|</span> <span class="n">Undef</span>                      <span class="o">|</span> <span class="n">null</span>                  <span class="o">|</span> <span class="n">null</span>                   <span class="o">|</span> <span class="n">null</span>                     <span class="o">|</span>
+<span class="o">|</span> <span class="n">variable</span> <span class="n">declartion</span>     <span class="o">|</span> <span class="nv">$varName</span> <span class="o">=</span>                 <span class="o">|</span> <span class="n">varName</span><span class="o">=</span>                   <span class="o">|</span> <span class="n">varName</span> <span class="o">=</span>                <span class="o">|</span> <span class="n">var</span> <span class="n">varName</span> <span class="o">=</span>               <span class="o">|</span> <span class="k">my</span> <span class="nv">$varName</span> <span class="o">=</span>              <span class="o">|</span> <span class="n">dataType</span> <span class="n">varName</span>      <span class="o">|</span> <span class="n">dataType</span> <span class="n">varName</span>       <span class="o">|</span> <span class="n">dataType</span> <span class="n">varName</span>         <span class="o">|</span>
+<span class="o">|</span> <span class="n">scope</span>                   <span class="o">|</span> <span class="p">{}</span>                         <span class="o">|</span> <span class="p">{}</span> <span class="k">for</span> <span class="nb">local</span> <span class="n">varName</span>       <span class="o">|</span> <span class="n">def</span>                      <span class="o">|</span> <span class="n">cascaded</span>                    <span class="o">|</span> <span class="p">{}</span>                         <span class="o">|</span> <span class="p">{}</span>                    <span class="o">|</span> <span class="p">{}</span>                     <span class="o">|</span> <span class="p">{}</span>                       <span class="o">|</span>
+<span class="o">|</span> <span class="n">increment</span> <span class="o">++</span> <span class="o">--</span>         <span class="o">|</span> <span class="n">Yes</span>                        <span class="o">|</span> <span class="n">Yes</span> <span class="n">within</span> <span class="p">(())</span>            <span class="o">|</span> <span class="n">No</span>                       <span class="o">|</span> <span class="n">Yes</span>                         <span class="o">|</span> <span class="n">Yes</span>                        <span class="o">|</span> <span class="n">Yes</span>                   <span class="o">|</span> <span class="n">Yes</span>                    <span class="o">|</span> <span class="n">Yes</span>                      <span class="o">|</span>
+<span class="o">|</span> <span class="n">string</span> <span class="n">concatenataion</span>   <span class="o">|</span> <span class="o">.</span>                          <span class="o">|</span> <span class="n">implied</span><span class="p">,</span> <span class="o">+=</span>                <span class="o">|</span> <span class="n">implied</span><span class="p">,</span> <span class="o">+</span>               <span class="o">|</span> <span class="o">+</span>                           <span class="o">|</span> <span class="o">.</span>                          <span class="o">|</span> <span class="o">+</span>                     <span class="o">|</span> <span class="o">+</span>                      <span class="o">|</span> <span class="o">+</span>                        <span class="o">|</span>
+<span class="o">|</span> <span class="k">print</span>                   <span class="o">|</span> <span class="n">echo …</span></pre></div> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/language-comparisons.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/windows-over-linux.html"><h1>Going back to Windows as my primary OS</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>February 16, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/rant.html">#rant</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Going%20back%20to%20Windows%20as%20my%20primary%20OS%20 https%3A//www.4thinker.com/windows-over-linux.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/windows-over-linux.html&p[images][0]=&p[title]=Going%20back%20to%20Windows%20as%20my%20primary%20OS%20&p[summary]=%3Cp%3EWindows%20is%20on%20a%20downhill%20since%20the%20new%20%3Ca%20href%3D%22https%3A//twitter.com/thurrott/status/424172005475500032%22%3EWindows%20Vista%3C/a%3E%20and%20I%20have%20considered%20to%20switch%20to%20Linux%20full%20time%20and%20I%20almost%20have%2C%20but%20now%20I%20am%20getting%20a%20bit%20sick%20of%20going%20after%20drivers%20to%20make%20everything%20run%20properly.%20Windows%207%20still%20provides%20a%20great%20user%20experience%20%28in%20terms%20of%20productivity%2C%20at%20least%29%20out%20of%20the%20box.%3C/p%3E%0A%3Cp%3EHere%20are%20few%20things%20I%20miss%20dearly%3A%0A1.%20device/hardware%20support%20%28wifi%2C%20trackpad%29%3A%20I%20managed%20to%20get%20them%20to%20work%2C%20but%20I%20spent%20like%2030%20hours.%3C/p%3E%0A%3Col%3E%0A%3Cli%3E%0A%3Cp%3EEverything%20Search%3A%20I%20have%20improved%20my%20%3Ccode%3Efind%3C/code%3E%20skill%20%3Ccode%3Egrep%3C/code%3E%20skill%20with%20Linux%2C%20but%20I%20miss%20%E2%80%A6%3C/p%3E%3C/li%3E%3C/ol%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/windows-over-linux.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Going%20back%20to%20Windows%20as%20my%20primary%20OS%20&body=https%3A//www.4thinker.com/windows-over-linux.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>Windows is on a downhill since the new <a href="https://twitter.com/thurrott/status/424172005475500032">Windows Vista</a> and I have considered to switch to Linux full time and I almost have, but now I am getting a bit sick of going after drivers to make everything run properly. Windows 7 still provides a great user experience (in terms of productivity, at least) out of the box.</p>
+<p>Here are few things I miss dearly:
+1. device/hardware support (wifi, trackpad): I managed to get them to work, but I spent like 30 hours.</p>
+<ol>
+<li>
+<p>Everything Search: I have improved my <code>find</code> skill <code>grep</code> skill with Linux, but I miss …</p></li></ol> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/windows-over-linux.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/unix-tar.html"><h1>Unix Tar</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>February 14, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Unix%20Tar%20 https%3A//www.4thinker.com/unix-tar.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/unix-tar.html&p[images][0]=&p[title]=Unix%20Tar%20&p[summary]=%3Cp%3ELike%20%3Ccode%3Eln%3C/code%3E%2C%20the%20file%20that%20gets%20creates%20come%20first.%20This%20for%20me%20is%20confusing.%20I%20expect%20all%20linux%20to%20follow%20%3Csrc%3E%20%3Ctarget%3E%20pattern%2C%20but%20free-rider%20can%27t%20be%20a%20chooser%2C%20I%20guess.%20%3C/p%3E%0A%3Cp%3EAnother%20thing%20that%20bugs%20about%20%3Ccode%3Etar%3C/code%3E%20utility%20is%20that%20you%20have%20to%20specify%20the%20extension%20and%20tar%20does%20not%20do%20it%20for%20you%20automatically.%20This%20probably%20probably%20has%20wasted%20a%20lot%20of%20time%20over%20decades.%3C/p%3E%0A%3Cp%3Eusing%20%3Ccode%3E.%3C/code%3E%20as%20%3Cdst%3E%20will%20unpack%20files%20to%20current%20directory%20when%20uncompressed.%20This%20is%20kind%20of%20a%20naughty%20behavior%20if%20you%20are%20distributing%20your%20files%20to%20public%2C%20and%20especially%20so%20if%20there%20are%20lots%20of%20files.%20If%20you%20%E2%80%A6%3C/dst%3E%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/unix-tar.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Unix%20Tar%20&body=https%3A//www.4thinker.com/unix-tar.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>Like <code>ln</code>, the file that gets creates come first. This for me is confusing. I expect all linux to follow <src> <target> pattern, but free-rider can't be a chooser, I guess. </p>
+<p>Another thing that bugs about <code>tar</code> utility is that you have to specify the extension and tar does not do it for you automatically. This probably probably has wasted a lot of time over decades.</p>
+<p>using <code>.</code> as <dst> will unpack files to current directory when uncompressed. This is kind of a naughty behavior if you are distributing your files to public, and especially so if there are lots of files. If you …</dst></p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/unix-tar.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/linux-setup.html"><h1>Setting Up Linux</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>February 14, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/sysadmin.html">sysadmin</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/linux.html">#linux</a>, <a href="https://www.4thinker.com/tag/setup.html">#setup</a>, <a href="https://www.4thinker.com/tag/laptop.html">#laptop</a></span>
+
+  <span>Read in 5 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Setting%20Up%20Linux%20 https%3A//www.4thinker.com/linux-setup.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/linux-setup.html&p[images][0]=&p[title]=Setting%20Up%20Linux%20&p[summary]=%3Ch2%3EEssential%3C/h2%3E%0A%3Cp%3E%3Cp/%3E%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Esudo%20apt-get%20update%0Asudo%20apt-get%20install%20-y%20vim%20git%20python%20python-pip%20tmux%20zsh%20python-dev%20libxml2-dev%20libxslt-dev%20ssh%0Asudo%20apt-get%20install%20-y%20default-jre%0Asudo%20pip%20install%20virtualenv%20requests%0Asudo%20npm%20install%20-g%20casperjs%20coffee-script%20js2coffee%20coffeelint%20uglify-js%0A%0A%23%20sudo%20apt-get%20install%20gtk2-engines-pixbuf%20vim-gnome%20clipit%20xclip%20xdotool%20xdiskusage%20resolvconf%20acpitool%20xmodmap%20powertop%20zip%20unzip%20curl%0Asudo%20apt-get%20install%20openjdk-7-jre%20openjdk-7-jdk%0A%23%20Laptop-specific%0Asudo%20apt-get%20install%20lsof%0Asudo%20apt-get%20purge%20laptop-mode-tools%0A%23%20Extra%0Asudo%20apt-get%20install%20ia32-libs%20eclipse%20xfce4-settings%20telnet%20ntpdate%20mongodb%0Asudo%20ln%20-s%20/usr/bin/nodejs%20/usr/bin/node%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Ch2%3Enpm%20in%20ubuntu%3C/h2%3E%0A%3Cp%3EIf%20linking%20the%20nodejs%20binary%20to%20node%20is%20not%20sufficient%20for%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/linux-setup.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Setting%20Up%20Linux%20&body=https%3A//www.4thinker.com/linux-setup.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<h2>Essential</h2>
+<p><p/></p>
+<div class="highlight"><pre><span></span>sudo apt-get update
+sudo apt-get install -y vim git python python-pip tmux zsh python-dev libxml2-dev libxslt-dev ssh
+sudo apt-get install -y default-jre
+sudo pip install virtualenv requests
+sudo npm install -g casperjs coffee-script js2coffee coffeelint uglify-js
+
+# sudo apt-get install gtk2-engines-pixbuf vim-gnome clipit xclip xdotool xdiskusage resolvconf acpitool xmodmap powertop zip unzip curl
+sudo apt-get install openjdk-7-jre openjdk-7-jdk
+# Laptop-specific
+sudo apt-get install lsof
+sudo apt-get purge laptop-mode-tools
+# Extra
+sudo apt-get install ia32-libs eclipse xfce4-settings telnet ntpdate mongodb
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+</pre></div>
+
+
+<h2>npm in ubuntu</h2>
+<p>If linking the nodejs binary to node is not sufficient for …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/linux-setup.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/cygwin-setup.html"><h1>How I setup my Cygwin</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>February 14, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/sysadmin.html">sysadmin</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/cygwin.html">#cygwin</a>, <a href="https://www.4thinker.com/tag/zsh.html">#zsh</a>, <a href="https://www.4thinker.com/tag/solarized.html">#solarized</a></span>
+
+  <span>Read in 6 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=How%20I%20setup%20my%20Cygwin%20 https%3A//www.4thinker.com/cygwin-setup.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/cygwin-setup.html&p[images][0]=&p[title]=How%20I%20setup%20my%20Cygwin%20&p[summary]=%3Cp%3EBy%20googling%20around%20I%20found%20%3Ca%20href%3D%22http%3A//randomartifacts.blogspot.com/2012/10/a-proper-cygwin-environment.html%22%3Ea%20pretty%20comprehensive%20guide%20by%20Thomas%20Wheeler%3C/a%3E.%20His%20instruction%20on%20%27Mapping%20Cygdrive%27%20did%20not%20work%20for%20me%20and%20I%20decided%20to%20fork%20an%20instruction%20on%20my%20own%2C%20so%20that%20I%20can%20keep%20adding%20stuff%20if%20I%20want%20to.%3C/p%3E%0A%3Ch2%3EMoving%20your%20home%20directory%20to%20your%20Windows%20profile%20directory%3C/h2%3E%0A%3Cp%3EI%20found%20this%20setup%20to%20be%20consistent%20with%20other%20unix%20systems.%20It%20preserves%20my%20sanity%20in%20the%20long%20run.%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Emkpasswd%20-l%20-d%20-p%20%26quot%3B%24%28cygpath%20-H%29%26quot%3B%20%26gt%3B%20/etc/passwd%0Amkgroup%20-l%20-d%20%26gt%3B%20/etc/group%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Ch2%3EInstalling%20Essential%20Programs%3C/h2%3E%0A%3Cp%3EDownload%20the%20%3Ca%20href%3D%22http%3A//cygwin.com/setup.exe%22%3Esetup.exe%3C/a%3E%20and%20install%20it%20along%20with%20wget.%20We%20will%20be%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/cygwin-setup.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=How%20I%20setup%20my%20Cygwin%20&body=https%3A//www.4thinker.com/cygwin-setup.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>By googling around I found <a href="http://randomartifacts.blogspot.com/2012/10/a-proper-cygwin-environment.html">a pretty comprehensive guide by Thomas Wheeler</a>. His instruction on 'Mapping Cygdrive' did not work for me and I decided to fork an instruction on my own, so that I can keep adding stuff if I want to.</p>
+<h2>Moving your home directory to your Windows profile directory</h2>
+<p>I found this setup to be consistent with other unix systems. It preserves my sanity in the long run.</p>
+<div class="highlight"><pre><span></span>mkpasswd -l -d -p &quot;$(cygpath -H)&quot; &gt; /etc/passwd
+mkgroup -l -d &gt; /etc/group
+</pre></div>
+
+
+<h2>Installing Essential Programs</h2>
+<p>Download the <a href="http://cygwin.com/setup.exe">setup.exe</a> and install it along with wget. We will be …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/cygwin-setup.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/union-find.html"><h1>Union Find</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>February 14, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/algs.html">algs</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/graph.html">#graph</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Union%20Find%20 https%3A//www.4thinker.com/union-find.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/union-find.html&p[images][0]=&p[title]=Union%20Find%20&p[summary]=%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%5BAlgorithms%5D%28https%3A//class.coursera.org/algs4partI-003/%29%20by%20Rob%20Sedgewick%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3Efind%20whether%20nodes%20are%20have%20a%20path%20to%20another.%3C/p%3E%0A%3Ch2%3EQuick-Find%20%28Na%C3%AFve%20implementation%29%3A%3C/h2%3E%0A%3Cp%3EAs%20the%20nodes%20get%20connected%2C%20all%20nodes%20in%20the%20resulting%20tree%20are%20marked%20with%20one%20of%20the%20node%27s%20id%20number.%20After%20all%20union%20operations%2C%20if%20any%20two%20selected%20nodes%20have%20the%20same%20ID%2C%20they%20are%20connected.%20%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Epublic%20void%20uinon%28int%20p%2C%20int%20q%29%0A%7B%0A%20%20%20%20int%20pid%20%3D%20id%5Bp%5D%3B%20//pid%20must%20be%20extracted%20because%20id%5Bp%5D%20will%20change%20to%20qid%0A%20%20%20%20int%20qid%20%3D%20id%5Bq%5D%3B%0A%20%20%20%20for%20%28int%20i%20%3D%200%3B%20i%20%26lt%3B%20id.length%3B%20i%2B%2B%29%0A%20%20%20%20%20%20%20%20if%20%28id%5Bi%5D%20%3D%3D%20pid%29%20id%5Bi%5D%20%3D%20qid%3B%0A%7D%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Ch2%3EWeighted%20Quick-Union%20%E2%80%A6%3C/h2%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/union-find.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Union%20Find%20&body=https%3A//www.4thinker.com/union-find.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<div class="highlight"><pre><span></span>[Algorithms](https://class.coursera.org/algs4partI-003/) by Rob Sedgewick
+</pre></div>
+
+
+<p>find whether nodes are have a path to another.</p>
+<h2>Quick-Find (Naïve implementation):</h2>
+<p>As the nodes get connected, all nodes in the resulting tree are marked with one of the node's id number. After all union operations, if any two selected nodes have the same ID, they are connected. </p>
+<div class="highlight"><pre><span></span>public void uinon(int p, int q)
+{
+    int pid = id[p]; //pid must be extracted because id[p] will change to qid
+    int qid = id[q];
+    for (int i = 0; i &lt; id.length; i++)
+        if (id[i] == pid) id[i] = qid;
+}
+</pre></div>
+
+
+<h2>Weighted Quick-Union …</h2> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/union-find.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/truecrypt.html"><h1>Trucrypt</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>February 13, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/security.html">#security</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Trucrypt%20 https%3A//www.4thinker.com/truecrypt.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/truecrypt.html&p[images][0]=&p[title]=Trucrypt%20&p[summary]=%3Cp%3EHere%20are%20some%20of%20the%20scripts%20I%20run%20to%20make%20my%20life%20easy%20with%20Trucrypt%20on%20linux.%3C/p%3E%0A%3Ch2%3ERemove%20%27You%20need%20to%20format%20the%20disk%27%20message%20in%20Windows%3C/h2%3E%0A%3Cp%3E%3Ca%20href%3D%22http%3A//superuser.com/questions/197765/how-to-turn-off-the-you-need-to-format-the-disk-do-you-want-to-format-it-m%22%3ESolution%20by%20Casual%20Coder%3C/a%3E%20from%20superuser.com%3C/p%3E%0A%3Cp%3ERight-click%20the%20%27Computer%27%20%28or%20%27My%20Computer%27%29%20icon%20on%20your%20desktop%20or%20in%20the%20Start%20Menu%20and%20select%20Manage.%20The%20%27Computer%20Management%27%20window%20should%20appear.%3C/p%3E%0A%3Cp%3EFrom%20the%20list%20on%20the%20left%2C%20select%20%27Disk%20Management%27%20%28within%20the%20Storage%20sub-tree%29.%3C/p%3E%0A%3Cp%3ERight-click%20the%20encrypted%20partition/device%20and%20select%20Change%20Drive%20Letter%20and%20Paths.%3C/p%3E%0A%3Cp%3EClick%20Remove.%3C/p%3E%0A%3Cp%3EIf%20Windows%20prompts%20you%20to%20confirm%20the%20action%2C%20click%20Yes.%3C/p%3E%0A%3Ch2%3EAuto%20dismount%3C/h2%3E%0A%3Cp%3Eon%20/etc/rc%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/truecrypt.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Trucrypt%20&body=https%3A//www.4thinker.com/truecrypt.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>Here are some of the scripts I run to make my life easy with Trucrypt on linux.</p>
+<h2>Remove 'You need to format the disk' message in Windows</h2>
+<p><a href="http://superuser.com/questions/197765/how-to-turn-off-the-you-need-to-format-the-disk-do-you-want-to-format-it-m">Solution by Casual Coder</a> from superuser.com</p>
+<p>Right-click the 'Computer' (or 'My Computer') icon on your desktop or in the Start Menu and select Manage. The 'Computer Management' window should appear.</p>
+<p>From the list on the left, select 'Disk Management' (within the Storage sub-tree).</p>
+<p>Right-click the encrypted partition/device and select Change Drive Letter and Paths.</p>
+<p>Click Remove.</p>
+<p>If Windows prompts you to confirm the action, click Yes.</p>
+<h2>Auto dismount</h2>
+<p>on /etc/rc …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/truecrypt.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+<div class="pagination">
+<ul>
+    <li class="prev"><a href="https://www.4thinker.com/author/forethinker5.html">&larr; Previous</a></li>
+
+    <li class=""><a href="https://www.4thinker.com/author/forethinker.html">1</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker2.html">2</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker3.html">3</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker4.html">4</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker5.html">5</a></li>
+    <li class="active"><a href="https://www.4thinker.com/author/forethinker6.html">6</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker7.html">7</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker8.html">8</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker9.html">9</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker10.html">10</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker11.html">11</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker12.html">12</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker13.html">13</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker14.html">14</a></li>
+
+    <li class="next"><a href="https://www.4thinker.com/author/forethinker7.html">Next &rarr;</a></li>
+
+</ul>
+</div>
+ 
+  
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHJwYJKoZIhvcNAQcEoIIHGDCCBxQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAn8m2t0rNgqrECQ0Ud0UKB6eo2OCzD1zyREArewWZuBTSdLyuJzRUkOBkZs6dBGE1AzzofibC3SPr6TtY79qQVPiref0fxL3q6z30ZorivEpfTrmAgQKxuprDVJ4YFecAuzp9DPUk10oScmei3EZv97oq7P+jSFFvJ/K86dP4CpDELMAkGBSsOAwIaBQAwgaQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQI3EUyiIvExciAgYBoiT7A1b73V0Gv8I0njdxrbBIMID/qIyiqhxnxrib3O1QStQENd39kFnxKRR93vmjWS54RH2HFUZVhZeIqJ7CUJmKtLJzUBeOioJNPM4li5J1aO/ki4QQLPCxEey4rUl2/EaQlYJaJaXb/akzTtIYeyEd49ZQnxCeisNzOAP6Nu6CCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE0MDcyMTA4NDMyMVowIwYJKoZIhvcNAQkEMRYEFPjXDRlI/ZBCCXrgNnKWbuk7Pu21MA0GCSqGSIb3DQEBAQUABIGAQ8rt33qN52B9iXzNFsn9sBto4e9iObuwZjMa+fTguCM+Z29Zp2sl7PEE0Eg7xv8gROt9+G2xu8LYwFeZ/TXJlLLGb2qFzgYRIkKP3Qye6ITBOb/0GIbmReKAl7Wavo2sy+4yVObksNS8CiiOi6QHSjXNnGPjFc7GwrLrMLgHsdo=-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+        
+
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/user-management.html"><h1>pdbedit to configure samba on linux machine</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>December 02, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/sysadmin.html">sysadmin</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/samba.html">#samba</a></span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=pdbedit%20to%20configure%20samba%20on%20linux%20machine%20 https%3A//www.4thinker.com/user-management.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/user-management.html&p[images][0]=&p[title]=pdbedit%20to%20configure%20samba%20on%20linux%20machine%20&p[summary]=%3Ch2%3EGroup%3C/h2%3E%0A%3Cp%3ECreate%20a%20group%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Egropuadd%20groupName%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3EDelete%20a%20group%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Egroupdel%20groupName%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Ch2%3EUsers%3C/h2%3E%0A%3Cp%3ECreate%20a%20user%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Euseradd%20-m%20-g%20groupName%20-s%20/sbin/nologin%20userName%0Ado%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3E%3Ccode%3E-m%3C/code%3E%20create%20home%2C%20%3Ccode%3E-g%3C/code%3E%20specify%20group%2C%20%3Ccode%3E-s%27%3C/code%3E%20specify%20shell%3C/p%3E%0A%3Cp%3EAdd%20User%20to%20samba%20and%20create%20a%20new%20password%3A%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Epdbedit%20-a%20-u%20userName%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3ERemove%20User%20from%20samba%20%28modify%20the%20user%20by%20adding%20a%20new%20one%29%3A%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Epdbedit%20-x%20-u%20userName%0A%3C/pre%3E%3C/div%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/user-management.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=pdbedit%20to%20configure%20samba%20on%20linux%20machine%20&body=https%3A//www.4thinker.com/user-management.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<h2>Group</h2>
+<p>Create a group</p>
+<div class="highlight"><pre><span></span>gropuadd groupName
+</pre></div>
+
+
+<p>Delete a group</p>
+<div class="highlight"><pre><span></span>groupdel groupName
+</pre></div>
+
+
+<h2>Users</h2>
+<p>Create a user</p>
+<div class="highlight"><pre><span></span>useradd -m -g groupName -s /sbin/nologin userName
+do
+</pre></div>
+
+
+<p><code>-m</code> create home, <code>-g</code> specify group, <code>-s'</code> specify shell</p>
+<p>Add User to samba and create a new password:</p>
+<div class="highlight"><pre><span></span>pdbedit -a -u userName
+</pre></div>
+
+
+<p>Remove User from samba (modify the user by adding a new one):</p>
+<div class="highlight"><pre><span></span>pdbedit -x -u userName
+</pre></div> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/user-management.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/unix-grep.html"><h1>Global Regular Expression Print</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>December 02, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Global%20Regular%20Expression%20Print%20 https%3A//www.4thinker.com/unix-grep.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/unix-grep.html&p[images][0]=&p[title]=Global%20Regular%20Expression%20Print%20&p[summary]=%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Egrep%20%26quot%3B.%2A%5C.zip%24%26quot%3B%0A%0Afind%20%24dir%20-type%20f%20-name%20%26%2339%3B%2A.log%26%2339%3B%20-exec%20grep%20-o%20%24pattern%20%7B%7D%20%5C%3B%0A%0Agrep%20-r%20--include%3D%26quot%3B%2A.php%26quot%3B%20%26quot%3Bpublic%20auction%26quot%3B%20./%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3E-i%20%20Case%20insensitive%20match.%0A-c%20%20Count%20of%20matches%3B%20suppressing%20normal%20output.%20One%20line%20per%20file%20match.%0A-o%20%20Show%20only%20the%20part%20of%20a%20matching%20line%20that%20matches.%0A-v%20%20not%0A-e%20or%3C/p%3E%0A%3Cp%3E-a%20processes%20binary%20file.%0A-f%20read%20the%20matches%20from%20a%20file.%0A-o%20show%20only%20the%20matched%20portion.%0A-z%20a%20line%20is%20terminated%20by%20null%20byte%20instead%20of%20a%20new%20line%20character.%3C/p%3E%0A%3Cp%3E%3Ccode%3Egrep%20-E%3C/code%3E%20extends%20the%20functionality%20of%20grep%2C%20allowing%20the%20usage%20of%20%3F%2C%20%2B%2C%20%7B%2C%20%7C%2C%20%28%2C%20and%20%29%20wihtout%20having%20to%20have%20a%20blackslash%20in%20front%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/unix-grep.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Global%20Regular%20Expression%20Print%20&body=https%3A//www.4thinker.com/unix-grep.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<div class="highlight"><pre><span></span>grep &quot;.*\.zip$&quot;
+
+find $dir -type f -name &#39;*.log&#39; -exec grep -o $pattern {} \;
+
+grep -r --include=&quot;*.php&quot; &quot;public auction&quot; ./
+</pre></div>
+
+
+<p>-i  Case insensitive match.
+-c  Count of matches; suppressing normal output. One line per file match.
+-o  Show only the part of a matching line that matches.
+-v  not
+-e or</p>
+<p>-a processes binary file.
+-f read the matches from a file.
+-o show only the matched portion.
+-z a line is terminated by null byte instead of a new line character.</p>
+<p><code>grep -E</code> extends the functionality of grep, allowing the usage of ?, +, {, |, (, and ) wihtout having to have a blackslash in front …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/unix-grep.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/unix-find.html"><h1>Unix Utility Find</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>December 02, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/shell.html">#shell</a></span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Unix%20Utility%20Find%20 https%3A//www.4thinker.com/unix-find.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/unix-find.html&p[images][0]=&p[title]=Unix%20Utility%20Find%20&p[summary]=%3Ch2%3EDefault%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3Ebreadth-first-search%3C/li%3E%0A%3Cli%3Esearch%20starts%20from%2024%20hours%20ago%3C/li%3E%0A%3Cli%3Esearch%20the%20current%20directory%3C/li%3E%0A%3Cli%3E-P%3A%20never%20follow%20symlink%20%28Default%29%3C/li%3E%0A%3Cli%3E%3Ccode%3E%2A%3C/code%3E%20match%20any%20characters%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3EPatterns%3C/h2%3E%0A%3Cp%3EEach%20option%20has%20optional%20prefix%20%3Ccode%3E-i%3C/code%3E%20for%20case-insensitivity%0A-%20name%0A-%20regex%0A-%20path%3C/p%3E%0A%3Ch2%3ENumbers%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3Einum%3A%20inode%20number%3C/li%3E%0A%3Cli%3Elinks%3A%20number%20of%20links%3C/li%3E%0A%3Cli%3Egid%3A%20group%20ID%3C/li%3E%0A%3Cli%3Euid%3A%20user%20ID%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3EAttributes%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3Emount%3A%20do%20no%20search%20through%20mounted%20directories%20%28CD%2C%20USB%2C%20remote%20drive%29%3C/li%3E%0A%3Cli%3Enogroup%3C/li%3E%0A%3Cli%3Enouser%3C/li%3E%0A%3Cli%3Ereadable%3C/li%3E%0A%3Cli%3Eempty%3C/li%3E%0A%3Cli%3Eexectuable%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3EOthers%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3Esamefile%3C/li%3E%0A%3Cli%3Euser%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3Esize%3C/h2%3E%0A%3Ch2%3ENegating%20Search%20Query%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3E%3Ccode%3E%21%3C/code%3E%20and%20%3Ccode%3E-not%3C/code%3E%20does%20the%20same%20thing%2C%20except%20that%20%3Ccode%3E-not%3C/code%3E%20is%20POSIX-compliant.%20The%20expression%20that%20comes%20after%20is%20affected%20and%20it%20needs%20to%20be%20escaped%20%3Ccode%3E%5C%28%20...%20%5C%29%3C/code%3E%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3EExpression%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3EExpressions%20are%20logically%20%3Ccode%3Eor%3C/code%3Eed%20%E2%80%A6%3C/li%3E%3C/ul%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/unix-find.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Unix%20Utility%20Find%20&body=https%3A//www.4thinker.com/unix-find.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<h2>Default</h2>
+<ul>
+<li>breadth-first-search</li>
+<li>search starts from 24 hours ago</li>
+<li>search the current directory</li>
+<li>-P: never follow symlink (Default)</li>
+<li><code>*</code> match any characters</li>
+</ul>
+<h2>Patterns</h2>
+<p>Each option has optional prefix <code>-i</code> for case-insensitivity
+- name
+- regex
+- path</p>
+<h2>Numbers</h2>
+<ul>
+<li>inum: inode number</li>
+<li>links: number of links</li>
+<li>gid: group ID</li>
+<li>uid: user ID</li>
+</ul>
+<h2>Attributes</h2>
+<ul>
+<li>mount: do no search through mounted directories (CD, USB, remote drive)</li>
+<li>nogroup</li>
+<li>nouser</li>
+<li>readable</li>
+<li>empty</li>
+<li>exectuable</li>
+</ul>
+<h2>Others</h2>
+<ul>
+<li>samefile</li>
+<li>user</li>
+</ul>
+<h2>size</h2>
+<h2>Negating Search Query</h2>
+<ul>
+<li><code>!</code> and <code>-not</code> does the same thing, except that <code>-not</code> is POSIX-compliant. The expression that comes after is affected and it needs to be escaped <code>\( ... \)</code></li>
+</ul>
+<h2>Expression</h2>
+<ul>
+<li>Expressions are logically <code>or</code>ed …</li></ul> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/unix-find.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/awk.html"><h1>This is Awk. Word.</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>November 20, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/unix.html">#unix</a></span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=This%20is%20Awk.%20Word.%20 https%3A//www.4thinker.com/awk.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/awk.html&p[images][0]=&p[title]=This%20is%20Awk.%20Word.%20&p[summary]=%3Ch2%3Econditional%3C/h2%3E%0A%3Cp%3Eif%20statement%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Eif%20%28cond%29%0A%20%20%20%20expr%0Aelse%20if%28cond%29%0A%20%20%20%20expr%0Aelse%0A%20%20%20%20expr%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3EComparison%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%20%26gt%3B%3D%2C%20%3D%3D%2C%20%26lt%3B%3D%2C%20%26gt%3B%2C%20%26lt%3B%2C%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3Eboolean%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%26amp%3B%26amp%3B%2C%20%7C%7C%2C%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3Ecrement%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%2B%2B%20--%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3ETertiary%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Eexpr%20%3F%20expr%20%3A%20expr%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Ch2%3Eprimitives%3C/h2%3E%0A%3Cp%3Evariable%20names%2C%20numbers%2C%20string%0Aeach%20statement%20is%20ended%20with%20semi-colon%3C/p%3E%0A%3Ch2%3Evariable%3C/h2%3E%0A%3Cp%3Evar%3Dvalue%0A-%20%3Ccode%3E%241%2C%20%242%2C%20%24NF%3C/code%3E%3A%20Arguments%20-%20nth%20value%20from%20the%20line.%20%3Ccode%3E%24%3C/code%3E%20is%20an%20operator%20that%20can%20be%20applied%20to%20any%20number%20%28primitive%20or%20variable%29%20and%20gets%20the%20field%20corresponding%20to%20that%20number.%0A-%20%3Ccode%3E%2C%3C/code%3E%3A%20string%20concatenation%20%0A-%20%3Ccode%3EFS%3C/code%3E%2C%20%3Ccode%3EOFS%3C/code%3E%2C%20%3Ccode%3ERS%3C/code%3E%20%3Ccode%3EORS%3C/code%3E%2C%20%3Ccode%3ENR%3C/code%3E%20%3Ccode%3ENF%3C/code%3E%3A%20field%20separator%2C%20output%20field%20separator%2C%20record%20separator%2C%20output%20record%20separator%2C%20number%20of%20records%2C%20number%20of%20fields.%20%3C/p%3E%0A%3Cp%3Eaction%20is%20by%20default%2C%20%3Ccode%3Eprint%3C/code%3E%0A%20%20%20%20%27/pattern/action%27%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%26%2339%3B/pattern/%0A/pattern/%26%2339%3B%0A%0A%26%2339%3B%24var%20%7E/pattern/%26%2339%3B%0A%0A%26%2339%3Bcondition%26%2339%3B%0A%0A%26%2339%3Bfunction%20%E2%80%A6%3C/pre%3E%3C/div%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/awk.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=This%20is%20Awk.%20Word.%20&body=https%3A//www.4thinker.com/awk.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<h2>conditional</h2>
+<p>if statement</p>
+<div class="highlight"><pre><span></span>if (cond)
+    expr
+else if(cond)
+    expr
+else
+    expr
+</pre></div>
+
+
+<p>Comparison</p>
+<div class="highlight"><pre><span></span> &gt;=, ==, &lt;=, &gt;, &lt;,
+</pre></div>
+
+
+<p>boolean</p>
+<div class="highlight"><pre><span></span>&amp;&amp;, ||,
+</pre></div>
+
+
+<p>crement</p>
+<div class="highlight"><pre><span></span>++ --
+</pre></div>
+
+
+<p>Tertiary</p>
+<div class="highlight"><pre><span></span>expr ? expr : expr
+</pre></div>
+
+
+<h2>primitives</h2>
+<p>variable names, numbers, string
+each statement is ended with semi-colon</p>
+<h2>variable</h2>
+<p>var=value
+- <code>$1, $2, $NF</code>: Arguments - nth value from the line. <code>$</code> is an operator that can be applied to any number (primitive or variable) and gets the field corresponding to that number.
+- <code>,</code>: string concatenation 
+- <code>FS</code>, <code>OFS</code>, <code>RS</code> <code>ORS</code>, <code>NR</code> <code>NF</code>: field separator, output field separator, record separator, output record separator, number of records, number of fields. </p>
+<p>action is by default, <code>print</code>
+    '/pattern/action'</p>
+<div class="highlight"><pre><span></span>&#39;/pattern/
+/pattern/&#39;
+
+&#39;$var ~/pattern/&#39;
+
+&#39;condition&#39;
+
+&#39;function …</pre></div> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/awk.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/unix-resource-management.html"><h1>Unix resource management</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>November 20, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/shell.html">#shell</a></span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Unix%20resource%20management%20 https%3A//www.4thinker.com/unix-resource-management.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/unix-resource-management.html&p[images][0]=&p[title]=Unix%20resource%20management%20&p[summary]=%3Cp%3EFree%20memory%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Efree%20-m%0A%3C/pre%3E%3C/div%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/unix-resource-management.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Unix%20resource%20management%20&body=https%3A//www.4thinker.com/unix-resource-management.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>Free memory</p>
+<div class="highlight"><pre><span></span>free -m
+</pre></div> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/unix-resource-management.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/unix-top.html"><h1>Top cheat sheet</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>November 20, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/administration.html">#Administration</a></span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Top%20cheat%20sheet%20 https%3A//www.4thinker.com/unix-top.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/unix-top.html&p[images][0]=&p[title]=Top%20cheat%20sheet%20&p[summary]=%3Cp%3E%3Ccode%3EA%3C/code%3E%20-%20split%20%28default%20RES%2C%20PID%2C%20MEM%2C%20USER%29%20%0A%3Ccode%3Ea%3C/code%3E%20-%20iterate%0A%3Ccode%3EM%3C/code%3E%20-%20sort%20by%20memory%0A%3Ccode%3EO%3C/code%3E%20-%20sort%20by%20something%20else%0A%3Ccode%3Ek%3C/code%3E%20-%20kill%20the%20selected%20process%0A%3Ccode%3Er%3C/code%3E%20-%20renice%20%28asks%20for%20pid%29%0A%3Ccode%3Eu%3C/code%3E%20-%20username%0A%3Ccode%3E1%3C/code%3E%20-%20toggle%20display%20of%20all%20CPU/cores%0A%3Ccode%3El%3C/code%3E%20-%20toggle%20cpu%20load%20display%0A%3Ccode%3Et%3C/code%3E%20-%20toggle%20cpu%20state%20display%0A%3Ccode%3Em%3C/code%3E%20-%20toggle%20memory%20info%20display%0A%3Ccode%3En%3C/code%3E%20-%20limit%20number%20of%20process%20on%20display%0A%3Ccode%3Ec%3C/code%3E%20-%20toggle%20command%20path%2C%20argument%0A%3Ccode%3Ez%3C/code%3E%20-%20toggle%20color%20highlight%3C/p%3E%0A%3Cp%3E%3Ccode%3Etop%20-u%20username%3C/code%3E%20-%20for%20a%20specific%20user%0A%3Ccode%3Etop%20-p%20pid%2C%20pids%3C/code%3E%20-%20for%20specific%20processes%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/unix-top.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Top%20cheat%20sheet%20&body=https%3A//www.4thinker.com/unix-top.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p><code>A</code> - split (default RES, PID, MEM, USER) 
+<code>a</code> - iterate
+<code>M</code> - sort by memory
+<code>O</code> - sort by something else
+<code>k</code> - kill the selected process
+<code>r</code> - renice (asks for pid)
+<code>u</code> - username
+<code>1</code> - toggle display of all CPU/cores
+<code>l</code> - toggle cpu load display
+<code>t</code> - toggle cpu state display
+<code>m</code> - toggle memory info display
+<code>n</code> - limit number of process on display
+<code>c</code> - toggle command path, argument
+<code>z</code> - toggle color highlight</p>
+<p><code>top -u username</code> - for a specific user
+<code>top -p pid, pids</code> - for specific processes</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/unix-top.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/unix-job-management.html"><h1>Unix job management</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>November 20, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/administration.html">#administration</a></span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Unix%20job%20management%20 https%3A//www.4thinker.com/unix-job-management.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/unix-job-management.html&p[images][0]=&p[title]=Unix%20job%20management%20&p[summary]=%3Cp%3E%3Ccode%3E%26amp%3B%3C/code%3E%20at%20the%20end%20of%20the%20command%20-%20run%20in%20the%20background%2C%20free%20up%20the%20command%20prompt%0A%3Ccode%3Enohup%3C/code%3E%20-%20suppress%20the%20output%20to%20nohup.out%20%0A%3Ccode%3Enohup%3C/code%3E%20%2B%20%3Ccode%3E%26amp%3B%3C/code%3E%20allows%20user%20to%20run%20the%20command%20even%20after%20logging%20out%0A%3Ccode%3EC-z%3C/code%3E%20put%20the%20running%20process%20in%20the%20background%0A%3Ccode%3Ejobs%3C/code%3E%20-%20list%20the%20jobs%20for%20the%20current%20shell%0A%3Ccode%3Ekill%20%251%3C/code%3E%20-%20kill%20the%20job%20listed%20by%20%3Ccode%3Ejobs%3C/code%3E%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/unix-job-management.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Unix%20job%20management%20&body=https%3A//www.4thinker.com/unix-job-management.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p><code>&amp;</code> at the end of the command - run in the background, free up the command prompt
+<code>nohup</code> - suppress the output to nohup.out 
+<code>nohup</code> + <code>&amp;</code> allows user to run the command even after logging out
+<code>C-z</code> put the running process in the background
+<code>jobs</code> - list the jobs for the current shell
+<code>kill %1</code> - kill the job listed by <code>jobs</code></p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/unix-job-management.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/sed.html"><h1>Sed, not sad</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>November 20, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/linux.html">#linux</a></span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Sed%2C%20not%20sad%20 https%3A//www.4thinker.com/sed.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/sed.html&p[images][0]=&p[title]=Sed%2C%20not%20sad%20&p[summary]=%3Cp%3EThe%20separator%20can%20be%20any%20character%20as%20long%20as%20they%20are%20consistent%3C/p%3E%0A%3Cp%3Esed%20%27ADDRESS%27Command%20fileName%0Ased%20/PATTERN/AddressCommand%20fileName%3C/p%3E%0A%3Cul%3E%0A%3Cli%3E%3Ccode%3E-i%3C/code%3E%3A%20makes%20changes%20on%20the%20file%2C%20suppresses%20output.%20A%20file%20extension%20%3Ccode%3E.bak%3C/code%3E%20can%20be%20used%20to%20redirect%20othe%20output.%3C/li%3E%0A%3Cli%3E%3Ccode%3E%3B%3C/code%3E%3A%20is%20to%20separate%20command%20within%20quotes%3C/li%3E%0A%3Cli%3E%3Ccode%3E-e%3C/code%3E%3A%20is%20to%20connect%20two%20separate%20commands%20in%20quotes.%3C/li%3E%0A%3Cli%3E%3Ccode%3E-n%3C/code%3E%3A%20suppresses%20output%2C%20useful%20when%20using%20custom%20output%20commands%3C/li%3E%0A%3Cli%3E%3Ccode%3E-f%3C/code%3E%3A%20read%20the%20sed%20script%20from%20a%20file%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3ELine%20Address%3C/h2%3E%0A%3Cp%3E%3Ccode%3E%23%2C%23%3C/code%3E%3A%20range%0A%3Ccode%3E%2C%23%3C/code%3E%3A%20range%20from%20the%20matching%20line%0A%20%20%20%20-%3Ccode%3E%2C%2B%23%3C/code%3E%3A%20%23%20lines%20after%20the%20current%20ilne%0A%20%20%20%20-%3Ccode%3E%2C-%23%3C/code%3E%3A%20%23%20lines%20before%20the%20current%20line%0A%3Ccode%3E%2C%24%3C/code%3E%3A%20to%20the%20end%20of%20the%20matching%20line%0A%3Ccode%3E%23%21%3C/code%3E%3A%20negation%0A%3Ccode%3E%24%3C/code%3E%3A%20last%20line%0A%3Ccode%3E%7E%23%3C/code%3E%3A%20every%20%23%20line%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/sed.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Sed%2C%20not%20sad%20&body=https%3A//www.4thinker.com/sed.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>The separator can be any character as long as they are consistent</p>
+<p>sed 'ADDRESS'Command fileName
+sed /PATTERN/AddressCommand fileName</p>
+<ul>
+<li><code>-i</code>: makes changes on the file, suppresses output. A file extension <code>.bak</code> can be used to redirect othe output.</li>
+<li><code>;</code>: is to separate command within quotes</li>
+<li><code>-e</code>: is to connect two separate commands in quotes.</li>
+<li><code>-n</code>: suppresses output, useful when using custom output commands</li>
+<li><code>-f</code>: read the sed script from a file</li>
+</ul>
+<h2>Line Address</h2>
+<p><code>#,#</code>: range
+<code>,#</code>: range from the matching line
+    -<code>,+#</code>: # lines after the current ilne
+    -<code>,-#</code>: # lines before the current line
+<code>,$</code>: to the end of the matching line
+<code>#!</code>: negation
+<code>$</code>: last line
+<code>~#</code>: every # line …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/sed.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/printing-on-linux.html"><h1>Printing on Linux</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>November 18, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Printing%20on%20Linux%20 https%3A//www.4thinker.com/printing-on-linux.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/printing-on-linux.html&p[images][0]=&p[title]=Printing%20on%20Linux%20&p[summary]=%3Cp%3EBoth%20major%20printer%20manufacturers%20support%20Linux%20drivers%3A%20Canon%20and%20Brother.%20They%20can%20be%20downloaded%20from%20their%20support%20pages.%20Depending%20on%20the%20printer%20driver%2C%20you%20probably%20will%20need%20%3Ccode%3Elpr%3C/code%3E%2C%20but%20definitely%20%3Ccode%3Ecups%3C/code%3E%20to%20keep%20your%20sanity%20intact.%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Esudo%20apt-get%20install%20lpr%20cups%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3Ecups%20works%20well%20with%20%3Ccode%3Eroot%3C/code%3E%20and%20not%20other%20privileged%20account%20and%20if%20you%20do%20not%20have%20any%20password%20on%20the%20account%2C%20you%20need%20to%20create%20one.%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Esudo%20su%0Apasswd%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3Eor%20simply%20%3Ccode%3Esudo%20passwd%20root%3C/code%3E%3C/p%3E%0A%3Ch2%3ECommon%20commands%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3Erestart%3C/li%3E%0A%3C/ul%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/printing-on-linux.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Printing%20on%20Linux%20&body=https%3A//www.4thinker.com/printing-on-linux.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>Both major printer manufacturers support Linux drivers: Canon and Brother. They can be downloaded from their support pages. Depending on the printer driver, you probably will need <code>lpr</code>, but definitely <code>cups</code> to keep your sanity intact.</p>
+<div class="highlight"><pre><span></span>sudo apt-get install lpr cups
+</pre></div>
+
+
+<p>cups works well with <code>root</code> and not other privileged account and if you do not have any password on the account, you need to create one.</p>
+<div class="highlight"><pre><span></span>sudo su
+passwd
+</pre></div>
+
+
+<p>or simply <code>sudo passwd root</code></p>
+<h2>Common commands</h2>
+<ul>
+<li>restart</li>
+</ul> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/printing-on-linux.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/have-no-life.html"><h1>What does it mean to "have no life"?</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>November 17, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/life.html">life</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/lifestyle.html">#lifestyle</a></span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=What%20does%20it%20mean%20to%20%22have%20no%20life%22%3F%20 https%3A//www.4thinker.com/have-no-life.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/have-no-life.html&p[images][0]=&p[title]=What%20does%20it%20mean%20to%20%22have%20no%20life%22%3F%20&p[summary]=%3Cp%3EI%20began%20to%20hear%20this%20term%20since%20college.%20From%20my%20experience%2C%20it%20was%20used%20as%20an%20excuse%20for%20something%20or%20just%20a%20attempt%20to%20gain%20sympathy%20from%20peers%20%28who%20doesn%27t%20want%20to%20play%20victim%3F%29.%20I%20was%20reading%20a%20post%20by%20an%20investment%20banker%20on%20Quora%20who%20confessed%20to%20become%20wealthy%20at%20the%20cost%20of%20having%20no%20life.%20He%20was%20trying%20to%20send%20a%20message%20that%20money%20is%20not%20everything%2C%20but%20that%20got%20me%20thinking...%20do%20I%20have%20a%20life%3F%20I%20do%20not%20watch%20TV%20or%20video%20games%2C%20but%20the%20only%20place%20I%20go%20on%20weekends%20is%20church.%20Otherwise%2C%20I%20just%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/have-no-life.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=What%20does%20it%20mean%20to%20%22have%20no%20life%22%3F%20&body=https%3A//www.4thinker.com/have-no-life.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>I began to hear this term since college. From my experience, it was used as an excuse for something or just a attempt to gain sympathy from peers (who doesn't want to play victim?). I was reading a post by an investment banker on Quora who confessed to become wealthy at the cost of having no life. He was trying to send a message that money is not everything, but that got me thinking... do I have a life? I do not watch TV or video games, but the only place I go on weekends is church. Otherwise, I just …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/have-no-life.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+<div class="pagination">
+<ul>
+    <li class="prev"><a href="https://www.4thinker.com/index7.html">&larr; Previous</a></li>
+
+    <li class=""><a href="https://www.4thinker.com/index.html">1</a></li>
+    <li class=""><a href="https://www.4thinker.com/index2.html">2</a></li>
+    <li class=""><a href="https://www.4thinker.com/index3.html">3</a></li>
+    <li class=""><a href="https://www.4thinker.com/index4.html">4</a></li>
+    <li class=""><a href="https://www.4thinker.com/index5.html">5</a></li>
+    <li class=""><a href="https://www.4thinker.com/index6.html">6</a></li>
+    <li class=""><a href="https://www.4thinker.com/index7.html">7</a></li>
+    <li class="active"><a href="https://www.4thinker.com/index8.html">8</a></li>
+    <li class=""><a href="https://www.4thinker.com/index9.html">9</a></li>
+    <li class=""><a href="https://www.4thinker.com/index10.html">10</a></li>
+    <li class=""><a href="https://www.4thinker.com/index11.html">11</a></li>
+    <li class=""><a href="https://www.4thinker.com/index12.html">12</a></li>
+    <li class=""><a href="https://www.4thinker.com/index13.html">13</a></li>
+    <li class=""><a href="https://www.4thinker.com/index14.html">14</a></li>
+
+    <li class="next"><a href="https://www.4thinker.com/index9.html">Next &rarr;</a></li>
+
+</ul>
+</div>
+ 
+  
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

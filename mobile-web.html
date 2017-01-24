@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li  class="active" >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+    <div class='article'>
+      <div class="row-fluid">
+           <div class="content-title span12">
+             <h1>Mobile Web Notes</h1b>
+           </div>
+      </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>August 21, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/web.html">web</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Mobile%20Web%20Notes%20 https%3A//www.4thinker.com/mobile-web.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/mobile-web.html&p[images][0]=&p[title]=Mobile%20Web%20Notes%20&p[summary]=%3Cp%3E%3Ca%20href%3D%22http%3A//mbsy.co/7sh6q%22%3EJourney%20Into%20Mobile%3C/a%3E%20by%20Jason%20Vanlue%20%40%20codeschool.com%3C/p%3E%0A%3Ch2%3EFluid%20Layout%3A%20convert%20%3Ccode%3Epx%3C/code%3Es%20to%20%3Ccode%3Eem%3C/code%3Es%3C/h2%3E%0A%3Cp%3EDefault%20font%20size%20is%2016%20px.%20%3C/p%3E%0A%3Cp%3EContext%20for%20..%20is%20..%3C/p%3E%0A%3Cul%3E%0A%3Cli%3EWidth%3A%20container%3C/li%3E%0A%3Cli%3EMargin%3A%20container%3C/li%3E%0A%3Cli%3EPadding%3A%20element%20itself%20%3C/li%3E%0A%3Cli%3Eline-height%3A%20font-size%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3EAdaptive%20Design%20using%20Media%20Queries%3A%3C/h2%3E%0A%3Cp%3EBreak%20points%20are%20determined%20by%20viewports%20in%20Adaptive%20Design%2C%20so%20keep%20in%20mind%20the%20popular%20device%20width%20sizes%20%28e.g.%20768px%29%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%26lt%3Blink%20rel%3D%26quot%3Bstylesheet%26quot%3B%20href%3D%26quot%3Bglobal.css%26quot%3B%20media%3D%26quot%3Ball%26quot%3B%20/%26gt%3B%0A%26lt%3Blink%20rel%3D%26quot%3Bstylesheet%26quot%3B%20href%3D%26quot%3Bmain.css%26quot%3B%20media%3D%26quot%3Bscreen%26quot%3B%20/%26gt%3B%0A%26lt%3Blink%20rel%3D%26quot%3Bstylesheet%26quot%3B%20href%3D%26quot%3Bpaper.css%26quot%3B%20media%3D%26quot%3Bprint%26quot%3B%20/%26gt%3B%0A%26lt%3Blink%20rel%3D%26quot%3Bstylesheet%26quot%3B%20href%3D%26quot%3Bmobile.css%26quot%3B%20media%3D%26quot%3Bhandheld%26quot%3B/%26gt%3B%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3E%3Ccode%3Emedia%3C/code%3E%20property%20specifies%20which%20media%20the%20linked%20resource%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/mobile-web.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Mobile%20Web%20Notes%20&body=https%3A//www.4thinker.com/mobile-web.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      
+      <div class="span10">
+	<p><a href="http://mbsy.co/7sh6q">Journey Into Mobile</a> by Jason Vanlue @ codeschool.com</p>
+<h2>Fluid Layout: convert <code>px</code>s to <code>em</code>s</h2>
+<p>Default font size is 16 px. </p>
+<p>Context for .. is ..</p>
+<ul>
+<li>Width: container</li>
+<li>Margin: container</li>
+<li>Padding: element itself </li>
+<li>line-height: font-size</li>
+</ul>
+<h2>Adaptive Design using Media Queries:</h2>
+<p>Break points are determined by viewports in Adaptive Design, so keep in mind the popular device width sizes (e.g. 768px)</p>
+<div class="highlight"><pre><span></span>&lt;link rel=&quot;stylesheet&quot; href=&quot;global.css&quot; media=&quot;all&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;main.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;paper.css&quot; media=&quot;print&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;mobile.css&quot; media=&quot;handheld&quot;/&gt;
+</pre></div>
+
+
+<p><code>media</code> property specifies which media the linked resource applies to. All CSS files referred by link tags are downloaded, bu only the CSS properties that meet conditions will be applied. This approach quickly diminished in practice, because they do not  target many properties of a device very well.</p>
+<p>Media Queries, therefore, was introduced as a part of CSS3 specification. The conditions are specified in css files in the following format:  <code>@media type (cond) {...}</code>. Each conditions are wrapped in parenthesis and the conditions can have logical operators between them, which are <code>not</code>, <code>only</code>, <code>and</code>, <code>or</code>(<code>,</code>). Some popular conditions include: <code>min-width</code>, <code>max-width</code>, and <code>orientation</code>.</p>
+<div class="highlight"><pre><span></span>@media screen and (max-width: 320px) {
+ body {
+  font-size: 100%
+ }
+}
+</pre></div>
+
+
+<p>The <code>font-size</code>, <code>border</code>, <code>width</code> or <code>float</code> properties may be changed for a better viewing experience. It is a convention to put your media specific stylesheet on the bottom of your css file, for a better organization and load time.</p>
+<h2>Responsive Design</h2>
+<p>Responsive is superset of adaptive. Responsive design provides continuity between contexts, are portable, and accessible. Break points are decided by the contents. Other directives include: simplifying contents, prioritizing layout, and optimizing user experience.</p>
+<h2>Responsive Media</h2>
+<p>To make a image adjust to the screen instead of staying in a static size, first save a large sized media and set <code>max-width</code> property to adjust the size for the viewport. IE6 is not supported and for IE7&amp;FF2 in Win7, the use of <a href="http://msdn.microsoft.com/en-us/library/">AlphaImageLoader</a> is recommended.</p>
+<h2>Retina Images</h2>
+<p>In order to deal with pixelated images in retina displays, first save the larger version of media file with <code>name@2x.png</code> and apply it based on the device's pixel density. The ratio of 2 is optimal for retina, 1.5 for HD Screen of Android devices.</p>
+<div class="highlight"><pre><span></span><span class="p">@</span><span class="n">media</span>
+<span class="n">only</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">min</span><span class="o">-</span><span class="n">device</span><span class="o">-</span><span class="n">pixel</span><span class="o">-</span><span class="nl">ratio</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">),</span>
+<span class="n">only</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min</span><span class="o">-</span><span class="n">device</span><span class="o">-</span><span class="n">pixel</span><span class="o">-</span><span class="nl">ratio</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">)</span> <span class="p">{</span>
+<span class="err"> </span><span class="p">.</span><span class="n">logo</span> <span class="p">{</span>
+<span class="err">   </span><span class="n">background</span><span class="o">-</span><span class="nl">image</span><span class="p">:</span> <span class="n">url</span><span class="p">(</span><span class="n">logo</span><span class="mi">@2</span><span class="n">x</span><span class="p">.</span><span class="n">png</span><span class="p">);</span>
+<span class="err">   </span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="nl">size</span><span class="p">:</span> <span class="mi">12</span><span class="n">px</span> <span class="mi">16</span><span class="n">px</span><span class="p">;</span>
+<span class="err">   </span><span class="n">background</span><span class="o">-</span><span class="nl">size</span><span class="p">:</span><span class="err"> </span><span class="mi">12</span><span class="n">px</span> <span class="mi">16</span><span class="n">px</span><span class="p">;</span>
+<span class="err"> </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>This approach works with <code>img</code>, <code>embed</code>, <code>object</code>, <code>video</code> tags.</p>
+<p>Other robust options include:
+    - <a href="http://fittextjs.com/">FitText</a> to make font-sizing flexible
+    - <a href="http://letteringjs.com/">Lettering.js</a> for more robust control over your typography
+    - (FitVids.js)[http://fitvidsjs.com/] for flexible, responsive videos</p>
+<p>In order to get around files being downloaded unnecessarily, 
+<a href="http://scottjehl.com/picturefill/">PictureFill</a> uses javascript to handle alternative image sizes.</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;picture</span> <span class="na">alt=</span><span class="s">&quot;Our Camp Site&quot;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Smallest size first - no @media qualifier --&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">&quot;camp-site.jpeg&quot;</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- Large size - send to viewports 800px wide and up --&gt;</span>
+    <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">&quot;camp-site-lrg.jpeg&quot;</span> <span class="na">media=</span><span class="s">&quot;(min-width: 900px)&quot;</span> <span class="nt">/&gt;</span>
+    <span class="c">&lt;!-- Fallback content for non-JS or non-media-query-supporting-browsers --&gt;</span>
+    <span class="nt">&lt;noscript&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;camp-site.jpeg&quot;</span> <span class="na">alt=</span><span class="s">&quot;our camp site&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/noscript&gt;</span>
+<span class="nt">&lt;/picture&gt;</span>
+</pre></div>
+
+
+<h2>Helpful Resources</h2>
+<ul>
+<li><a href="http://www.abookapart.com/products/responsive-web-design">Responsive Web</a></li>
+<li><a href="http://easy-readers.net/books/adaptive-web-design/">Adaptive Web Design</a></li>
+<li><a href="http://responsive.is/">Responsive.is</a></li>
+<li><a href="http://www.markboulton.co.uk/">The Personal Disquiet of Mark Boulton</a></li>
+<li><a href="http://futurefriend.ly/resources.html">Future Friendly Resources</a></li>
+<li><a href="http://www.lukew.com/">LukeW Ideation + Design</a></li>
+<li><a href="http://mediaqueri.es/">Media Queries</a></li>
+<li><a href="http://mediaqueri.es/">Viewport Meta Tag</a></li>
+<li><a href="http://courseware.codeschool.com.s3.amazonaws.com/journey_into_mobile/TheLostWorld.zip">Example website: The Lost World</a></li>
+</ul>
+	<hr />
+      </div>
+
+      <div class="span8 offset2">
+          <h3>Related Posts</h3>
+      </div>
+
+    </div>
+
+      <h3>Comments</h3>
+    
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'forethinker'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

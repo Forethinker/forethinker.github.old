@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li  class="active" >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+    <div class='article'>
+      <div class="row-fluid">
+           <div class="content-title span12">
+             <h1>Vim-Airline is here!</h1b>
+           </div>
+      </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 17, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/vim.html">#vim</a></span>
+
+  <span>Read in 6 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Vim-Airline%20is%20here%21%20 https%3A//www.4thinker.com/vim-airline.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/vim-airline.html&p[images][0]=&p[title]=Vim-Airline%20is%20here%21%20&p[summary]=%3Cp%3EAirline%20is%20the%20latest%20and%20hottest%20putting%20skins%20on%20statusline.%20There%20are%20at%20least%20a%20dozen%20of%20websites%20that%20explains%20how%20to%20install%20powerline%20fonts%2C%20but%20I%20found%20them%20confusing%20and%20felt%20like%20I%20was%20dealing%20with%20a%20bad%20customer%20service%20%28%22follow%20this%20link%22%29.%20So%20here%20is%20how%20I%20got%20vim-airline%20to%20work%20with%20powerline%20fonts.%20%3C/p%3E%0A%3Cp%3EJohn%20Chain%20wrote%20about%20%3Ca%20href%3D%22http%3A//jchain.github.io/blog/2013/07/17/fly-with-vim-airline/%22%3Ewhy%20airline%20is%20better%3C/a%3E.%20In%20short%2C%20vim-arline%20uses%20less%20code%20%281/12th%20of%20powerline%2C%201/3%20of%20vim-powerline%29%20and%20it%20is%20not%20python%20dependent.%20On%20a%20side%20note%2C%20I%20did%20not%20have%20to%20follow%20his%20advice%20on%20%3Ccode%3Eset%20lazydraw%3C/code%3E%20to%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/vim-airline.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Vim-Airline%20is%20here%21%20&body=https%3A//www.4thinker.com/vim-airline.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      
+      <div class="span10">
+	<p>Airline is the latest and hottest putting skins on statusline. There are at least a dozen of websites that explains how to install powerline fonts, but I found them confusing and felt like I was dealing with a bad customer service ("follow this link"). So here is how I got vim-airline to work with powerline fonts. </p>
+<p>John Chain wrote about <a href="http://jchain.github.io/blog/2013/07/17/fly-with-vim-airline/">why airline is better</a>. In short, vim-arline uses less code (1/12th of powerline, 1/3 of vim-powerline) and it is not python dependent. On a side note, I did not have to follow his advice on <code>set lazydraw</code> to get airline working in terminal.</p>
+<p>My intention was to use Consolas font everywhere along with airline (vim, gvim, cygwin, windows, linux). I was successful, mostly. I still could not get powerline symbols to show up in cygwin terminal. Also git-gutter's color coding got lost whenever I saved a file, but I am hoping it will get straightened out over time.</p>
+<h2>Install vim-airline</h2>
+<p>I have tried Pathogen, NeoBundle, and Vundle. I recommend Vundle. I found it must faster in updating vim plugins.</p>
+<div class="highlight"><pre><span></span># in .vimrc
+Bundle &#39;blind/vim-airline&#39;
+# on commandline
+:BundleInstall!
+</pre></div>
+
+
+<h2>Font installation in Windows</h2>
+<p>I do not use any of these fonts, skip to Consolas Font section if you are a fan of that font.</p>
+<p>Download the font:</p>
+<div class="highlight"><pre><span></span>git clone https://github.com/Lokaltog/powerline-fonts
+</pre></div>
+
+
+<p>If you right click them, there should be <code>install</code> option in the menu. Or you can drag it straight to Windows Fonts folder, or  you really ought start using <a href="http://www.xiles.net/nexusfont/">NexusFont</a> to manage your font. Anyway, here are my opinions of the font.</p>
+<div class="highlight"><pre><span></span>Anonymous
+DejaVuSansMono - 2nd best looking font
+DroidSansMono - 2nd worst looking font
+Inconsolata
+InconsolataDz
+MenloforPowerline - the worst looking font
+MesloforPowerlineDZ
+SourceCodePro 
+UbuntuMono - the best looking font
+</pre></div>
+
+
+<p>All these fonts will be installed with 'Powerline' string as the suffix to their names. 'DejaVuSansMono Powerline's regular font (it shows up as Book in the font settings box) was not showing up as an option, forcing the user to choose 'Bold' or 'Bold Italic'. I was able to get the regular fonts back by deleting the 'DejaVuSansMono' font.</p>
+<h2>Font installation in Linux</h2>
+<p>Once again, skip to Consolas Font section if you are a fan of that font.
+I use Crunchbang Linux, so the installation details may differ. The installation details from <a href="https://powerline.readthedocs.org/en/latest/installation/linux.html#font-installation">Powerline Documentation</a> says that 'there are two ways of installing the required fonts'. I think it is meant to says two STEPS, because they go together. Here is what I did.</p>
+<div class="highlight"><pre><span></span>cd ~/.fonts
+git clone https://github.com/Lokaltog/powerline-fonts
+wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
+wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+# Merge the contents of 10-powerline-symbols.conf to ~/.fonts.conf
+fc-cache -vf ~/.fonts
+</pre></div>
+
+
+<p>I say it must be two STEPS, because if you look at the content of '10-powerline-symbols.conf', it is patching 'Powerlinesymbols.otf' to Lokaltog's fonts and some of the popular linux fonts. The article does not make it clear that first way is a prerequisite for the second way, but it is the only explanation on the web I found, so I am very grateful. You can see the copy of my modified <a href="files/.fonts.conf">.fonts.conf here</a>.</p>
+<h2>Consolas Font</h2>
+<p>Consolas is my favorite font, because it is a popular choice and I have no spine. I kid. Consolas font has design that is simple and clear. It is very comfortable to read. It is as if the font is trying its best to hide away complexity and let you focus on what you actually see. Euguneching was the original author of <code>consolas-powerline-vim</code>, a font patched up for powerline. When I tried it back in 2012, it did not work for me. So I gave up on using powerline altogether. That is how much consolas means to me. I even tried using <code>fontpatcher</code> on a copy of consolas font from Windows, but it still would not work. But I found <a href="https://github.com/runsisi/consolas-font-for-powerline">Runsisi's version of font</a> this time around and it worked well (Big dot next to trailing line notifcation in Windows gVim, does not show up though, sadly). I do not know what kind of magic he pulled off, but font designing is something that I will never do, so I am comfortable with not knowing the underlying details. And no, I will not bother fixing that one glyph in Windows gVim.</p>
+<p>The step for Linux is similar to that of above:</p>
+<div class="highlight"><pre><span></span>cd ~/.fonts
+git clone https://github.com/runsisi/consolas-font-for-powerline
+fc-cache -vf ~/.fonts
+</pre></div>
+
+
+<h2>Airline in Action</h2>
+<p>You need to set font encoing to 'utf-8' for glyphs to display properly. In gVim, that means setting <code>set encoding=utf-8</code>; In terminals, going to the preference and change the appropriate settings. For cygwin, it should be done already, but it can be changed in 'cygwin.bat' file in the cygwin installation directory. <code>set LANG=en_US.UTF-8</code></p>
+<p>Then I have the following lines in my .vimrc. This allows me to set the consolas font for Windows gVim and Linux gVim, respectively.</p>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="k">has</span> (<span class="s">&#39;win32&#39;</span>)
+    <span class="n">set</span> <span class="n">guifont</span>=<span class="n">Powerline_Consolas:h9:cANSI</span>
+<span class="k">else</span>
+    <span class="n">set</span> <span class="n">guifont</span>=<span class="n">Powerline</span>\ <span class="n">Consolas</span>\ <span class="mi">10</span>
+<span class="n">endif</span>
+</pre></div>
+
+
+<p>Airline's tabline is really well designed. It is turned off by default, but I really recommend the readers to use it. I used to have a problem where the tab separator would not show clearly in my Windows gVim. That problem is not gone thanks to Airline's tabline. Airline's themes come included in the git repo. <a href="https://github.com/bling/vim-airline/wiki/Screenshots#powerlineish-theme">The screenshots are also available online.</a>. I think <code>powerlineish</code> theme looks the best.</p>
+<div class="highlight"><pre><span></span>let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme             = &#39;powerlineish&#39;
+</pre></div>
+
+
+<h2>Cygwin terminal</h2>
+<p>As I mentioned before, the symbols do not work. But it is very easy to turn on the non-glyph mode. Because glyph is turned off by default you just enable it with GUI mode.</p>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="k">has</span> (<span class="s">&#39;win32unix&#39;</span>) &amp;&amp; !<span class="k">has</span>(<span class="s">&#39;gui_running&#39;</span>)
+    <span class="k">let</span> <span class="n">g:airline_powerline_fonts</span> = <span class="mi">1</span>
+<span class="n">endif</span>
+</pre></div>
+
+
+<h2>Conclusion</h2>
+<p>Airline makes vim so beautiful. I get butterflies and chills as I stare into my vim now. I used to think that vim's vanilla version of <code>statusline</code> was enough since it shows all the information I need. Boy I was wrong. Color conveys information more quickly and efficiently than one may expect. I now believe that color encoding can be improved, always. Although color design is not a task I would pursue, it is something that I will keep tab on what pros are doing.</p>
+	<hr />
+      </div>
+
+      <div class="span8 offset2">
+          <h3>Related Posts</h3>
+            <ul>
+                <li><a href="https://www.4thinker.com/vim-fixes.html">Vim Essential Fixes</a></li>
+                <li><a href="https://www.4thinker.com/vim-markdown-preview.html">Preview Markdown from Vim</a></li>
+                <li><a href="https://www.4thinker.com/vim-plugins-alternatives.html">Vim Plugins I use</a></li>
+                <li><a href="https://www.4thinker.com/vim-shougo.html">Shougo's Neocomplcache + Neosnippet + Vimproc + Vimshell</a></li>
+            </ul>
+      </div>
+
+    </div>
+
+      <h3>Comments</h3>
+    
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'forethinker'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

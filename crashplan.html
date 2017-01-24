@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li  class="active" >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+    <div class='article'>
+      <div class="row-fluid">
+           <div class="content-title span12">
+             <h1>Installing Crashplan on Pogoplug</h1b>
+           </div>
+      </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>April 22, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/server.html">#server</a>, <a href="https://www.4thinker.com/tag/backup.html">#backup</a></span>
+
+  <span>Read in 4 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Installing%20Crashplan%20on%20Pogoplug%20 https%3A//www.4thinker.com/crashplan.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/crashplan.html&p[images][0]=&p[title]=Installing%20Crashplan%20on%20Pogoplug%20&p[summary]=%3Cp%3EI%20am%20assuming%20that%20you%20have%20Arch%20Linux%20Arm%20running%20on%20your%20Pogoplug.%20My%20pogoplug%20is%20V2%2C%20which%20has%20Marvell%20processor%20in%20it.%20%281.2%20Mhz%29.%20Here%20is%20%3Ca%20href%3D%22http%3A//obihoernchen.net/wordpress/770/plug_computer_arch_linux/%22%3Ean%20excellent%20article%20by%20Obihoernchen%3C/a%3E%20that%20helped%20me%20to%20get%20things%20set%20up%20properly.%3C/p%3E%0A%3Ch2%3EInstalling%20Java%20SE%3C/h2%3E%0A%3Cp%3EDownload%20the%20one%20that%20starts%20with%20%22ARMv5%20Linux%22%20from%20the%20%3Ca%20href%3D%22http%3A//www.oracle.com/technetwork/java/embedded/downloads/javase/index.html%22%3EOracle%20Website%3C/a%3E.%20Unfortunately%2C%20You%20will%20have%20to%20sign%20up%20for%20Oracle%20account%20and%20upload%20the%20file%20to%20your%20server%20via%20SCP%3A%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%3Cspan%20class%3D%22c1%22%3E%23%20cd%20/path/to/your/file%3C/span%3E%0A%3Cspan%20class%3D%22c1%22%3E%23%20nas%20is%20the%20alias%20defined%20in%20.ssh%20file%20for%20my%20server.%20Change%20%26%2339%3Bnas%26%2339%3B%20with%20your%20server%26%2339%3Bs%20ip%20address%20%E2%80%A6%3C/span%3E%3C/pre%3E%3C/div%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/crashplan.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Installing%20Crashplan%20on%20Pogoplug%20&body=https%3A//www.4thinker.com/crashplan.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      
+      <div class="span10">
+	<p>I am assuming that you have Arch Linux Arm running on your Pogoplug. My pogoplug is V2, which has Marvell processor in it. (1.2 Mhz). Here is <a href="http://obihoernchen.net/wordpress/770/plug_computer_arch_linux/">an excellent article by Obihoernchen</a> that helped me to get things set up properly.</p>
+<h2>Installing Java SE</h2>
+<p>Download the one that starts with "ARMv5 Linux" from the <a href="http://www.oracle.com/technetwork/java/embedded/downloads/javase/index.html">Oracle Website</a>. Unfortunately, You will have to sign up for Oracle account and upload the file to your server via SCP:</p>
+<div class="highlight"><pre><span></span><span class="c1"># cd /path/to/your/file</span>
+<span class="c1"># nas is the alias defined in .ssh file for my server. Change &#39;nas&#39; with your server&#39;s ip address</span>
+scp ejre* nas:/usr/lib
+ssh nas
+<span class="nb">cd</span> /usr/lib
+tar -xzvf ejre*
+rm -rf ./ejre*
+<span class="c1"># create a symlink to the java binary</span>
+sudo ln -s /usr/lib/jvm/bin/java /sbin/java
+<span class="c1"># Check if your java works; you might have to logout and log back in for the PATH to refresh</span>
+java -version
+</pre></div>
+
+
+<h2>Install <a href="http://www.crashplan.com/consumer/download.html?os=Linux">Crashplan</a></h2>
+<div class="highlight"><pre><span></span>wget http://download.crashplan.com/installs/linux/install/CrashPlan/CrashPlan_3.4.1_Linux.tgz
+tar -xzvf CrashPlan_3.4.1_Linux.tgz
+./install.sh
+<span class="c1"># choose the default for all options</span>
+<span class="nb">cd</span> /usr/local/crashplan
+<span class="c1"># -p is to preserve the file attributes</span>
+cp -p linbjtux.so<span class="o">{</span>,.orig<span class="o">}</span>
+wget http://www.opticality.com/blog/wp-content/uploads/files/libjtux.so
+<span class="nb">cd</span> /tmp
+wget http://ftp.us.debian.org/debian/pool/main/libj/libjna-java/libjna-java_3.2.7-4_armel.deb
+ar vx libjna-java_3.2.7-4_armel.deb 
+tar -xzf data.tar.gz
+<span class="nb">cd</span> /usr/local/crashplan/lib
+mkdir -p com/sun/jna/linux-arm
+cp /tmp/usr/lib/jni/libjnidispatch.so com/sun/jun/linux-arm/
+cp -p jna-3.2.5<span class="o">{</span>,.orig<span class="o">}</span>
+</pre></div>
+
+
+<p>libjtux.so was created by <a href="http://www.opticality.com/blog/2011/07/16/installing-crashplan-on-a-pogoplug-pro/">hadar</a>, but just in case, I have my copy <a href="files/libjtux.so">here</a>.</p>
+<h2>Setting up systemd</h2>
+<div class="highlight"><pre><span></span>wget http://4thinker.com/files/crashplan
+cp crashplan /etc/rc.d/
+
+wget http://4thinker.com/files/crashplan.service
+cp crashplan.service /usr/lib/systemd/system/
+</pre></div>
+
+
+<h2>Test via systemctl</h2>
+<div class="highlight"><pre><span></span>systemctl <span class="nb">enable</span> crashplan
+<span class="c1">#check the status of crashplan</span>
+systemctl status crashplan
+</pre></div>
+
+
+<h2>Log in from the Crashplan client GUI</h2>
+<p>On you computer find this file: 'c:\Program Files\CrashPlan\conf\ui.properties' and uncomment the following line</p>
+<div class="highlight"><pre><span></span>servicePort=4200
+</pre></div>
+
+
+<p>And open the SSH tunnel to your server's 4243 port which services Crashplan by default:</p>
+<div class="highlight"><pre><span></span>ssh -N -L <span class="m">4200</span>:localhost:4243 username@servername
+</pre></div>
+
+
+<p>Launch crashplan and its head should read data from the server. You can check this by looking at the name of the computer on the program. I actually have the following line in my <code>.bashrc</code> so that I could set up the tunnel and launch the crashplan at the same time. '&amp;', runs the command in the background.</p>
+<div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">crashplan</span><span class="o">=</span><span class="s1">&#39;ssh -N -L 4200:localhost:4243 nas&amp; &quot;$(cygpath &quot;C:\Program Files (x86)\CrashPlan\CrashPlanDesktop.exe&quot;)&quot; &#39;</span>
+</pre></div>
+
+
+<p>I also added these lines in my crontab so that crashplan does hog the network during the peak times. You can edit crontab with <code>crontab -e</code> which opens up the file in your default editor (as defined by $EDITOR) and see the content of crontab with <code>crontab -l</code> in your commandline.</p>
+<div class="highlight"><pre><span></span>@daily systemctl start crashplan
+0 14 * * 1-5 systemctl stop crashplan
+</pre></div>
+
+
+<p>And you should be good to go!</p>
+<h2>Other JDKs and their shortcomings</h2>
+<p>openjdk8 does not work becuase it does not have a support for ARMv5 yet
+openjdk7 does not work because there is a bug in the interpreter. I get the follow message:</p>
+<div class="highlight"><pre><span></span> Error: caught unhandled signal 4
+ Error: caught unhandled signal 11
+ etc...
+</pre></div>
+
+
+<p>jre6 works, but it is a bit outdated and has poorer performance. (https://blogs.oracle.com/henrik/entry/java_se_embedded_7u2_released)</p>
+<h2>References</h2>
+<ul>
+<li><a href="http://gmrpi.blogspot.com/2013/02/how-to-install-java-on-raspberry-pi.html">HOW-TO Install java on the Raspberry PI</a></li>
+<li><a href="http://archlinuxarm.org/forum/viewtopic.php?f=31&amp;t=5120">CrashPlan with JDK 8</a></li>
+<li><a href="http://www.opticality.com/blog/2011/07/16/installing-crashplan-on-a-pogoplug-pro/">Installing CrashPlan on a PogoPlug Pro</a></li>
+</ul>
+	<hr />
+      </div>
+
+      <div class="span8 offset2">
+          <h3>Related Posts</h3>
+            <ul>
+                <li><a href="https://www.4thinker.com/backup-software.html">The backup software</a></li>
+                <li><a href="https://www.4thinker.com/samba.html">Samba Quick Setup Guide</a></li>
+            </ul>
+      </div>
+
+    </div>
+
+      <h3>Comments</h3>
+    
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'forethinker'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

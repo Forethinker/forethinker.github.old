@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li  class="active" >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+    <div class='article'>
+      <div class="row-fluid">
+           <div class="content-title span12">
+             <h1>Unix Utility Find</h1b>
+           </div>
+      </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>December 02, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/shell.html">#shell</a></span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Unix%20Utility%20Find%20 https%3A//www.4thinker.com/unix-find.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/unix-find.html&p[images][0]=&p[title]=Unix%20Utility%20Find%20&p[summary]=%3Ch2%3EDefault%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3Ebreadth-first-search%3C/li%3E%0A%3Cli%3Esearch%20starts%20from%2024%20hours%20ago%3C/li%3E%0A%3Cli%3Esearch%20the%20current%20directory%3C/li%3E%0A%3Cli%3E-P%3A%20never%20follow%20symlink%20%28Default%29%3C/li%3E%0A%3Cli%3E%3Ccode%3E%2A%3C/code%3E%20match%20any%20characters%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3EPatterns%3C/h2%3E%0A%3Cp%3EEach%20option%20has%20optional%20prefix%20%3Ccode%3E-i%3C/code%3E%20for%20case-insensitivity%0A-%20name%0A-%20regex%0A-%20path%3C/p%3E%0A%3Ch2%3ENumbers%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3Einum%3A%20inode%20number%3C/li%3E%0A%3Cli%3Elinks%3A%20number%20of%20links%3C/li%3E%0A%3Cli%3Egid%3A%20group%20ID%3C/li%3E%0A%3Cli%3Euid%3A%20user%20ID%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3EAttributes%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3Emount%3A%20do%20no%20search%20through%20mounted%20directories%20%28CD%2C%20USB%2C%20remote%20drive%29%3C/li%3E%0A%3Cli%3Enogroup%3C/li%3E%0A%3Cli%3Enouser%3C/li%3E%0A%3Cli%3Ereadable%3C/li%3E%0A%3Cli%3Eempty%3C/li%3E%0A%3Cli%3Eexectuable%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3EOthers%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3Esamefile%3C/li%3E%0A%3Cli%3Euser%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3Esize%3C/h2%3E%0A%3Ch2%3ENegating%20Search%20Query%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3E%3Ccode%3E%21%3C/code%3E%20and%20%3Ccode%3E-not%3C/code%3E%20does%20the%20same%20thing%2C%20except%20that%20%3Ccode%3E-not%3C/code%3E%20is%20POSIX-compliant.%20The%20expression%20that%20comes%20after%20is%20affected%20and%20it%20needs%20to%20be%20escaped%20%3Ccode%3E%5C%28%20...%20%5C%29%3C/code%3E%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3EExpression%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3EExpressions%20are%20logically%20%3Ccode%3Eor%3C/code%3Eed%20%E2%80%A6%3C/li%3E%3C/ul%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/unix-find.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Unix%20Utility%20Find%20&body=https%3A//www.4thinker.com/unix-find.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      
+      <div class="span10">
+	<h2>Default</h2>
+<ul>
+<li>breadth-first-search</li>
+<li>search starts from 24 hours ago</li>
+<li>search the current directory</li>
+<li>-P: never follow symlink (Default)</li>
+<li><code>*</code> match any characters</li>
+</ul>
+<h2>Patterns</h2>
+<p>Each option has optional prefix <code>-i</code> for case-insensitivity
+- name
+- regex
+- path</p>
+<h2>Numbers</h2>
+<ul>
+<li>inum: inode number</li>
+<li>links: number of links</li>
+<li>gid: group ID</li>
+<li>uid: user ID</li>
+</ul>
+<h2>Attributes</h2>
+<ul>
+<li>mount: do no search through mounted directories (CD, USB, remote drive)</li>
+<li>nogroup</li>
+<li>nouser</li>
+<li>readable</li>
+<li>empty</li>
+<li>exectuable</li>
+</ul>
+<h2>Others</h2>
+<ul>
+<li>samefile</li>
+<li>user</li>
+</ul>
+<h2>size</h2>
+<h2>Negating Search Query</h2>
+<ul>
+<li><code>!</code> and <code>-not</code> does the same thing, except that <code>-not</code> is POSIX-compliant. The expression that comes after is affected and it needs to be escaped <code>\( ... \)</code></li>
+</ul>
+<h2>Expression</h2>
+<ul>
+<li>Expressions are logically <code>or</code>ed with <code>-o</code> and space is implied and <code>-a</code></li>
+</ul>
+<h2>types (first letter is the option)</h2>
+<ul>
+<li>block, character, directory, pipe, file, link, socket</li>
+</ul>
+<h2>file comparison</h2>
+<ul>
+<li>newer: modified time than the specified file</li>
+<li>newerXY: XY can be one of the prefix below
+the argument is the filename to use for comparison</li>
+</ul>
+<h2>time</h2>
+<p><em>prefix</em></p>
+<div class="highlight"><pre><span></span>c - changed
+a - accessed
+m - modified
+</pre></div>
+
+
+<p><em>root</em></p>
+<div class="highlight"><pre><span></span>min - minutes
+time - days (24 hours)
+</pre></div>
+
+
+<p><em>space + number</em></p>
+<div class="highlight"><pre><span></span>+ greater
+- less than
+exactly otherwise
+</pre></div>
+
+
+<ul>
+<li>used: accessedTimes + n*days &gt; modifiedTime</li>
+<li>anewer: accessedTime &gt; modifiedTime</li>
+<li>cnewer: changedTime &gt; modifiedTime</li>
+<li>daystart: measure time from the beginning of today</li>
+</ul>
+<h2>Actions</h2>
+<ul>
+<li>delete (implies depth)</li>
+<li>
+<p>prune: do not descend into driectory, cannot use with <code>depth</code> or <code>delete</code></p>
+<p><b></b>
+find [path] -type d [conditions to prune] -prune -o [your usual conditions] [actions to perform]</p>
+</li>
+<li>
+<p>without <code>-typd d</code>, <code>prune</code> will not print the pruned files, but will still print out the directories containing them. <a href="http://stackoverflow.com/a/1489405/986067">stackoverflow</a></p>
+</li>
+<li>prune is delimited by <code>-o</code> for its conditional expressions, except when when it is preceded directly next to <code>-o</code>.</li>
+</ul>
+<h3>Actions (-ls)</h3>
+<p>if the flag is prefixed with <code>f</code>, a fileName for output is to be passed as the argument to the flag.
+- ls:
+- print: fullName
+- print0: fullName appended with a null character
+- printf: formatted output</p>
+<h3>Actions (-exec)</h3>
+<p>the argument is any executable in the path
+<code>execdir</code>: excutes the command on the subdirectory where the matching file was found
+<code>ok</code>: <code>exec</code> with confirmation
+<code>okdir</code>: <code>execdir</code> with confirmation
+<code>"{}"</code>: is alias for the matched file name(s). Use double quotes for possible spaces between names
+<code>\;</code>: execute the command on each matched file
+<code>\+</code>: append all file names then pass to the command</p>
+<p>only shows the line numbers</p>
+<div class="highlight"><pre><span></span>find . -exec grep -Hn hello {} \;
+</pre></div>
+
+
+<p>show also the filename</p>
+<div class="highlight"><pre><span></span>find . -exec grep -n hello /dev/null {} \;
+</pre></div>
+
+
+<h2>Depth</h2>
+<ul>
+<li>it is better to include it early in the options so that you don't get a warning</li>
+<li>depth: process each directory's contents before the directory itself (Depth First Tree)</li>
+<li>maxdepth:
+sub-directory level 2 and 4
+-mindepth 3 -maxdepth 5</li>
+</ul>
+<h2>symlinks</h2>
+<ul>
+<li>L: follow symlinks</li>
+<li>H: do not follow symlink except for command line argument processing</li>
+</ul>
+<h2>Permission</h2>
+<ul>
+<li>perm: permission</li>
+</ul>
+<h2>regex</h2>
+<ul>
+<li>follows the syntax of grep: special characters needs to be escaped and</li>
+</ul>
+<h2>Excluding a directory</h2>
+<p>http://stackoverflow.com/questions/4210042/exclude-directory-from-find-command</p>
+	<hr />
+      </div>
+
+      <div class="span8 offset2">
+          <h3>Related Posts</h3>
+            <ul>
+                <li><a href="https://www.4thinker.com/zsh-over-fish.html"></a></li>
+                <li><a href="https://www.4thinker.com/python-tricks.html">A collection of useful python scripts</a></li>
+                <li><a href="https://www.4thinker.com/keybindings.html">finding key codes to use for bindkey</a></li>
+                <li><a href="https://www.4thinker.com/powershell-notes.html">PowerShell Notes</a></li>
+                <li><a href="https://www.4thinker.com/ssh.html">SSH recipes</a></li>
+            </ul>
+      </div>
+
+    </div>
+
+      <h3>Comments</h3>
+    
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'forethinker'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+
+<h2>Archives</h2>
+
+<table class="table table-striped">
+    <tbody>
+        <tr>
+        <td>06 Jun 2016</td>
+        <td><a href='gadgets-2016.html'>My Choice of Hardware in 2016</a></td>
+        </tr>
+        <tr>
+        <td>07 Apr 2016</td>
+        <td><a href='dslr-camera-lens.html'>Minimalist Camera Setup</a></td>
+        </tr>
+        <tr>
+        <td>23 Mar 2016</td>
+        <td><a href='chrome-flash-plugin.html'>Ironing out flash issues on Google Chrome</a></td>
+        </tr>
+        <tr>
+        <td>28 Jan 2016</td>
+        <td><a href='mouse-settings.html'>Adjusting input device settings</a></td>
+        </tr>
+        <tr>
+        <td>18 Jan 2016</td>
+        <td><a href='webdav.html'>WebDAV vs FTP</a></td>
+        </tr>
+        <tr>
+        <td>02 Jan 2016</td>
+        <td><a href='cellphone.html'>What I want in a phone</a></td>
+        </tr>
+        <tr>
+        <td>17 Dec 2015</td>
+        <td><a href='perrier.html'>I am addicted to perrier and I cannot lie</a></td>
+        </tr>
+        <tr>
+        <td>16 Dec 2015</td>
+        <td><a href='charging-devices.html'>Why do you bother charging your wireless devices?</a></td>
+        </tr>
+        <tr>
+        <td>23 Nov 2015</td>
+        <td><a href='backup.html'>Backup strategy</a></td>
+        </tr>
+        <tr>
+        <td>23 Nov 2015</td>
+        <td><a href='synology, backup, nas.html'>Network Attached Storage experiments</a></td>
+        </tr>
+        <tr>
+        <td>19 Nov 2015</td>
+        <td><a href='relationship.html'>Construction Communication Tactics in Relationship</a></td>
+        </tr>
+        <tr>
+        <td>27 Apr 2015</td>
+        <td><a href='photography.html'>Should I get into photography</a></td>
+        </tr>
+        <tr>
+        <td>25 Apr 2015</td>
+        <td><a href='gvim-in-windows.html'>Using 64-bit gVim in Windows</a></td>
+        </tr>
+        <tr>
+        <td>16 Mar 2015</td>
+        <td><a href='operating-systems.html'>Operating Systems</a></td>
+        </tr>
+        <tr>
+        <td>06 Mar 2015</td>
+        <td><a href='flash_drives.html'>Every experience I had with a flash drive</a></td>
+        </tr>
+        <tr>
+        <td>14 Feb 2015</td>
+        <td><a href='grunt.html'>Grunt makes me smile</a></td>
+        </tr>
+        <tr>
+        <td>07 Jan 2015</td>
+        <td><a href='beats-solo-2.0.html'>Beats Solo 2.0 vs Other earphones</a></td>
+        </tr>
+        <tr>
+        <td>18 Dec 2014</td>
+        <td><a href='heartache.html'>Heartache of being a Good Sport</a></td>
+        </tr>
+        <tr>
+        <td>06 Dec 2014</td>
+        <td><a href='black-on-white.html'>lighter fonts on darker screen</a></td>
+        </tr>
+        <tr>
+        <td>24 Nov 2014</td>
+        <td><a href='daily-devotional.html'>Daily Devotional Every Night</a></td>
+        </tr>
+        <tr>
+        <td>18 Nov 2014</td>
+        <td><a href='coffeescript.html'>Coffeescript everwhere</a></td>
+        </tr>
+        <tr>
+        <td>18 Nov 2014</td>
+        <td><a href='vagrant.html'>Vagrant</a></td>
+        </tr>
+        <tr>
+        <td>17 Oct 2014</td>
+        <td><a href='hg-to-git.html'>Using git for hg repository.</a></td>
+        </tr>
+        <tr>
+        <td>26 Aug 2014</td>
+        <td><a href='hostname.html'>Sendmail on Ubuntu</a></td>
+        </tr>
+        <tr>
+        <td>15 Aug 2014</td>
+        <td><a href='javascript-package-managers.html'>Javascript Package managers</a></td>
+        </tr>
+        <tr>
+        <td>28 Jul 2014</td>
+        <td><a href='pelican-customization.html'>Pelican Customization</a></td>
+        </tr>
+        <tr>
+        <td>20 Jul 2014</td>
+        <td><a href='aws-ec2.html'>Learning to use AWS EC2</a></td>
+        </tr>
+        <tr>
+        <td>20 Jul 2014</td>
+        <td><a href='media-conversion.html'>Converting and Transferring Various Media Files</a></td>
+        </tr>
+        <tr>
+        <td>17 Jul 2014</td>
+        <td><a href='web-api.html'>Web API notes</a></td>
+        </tr>
+        <tr>
+        <td>16 Jul 2014</td>
+        <td><a href='learning-a-new-language.html'>Food for thought if you are learning a new language</a></td>
+        </tr>
+        <tr>
+        <td>13 Jul 2014</td>
+        <td><a href='young-programmer-career.html'>What should I strive to do as a young software engineer?</a></td>
+        </tr>
+        <tr>
+        <td>13 Jul 2014</td>
+        <td><a href='advices-for-20s.html'>Advices that worked for me in my 20s</a></td>
+        </tr>
+        <tr>
+        <td>12 Jul 2014</td>
+        <td><a href='parental-control-mobile.html'>Setting up a filter on your (unrooted) phone</a></td>
+        </tr>
+        <tr>
+        <td>11 Jul 2014</td>
+        <td><a href='windows-tasks-scheduler.html'>Using Windows Tasks Scheduler</a></td>
+        </tr>
+        <tr>
+        <td>27 Jun 2014</td>
+        <td><a href='better-without-porn.html'>Porn is like cigarettes/cocaine to your psychological health.</a></td>
+        </tr>
+        <tr>
+        <td>15 Jun 2014</td>
+        <td><a href='nginx.html'>nginx is better than apache</a></td>
+        </tr>
+        <tr>
+        <td>19 May 2014</td>
+        <td><a href='chrome-browser-tools.html'></a></td>
+        </tr>
+        <tr>
+        <td>19 May 2014</td>
+        <td><a href='google-chrome-settings.html'>Google Chrome Settings</a></td>
+        </tr>
+        <tr>
+        <td>13 May 2014</td>
+        <td><a href='centos-fixes.html'>CentOS fixes</a></td>
+        </tr>
+        <tr>
+        <td>02 May 2014</td>
+        <td><a href='linux-eye-openers.html'>Linux Eye Openers</a></td>
+        </tr>
+        <tr>
+        <td>02 May 2014</td>
+        <td><a href='nfs.html'>Network File System</a></td>
+        </tr>
+        <tr>
+        <td>29 Apr 2014</td>
+        <td><a href='python-libraries.html'>My Pocketbook for Python libraries</a></td>
+        </tr>
+        <tr>
+        <td>25 Apr 2014</td>
+        <td><a href='ubnutu-fixes.html'>Ubuntu configurations and fixes</a></td>
+        </tr>
+        <tr>
+        <td>30 Mar 2014</td>
+        <td><a href='bitcoin-rant.html'>My thoughts and predictions on bitcoin</a></td>
+        </tr>
+        <tr>
+        <td>29 Mar 2014</td>
+        <td><a href='retirement-investment.html'>My Simplified Investment Guide for Retirement</a></td>
+        </tr>
+        <tr>
+        <td>17 Mar 2014</td>
+        <td><a href='latex.html'>Learning Latex</a></td>
+        </tr>
+        <tr>
+        <td>17 Mar 2014</td>
+        <td><a href='latex-setup.html'>Setting up latex</a></td>
+        </tr>
+        <tr>
+        <td>12 Mar 2014</td>
+        <td><a href='time.html'>Time synchronization</a></td>
+        </tr>
+        <tr>
+        <td>08 Mar 2014</td>
+        <td><a href='apache.html'>Apache Notes</a></td>
+        </tr>
+        <tr>
+        <td>05 Mar 2014</td>
+        <td><a href='python-fixes.html'>Things I had to lookup while using Python</a></td>
+        </tr>
+        <tr>
+        <td>03 Mar 2014</td>
+        <td><a href='conversation.html'>Having a great conversation is like playing a great tennis game</a></td>
+        </tr>
+        <tr>
+        <td>21 Feb 2014</td>
+        <td><a href='samba.html'>Samba Quick Setup Guide</a></td>
+        </tr>
+        <tr>
+        <td>20 Feb 2014</td>
+        <td><a href='vmware-tools.html'>VMWare Tools Manual Installation</a></td>
+        </tr>
+        <tr>
+        <td>16 Feb 2014</td>
+        <td><a href='language-comparisons.html'>My messy, incomplete programming languages comparison chart</a></td>
+        </tr>
+        <tr>
+        <td>16 Feb 2014</td>
+        <td><a href='windows-over-linux.html'>Going back to Windows as my primary OS</a></td>
+        </tr>
+        <tr>
+        <td>14 Feb 2014</td>
+        <td><a href='unix-tar.html'>Unix Tar</a></td>
+        </tr>
+        <tr>
+        <td>14 Feb 2014</td>
+        <td><a href='linux-setup.html'>Setting Up Linux</a></td>
+        </tr>
+        <tr>
+        <td>14 Feb 2014</td>
+        <td><a href='cygwin-setup.html'>How I setup my Cygwin</a></td>
+        </tr>
+        <tr>
+        <td>14 Feb 2014</td>
+        <td><a href='union-find.html'>Union Find</a></td>
+        </tr>
+        <tr>
+        <td>13 Feb 2014</td>
+        <td><a href='truecrypt.html'>Trucrypt</a></td>
+        </tr>
+        <tr>
+        <td>13 Feb 2014</td>
+        <td><a href='gadgets.html'>My Choice of Hardware</a></td>
+        </tr>
+        <tr>
+        <td>25 Jan 2014</td>
+        <td><a href='ssh.html'>SSH recipes</a></td>
+        </tr>
+        <tr>
+        <td>25 Jan 2014</td>
+        <td><a href='windows-over-mac.html'>Windows is the best OS for Personal Use</a></td>
+        </tr>
+        <tr>
+        <td>23 Jan 2014</td>
+        <td><a href='vmware-view.html'>How to install VMWare View on Debian</a></td>
+        </tr>
+        <tr>
+        <td>03 Jan 2014</td>
+        <td><a href='ppa-in-debian.html'>PPA in Debian</a></td>
+        </tr>
+        <tr>
+        <td>01 Jan 2014</td>
+        <td><a href='auto-brightness.html'>Setting Auto-brightness with Calise and brightness.py</a></td>
+        </tr>
+        <tr>
+        <td>22 Dec 2013</td>
+        <td><a href='parental-control.html'>Serious Internet Filtering (Parental Control) with DD-WRT + OpenDNS + IPTables</a></td>
+        </tr>
+        <tr>
+        <td>18 Dec 2013</td>
+        <td><a href='negotiation.html'>How your perception of negotiation could hurt you</a></td>
+        </tr>
+        <tr>
+        <td>13 Dec 2013</td>
+        <td><a href='vsphere-quirks.html'>vSphere Client Quirks</a></td>
+        </tr>
+        <tr>
+        <td>02 Dec 2013</td>
+        <td><a href='backup-software.html'>The backup software</a></td>
+        </tr>
+        <tr>
+        <td>02 Dec 2013</td>
+        <td><a href='user-management.html'>pdbedit to configure samba on linux machine</a></td>
+        </tr>
+        <tr>
+        <td>02 Dec 2013</td>
+        <td><a href='unix-grep.html'>Global Regular Expression Print</a></td>
+        </tr>
+        <tr>
+        <td>02 Dec 2013</td>
+        <td><a href='unix-find.html'>Unix Utility Find</a></td>
+        </tr>
+        <tr>
+        <td>20 Nov 2013</td>
+        <td><a href='awk.html'>This is Awk. Word.</a></td>
+        </tr>
+        <tr>
+        <td>20 Nov 2013</td>
+        <td><a href='unix-resource-management.html'>Unix resource management</a></td>
+        </tr>
+        <tr>
+        <td>20 Nov 2013</td>
+        <td><a href='unix-top.html'>Top cheat sheet</a></td>
+        </tr>
+        <tr>
+        <td>20 Nov 2013</td>
+        <td><a href='unix-job-management.html'>Unix job management</a></td>
+        </tr>
+        <tr>
+        <td>20 Nov 2013</td>
+        <td><a href='sed.html'>Sed, not sad</a></td>
+        </tr>
+        <tr>
+        <td>18 Nov 2013</td>
+        <td><a href='printing-on-linux.html'>Printing on Linux</a></td>
+        </tr>
+        <tr>
+        <td>17 Nov 2013</td>
+        <td><a href='have-no-life.html'>What does it mean to "have no life"?</a></td>
+        </tr>
+        <tr>
+        <td>04 Nov 2013</td>
+        <td><a href='ondir.html'>Use Ondir to change SSH config file based on the current directory</a></td>
+        </tr>
+        <tr>
+        <td>30 Oct 2013</td>
+        <td><a href='learning-chinese.html'>Learning Chinese</a></td>
+        </tr>
+        <tr>
+        <td>29 Oct 2013</td>
+        <td><a href='windows-quirks.html'>Windows Quirks</a></td>
+        </tr>
+        <tr>
+        <td>25 Oct 2013</td>
+        <td><a href='moving-home-directory.html'>Moving Home Directory</a></td>
+        </tr>
+        <tr>
+        <td>22 Oct 2013</td>
+        <td><a href='links.html'>Links</a></td>
+        </tr>
+        <tr>
+        <td>22 Oct 2013</td>
+        <td><a href='powershell-notes.html'>PowerShell Notes</a></td>
+        </tr>
+        <tr>
+        <td>15 Oct 2013</td>
+        <td><a href='linux-install-to-fix.html'>Problems that can be solved with a simple installation</a></td>
+        </tr>
+        <tr>
+        <td>14 Oct 2013</td>
+        <td><a href='firefox.html'>Firefox Configuration</a></td>
+        </tr>
+        <tr>
+        <td>14 Oct 2013</td>
+        <td><a href='unix-du.html'>Unix Utility DU</a></td>
+        </tr>
+        <tr>
+        <td>12 Oct 2013</td>
+        <td><a href='mongodb.html'>MongoDB Notes</a></td>
+        </tr>
+        <tr>
+        <td>11 Oct 2013</td>
+        <td><a href='single-monitor.html'>Single Monitor rules</a></td>
+        </tr>
+        <tr>
+        <td>10 Oct 2013</td>
+        <td><a href='openvpn.html'>OpenVPN Notes</a></td>
+        </tr>
+        <tr>
+        <td>09 Oct 2013</td>
+        <td><a href='teamviewer-on-linux.html'>Installing to</a></td>
+        </tr>
+        <tr>
+        <td>08 Oct 2013</td>
+        <td><a href='moving-partition.html'>Moving a linux (crunchbang) partition</a></td>
+        </tr>
+        <tr>
+        <td>05 Oct 2013</td>
+        <td><a href='eclipse-settings.html'>Eclipse Settings</a></td>
+        </tr>
+        <tr>
+        <td>01 Oct 2013</td>
+        <td><a href='java-installation.html'>Java Installation Files / Alterantatives Selection</a></td>
+        </tr>
+        <tr>
+        <td>30 Sep 2013</td>
+        <td><a href='crunchifying-mint.html'>Cruncifying-mint</a></td>
+        </tr>
+        <tr>
+        <td>30 Sep 2013</td>
+        <td><a href='colorscheme-solarized.html'>Zenburn to Solarized</a></td>
+        </tr>
+        <tr>
+        <td>27 Sep 2013</td>
+        <td><a href='dotfiles.html'>Dotfiles management</a></td>
+        </tr>
+        <tr>
+        <td>23 Sep 2013</td>
+        <td><a href='screen-reset.html'>Reinstall Laptop Screen Driver</a></td>
+        </tr>
+        <tr>
+        <td>21 Sep 2013</td>
+        <td><a href='zsh-over-fish.html'></a></td>
+        </tr>
+        <tr>
+        <td>20 Sep 2013</td>
+        <td><a href='vim-fixes.html'>Vim Essential Fixes</a></td>
+        </tr>
+        <tr>
+        <td>19 Sep 2013</td>
+        <td><a href='lifehack.html'>Life Hacking for Thinkers</a></td>
+        </tr>
+        <tr>
+        <td>17 Sep 2013</td>
+        <td><a href='vim-airline.html'>Vim-Airline is here!</a></td>
+        </tr>
+        <tr>
+        <td>16 Sep 2013</td>
+        <td><a href='vim-shougo.html'>Shougo's Neocomplcache + Neosnippet + Vimproc + Vimshell</a></td>
+        </tr>
+        <tr>
+        <td>16 Sep 2013</td>
+        <td><a href='trees.html'>Trees</a></td>
+        </tr>
+        <tr>
+        <td>15 Sep 2013</td>
+        <td><a href='desktop-customization.html'>Desktop Customization is a waste of time</a></td>
+        </tr>
+        <tr>
+        <td>13 Sep 2013</td>
+        <td><a href='rotation.html'>Efficient ways to do rotation</a></td>
+        </tr>
+        <tr>
+        <td>12 Sep 2013</td>
+        <td><a href='python-tricks.html'>A collection of useful python scripts</a></td>
+        </tr>
+        <tr>
+        <td>11 Sep 2013</td>
+        <td><a href='companies-red-flag.html'>Companies that raised red flags during my interview process</a></td>
+        </tr>
+        <tr>
+        <td>10 Sep 2013</td>
+        <td><a href='integer-list.html'>Algorithm Questions regarding integer lists</a></td>
+        </tr>
+        <tr>
+        <td>10 Sep 2013</td>
+        <td><a href='specialization.html'>Specializing as a software engineer</a></td>
+        </tr>
+        <tr>
+        <td>08 Sep 2013</td>
+        <td><a href='vim-markdown-preview.html'>Preview Markdown from Vim</a></td>
+        </tr>
+        <tr>
+        <td>08 Sep 2013</td>
+        <td><a href='keybindings.html'>finding key codes to use for bindkey</a></td>
+        </tr>
+        <tr>
+        <td>08 Sep 2013</td>
+        <td><a href='design-pattern.html'>Design Pattern</a></td>
+        </tr>
+        <tr>
+        <td>07 Sep 2013</td>
+        <td><a href='blogging-on-commandline.html'>Setting up Pelican for blogging</a></td>
+        </tr>
+        <tr>
+        <td>26 Aug 2013</td>
+        <td><a href='terms.html'>Terminologies</a></td>
+        </tr>
+        <tr>
+        <td>22 Aug 2013</td>
+        <td><a href='typography.html'>Topography Notes</a></td>
+        </tr>
+        <tr>
+        <td>22 Aug 2013</td>
+        <td><a href='color-theory.html'>Color Theory Notes</a></td>
+        </tr>
+        <tr>
+        <td>21 Aug 2013</td>
+        <td><a href='mobile-web.html'>Mobile Web Notes</a></td>
+        </tr>
+        <tr>
+        <td>12 Aug 2013</td>
+        <td><a href='anonymity.html'>Don't give up on your anonymity</a></td>
+        </tr>
+        <tr>
+        <td>11 Aug 2013</td>
+        <td><a href='fish-on-cygwin.html'>My attempt to replace Bash with Fish</a></td>
+        </tr>
+        <tr>
+        <td>08 Aug 2013</td>
+        <td><a href='node-on-cygwin.html'>Using Node.js and NPM on Cygwin</a></td>
+        </tr>
+        <tr>
+        <td>08 Aug 2013</td>
+        <td><a href='ruby-on-cygwin.html'>How to get Ruby, RVM, Jekyll, Octopress, and Heroku working on Cygwin</a></td>
+        </tr>
+        <tr>
+        <td>05 Aug 2013</td>
+        <td><a href='bash-tricks.html'>A collection of Useful Shell commands</a></td>
+        </tr>
+        <tr>
+        <td>29 Jul 2013</td>
+        <td><a href='jquery-ajax-notes.html'>AJAX notes</a></td>
+        </tr>
+        <tr>
+        <td>27 Jul 2013</td>
+        <td><a href='jquery-notes.html'>jQuery Notes</a></td>
+        </tr>
+        <tr>
+        <td>24 Jul 2013</td>
+        <td><a href='vim-plugins-alternatives.html'>Vim Plugins I use</a></td>
+        </tr>
+        <tr>
+        <td>06 Jun 2013</td>
+        <td><a href='windows-management.html'>Intuitive and Natural Windows Management Setup</a></td>
+        </tr>
+        <tr>
+        <td>29 May 2013</td>
+        <td><a href='LAMP-on-cygwin.html'>Installing LAMP on Cygwin</a></td>
+        </tr>
+        <tr>
+        <td>24 May 2013</td>
+        <td><a href='interviews-are-hard.html'>Interviewing for a Software Engineer position is Hard</a></td>
+        </tr>
+        <tr>
+        <td>10 May 2013</td>
+        <td><a href='python-on-window.html'>How to install pip, oauth2 on Windows</a></td>
+        </tr>
+        <tr>
+        <td>01 May 2013</td>
+        <td><a href='automation.html'>Why spending more time than you save is okay, and when it is not.</a></td>
+        </tr>
+        <tr>
+        <td>22 Apr 2013</td>
+        <td><a href='crashplan.html'>Installing Crashplan on Pogoplug</a></td>
+        </tr>
+    </tbody>
+</table>
+
+
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

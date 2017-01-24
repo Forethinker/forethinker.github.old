@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li  class="active" >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+        
+
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/eclipse-settings.html"><h1>Eclipse Settings</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>October 05, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Eclipse%20Settings%20 https%3A//www.4thinker.com/eclipse-settings.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/eclipse-settings.html&p[images][0]=&p[title]=Eclipse%20Settings%20&p[summary]=%3Ch2%3ETraditional%20Style%20Tabs%3C/h2%3E%0A%3Cp%3EWindow%20%26gt%3B%20Preferences%20%26gt%3B%20General%20%26gt%3B%20Appearance%20%26gt%3B%20Show%20traditional%20style%20tabs.%3C/p%3E%0A%3Cp%3EGo%20to%20%5Beclipse_folder%5D%5Cplugins%5Corg.eclipse.platform_4.2.1.v201209141800%5Ccss%0AOpen%20the%20css%20file%20that%20corresponds%20to%20your%20selected%20theme%2C%20e.g.%20e4_default_win7.css%0AThen%20find%20the%20selector%20.MPartStack%20and%20set%20swt-simple%20to%20true%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/eclipse-settings.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Eclipse%20Settings%20&body=https%3A//www.4thinker.com/eclipse-settings.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<h2>Traditional Style Tabs</h2>
+<p>Window &gt; Preferences &gt; General &gt; Appearance &gt; Show traditional style tabs.</p>
+<p>Go to [eclipse_folder]\plugins\org.eclipse.platform_4.2.1.v201209141800\css
+Open the css file that corresponds to your selected theme, e.g. e4_default_win7.css
+Then find the selector .MPartStack and set swt-simple to true</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/eclipse-settings.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/java-installation.html"><h1>Java Installation Files / Alterantatives Selection</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>October 01, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/java.html">#java</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Java%20Installation%20Files%20/%20Alterantatives%20Selection%20 https%3A//www.4thinker.com/java-installation.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/java-installation.html&p[images][0]=&p[title]=Java%20Installation%20Files%20/%20Alterantatives%20Selection%20&p[summary]=%3Cp%3EJava%20versioning%20comes%20natural%20to%20you%20after%20you%20go%20through%20many%20installation%20process%2C%20but%20it%20is%20not%20clear%20right%20off%20the%20bat.%0A-%20JDK%20is%20needed%20if%20you%20are%20a%20developer%20and%20compile%20Java%20program%2C%20JRE%20gives%20you%20the%20Java%20Virtual%20Machine%20so%20you%20can%20use%20the%20software.%20Most%20people%20just%20needs%20the%20latter.%0A-%20If%20you%20install%20JDK%2C%20JRE%20is%20included%20%28%24JAVA_HOME/jre%29%20so%20you%20do%20not%20need%20to%20install%20it%20separately.%0A-%20OpenJDK%20and%20JavaJDK%20are%20different.%20The%20former%20is%20open%20source%20and%20rolls%20out%20features%20faster%20and%20the%20latter%20is%20proprietary%20by%20Oracle%20and%20is%20more%20stable.%0A-%20IcedTea%20is%20a%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/java-installation.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Java%20Installation%20Files%20/%20Alterantatives%20Selection%20&body=https%3A//www.4thinker.com/java-installation.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>Java versioning comes natural to you after you go through many installation process, but it is not clear right off the bat.
+- JDK is needed if you are a developer and compile Java program, JRE gives you the Java Virtual Machine so you can use the software. Most people just needs the latter.
+- If you install JDK, JRE is included ($JAVA_HOME/jre) so you do not need to install it separately.
+- OpenJDK and JavaJDK are different. The former is open source and rolls out features faster and the latter is proprietary by Oracle and is more stable.
+- IcedTea is a …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/java-installation.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/colorscheme-solarized.html"><h1>Zenburn to Solarized</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 30, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/design.html">#design</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Zenburn%20to%20Solarized%20 https%3A//www.4thinker.com/colorscheme-solarized.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/colorscheme-solarized.html&p[images][0]=&p[title]=Zenburn%20to%20Solarized%20&p[summary]=%3Cp%3E%3Ca%20href%3D%22http%3A//www.newscientist.com/article/mg21428710.300-better-than-sunshine-see-life-in-an-improved-light.html%22%3E%21%5BAlt%20Natural%20Ligtht%20Color%20Chart%5D%28%7Cfilename%7C/images/natural-light.jpg%3C/a%3E%0A%22Better%20than%20Sunshine%3A%20See%20Life%20in%20an%20Improved%20Light%22%3C/p%3E%0A%3Cp%3EI%20switched%20to%20solarized%20color%20theme%20while%20%3Ca%20href%3D%22vim-airline.html%22%3Einstalling%20airilne%3C/a%3E.%20Solarized%20is%20a%20very%20beautiful%20theme.%20I%20am%20partial%20to%20darker%20version%2C%20but%20light%20version%20is%20fine%20too.%20They%20both%20give%20modern%20looks%2C%20but%20the%20darker%20version%2C%20however%2C%20is%20more%20comfortable%20to%20my%20eyes.%20I%20would%20say%20Zenburn%20is%20still%20good%20if%20you%20are%20about%20to%20go%20to%20bed%2C%20%3Ca%20href%3D%22http%3A//www.washingtonpost.com/wp-dyn/content/article/2011/02/14/AR2011021404136.html%22%3Ebecause%20that%20orangish%20color%20is%20supposed%20to%20relax%20you%20while%20bluish%20colors%20excites%20you%3C/a%3E.%20Anyway%2C%20I%20knew%20solarized%20was%20a%20popular%20choice%2C%20but%20like%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/colorscheme-solarized.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Zenburn%20to%20Solarized%20&body=https%3A//www.4thinker.com/colorscheme-solarized.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p><a href="http://www.newscientist.com/article/mg21428710.300-better-than-sunshine-see-life-in-an-improved-light.html">![Alt Natural Ligtht Color Chart](|filename|/images/natural-light.jpg</a>
+"Better than Sunshine: See Life in an Improved Light"</p>
+<p>I switched to solarized color theme while <a href="vim-airline.html">installing airilne</a>. Solarized is a very beautiful theme. I am partial to darker version, but light version is fine too. They both give modern looks, but the darker version, however, is more comfortable to my eyes. I would say Zenburn is still good if you are about to go to bed, <a href="http://www.washingtonpost.com/wp-dyn/content/article/2011/02/14/AR2011021404136.html">because that orangish color is supposed to relax you while bluish colors excites you</a>. Anyway, I knew solarized was a popular choice, but like …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/colorscheme-solarized.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/dotfiles.html"><h1>Dotfiles management</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 27, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/shell.html">#shell</a></span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Dotfiles%20management%20 https%3A//www.4thinker.com/dotfiles.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/dotfiles.html&p[images][0]=&p[title]=Dotfiles%20management%20&p[summary]=%3Cp%3EI%20guess%20the%20conventional%20way%20to%20control%20dotfile%20is%20using%20%3Ca%20href%3D%22http%3A//www.github.com%22%3Egithub%3C/a%3E.%20It%20is%20not%20a%20bad%20idea%2C%20but%20I%20stick%20with%20Dropbox%20for%20versioning.%20Yes%2C%20it%20is%20a%20version%20control%20for%20non-power%20user%2C%20but%20it%20is%20pretty%20handy%20to%20have%20your%20%3Ccode%3E.vimrc%3C/code%3E%20every%20time%20you%20edit%20it.%20I%20typically%20document%20my%20dotfiles%20in%20the%20code%20and%20I%20have%20not%20found%20the%20commmit%20message%20to%20be%20useful%20for%20dotfiles.%3C/p%3E%0A%3Ch2%3EWindows%3C/h2%3E%0A%3Cp%3ESymlink%20dotfiles%20using%20%3Ca%20href%3D%22http%3A//schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html%22%3ELink%20Shell%20Extension%3C/a%3E.%20This%20allows%20me%20to%20edit%20dotfiles%20in%20either%20%3Ccode%3EDropbox%3C/code%3E%20or%20in%20my%20profile%20without%20worry%20about%20copying%20them%20over.%20I%20found%20%3Ccode%3Ehardlinks%3C/code%3E%20to%20not%20work%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/dotfiles.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Dotfiles%20management%20&body=https%3A//www.4thinker.com/dotfiles.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>I guess the conventional way to control dotfile is using <a href="http://www.github.com">github</a>. It is not a bad idea, but I stick with Dropbox for versioning. Yes, it is a version control for non-power user, but it is pretty handy to have your <code>.vimrc</code> every time you edit it. I typically document my dotfiles in the code and I have not found the commmit message to be useful for dotfiles.</p>
+<h2>Windows</h2>
+<p>Symlink dotfiles using <a href="http://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html">Link Shell Extension</a>. This allows me to edit dotfiles in either <code>Dropbox</code> or in my profile without worry about copying them over. I found <code>hardlinks</code> to not work …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/dotfiles.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/screen-reset.html"><h1>Reinstall Laptop Screen Driver</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 23, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Reinstall%20Laptop%20Screen%20Driver%20 https%3A//www.4thinker.com/screen-reset.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/screen-reset.html&p[images][0]=&p[title]=Reinstall%20Laptop%20Screen%20Driver%20&p[summary]=%3Cp%3Ehttp%3A//download.microsoft.com/download/1/1/f/11f7dd10-272d-4cd2-896f-9ce67f3e0240/devcon.exe%0Ahttp%3A//support.microsoft.com/kb/311272%3C/p%3E%0A%3Cp%3EOnce%20you%20extract%2C%20there%20are%20two%20folders%2C%20%3Ccode%3EI386%3C/code%3E%20and%20%3Ccode%3EIa64%3C/code%3E%2C%20which%20contains%20%3Ccode%3EDevCon.exe%3C/code%3E.%20The%20archiecture%20depends%20on%20your%20%3Ccode%3Ecmd.exe%3C/code%3E%20instead%20of%20your%20machine.%20%3C/p%3E%0A%3Cp%3Edevcon.exe%20--remove%20%3Dmonitor%0Adevcon.exe%20--update%20%3Dmonitor%3C/p%3E%0A%3Cp%3ENow%20I%20just%20put%20that%20into%20my%20auothotkey%20script%20and%20I%20am%20good%20to%20go.%20This%20is%20much%20better%20and%20simpler%20approach%20than%20%3Ca%20href%3D%22http%3A//www.autohotkey.com/board/topic/49386-launching-a-script-when-a-specific-usb-device-is-connected/%22%3Ethe%20one%20that%20uses%20only%20auothotkey%20script%3C/a%3E%3C/p%3E%0A%3Cp%3EIf%20you%20need%20more%20%3Ca%20href%3D%22http%3A//msdn.microsoft.com/en-us/library/windows/hardware/ff544746%28v%3Dvs.85%29.aspx%22%3Eexamples%20of%20DevCon%2C%20Microsoft%20provides%20them%20in%20their%20Dev%20Center%20page%3C/a%3E%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/screen-reset.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Reinstall%20Laptop%20Screen%20Driver%20&body=https%3A//www.4thinker.com/screen-reset.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>http://download.microsoft.com/download/1/1/f/11f7dd10-272d-4cd2-896f-9ce67f3e0240/devcon.exe
+http://support.microsoft.com/kb/311272</p>
+<p>Once you extract, there are two folders, <code>I386</code> and <code>Ia64</code>, which contains <code>DevCon.exe</code>. The archiecture depends on your <code>cmd.exe</code> instead of your machine. </p>
+<p>devcon.exe --remove =monitor
+devcon.exe --update =monitor</p>
+<p>Now I just put that into my auothotkey script and I am good to go. This is much better and simpler approach than <a href="http://www.autohotkey.com/board/topic/49386-launching-a-script-when-a-specific-usb-device-is-connected/">the one that uses only auothotkey script</a></p>
+<p>If you need more <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff544746(v=vs.85).aspx">examples of DevCon, Microsoft provides them in their Dev Center page</a></p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/screen-reset.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/vim-fixes.html"><h1>Vim Essential Fixes</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 20, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/vim.html">#vim</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Vim%20Essential%20Fixes%20 https%3A//www.4thinker.com/vim-fixes.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/vim-fixes.html&p[images][0]=&p[title]=Vim%20Essential%20Fixes%20&p[summary]=%3Ch2%3EUse%20Ctrlp%27s%20%3Ccode%3Eg%3Actrlp_switch_buffer%3C/code%3E%20instead%20of%20%3Ccode%3Etab%20drop%3C/code%3E%3C/h2%3E%0A%3Cp%3E%3Ccode%3Etab%20drop%3C/code%3E%20allows%20you%20to%20switch%20to%20the%20tab%20with%20the%20specified%20name%20if%20it%20is%20already%20open.%20But%20it%20is%20very%20inefficiently%20done.%20It%20iterates%20through%20each%20tab%20until%20it%20finds%20the%20matching%20file.%20It%20is%20slow%2C%20and%20a%20custom%20function%20like%20%27switch%20to%20the%20last%20used%20tab%27%20fails.%20%3Ccode%3Ectrlp%3C/code%3E%20however%20has%20an%20option%20which%20fixes%20this.%20ctrp%20is%20a%20plugin%20that%20searches%20and%20opens%20recent%20files%2C%20files%20in%20the%20current%20directory%2C%20and%20files%20opened%20in%20the%20buffer.%20I%20use%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%3Cspan%20class%3D%22k%22%3Eg%3C/span%3E%3Actrlp_switch_buffer%20%3Cspan%20class%3D%22p%22%3E%3D%3C/span%3E%20%3Cspan%20class%3D%22s1%22%3E%26%2339%3Bt%26%2339%3B%3C/span%3E%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3Eto%20switch%20to%20the%20tab%20if%20it%20is%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/vim-fixes.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Vim%20Essential%20Fixes%20&body=https%3A//www.4thinker.com/vim-fixes.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<h2>Use Ctrlp's <code>g:ctrlp_switch_buffer</code> instead of <code>tab drop</code></h2>
+<p><code>tab drop</code> allows you to switch to the tab with the specified name if it is already open. But it is very inefficiently done. It iterates through each tab until it finds the matching file. It is slow, and a custom function like 'switch to the last used tab' fails. <code>ctrlp</code> however has an option which fixes this. ctrp is a plugin that searches and opens recent files, files in the current directory, and files opened in the buffer. I use</p>
+<div class="highlight"><pre><span></span><span class="k">g</span>:ctrlp_switch_buffer <span class="p">=</span> <span class="s1">&#39;t&#39;</span>
+</pre></div>
+
+
+<p>to switch to the tab if it is …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/vim-fixes.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/vim-airline.html"><h1>Vim-Airline is here!</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 17, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/vim.html">#vim</a></span>
+
+  <span>Read in 6 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Vim-Airline%20is%20here%21%20 https%3A//www.4thinker.com/vim-airline.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/vim-airline.html&p[images][0]=&p[title]=Vim-Airline%20is%20here%21%20&p[summary]=%3Cp%3EAirline%20is%20the%20latest%20and%20hottest%20putting%20skins%20on%20statusline.%20There%20are%20at%20least%20a%20dozen%20of%20websites%20that%20explains%20how%20to%20install%20powerline%20fonts%2C%20but%20I%20found%20them%20confusing%20and%20felt%20like%20I%20was%20dealing%20with%20a%20bad%20customer%20service%20%28%22follow%20this%20link%22%29.%20So%20here%20is%20how%20I%20got%20vim-airline%20to%20work%20with%20powerline%20fonts.%20%3C/p%3E%0A%3Cp%3EJohn%20Chain%20wrote%20about%20%3Ca%20href%3D%22http%3A//jchain.github.io/blog/2013/07/17/fly-with-vim-airline/%22%3Ewhy%20airline%20is%20better%3C/a%3E.%20In%20short%2C%20vim-arline%20uses%20less%20code%20%281/12th%20of%20powerline%2C%201/3%20of%20vim-powerline%29%20and%20it%20is%20not%20python%20dependent.%20On%20a%20side%20note%2C%20I%20did%20not%20have%20to%20follow%20his%20advice%20on%20%3Ccode%3Eset%20lazydraw%3C/code%3E%20to%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/vim-airline.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Vim-Airline%20is%20here%21%20&body=https%3A//www.4thinker.com/vim-airline.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>Airline is the latest and hottest putting skins on statusline. There are at least a dozen of websites that explains how to install powerline fonts, but I found them confusing and felt like I was dealing with a bad customer service ("follow this link"). So here is how I got vim-airline to work with powerline fonts. </p>
+<p>John Chain wrote about <a href="http://jchain.github.io/blog/2013/07/17/fly-with-vim-airline/">why airline is better</a>. In short, vim-arline uses less code (1/12th of powerline, 1/3 of vim-powerline) and it is not python dependent. On a side note, I did not have to follow his advice on <code>set lazydraw</code> to …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/vim-airline.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/vim-shougo.html"><h1>Shougo's Neocomplcache + Neosnippet + Vimproc + Vimshell</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 16, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/vim.html">#vim</a></span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Shougo%27s%20Neocomplcache%20%2B%20Neosnippet%20%2B%20Vimproc%20%2B%20Vimshell%20 https%3A//www.4thinker.com/vim-shougo.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/vim-shougo.html&p[images][0]=&p[title]=Shougo%27s%20Neocomplcache%20%2B%20Neosnippet%20%2B%20Vimproc%20%2B%20Vimshell%20&p[summary]=%3Cp%3EI%20am%20very%20reluctant%20to%20write%20about%20my%20vim%20configuration%2C%20because%20it%20changes%20so%20frequently.%20But%20I%20really%20using%20vim%20plugins%20by%20Shougo%2C%20I%20could%20not%20help%20writing%20something%20about%20it.%3C/p%3E%0A%3Ch2%3ENeocomplcache%3C/h2%3E%0A%3Cp%3EIMHO%2C%20the%20best%20autocompletion%20plugin%20around.%20I%20use%20the%20generic%20configuration%20as%20shown%20on%20%3Ca%20href%3D%22https%3A//github.com/Shougo/neocomplcache.vim%22%3Ethe%20github%20page%3C/a%3E%2C%20with%20exception%20to%20two%20lines.%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%3Cspan%20class%3D%22k%22%3Elet%3C/span%3E%20%3Cspan%20class%3D%22k%22%3Eg%3C/span%3E%3Aneocomplcache_dictionary_filetype_lists%20%3Cspan%20class%3D%22p%22%3E%3D%3C/span%3E%20%7B%0A%5C%20%3Cspan%20class%3D%22s1%22%3E%26%2339%3Bjavascript%26%2339%3B%3C/span%3E%20%3A%20expand%3Cspan%20class%3D%22p%22%3E%28%3C/span%3E%3Cspan%20class%3D%22s1%22%3E%26%2339%3B%7E/Dropbox/dev/dotfiles/others/javascript.dict%26%2339%3B%3C/span%3E%3Cspan%20class%3D%22p%22%3E%29%3C/span%3E%20.%3Cspan%20class%3D%22s1%22%3E%26%2339%3B%2C%26%2339%3B%3C/span%3E.%20expand%3Cspan%20class%3D%22p%22%3E%28%3C/span%3E%3Cspan%20class%3D%22s1%22%3E%26%2339%3B%7E/.vim/bundle/vim-node/dict/node.dict%26%2339%3B%3C/span%3E%3Cspan%20class%3D%22p%22%3E%29%2C%3C/span%3E%0A%5C%20%7D%0A%0A%3Cspan%20class%3D%22k%22%3Elet%3C/span%3E%20%3Cspan%20class%3D%22k%22%3Eg%3C/span%3E%3Aneosnippet%23snippets_directory%3Cspan%20class%3D%22p%22%3E%3D%3C/span%3E%3Cspan%20class%3D%22s1%22%3E%26%2339%3B%7E/.vim/bundle/vim-snippets/snippets%2C%20%7E/Dropbox/dev/dotfiles/snippets%26%2339%3B%3C/span%3E%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3EThe%20first%20line%20allows%20me%20to%20add%20dictionaries%20that%20are%20not%20part%20of%20the%20installation.%20One%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/vim-shougo.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Shougo%27s%20Neocomplcache%20%2B%20Neosnippet%20%2B%20Vimproc%20%2B%20Vimshell%20&body=https%3A//www.4thinker.com/vim-shougo.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>I am very reluctant to write about my vim configuration, because it changes so frequently. But I really using vim plugins by Shougo, I could not help writing something about it.</p>
+<h2>Neocomplcache</h2>
+<p>IMHO, the best autocompletion plugin around. I use the generic configuration as shown on <a href="https://github.com/Shougo/neocomplcache.vim">the github page</a>, with exception to two lines.</p>
+<div class="highlight"><pre><span></span><span class="k">let</span> <span class="k">g</span>:neocomplcache_dictionary_filetype_lists <span class="p">=</span> {
+\ <span class="s1">&#39;javascript&#39;</span> : expand<span class="p">(</span><span class="s1">&#39;~/Dropbox/dev/dotfiles/others/javascript.dict&#39;</span><span class="p">)</span> .<span class="s1">&#39;,&#39;</span>. expand<span class="p">(</span><span class="s1">&#39;~/.vim/bundle/vim-node/dict/node.dict&#39;</span><span class="p">),</span>
+\ }
+
+<span class="k">let</span> <span class="k">g</span>:neosnippet#snippets_directory<span class="p">=</span><span class="s1">&#39;~/.vim/bundle/vim-snippets/snippets, ~/Dropbox/dev/dotfiles/snippets&#39;</span>
+</pre></div>
+
+
+<p>The first line allows me to add dictionaries that are not part of the installation. One …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/vim-shougo.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/vim-markdown-preview.html"><h1>Preview Markdown from Vim</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 08, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/vim.html">#vim</a></span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Preview%20Markdown%20from%20Vim%20 https%3A//www.4thinker.com/vim-markdown-preview.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/vim-markdown-preview.html&p[images][0]=&p[title]=Preview%20Markdown%20from%20Vim%20&p[summary]=%3Cp%3EIn%20the%20beginning%2C%20I%20was%20looking%20for%20a%20solution%20where%20I%20could%20lookup%20markdown%20from%20vim%20with%20python%20or%20ruby%2C%20but%20then%20I%20%3Ca%20href%3D%22http%3A//blog.natesilva.com/post/5256838248/how-to-preview-a-markdown-document-in-vim%22%3Efound%20a%20vim%20script%3C/a%3E%20by%20Nate%20Silva%20that%20does%20this%20and%20it%20works%20well%20across%20many%20different%20platforms.%20I%20had%20to%20make%20minor%20changes.%3C/p%3E%0A%3Ch2%3EInstallation%3C/h2%3E%0A%3Cp%3ESince%20I%20use%20%3Ca%20href%3D%22blogging-on-commandline.html%22%3Epelican%3C/a%3E%20for%20blogging%2C%20I%20have%20python%20markdown%20installed%2C%20so%20I%20use%20that%20and%20make%20a%20symlink%20as%20%3Ccode%3Emarkdown%3C/code%3E%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Epip%20install%20markdown%0Aln%20-s%20/usr/local/bin/markdown_py%20/usr/local/bin/markdown%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3Ethen%20I%20just%20add%20the%20following%20scripts%20and%20I%20can%20get%20a%20markdown%20preview.%20Notice%20that%20I%20hardcoded%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/vim-markdown-preview.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Preview%20Markdown%20from%20Vim%20&body=https%3A//www.4thinker.com/vim-markdown-preview.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>In the beginning, I was looking for a solution where I could lookup markdown from vim with python or ruby, but then I <a href="http://blog.natesilva.com/post/5256838248/how-to-preview-a-markdown-document-in-vim">found a vim script</a> by Nate Silva that does this and it works well across many different platforms. I had to make minor changes.</p>
+<h2>Installation</h2>
+<p>Since I use <a href="blogging-on-commandline.html">pelican</a> for blogging, I have python markdown installed, so I use that and make a symlink as <code>markdown</code></p>
+<div class="highlight"><pre><span></span>pip install markdown
+ln -s /usr/local/bin/markdown_py /usr/local/bin/markdown
+</pre></div>
+
+
+<p>then I just add the following scripts and I can get a markdown preview. Notice that I hardcoded …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/vim-markdown-preview.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/keybindings.html"><h1>finding key codes to use for bindkey</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 08, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/shell.html">#shell</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=finding%20key%20codes%20to%20use%20for%20bindkey%20 https%3A//www.4thinker.com/keybindings.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/keybindings.html&p[images][0]=&p[title]=finding%20key%20codes%20to%20use%20for%20bindkey%20&p[summary]=%3Cp%3EYou%20can%20find%20keys%20in%20shell%20using%20%3Ccode%3E.inputrc%3C/code%3E%20or%20%3Ccode%3E.screenrc%3C/code%3E.%20In%20order%20to%20find%20the%20key%20codes%20to%20use%2C%20you%20can%20use%20either%20%3Ccode%3Eread%3C/code%3E%20command%20or%20press%20%3Ccode%3EC-v%3C/code%3E%20and%20then%20enter%20in%20the%20key%20you%20like%20to%20map.%3C/p%3E%0A%3Cp%3EI%20have%20the%20following%20code%20in%20my%20%3Ccode%3E.bashrc%3C/code%3E%20to%20figure%20out%20how%20keys%20are%20mapped.%20It%20excludes%20mapping%20with%20keywords%20which%20we%20are%20not%20interested%20with%3A%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Ealias%20bindp%3D%26%2339%3Bbind%20-p%20%7C%20grep%20-E%20-v%20%26quot%3Bvi%7Cbound%7C%20self%7Clowercase%7Cargument%26quot%3B%26%2339%3B%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3E%3Ccode%3Ebound%3C/code%3E%20only%20shows%20up%20if%20the%20key%20is%20not%20bound%0A%3Ccode%3Eself%3C/code%3E%20prints%20itself%2C%20so%20it%20tends%20to%20be%20important%0A%3Ccode%3Elowercase%3C/code%3E%20is%20for%20commands%20that%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/keybindings.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=finding%20key%20codes%20to%20use%20for%20bindkey%20&body=https%3A//www.4thinker.com/keybindings.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>You can find keys in shell using <code>.inputrc</code> or <code>.screenrc</code>. In order to find the key codes to use, you can use either <code>read</code> command or press <code>C-v</code> and then enter in the key you like to map.</p>
+<p>I have the following code in my <code>.bashrc</code> to figure out how keys are mapped. It excludes mapping with keywords which we are not interested with:</p>
+<div class="highlight"><pre><span></span>alias bindp=&#39;bind -p | grep -E -v &quot;vi|bound| self|lowercase|argument&quot;&#39;
+</pre></div>
+
+
+<p><code>bound</code> only shows up if the key is not bound
+<code>self</code> prints itself, so it tends to be important
+<code>lowercase</code> is for commands that …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/keybindings.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+<div class="pagination">
+<ul>
+    <li class="prev"><a href="https://www.4thinker.com/category/hack3.html">&larr; Previous</a></li>
+
+    <li class=""><a href="https://www.4thinker.com/category/hack.html">1</a></li>
+    <li class=""><a href="https://www.4thinker.com/category/hack2.html">2</a></li>
+    <li class=""><a href="https://www.4thinker.com/category/hack3.html">3</a></li>
+    <li class="active"><a href="https://www.4thinker.com/category/hack4.html">4</a></li>
+    <li class=""><a href="https://www.4thinker.com/category/hack5.html">5</a></li>
+
+    <li class="next"><a href="https://www.4thinker.com/category/hack5.html">Next &rarr;</a></li>
+
+</ul>
+</div>
+ 
+  
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+        
+
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/integer-list.html"><h1>Algorithm Questions regarding integer lists</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 10, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/algs.html">algs</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Algorithm%20Questions%20regarding%20integer%20lists%20 https%3A//www.4thinker.com/integer-list.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/integer-list.html&p[images][0]=&p[title]=Algorithm%20Questions%20regarding%20integer%20lists%20&p[summary]=%3Cul%3E%0A%3Cli%3EAll%20questions%20are%20started%20with%20%22Given%20a%20list%20of%20integers%20%28not%20sorted%29%22%3C/li%3E%0A%3Cli%3EAll%20numbers%20include%20negative%20numbers.%3C/li%3E%0A%3Cli%3EX%20is%20an%20arbitrary%20number%20that%20is%20predefined%3C/li%3E%0A%3C/ul%3E%0A%3Cp%3EQ%3A%20find%203%20numbers%20that%20add%20up%20to%20a%20given%20number%20%28a%2Bb%2Bc%3Dd%29%3C/p%3E%0A%3Cp%3EA%3A%20Convert%20the%20equation%20to%20a%2Bb%3Dd-c%2C%20make%20hash%20tables%20representing%20each%20side%20of%20the%20question.%20Iterate%20through%20each%20possible%20pair%20of%20numbers%20%28n%5E2%29%2C%20see%20if%20the%20sum%20can%20be%20found%20in%20the%20difference%20hash%20table%20or%20if%20the%20difference%20can%20be%20found%20in%20the%20sum%20table.%20If%20true%20for%20each%20case.%20If%20the%20exact%20numbers%20are%20needed%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/integer-list.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Algorithm%20Questions%20regarding%20integer%20lists%20&body=https%3A//www.4thinker.com/integer-list.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<ul>
+<li>All questions are started with "Given a list of integers (not sorted)"</li>
+<li>All numbers include negative numbers.</li>
+<li>X is an arbitrary number that is predefined</li>
+</ul>
+<p>Q: find 3 numbers that add up to a given number (a+b+c=d)</p>
+<p>A: Convert the equation to a+b=d-c, make hash tables representing each side of the question. Iterate through each possible pair of numbers (n^2), see if the sum can be found in the difference hash table or if the difference can be found in the sum table. If true for each case. If the exact numbers are needed …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/integer-list.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/specialization.html"><h1>Specializing as a software engineer</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 10, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/life.html">life</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/career.html">#career</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Specializing%20as%20a%20software%20engineer%20 https%3A//www.4thinker.com/specialization.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/specialization.html&p[images][0]=&p[title]=Specializing%20as%20a%20software%20engineer%20&p[summary]=%3Cp%3E%3Ca%20href%3D%22http%3A//wesleyvanderpool.com/%3Fportfolio%3Dleatherman-multi-tools%22%3E%3Cimg%20alt%3D%22Alt%20Leatherman%20multi-purpose%20tools%22%20src%3D%22%7Cfilename%7C/images/leatherman.jpg%22%3E%20%22This%20guy%20ain%27t%20going%20to%20the%20Olympics%22%3C/a%3E%3C/p%3E%0A%3Cp%3EI%20always%20feel%20insecure%20about%20my%20skill%20set%2C%20but%20in%20a%20good%20way.%20It%20motivates%20me%20to%20learn.%20Up%20until%20now%2C%20I%20just%20learned%20anything%20that%20was%20flashing%20before%20my%20eyes.%20I%20think%20this%20step%20was%20necessary%20because%20I%20would%20never%20know%20what%20I%20am%20good%20at%20or%20like%20until%20I%20try%21%20But%20I%20have%20not%20really%20thought%20about%20how%20I%20want%20to%20specialize.%20So%20I%20compiled%20a%20list%20so%20that%20I%20could%20look%20out%20for%20my%20career%20and%20see%20whether%20I%20am%20honing%20the%20same%20skill.%20Because%20more%20specialized%20you%20are%2C%20the%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/specialization.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Specializing%20as%20a%20software%20engineer%20&body=https%3A//www.4thinker.com/specialization.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p><a href="http://wesleyvanderpool.com/?portfolio=leatherman-multi-tools"><img alt="Alt Leatherman multi-purpose tools" src="|filename|/images/leatherman.jpg"> "This guy ain't going to the Olympics"</a></p>
+<p>I always feel insecure about my skill set, but in a good way. It motivates me to learn. Up until now, I just learned anything that was flashing before my eyes. I think this step was necessary because I would never know what I am good at or like until I try! But I have not really thought about how I want to specialize. So I compiled a list so that I could look out for my career and see whether I am honing the same skill. Because more specialized you are, the …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/specialization.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/vim-markdown-preview.html"><h1>Preview Markdown from Vim</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 08, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/vim.html">#vim</a></span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Preview%20Markdown%20from%20Vim%20 https%3A//www.4thinker.com/vim-markdown-preview.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/vim-markdown-preview.html&p[images][0]=&p[title]=Preview%20Markdown%20from%20Vim%20&p[summary]=%3Cp%3EIn%20the%20beginning%2C%20I%20was%20looking%20for%20a%20solution%20where%20I%20could%20lookup%20markdown%20from%20vim%20with%20python%20or%20ruby%2C%20but%20then%20I%20%3Ca%20href%3D%22http%3A//blog.natesilva.com/post/5256838248/how-to-preview-a-markdown-document-in-vim%22%3Efound%20a%20vim%20script%3C/a%3E%20by%20Nate%20Silva%20that%20does%20this%20and%20it%20works%20well%20across%20many%20different%20platforms.%20I%20had%20to%20make%20minor%20changes.%3C/p%3E%0A%3Ch2%3EInstallation%3C/h2%3E%0A%3Cp%3ESince%20I%20use%20%3Ca%20href%3D%22blogging-on-commandline.html%22%3Epelican%3C/a%3E%20for%20blogging%2C%20I%20have%20python%20markdown%20installed%2C%20so%20I%20use%20that%20and%20make%20a%20symlink%20as%20%3Ccode%3Emarkdown%3C/code%3E%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Epip%20install%20markdown%0Aln%20-s%20/usr/local/bin/markdown_py%20/usr/local/bin/markdown%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3Ethen%20I%20just%20add%20the%20following%20scripts%20and%20I%20can%20get%20a%20markdown%20preview.%20Notice%20that%20I%20hardcoded%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/vim-markdown-preview.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Preview%20Markdown%20from%20Vim%20&body=https%3A//www.4thinker.com/vim-markdown-preview.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>In the beginning, I was looking for a solution where I could lookup markdown from vim with python or ruby, but then I <a href="http://blog.natesilva.com/post/5256838248/how-to-preview-a-markdown-document-in-vim">found a vim script</a> by Nate Silva that does this and it works well across many different platforms. I had to make minor changes.</p>
+<h2>Installation</h2>
+<p>Since I use <a href="blogging-on-commandline.html">pelican</a> for blogging, I have python markdown installed, so I use that and make a symlink as <code>markdown</code></p>
+<div class="highlight"><pre><span></span>pip install markdown
+ln -s /usr/local/bin/markdown_py /usr/local/bin/markdown
+</pre></div>
+
+
+<p>then I just add the following scripts and I can get a markdown preview. Notice that I hardcoded …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/vim-markdown-preview.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/keybindings.html"><h1>finding key codes to use for bindkey</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 08, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/shell.html">#shell</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=finding%20key%20codes%20to%20use%20for%20bindkey%20 https%3A//www.4thinker.com/keybindings.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/keybindings.html&p[images][0]=&p[title]=finding%20key%20codes%20to%20use%20for%20bindkey%20&p[summary]=%3Cp%3EYou%20can%20find%20keys%20in%20shell%20using%20%3Ccode%3E.inputrc%3C/code%3E%20or%20%3Ccode%3E.screenrc%3C/code%3E.%20In%20order%20to%20find%20the%20key%20codes%20to%20use%2C%20you%20can%20use%20either%20%3Ccode%3Eread%3C/code%3E%20command%20or%20press%20%3Ccode%3EC-v%3C/code%3E%20and%20then%20enter%20in%20the%20key%20you%20like%20to%20map.%3C/p%3E%0A%3Cp%3EI%20have%20the%20following%20code%20in%20my%20%3Ccode%3E.bashrc%3C/code%3E%20to%20figure%20out%20how%20keys%20are%20mapped.%20It%20excludes%20mapping%20with%20keywords%20which%20we%20are%20not%20interested%20with%3A%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Ealias%20bindp%3D%26%2339%3Bbind%20-p%20%7C%20grep%20-E%20-v%20%26quot%3Bvi%7Cbound%7C%20self%7Clowercase%7Cargument%26quot%3B%26%2339%3B%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3E%3Ccode%3Ebound%3C/code%3E%20only%20shows%20up%20if%20the%20key%20is%20not%20bound%0A%3Ccode%3Eself%3C/code%3E%20prints%20itself%2C%20so%20it%20tends%20to%20be%20important%0A%3Ccode%3Elowercase%3C/code%3E%20is%20for%20commands%20that%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/keybindings.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=finding%20key%20codes%20to%20use%20for%20bindkey%20&body=https%3A//www.4thinker.com/keybindings.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>You can find keys in shell using <code>.inputrc</code> or <code>.screenrc</code>. In order to find the key codes to use, you can use either <code>read</code> command or press <code>C-v</code> and then enter in the key you like to map.</p>
+<p>I have the following code in my <code>.bashrc</code> to figure out how keys are mapped. It excludes mapping with keywords which we are not interested with:</p>
+<div class="highlight"><pre><span></span>alias bindp=&#39;bind -p | grep -E -v &quot;vi|bound| self|lowercase|argument&quot;&#39;
+</pre></div>
+
+
+<p><code>bound</code> only shows up if the key is not bound
+<code>self</code> prints itself, so it tends to be important
+<code>lowercase</code> is for commands that …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/keybindings.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/design-pattern.html"><h1>Design Pattern</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 08, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/cs.html">cs</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/software.html">#software</a></span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Design%20Pattern%20 https%3A//www.4thinker.com/design-pattern.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/design-pattern.html&p[images][0]=&p[title]=Design%20Pattern%20&p[summary]=%3Cp%3EI%20was%20asked%20about%20Factory%20Design%20pattern%20at%20a%20game%20company%20for%20a%20junior%20developer%20position.%20I%20had%20a%20feeling%20that%20the%20interviewer%20was%20asking%20me%20that%20question%20because%20that%20was%20something%20he%20was%20learning%20at%20that%20time.%20I%20gave%20me%20him%20an%20idea%20of%20what%20I%20think%20it%20was%2C%20but%20he%20wanted%20me%20to%20tell%20him%20the%20details.%20I%20could%20not%2C%20so%20he%20schooled%20me%20there%20and%20I%20had%20no%20way%20of%20verifying%20whether%20what%20he%20was%20saying%20was%20right.%20I%20failed%20that%20interview%20so%20I%20went%20back%20so%20that%20I%20do%20not%20ever%20forget%20what%20it%20is%2C%20but%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/design-pattern.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Design%20Pattern%20&body=https%3A//www.4thinker.com/design-pattern.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>I was asked about Factory Design pattern at a game company for a junior developer position. I had a feeling that the interviewer was asking me that question because that was something he was learning at that time. I gave me him an idea of what I think it was, but he wanted me to tell him the details. I could not, so he schooled me there and I had no way of verifying whether what he was saying was right. I failed that interview so I went back so that I do not ever forget what it is, but …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/design-pattern.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/blogging-on-commandline.html"><h1>Setting up Pelican for blogging</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 07, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/web.html">web</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/blog.html">#blog</a>, <a href="https://www.4thinker.com/tag/pelican.html">#pelican</a></span>
+
+  <span>Read in 6 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Setting%20up%20Pelican%20for%20blogging%20 https%3A//www.4thinker.com/blogging-on-commandline.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/blogging-on-commandline.html&p[images][0]=&p[title]=Setting%20up%20Pelican%20for%20blogging%20&p[summary]=%3Cp%3EAt%20the%20start%20of%20year%202013%2C%20I%20tried%20to%20set%20up%20a%20system%20on%20a%20wordpress%20blog%20so%20that%20I%20could%20blog%20from%20commandline.%20The%20plan%20became%20moot%20when%20I%20found%20out%20that%20my%20web%20hosting%20service%20provider%20did%20not%20have%20the%20latest%20PHP%20installed%20and%20I%20just%20could%20not%20install%20%3Ca%20href%3D%22http%3A//wp-cli.org/%22%3EWP-CLI%3C/a%3E%20or%20%3Ca%20href%3D%22http%3A//wordshell.net/%22%3Ewordshell%3C/a%3E.%20Maybe%20I%20did%20not%20try%20hard%20enough%2C%20but%20I%20had%20many%20doubts%20about%20its%20usefulness.%20Six%20month%20after%2C%20I%20gave%20%3Ca%20href%3D%22ruby-on-cygwin.html%22%3EJekyll%20and%20Octopress%3C/a%3E%20a%20try.%20It%20was%20quiet%20easy%20to%20set%20it%20up.%20But%20since%20I%20do%20not%20use%20Ruby%2C%20I%20began%20to%20worry%20how%20much%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/blogging-on-commandline.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Setting%20up%20Pelican%20for%20blogging%20&body=https%3A//www.4thinker.com/blogging-on-commandline.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>At the start of year 2013, I tried to set up a system on a wordpress blog so that I could blog from commandline. The plan became moot when I found out that my web hosting service provider did not have the latest PHP installed and I just could not install <a href="http://wp-cli.org/">WP-CLI</a> or <a href="http://wordshell.net/">wordshell</a>. Maybe I did not try hard enough, but I had many doubts about its usefulness. Six month after, I gave <a href="ruby-on-cygwin.html">Jekyll and Octopress</a> a try. It was quiet easy to set it up. But since I do not use Ruby, I began to worry how much …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/blogging-on-commandline.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/terms.html"><h1>Terminologies</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>August 26, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/cs.html">cs</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/software.html">#software</a></span>
+
+  <span>Read in 4 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Terminologies%20 https%3A//www.4thinker.com/terms.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/terms.html&p[images][0]=&p[title]=Terminologies%20&p[summary]=%3Ch2%3EMemory%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3ELoitering%3A%20holding%20a%20reference%20to%20an%20object%20when%20it%20is%20no%20longer%20needed.%3C/li%3E%0A%3Cli%3EShallow%20memory%20usage%3A%20no%20content%20memory%20is%20allocated%2C%20only%20the%20reference%3C/li%3E%0A%3Cli%3EDeep%20memory%20usage%3A%20content%20memory%20is%20allocated%2C%20duplicated%2C%20or%20initialized.%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3EObject%20Oriented%20Design%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3EAbstract%20class%3A%20You%20cannot%20instantiate%20an%20abstract%20class%20%28make%20it%20return%20an%20object%29%2C%20although%20you%20can%20call%20a%20static%20method%20inside%20of%20it.%20It%20needs%20at%20least%20one%20abstract%20method.%20It%20is%20meant%20to%20be%20extended.%20%3C/li%3E%0A%3Cli%3EAbstract%20method%3A%20You%20cannot%20make%20a%20function%20call%20to%20an%20abstract%20method.%20These%20can%20only%20exist%20in%20an%20abstract%20class.%20This%20cannot%20have%20implementation.%20It%20is%20%E2%80%A6%3C/li%3E%3C/ul%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/terms.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Terminologies%20&body=https%3A//www.4thinker.com/terms.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<h2>Memory</h2>
+<ul>
+<li>Loitering: holding a reference to an object when it is no longer needed.</li>
+<li>Shallow memory usage: no content memory is allocated, only the reference</li>
+<li>Deep memory usage: content memory is allocated, duplicated, or initialized.</li>
+</ul>
+<h2>Object Oriented Design</h2>
+<ul>
+<li>Abstract class: You cannot instantiate an abstract class (make it return an object), although you can call a static method inside of it. It needs at least one abstract method. It is meant to be extended. </li>
+<li>Abstract method: You cannot make a function call to an abstract method. These can only exist in an abstract class. This cannot have implementation. It is …</li></ul> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/terms.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/typography.html"><h1>Topography Notes</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>August 22, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/web.html">web</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Topography%20Notes%20 https%3A//www.4thinker.com/typography.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/typography.html&p[images][0]=&p[title]=Topography%20Notes%20&p[summary]=%3Cp%3E%3Ca%20href%3D%22http%3A//mbsy.co/7sh6q%22%3EFundamentals%20of%20Design%3C/a%3E%20by%20Tim%20Dikun%20%40%20codeschool.com%3C/p%3E%0A%3Ch2%3EAttributes%20that%20Influence%20Design%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3EAudience%3A%20Age%2C%20Race%2C%20Gender%2C%20Cultural%20Niche%3C/li%3E%0A%3Cli%3ETone%3A%20Casual%2C%20Formal%2C%20Friendly%2C%20Sarcastic%3C/li%3E%0A%3Cli%3EPurpose%3A%20Informational%2C%20Conversations%3C/li%3E%0A%3C/ul%3E%0A%3Chr%3E%0A%3Ch2%3ESerif%3C/h2%3E%0A%3Ch4%3EHumanist%20-%20Classic%20%26amp%3B%20Traditional%3C/h4%3E%0A%3Cul%3E%0A%3Cli%3EEmulates%20calligraphy%3C/li%3E%0A%3Cli%3EContrasting%20Strokes%3C/li%3E%0A%3Cli%3EJournalist%20and%20Historical%20Text%3C/li%3E%0A%3C/ul%3E%0A%3Ch4%3ETransitional%20-%20Strong%2C%20Stylish%2C%20%26amp%3B%20Dynamic%3C/h4%3E%0A%3Cul%3E%0A%3Cli%3ESharper%20Serif%3C/li%3E%0A%3Cli%3EMore%20contrasting%20Strokes%3C/li%3E%0A%3Cli%3EAcademic%20and%20Legal%3C/li%3E%0A%3C/ul%3E%0A%3Ch4%3EModern%20Serif%20-%20Structured%2C%20Clear%2C%20%26amp%3B%20Elegant%3C/h4%3E%0A%3Cul%3E%0A%3Cli%3EThin%2C%20horizontal%20Serif%3C/li%3E%0A%3Cli%3EHigh%20Contrast%20Stroke%3C/li%3E%0A%3Cli%3EArt%20and%20Cultural%3C/li%3E%0A%3C/ul%3E%0A%3Ch4%3EEgyptian%20%28Slab%20Serif%29%20-%20Authoritative%2C%20yet%20friendly%3C/h4%3E%0A%3Cul%3E%0A%3Cli%3EHeavy%2C%20boxy%2C%20serifs%3C/li%3E%0A%3Cli%3EVery%20Low%20Contrast%20Stroke%3C/li%3E%0A%3Cli%3EMarketing%20and%20Promotional%20%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3ESans-Serif%3C/h2%3E%0A%3Ch4%3EHumanist%20-%20Perfect%20vs%20imperfect%3C/h4%3E%0A%3Cul%3E%0A%3Cli%3EEmulates%20calligraphy%3C/li%3E%0A%3Cli%3Econtrasting%20strokes%3C/li%3E%0A%3Cli%3EGovernment%2C%20Finance%2C%20Education%3C/li%3E%0A%3C/ul%3E%0A%3Ch4%3ETransitional%20-%20Unassuming%20%26amp%3B%20Modern%3C/h4%3E%0A%3Cul%3E%0A%3Cli%3EStrong%20strokes%3C/li%3E%0A%3Cli%3EUpright%2C%20uniform%2C%20characters%20%E2%80%A6%3C/li%3E%3C/ul%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/typography.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Topography%20Notes%20&body=https%3A//www.4thinker.com/typography.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p><a href="http://mbsy.co/7sh6q">Fundamentals of Design</a> by Tim Dikun @ codeschool.com</p>
+<h2>Attributes that Influence Design</h2>
+<ul>
+<li>Audience: Age, Race, Gender, Cultural Niche</li>
+<li>Tone: Casual, Formal, Friendly, Sarcastic</li>
+<li>Purpose: Informational, Conversations</li>
+</ul>
+<hr>
+<h2>Serif</h2>
+<h4>Humanist - Classic &amp; Traditional</h4>
+<ul>
+<li>Emulates calligraphy</li>
+<li>Contrasting Strokes</li>
+<li>Journalist and Historical Text</li>
+</ul>
+<h4>Transitional - Strong, Stylish, &amp; Dynamic</h4>
+<ul>
+<li>Sharper Serif</li>
+<li>More contrasting Strokes</li>
+<li>Academic and Legal</li>
+</ul>
+<h4>Modern Serif - Structured, Clear, &amp; Elegant</h4>
+<ul>
+<li>Thin, horizontal Serif</li>
+<li>High Contrast Stroke</li>
+<li>Art and Cultural</li>
+</ul>
+<h4>Egyptian (Slab Serif) - Authoritative, yet friendly</h4>
+<ul>
+<li>Heavy, boxy, serifs</li>
+<li>Very Low Contrast Stroke</li>
+<li>Marketing and Promotional </li>
+</ul>
+<h2>Sans-Serif</h2>
+<h4>Humanist - Perfect vs imperfect</h4>
+<ul>
+<li>Emulates calligraphy</li>
+<li>contrasting strokes</li>
+<li>Government, Finance, Education</li>
+</ul>
+<h4>Transitional - Unassuming &amp; Modern</h4>
+<ul>
+<li>Strong strokes</li>
+<li>Upright, uniform, characters …</li></ul> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/typography.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/color-theory.html"><h1>Color Theory Notes</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>August 22, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/web.html">web</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Color%20Theory%20Notes%20 https%3A//www.4thinker.com/color-theory.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/color-theory.html&p[images][0]=&p[title]=Color%20Theory%20Notes%20&p[summary]=%3Cp%3E%3Ca%20href%3D%22http%3A//mbsy.co/7sh6q%22%3EFundamentals%20of%20Design%3C/a%3E%20by%20Tim%20Dikun%20%40%20%3Ca%20href%3D%22http%3A//mbsy.co/7sh6q%22%3Ecodeschool.com%3C/a%3E%3C/p%3E%0A%3Ch2%3EColor%20Types%3C/h2%3E%0A%3Cp%3ESubtractive%20Color%20%28CMYK%29%3A%20based%20on%20the%20white%20background%2C%20printer%2C%20physical%3C/p%3E%0A%3Cp%3EAdditive%20Color%20%28RGB%29%3A%20Based%20on%20the%20black%20background%2C%20monitor%2C%20virtual%3C/p%3E%0A%3Cp%3EHuman%20process%20color%20based%20on%20Hue%2C%20Saturation%2C%20and%20Lightness%20%3C/p%3E%0A%3Cul%3E%0A%3Cli%3EHue%20%28x%29%3A%20can%20be%20best%20represented%20with%20a%20color%20wheel%2C%20which%20enculates%20the%20entire%20RGB%20space.%20%28Degree%29%3C/li%3E%0A%3Cli%3ESaturation%20%28y%29%3A%20the%20variation%20of%20the%20color%20to%20gray%20%28%25%29%3C/li%3E%0A%3Cli%3ELighness%20%28z%29%3A%20the%20variation%20of%20the%20color%20with%20respect%20to%20white%20%28100%25%29%20and%20black%20%280%25%29%3C/li%3E%0A%3Cli%3EThese%20three%20properties%20can%20be%20best%20represented%20as%20a%20cylinder%20%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3EFirst%20Choose%20a%20Base%20Color%3C/h2%3E%0A%3Cul%3E%0A%3Cli%3ERed%3A%20Heat%2C%20Passion%2C%20Excitement%2C%20Speed%20%E2%80%A6%3C/li%3E%3C/ul%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/color-theory.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Color%20Theory%20Notes%20&body=https%3A//www.4thinker.com/color-theory.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p><a href="http://mbsy.co/7sh6q">Fundamentals of Design</a> by Tim Dikun @ <a href="http://mbsy.co/7sh6q">codeschool.com</a></p>
+<h2>Color Types</h2>
+<p>Subtractive Color (CMYK): based on the white background, printer, physical</p>
+<p>Additive Color (RGB): Based on the black background, monitor, virtual</p>
+<p>Human process color based on Hue, Saturation, and Lightness </p>
+<ul>
+<li>Hue (x): can be best represented with a color wheel, which enculates the entire RGB space. (Degree)</li>
+<li>Saturation (y): the variation of the color to gray (%)</li>
+<li>Lighness (z): the variation of the color with respect to white (100%) and black (0%)</li>
+<li>These three properties can be best represented as a cylinder </li>
+</ul>
+<h2>First Choose a Base Color</h2>
+<ul>
+<li>Red: Heat, Passion, Excitement, Speed …</li></ul> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/color-theory.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/mobile-web.html"><h1>Mobile Web Notes</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>August 21, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/web.html">web</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Mobile%20Web%20Notes%20 https%3A//www.4thinker.com/mobile-web.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/mobile-web.html&p[images][0]=&p[title]=Mobile%20Web%20Notes%20&p[summary]=%3Cp%3E%3Ca%20href%3D%22http%3A//mbsy.co/7sh6q%22%3EJourney%20Into%20Mobile%3C/a%3E%20by%20Jason%20Vanlue%20%40%20codeschool.com%3C/p%3E%0A%3Ch2%3EFluid%20Layout%3A%20convert%20%3Ccode%3Epx%3C/code%3Es%20to%20%3Ccode%3Eem%3C/code%3Es%3C/h2%3E%0A%3Cp%3EDefault%20font%20size%20is%2016%20px.%20%3C/p%3E%0A%3Cp%3EContext%20for%20..%20is%20..%3C/p%3E%0A%3Cul%3E%0A%3Cli%3EWidth%3A%20container%3C/li%3E%0A%3Cli%3EMargin%3A%20container%3C/li%3E%0A%3Cli%3EPadding%3A%20element%20itself%20%3C/li%3E%0A%3Cli%3Eline-height%3A%20font-size%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3EAdaptive%20Design%20using%20Media%20Queries%3A%3C/h2%3E%0A%3Cp%3EBreak%20points%20are%20determined%20by%20viewports%20in%20Adaptive%20Design%2C%20so%20keep%20in%20mind%20the%20popular%20device%20width%20sizes%20%28e.g.%20768px%29%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%26lt%3Blink%20rel%3D%26quot%3Bstylesheet%26quot%3B%20href%3D%26quot%3Bglobal.css%26quot%3B%20media%3D%26quot%3Ball%26quot%3B%20/%26gt%3B%0A%26lt%3Blink%20rel%3D%26quot%3Bstylesheet%26quot%3B%20href%3D%26quot%3Bmain.css%26quot%3B%20media%3D%26quot%3Bscreen%26quot%3B%20/%26gt%3B%0A%26lt%3Blink%20rel%3D%26quot%3Bstylesheet%26quot%3B%20href%3D%26quot%3Bpaper.css%26quot%3B%20media%3D%26quot%3Bprint%26quot%3B%20/%26gt%3B%0A%26lt%3Blink%20rel%3D%26quot%3Bstylesheet%26quot%3B%20href%3D%26quot%3Bmobile.css%26quot%3B%20media%3D%26quot%3Bhandheld%26quot%3B/%26gt%3B%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3E%3Ccode%3Emedia%3C/code%3E%20property%20specifies%20which%20media%20the%20linked%20resource%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/mobile-web.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Mobile%20Web%20Notes%20&body=https%3A//www.4thinker.com/mobile-web.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p><a href="http://mbsy.co/7sh6q">Journey Into Mobile</a> by Jason Vanlue @ codeschool.com</p>
+<h2>Fluid Layout: convert <code>px</code>s to <code>em</code>s</h2>
+<p>Default font size is 16 px. </p>
+<p>Context for .. is ..</p>
+<ul>
+<li>Width: container</li>
+<li>Margin: container</li>
+<li>Padding: element itself </li>
+<li>line-height: font-size</li>
+</ul>
+<h2>Adaptive Design using Media Queries:</h2>
+<p>Break points are determined by viewports in Adaptive Design, so keep in mind the popular device width sizes (e.g. 768px)</p>
+<div class="highlight"><pre><span></span>&lt;link rel=&quot;stylesheet&quot; href=&quot;global.css&quot; media=&quot;all&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;main.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;paper.css&quot; media=&quot;print&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;mobile.css&quot; media=&quot;handheld&quot;/&gt;
+</pre></div>
+
+
+<p><code>media</code> property specifies which media the linked resource …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/mobile-web.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+<div class="pagination">
+<ul>
+    <li class="prev"><a href="https://www.4thinker.com/author/forethinker11.html">&larr; Previous</a></li>
+
+    <li class=""><a href="https://www.4thinker.com/author/forethinker.html">1</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker2.html">2</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker3.html">3</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker4.html">4</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker5.html">5</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker6.html">6</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker7.html">7</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker8.html">8</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker9.html">9</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker10.html">10</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker11.html">11</a></li>
+    <li class="active"><a href="https://www.4thinker.com/author/forethinker12.html">12</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker13.html">13</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker14.html">14</a></li>
+
+    <li class="next"><a href="https://www.4thinker.com/author/forethinker13.html">Next &rarr;</a></li>
+
+</ul>
+</div>
+ 
+  
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

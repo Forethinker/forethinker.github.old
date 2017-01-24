@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+        
+
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/coffeescript.html"><h1>Coffeescript everwhere</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>November 18, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/web.html">web</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Coffeescript%20everwhere%20 https%3A//www.4thinker.com/coffeescript.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/coffeescript.html&p[images][0]=&p[title]=Coffeescript%20everwhere%20&p[summary]=%3Cp%3Eparenthesis%20for%20function%20calls%20are%20optional.%3C/p%3E%0A%3Ch2%3EInstallation%3C/h2%3E%0A%3Cp%3EUbuntu%20has%20node%20package%2C%20which%20makes%20things%20interesting.%20Many%20of%20the%20npm%20modules%20likes%20to%20refer%20%3Ccode%3Enode%3C/code%3E%2C%20but%20the%20actual%20nodejs%20binary%20is%20installed%20as%20%3Ccode%3Enodejs%3C/code%3E.%20First%20you%20have%20to%20make%20sure%20you%20don%27t%20install%20%3Ccode%3Enode%3C/code%3E%20with%20apt-get%2C%20second%20you%20have%20to%20make%20a%20symlink%20nodejs%20to%20node.%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Esudo%20ln%20-s%20/usr/bin/nodejs%20/usr/bin/node%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Ch2%3EPhpstorm%3C/h2%3E%0A%3Cp%3EPycharm%20%283.1.3%29%20does%20not%20work%20with%20LiveEdit%20because%20it%20does%20not%20have%20%3Ca%20href%3D%22http%3A//youtrack.jetbrains.com/issue/WI-17044%22%3Ea%20native%20web%20server%3C/a%3E.%20I%20just%20figured%20that%20for%20anything%20web-related%20Phpstorm%20is%20going%20to%20edge%20over%20Pycharm.%0AThe%20watcher%20feature%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/coffeescript.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Coffeescript%20everwhere%20&body=https%3A//www.4thinker.com/coffeescript.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>parenthesis for function calls are optional.</p>
+<h2>Installation</h2>
+<p>Ubuntu has node package, which makes things interesting. Many of the npm modules likes to refer <code>node</code>, but the actual nodejs binary is installed as <code>nodejs</code>. First you have to make sure you don't install <code>node</code> with apt-get, second you have to make a symlink nodejs to node.</p>
+<div class="highlight"><pre><span></span>sudo ln -s /usr/bin/nodejs /usr/bin/node
+</pre></div>
+
+
+<h2>Phpstorm</h2>
+<p>Pycharm (3.1.3) does not work with LiveEdit because it does not have <a href="http://youtrack.jetbrains.com/issue/WI-17044">a native web server</a>. I just figured that for anything web-related Phpstorm is going to edge over Pycharm.
+The watcher feature …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/coffeescript.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/vagrant.html"><h1>Vagrant</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>November 18, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Vagrant%20 https%3A//www.4thinker.com/vagrant.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/vagrant.html&p[images][0]=&p[title]=Vagrant%20&p[summary]=%3Cp%3EI%20first%20encountered%20the%20world%20vagrant%20from%20JetBrains%27%20documentation%20on%20remote%20interpreter%20for%20PyCharm.%20Vagrant%20is%20a%20way%20to%20deploy%20VMs%20in%20already%20configured%20state%20quickly%20and%20programmatically.%20It%20is%20built%20on%20Oracle%20VirtualBox%20and%20writeen%20in%20ruby.%20I%20still%20do%20not%20find%20a%20good%20use%20case%20for%20it%20yet%20for%20my%20workflow%2C%20because%20I%20create%20very%20few%20custom%20VMs%20that%20I%20recycle.%20I%20have%20not%20had%20to%20reproduce%20other%20people%27s%20working%20environment%20for%20troubleshooting%20yet.%20And%20I%20have%20created%206%20VMs%20%20But%20it%20can%20be%20used%20with%20docker%20to%20automate%20deployment%20of%20applications%20too.%3C/p%3E%0A%3Cp%3EIf%20the%20box%20is%20predefined%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/vagrant.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Vagrant%20&body=https%3A//www.4thinker.com/vagrant.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>I first encountered the world vagrant from JetBrains' documentation on remote interpreter for PyCharm. Vagrant is a way to deploy VMs in already configured state quickly and programmatically. It is built on Oracle VirtualBox and writeen in ruby. I still do not find a good use case for it yet for my workflow, because I create very few custom VMs that I recycle. I have not had to reproduce other people's working environment for troubleshooting yet. And I have created 6 VMs  But it can be used with docker to automate deployment of applications too.</p>
+<p>If the box is predefined …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/vagrant.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/hg-to-git.html"><h1>Using git for hg repository.</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>October 17, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/versioning.html">#versioning</a>, <a href="https://www.4thinker.com/tag/git.html">#git</a>, <a href="https://www.4thinker.com/tag/hg.html">#hg</a></span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Using%20git%20for%20hg%20repository.%20 https%3A//www.4thinker.com/hg-to-git.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/hg-to-git.html&p[images][0]=&p[title]=Using%20git%20for%20hg%20repository.%20&p[summary]=%3Cp%3EI%20recently%20had%20to%20work%20with%20a%20project%20that%20is%20in%20mercurial%2C%20but%20I%20know%20that%20git%20is%20more%20powerful%20and%20is%20more%20widely%20used.%20So%20I%20looked%20around%20and%20there%20is%20a%20way%20to%20use%20%3Ca%20href%3D%22http%3A//stackoverflow.com/questions/883452/git-interoperability-with-a-mercurial-repository%22%3Egit%20on%20hg%20repository.%3C/a%3E.%20Sorry%20if%20I%20am%20late%20to%20the%20party%2C%20but%20I%20am%20so%20happy.%20Because%20seriously%2C%20when%20there%20are%20two%20alternatives%2C%20%3Ca%20href%3D%22http%3A//blogs.atlassian.com/2012/03/git-vs-mercurial-why-git/%22%3EI%20would%20like%20to%20stick%20to%20the%20best%20one.%20wink%20wink.%3C/a%3E%20If%20you%20must%20use%20mercurial.%20There%20is%20an%20excellent%20article%20written%20by%20%3Ca%20href%3D%22http%3A//jamie-wong.com/2012/07/11/my-mercurial-setup-and-workflow-at-khan-academy/%22%3EJamie%20Wong%20about%20setting%20up%20mercurial%20like%20pro%3C/a%3E%2C%20but%20make%20sure%20you%20check%20out%20%3Ca%20href%3D%22https%3A//github.com/ludovicchabant/vim-lawrencium%22%3Elawrencium%3C/a%3E%20instead%20of%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/hg-to-git.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Using%20git%20for%20hg%20repository.%20&body=https%3A//www.4thinker.com/hg-to-git.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>I recently had to work with a project that is in mercurial, but I know that git is more powerful and is more widely used. So I looked around and there is a way to use <a href="http://stackoverflow.com/questions/883452/git-interoperability-with-a-mercurial-repository">git on hg repository.</a>. Sorry if I am late to the party, but I am so happy. Because seriously, when there are two alternatives, <a href="http://blogs.atlassian.com/2012/03/git-vs-mercurial-why-git/">I would like to stick to the best one. wink wink.</a> If you must use mercurial. There is an excellent article written by <a href="http://jamie-wong.com/2012/07/11/my-mercurial-setup-and-workflow-at-khan-academy/">Jamie Wong about setting up mercurial like pro</a>, but make sure you check out <a href="https://github.com/ludovicchabant/vim-lawrencium">lawrencium</a> instead of …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/hg-to-git.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/hostname.html"><h1>Sendmail on Ubuntu</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>August 26, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/sysadmin.html">sysadmin</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Sendmail%20on%20Ubuntu%20 https%3A//www.4thinker.com/hostname.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/hostname.html&p[images][0]=&p[title]=Sendmail%20on%20Ubuntu%20&p[summary]=%3Cp%3EThere%20are%20several%20options%20available%20for%20sending%20emails%20from%20your%20server%3A%20SMTP%2C%20postfix%2C%20and%20sendmail.%20I%20choose%20sendmail%20because%20it%20is%20the%20easiest%20to%20setup%20and%20I%20only%20need%20it%20to%20send%20out%20emails.%20%3C/p%3E%0A%3Ch2%3EChanging%20hostname%20temporarily%20for%20now%3C/h2%3E%0A%3Cp%3EThis%20is%20the%20name%20that%20will%20end%20up%20after%20%3Ccode%3E%40%3C/code%3E%20character%20in%20the%20email.%20It%20is%20also%20the%20name%20that%20shows%20up%20on%20your%20command%20shell%20prompt.%20%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Ehostname%20NEW_HOST_NAME%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3EYour%20prompt%20will%20not%20reflect%20the%20change%20until%20you%20reboot.%3C/p%3E%0A%3Ch2%3EChanging%20the%20hostname%20for%20when%20the%20system%20boots%3A%3C/h2%3E%0A%3Cp%3E/etc/hosts%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E127.0.0.1%20myhostname%20localhost.localdomain%20localhost%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Ch2%3EConfiguration%3C/h2%3E%0A%3Cp%3EJust%20say%20yes.%20%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Esudo%20%E2%80%A6%3C/pre%3E%3C/div%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/hostname.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Sendmail%20on%20Ubuntu%20&body=https%3A//www.4thinker.com/hostname.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>There are several options available for sending emails from your server: SMTP, postfix, and sendmail. I choose sendmail because it is the easiest to setup and I only need it to send out emails. </p>
+<h2>Changing hostname temporarily for now</h2>
+<p>This is the name that will end up after <code>@</code> character in the email. It is also the name that shows up on your command shell prompt. </p>
+<div class="highlight"><pre><span></span>hostname NEW_HOST_NAME
+</pre></div>
+
+
+<p>Your prompt will not reflect the change until you reboot.</p>
+<h2>Changing the hostname for when the system boots:</h2>
+<p>/etc/hosts</p>
+<div class="highlight"><pre><span></span>127.0.0.1 myhostname localhost.localdomain localhost
+</pre></div>
+
+
+<h2>Configuration</h2>
+<p>Just say yes. </p>
+<div class="highlight"><pre><span></span>sudo …</pre></div> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/hostname.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/javascript-package-managers.html"><h1>Javascript Package managers</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>August 15, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/web.html">web</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Javascript%20Package%20managers%20 https%3A//www.4thinker.com/javascript-package-managers.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/javascript-package-managers.html&p[images][0]=&p[title]=Javascript%20Package%20managers%20&p[summary]=%3Ch2%3ENPM%3C/h2%3E%0A%3Cp%3ENode%20package%20manager%20for%20node%20modules%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Enpm%20insall%20--save%20%26lt%3Bmoduel%26gt%3B%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3Ewill%20also%20update%20%3Ccode%3Epackage.json%3C/code%3E%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Enpm%20update%20-g%20npm%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Ch2%3EBower%3C/h2%3E%0A%3Cp%3Enone-Node%20file%20manager%2C%20including%20files%20like%20.js%2C%20.css%2C%20.html%2C%20.png%2C%20.ttf.%20It%20can%20be%20utlized%20for%20other%20framework%20%28e.g.%20AnguarlJS%29.%20%3Ccode%3Ebower%20install%3C/code%3E%20command%20can%20be%20used%20on%20bower%20resgiry%2C%20git%2C%20any%20url%2C%20or%20local%20directory%3C/p%3E%0A%3Cp%3E.bowerrc%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3E%7B%0A%20%20%26quot%3Bdirectory%26quot%3B%20%3A%20%26quot%3Bcomponents%26quot%3B%2C%0A%20%20%26quot%3Bjson%26quot%3B%20%20%20%20%20%20%3A%20%26quot%3Bbower.json%26quot%3B%2C%0A%20%20%26quot%3Bendpoint%26quot%3B%20%20%3A%20%26quot%3Bhttps%3A//Bower.herokuapp.com%26quot%3B%2C%0A%20%20%26quot%3Bsearchpath%26quot%3B%20%20%3A%20%26quot%3B%26quot%3B%2C%0A%20%20%26quot%3Bshorthand_resolver%26quot%3B%20%3A%20%26quot%3B%26quot%3B%0A%7D%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cul%3E%0A%3Cli%3Edirectory%20-%20local%20directory%20name%20and%20location%20in%20which%20the%20components%20will%20be%20installed.%0Ajson%20-%20name%20of%20the%20json%20file%20which%20contains%20the%20values%20describing%20%28i.e.%20name%2C%20version%2C%20main%2C%20dependencies%20%E2%80%A6%3C/li%3E%3C/ul%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/javascript-package-managers.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Javascript%20Package%20managers%20&body=https%3A//www.4thinker.com/javascript-package-managers.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<h2>NPM</h2>
+<p>Node package manager for node modules</p>
+<div class="highlight"><pre><span></span>npm insall --save &lt;moduel&gt;
+</pre></div>
+
+
+<p>will also update <code>package.json</code></p>
+<div class="highlight"><pre><span></span>npm update -g npm
+</pre></div>
+
+
+<h2>Bower</h2>
+<p>none-Node file manager, including files like .js, .css, .html, .png, .ttf. It can be utlized for other framework (e.g. AnguarlJS). <code>bower install</code> command can be used on bower resgiry, git, any url, or local directory</p>
+<p>.bowerrc</p>
+<div class="highlight"><pre><span></span>{
+  &quot;directory&quot; : &quot;components&quot;,
+  &quot;json&quot;      : &quot;bower.json&quot;,
+  &quot;endpoint&quot;  : &quot;https://Bower.herokuapp.com&quot;,
+  &quot;searchpath&quot;  : &quot;&quot;,
+  &quot;shorthand_resolver&quot; : &quot;&quot;
+}
+</pre></div>
+
+
+<ul>
+<li>directory - local directory name and location in which the components will be installed.
+json - name of the json file which contains the values describing (i.e. name, version, main, dependencies …</li></ul> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/javascript-package-managers.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/pelican-customization.html"><h1>Pelican Customization</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>July 28, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/web.html">web</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/pelican.html">#pelican</a>, <a href="https://www.4thinker.com/tag/blogging.html">#blogging</a>, <a href="https://www.4thinker.com/tag/powershell.html">#powershell</a>, <a href="https://www.4thinker.com/tag/anonymity.html">#anonymity</a></span>
+
+  <span>Read in 4 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Pelican%20Customization%20 https%3A//www.4thinker.com/pelican-customization.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/pelican-customization.html&p[images][0]=&p[title]=Pelican%20Customization%20&p[summary]=%3Cp%3EThis%20weekend%20you%20must%20have%20had%20my%20RSS%20feed%20messed%20up%2C%20because%20I%20was%20refreshing%20my%20blog%20with%20updates%2C%20sometimes%20broken%20one.%20Now%20I%20am%20using%20%3Ca%20href%3D%22https%3A//github.com/jmaister/readtime%22%3Ereadtime%3C/a%3E%20and%20%3Ca%20href%3D%22https%3A//github.com/getpelican/pelican-plugins/share_post%22%3Eshare_post%20plugins%3C/a%3E%20to%20show%20some%20more%20stuff%20in%20the%20article%20side-bar.%20The%20other%20two%20plugins%20I%20use%20are%20%3Ca%20href%3D%22https%3A//github.com/getpelican/pelican-plugins/tree/master/related_posts%22%3Erelated_posts%3C/a%3E%20and%20%3Ca%20href%3D%22https%3A//github.com/getpelican/pelican-plugins/tree/master/render_math%22%3Erender_math%3C/a%3E%2C%20formerly%20%27latex%27.%20I%20really%20hesitated%20on%20adding%20the%20share%20buttons%20for%20various%20reasons%20-%20one%20of%20them%20being%20I%20sometimes%20put%20inaccurate%20information%20inadvertently%2C%20but%20I%20gave%20in%20hoping%20that%20my%20readers%20would%20find%20it%20useful.%3C/p%3E%0A%3Cp%3EHaving%20no%20%3Ccode%3Ewww%3C/code%3E%20prepended%20to%20%3Ccode%3ECNAME%3C/code%3E%20file%20will%20complicate%20a%20lot%20of%20things%20for%20DNS%20entry%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/pelican-customization.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Pelican%20Customization%20&body=https%3A//www.4thinker.com/pelican-customization.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>This weekend you must have had my RSS feed messed up, because I was refreshing my blog with updates, sometimes broken one. Now I am using <a href="https://github.com/jmaister/readtime">readtime</a> and <a href="https://github.com/getpelican/pelican-plugins/share_post">share_post plugins</a> to show some more stuff in the article side-bar. The other two plugins I use are <a href="https://github.com/getpelican/pelican-plugins/tree/master/related_posts">related_posts</a> and <a href="https://github.com/getpelican/pelican-plugins/tree/master/render_math">render_math</a>, formerly 'latex'. I really hesitated on adding the share buttons for various reasons - one of them being I sometimes put inaccurate information inadvertently, but I gave in hoping that my readers would find it useful.</p>
+<p>Having no <code>www</code> prepended to <code>CNAME</code> file will complicate a lot of things for DNS entry …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/pelican-customization.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/aws-ec2.html"><h1>Learning to use AWS EC2</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>July 20, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/web.html">web</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/aws.html">#aws</a>, <a href="https://www.4thinker.com/tag/amazon.html">#amazon</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Learning%20to%20use%20AWS%20EC2%20 https%3A//www.4thinker.com/aws-ec2.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/aws-ec2.html&p[images][0]=&p[title]=Learning%20to%20use%20AWS%20EC2%20&p[summary]=%3Ch2%3EAmazon%20now%20offers%20up%20to%2030GB%20SSD%20instead%20of%20HDD%20for%20free-tier%3C/h2%3E%0A%3Cp%3EI%20didn%27t%20check%20how%20much%20hard%20drive%20space%20I%20had%20before%2C%20but%20I%20was%20using%20well%20below%2010GB.%20By%20default%20the%20general%20purpose%20SSD%20is%20set%20to%2010GB%2C%20but%20the%20maximum%20allocation%20is%2030GB%20for%20the%20free-tier%20t1.micro%20instance.%20Before%20you%20hit%20review%20button%2C%20there%20should%20be%20numbered%20tabs%20on%20the%20top%20that%20Amazon%20setup%20wizard%20did%20not%20redirect%20you%2C%20go%20to%20one%20of%20those%20and%20make%20sure%20to%20take%20the%20full%20advantage%20of%20free-tier%20service.%20I%20definitely%20noticed%20the%20speed%20up.%3C/p%3E%0A%3Ch2%3EThere%20is%20no%20password%20here%20%E2%80%A6%3C/h2%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/aws-ec2.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Learning%20to%20use%20AWS%20EC2%20&body=https%3A//www.4thinker.com/aws-ec2.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<h2>Amazon now offers up to 30GB SSD instead of HDD for free-tier</h2>
+<p>I didn't check how much hard drive space I had before, but I was using well below 10GB. By default the general purpose SSD is set to 10GB, but the maximum allocation is 30GB for the free-tier t1.micro instance. Before you hit review button, there should be numbered tabs on the top that Amazon setup wizard did not redirect you, go to one of those and make sure to take the full advantage of free-tier service. I definitely noticed the speed up.</p>
+<h2>There is no password here …</h2> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/aws-ec2.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/media-conversion.html"><h1>Converting and Transferring Various Media Files</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>July 20, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/media.html">#media</a>, <a href="https://www.4thinker.com/tag/mp4.html">#mp4</a>, <a href="https://www.4thinker.com/tag/audio.html">#audio</a>, <a href="https://www.4thinker.com/tag/video.html">#video</a></span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Converting%20and%20Transferring%20Various%20Media%20Files%20 https%3A//www.4thinker.com/media-conversion.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/media-conversion.html&p[images][0]=&p[title]=Converting%20and%20Transferring%20Various%20Media%20Files%20&p[summary]=%3Ch2%3EJoin%20mp4%20videos%20in%20minutes%20with%20MP4Joiner%3C/h2%3E%0A%3Cp%3E%3Ca%20href%3D%22http%3A//www.mp4joiner.org/en/%22%3EMp4Joiner%3C/a%3E%20is%20the%20best%20program%20for%20joining%20two%20MP4%20files%20together.%20Most%20of%20the%20camcorders%20and%20cell%20phones%20have%20file%20size%20limited%20to%204GB%20which%20translates%20to%20approximately%2033%20minutes%20for%201080p%20videos.%20If%20you%20try%20to%20merge%20two%20videos%20together%20with%20Sony%20Vegas%20or%20Adobe%20Premiere%20Pro%2C%20they%20re-render%20the%20entire%20video%2C%20taking%20more%20than%20four%20hours%28%21%29.%20But%20this%20program%20merely%20slice%20the%20metadata%20and%20merge%20the%20video%20together%2C%20taking%20less%20than%2010%20minutes.%20You%20can%20do%20the%20same%20thing%20with%20ffmpeg%2C%20but%20I%20like%20the%20optino%20of%20dragging%20and%20seeing%20the%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/media-conversion.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Converting%20and%20Transferring%20Various%20Media%20Files%20&body=https%3A//www.4thinker.com/media-conversion.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<h2>Join mp4 videos in minutes with MP4Joiner</h2>
+<p><a href="http://www.mp4joiner.org/en/">Mp4Joiner</a> is the best program for joining two MP4 files together. Most of the camcorders and cell phones have file size limited to 4GB which translates to approximately 33 minutes for 1080p videos. If you try to merge two videos together with Sony Vegas or Adobe Premiere Pro, they re-render the entire video, taking more than four hours(!). But this program merely slice the metadata and merge the video together, taking less than 10 minutes. You can do the same thing with ffmpeg, but I like the optino of dragging and seeing the …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/media-conversion.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/web-api.html"><h1>Web API notes</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>July 17, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/web.html">web</a> ]
+</span>
+
+<span>
+</span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Web%20API%20notes%20 https%3A//www.4thinker.com/web-api.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/web-api.html&p[images][0]=&p[title]=Web%20API%20notes%20&p[summary]=%3Cp%3EstopPropagation%28%29%20cuts%20off%20the%20flow%20of%20capture%20and%20bubble%20at%20that%20specified%20element%0AprevenetDefault%28%29%20allows%20event%20propagation%20but%20prevents%20the%20browser%20from%20carrying%20out%20its%20default%20action%20%28e.g.%20opening%20a%20new%20tab%20when%20a%20link%20is%20clicked%29%0AaddEventListener%2C%20removeEventListener%2C%20Event.preventDefault%20and%20Event.stopPropagation%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/web-api.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Web%20API%20notes%20&body=https%3A//www.4thinker.com/web-api.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>stopPropagation() cuts off the flow of capture and bubble at that specified element
+prevenetDefault() allows event propagation but prevents the browser from carrying out its default action (e.g. opening a new tab when a link is clicked)
+addEventListener, removeEventListener, Event.preventDefault and Event.stopPropagation</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/web-api.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/learning-a-new-language.html"><h1>Food for thought if you are learning a new language</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>July 16, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/life.html">life</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/language.html">#language</a>, <a href="https://www.4thinker.com/tag/learning.html">#learning</a></span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Food%20for%20thought%20if%20you%20are%20learning%20a%20new%20language%20 https%3A//www.4thinker.com/learning-a-new-language.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/learning-a-new-language.html&p[images][0]=&p[title]=Food%20for%20thought%20if%20you%20are%20learning%20a%20new%20language%20&p[summary]=%3Cp%3EYou%20know%2C%20I%20see%20all%20these%20videos%20for%20learning%20English%2C%20breaking%20down%20the%20grammar%20structure%20and%20vocabulary%20for%20every%20sentence.%20Then%20I%20wonder%2C%20how%20would%20a%20baby%20take%20in%20those%20lessons%3F%20I%20mean%201%20year%20old%20baby%20is%20no%20smarter%20than%20most%20of%20you%20out%20there.%20Okay%2C%20my%20smarter%20I%20mean%2C%20his/her%20knowledge%20base%20is%20much%20less%20than%20most%20of%20you.%20Maybe%20someone%20could%20argue%20that%20knowing%20less%20is%20an%20advantage%2C%20but%20in%20my%20opinion%2C%20such%20academic%20way%20of%20learning%20a%20new%20language%20is%20horribly%20inefficient.%20Even%20if%20you%20cannot%20afford%20to%20live%20in%20the%20native%20country%20for%20a%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/learning-a-new-language.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Food%20for%20thought%20if%20you%20are%20learning%20a%20new%20language%20&body=https%3A//www.4thinker.com/learning-a-new-language.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>You know, I see all these videos for learning English, breaking down the grammar structure and vocabulary for every sentence. Then I wonder, how would a baby take in those lessons? I mean 1 year old baby is no smarter than most of you out there. Okay, my smarter I mean, his/her knowledge base is much less than most of you. Maybe someone could argue that knowing less is an advantage, but in my opinion, such academic way of learning a new language is horribly inefficient. Even if you cannot afford to live in the native country for a …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/learning-a-new-language.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+<div class="pagination">
+<ul>
+    <li class="prev"><a href="https://www.4thinker.com/author/forethinker2.html">&larr; Previous</a></li>
+
+    <li class=""><a href="https://www.4thinker.com/author/forethinker.html">1</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker2.html">2</a></li>
+    <li class="active"><a href="https://www.4thinker.com/author/forethinker3.html">3</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker4.html">4</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker5.html">5</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker6.html">6</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker7.html">7</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker8.html">8</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker9.html">9</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker10.html">10</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker11.html">11</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker12.html">12</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker13.html">13</a></li>
+    <li class=""><a href="https://www.4thinker.com/author/forethinker14.html">14</a></li>
+
+    <li class="next"><a href="https://www.4thinker.com/author/forethinker4.html">Next &rarr;</a></li>
+
+</ul>
+</div>
+ 
+  
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

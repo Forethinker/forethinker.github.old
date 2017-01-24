@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Forethinker - sysadmin</title><link href="https://www.4thinker.com/" rel="alternate"></link><link href="https://www.4thinker.com/feeds/sysadmin.atom.xml" rel="self"></link><id>https://www.4thinker.com/</id><updated>2014-08-26T16:15:03-07:00</updated><entry><title>Sendmail on Ubuntu</title><link href="https://www.4thinker.com/hostname.html" rel="alternate"></link><published>2014-08-26T16:15:03-07:00</published><updated>2014-08-26T16:15:03-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-08-26:/hostname.html</id><summary type="html">&lt;p&gt;There are several options available for sending emails from your server: SMTP, postfix, and sendmail. I choose sendmail because it is the easiest to setup and I only need it to send out emails. &lt;/p&gt;
+&lt;h2&gt;Changing hostname temporarily for now&lt;/h2&gt;
+&lt;p&gt;This is the name that will end up after &lt;code&gt;@&lt;/code&gt; character in the email. It is also the name that shows up on your command shell prompt. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;hostname NEW_HOST_NAME
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Your prompt will not reflect the change until you reboot.&lt;/p&gt;
+&lt;h2&gt;Changing the hostname for when the system boots:&lt;/h2&gt;
+&lt;p&gt;/etc/hosts&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;127.0.0.1 myhostname localhost.localdomain localhost
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;Just say yes. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;There are several options available for sending emails from your server: SMTP, postfix, and sendmail. I choose sendmail because it is the easiest to setup and I only need it to send out emails. &lt;/p&gt;
+&lt;h2&gt;Changing hostname temporarily for now&lt;/h2&gt;
+&lt;p&gt;This is the name that will end up after &lt;code&gt;@&lt;/code&gt; character in the email. It is also the name that shows up on your command shell prompt. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;hostname NEW_HOST_NAME
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Your prompt will not reflect the change until you reboot.&lt;/p&gt;
+&lt;h2&gt;Changing the hostname for when the system boots:&lt;/h2&gt;
+&lt;p&gt;/etc/hosts&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;127.0.0.1 myhostname localhost.localdomain localhost
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;Just say yes. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo sendmailconfig
+service sendmail restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;MAIL_HUB and LOCAL_REPLY&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.sendmail.com/sm/open_source/docs/m4/masquerading.html"&gt;These are for unqualified and local names.&lt;/a&gt;
+/etc/mail/sendmail.mc&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;define(`MAIL_HUB&amp;#39;, `example.com.&amp;#39;)dnl
+define(`LOCAL_RELAY&amp;#39;, `example.com.&amp;#39;)dnl
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Test&lt;/h2&gt;
+&lt;p&gt;-t flag i&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;echo -e &amp;quot;To: user@example.com\nSubject: Test\nTest\n&amp;quot; | sendmail -t -v
+&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>CentOS fixes</title><link href="https://www.4thinker.com/centos-fixes.html" rel="alternate"></link><published>2014-05-13T01:53:00-07:00</published><updated>2014-05-13T01:53:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-05-13:/centos-fixes.html</id><summary type="html">&lt;p&gt;My company is forcing me to use CentOS. I was in a state of shock for a few days and pretend it did not happen, but I have to live with it. Here are the fixes I had to go through:&lt;/p&gt;
+&lt;h2&gt;The permission on ~/.ssh&lt;/h2&gt;
+&lt;p&gt;This seems to be a bit more strict. I had to set ~/.ssh permission to 600 and ~/.ssh/authorized_keys to &lt;code&gt;700&lt;/code&gt; to make &lt;code&gt;ssh-copy-id&lt;/code&gt; to make it work&lt;/p&gt;
+&lt;h2&gt;Installing&lt;/h2&gt;
+&lt;h2&gt;Allowing to run commands as sudo&lt;/h2&gt;
+&lt;p&gt;e.g. &lt;code&gt;sudo vim /etc/profile&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo bash -c &amp;quot;echo &amp;#39;%wheel  ALL=(ALL)       SETENV: ALL&amp;#39; &amp;gt;&amp;gt; /etc/sudoer&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="http://superuser.com/questions/548508/why-cant-i-sudo-some-commands-e-g-vim"&gt;explantion here on …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;My company is forcing me to use CentOS. I was in a state of shock for a few days and pretend it did not happen, but I have to live with it. Here are the fixes I had to go through:&lt;/p&gt;
+&lt;h2&gt;The permission on ~/.ssh&lt;/h2&gt;
+&lt;p&gt;This seems to be a bit more strict. I had to set ~/.ssh permission to 600 and ~/.ssh/authorized_keys to &lt;code&gt;700&lt;/code&gt; to make &lt;code&gt;ssh-copy-id&lt;/code&gt; to make it work&lt;/p&gt;
+&lt;h2&gt;Installing&lt;/h2&gt;
+&lt;h2&gt;Allowing to run commands as sudo&lt;/h2&gt;
+&lt;p&gt;e.g. &lt;code&gt;sudo vim /etc/profile&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo bash -c &amp;quot;echo &amp;#39;%wheel  ALL=(ALL)       SETENV: ALL&amp;#39; &amp;gt;&amp;gt; /etc/sudoer&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="http://superuser.com/questions/548508/why-cant-i-sudo-some-commands-e-g-vim"&gt;explantion here on stackoverflow&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Configuring IPTables for samba&lt;/h2&gt;
+&lt;p&gt;-A INPUT -s 10.3.1.0/24 -m state --state NEW -m tcp -p tcp --dport 445 -j ACCEPT
+-A INPUT -s 10.3.1.0/24 -m state --state NEW -m udp -p udp --dport 445 -j ACCEPT
+-A INPUT -s 10.3.1.0/24 -m state --state NEW -m udp -p udp --dport 137 -j ACCEPT
+-A INPUT -s 10.3.1.0/24 -m state --state NEW -m udp -p udp --dport 138 -j ACCEPT
+-A INPUT -s 10.3.1.0/24 -m state --state NEW -m tcp -p tcp --dport 139 -j ACCEPT&lt;/p&gt;
+&lt;p&gt;-A INPUT -s 10.1.40.0/24 -m state --state NEW -m tcp -p tcp --dport 445 -j ACCEPT
+-A INPUT -s 10.1.40.0/24 -m state --state NEW -m udp -p udp --dport 445 -j ACCEPT
+-A INPUT -s 10.1.40.0/24 -m state --state NEW -m udp -p udp --dport 137 -j ACCEPT
+-A INPUT -s 10.1.40.0/24 -m state --state NEW -m udp -p udp --dport 138 -j ACCEPT
+-A INPUT -s 10.1.40.0/24 -m state --state NEW -m tcp -p tcp --dport 139 -j ACCEPT&lt;/p&gt;
+&lt;p&gt;chkconfig smb on&lt;/p&gt;
+&lt;h2&gt;Mutually Exclusive Features for ZSH builds? -- Solved&lt;/h2&gt;
+&lt;p&gt;At first, I thought I have to choose between local history (per-disrectory-history) plugin or the nice vim-airline like agnoster zsh_theme and correct character rendering. If you build it manually from the website, for some reason the character does not render correctly. If you use the latest zsh that comes with CentOS, the &lt;code&gt;print -S&lt;/code&gt; fails because there is no parameter introduced at that version. Solution? Keep them both, but make sure your shell and screen is invoking the one that built&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;wget http://www.zsh.org/pub/zsh-5.0.5.tar.bz2 &amp;amp;&amp;amp; tar xvjf zsh-5.0.5.tar.bz2 &amp;amp;&amp;amp; cd zsh-5.0.5
+./configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; sudo make install
+echo &amp;quot;/usr/local/bin/zsh&amp;quot; | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/zsh
+
+
+ls -la /usr/bin/zsh
+sudo rm /usr/bin/zsh
+sudo ln -s /usr/local/bin/zsh /usr/bin/zsh
+&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>Ubuntu configurations and fixes</title><link href="https://www.4thinker.com/ubnutu-fixes.html" rel="alternate"></link><published>2014-04-25T11:56:00-07:00</published><updated>2014-04-25T11:56:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-04-25:/ubnutu-fixes.html</id><summary type="html">&lt;h2&gt;Simplifying the Message of the Day:&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo vim /etc/update-motd.d/50-landscape-sysinfo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;add this flag: &lt;code&gt;--exclude-sysinfo-plugins=LandscapeLink&lt;/code&gt; to&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/usr/bin/landscape-sysinfo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and see the change with: &lt;code&gt;/etc/update-motd.d/50-landscape-sysinfo&lt;/code&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Simplifying the Message of the Day:&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo vim /etc/update-motd.d/50-landscape-sysinfo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;add this flag: &lt;code&gt;--exclude-sysinfo-plugins=LandscapeLink&lt;/code&gt; to&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/usr/bin/landscape-sysinfo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and see the change with: &lt;code&gt;/etc/update-motd.d/50-landscape-sysinfo&lt;/code&gt;&lt;/p&gt;</content></entry><entry><title>Apache Notes</title><link href="https://www.4thinker.com/apache.html" rel="alternate"></link><published>2014-03-08T05:44:00-08:00</published><updated>2014-03-08T05:44:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-03-08:/apache.html</id><summary type="html">&lt;p&gt;Apache is pretty well documented, but I can't remember things until I make a note of it&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;UseCanonicalName On
+#DocumentRoot &amp;quot;/var/www/html&amp;quot;
+#&lt;span class="nt"&gt;&amp;lt;Directory&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+#    Options FollowSymLinks
+#    AllowOverride None
+#&lt;span class="nt"&gt;&amp;lt;/Directory&amp;gt;&lt;/span&gt;
+
+#&lt;span class="nt"&gt;&amp;lt;Directory&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;/var/www/html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+#    Options Indexes FollowSymLinks
+#    AllowOverride None
+#    Order allow,deny
+#    Allow from all
+#&lt;span class="nt"&gt;&amp;lt;/Directory&amp;gt;&lt;/span&gt;
+#ErrorLog logs/error_log 
+#CustomLog logs/access_log combined
+NameVirtualHost *:80
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Error logs that are of relative path are stored under &lt;code&gt;/etc/httpd&lt;/code&gt;. Without the path, the default location of the logs depend:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;RHEL / Red Hat / CentOS / Fedora - /var/log/httpd/
+Debian / Ubuntu - /var/log/apache2/
+FreeBSD - /var/log/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The second argument to CustomLog can be &lt;code&gt;common …&lt;/code&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Apache is pretty well documented, but I can't remember things until I make a note of it&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;UseCanonicalName On
+#DocumentRoot &amp;quot;/var/www/html&amp;quot;
+#&lt;span class="nt"&gt;&amp;lt;Directory&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+#    Options FollowSymLinks
+#    AllowOverride None
+#&lt;span class="nt"&gt;&amp;lt;/Directory&amp;gt;&lt;/span&gt;
+
+#&lt;span class="nt"&gt;&amp;lt;Directory&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;/var/www/html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+#    Options Indexes FollowSymLinks
+#    AllowOverride None
+#    Order allow,deny
+#    Allow from all
+#&lt;span class="nt"&gt;&amp;lt;/Directory&amp;gt;&lt;/span&gt;
+#ErrorLog logs/error_log 
+#CustomLog logs/access_log combined
+NameVirtualHost *:80
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Error logs that are of relative path are stored under &lt;code&gt;/etc/httpd&lt;/code&gt;. Without the path, the default location of the logs depend:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;RHEL / Red Hat / CentOS / Fedora - /var/log/httpd/
+Debian / Ubuntu - /var/log/apache2/
+FreeBSD - /var/log/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The second argument to CustomLog can be &lt;code&gt;common&lt;/code&gt; or &lt;code&gt;combined&lt;/code&gt;. It is just a way the logs are &lt;a href="http://httpd.apache.org/docs/1.3/logs.html#common"&gt;formatted&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Probab&lt;/p&gt;
+&lt;p&gt;to restart apache&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;service httpd restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Syntax check for the configuration file&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;`httpd -t`
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Shows how the configuration file is parsed:
+    &lt;code&gt;httpd -S&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Don't let SELinux context bite you:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;chcon -t httpd_config_t httpd.conf
+&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>Samba Quick Setup Guide</title><link href="https://www.4thinker.com/samba.html" rel="alternate"></link><published>2014-02-21T07:04:00-08:00</published><updated>2014-02-21T07:04:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-02-21:/samba.html</id><summary type="html">&lt;h2&gt;Install smaba and configure&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install samba
+sudo vim /etc/samba/smb.conf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Configuring smb.conf&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;security = user
+
+[homes]
+   comment = Home Directories
+   browseable = yes
+   valid users = %S
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;valid users = %S means that only you, or anyone with your login account, can connect to your own Home folder via Samba.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[share]&lt;/span&gt;
+    &lt;span class="na"&gt;comment&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;New Share Path&lt;/span&gt;
+&lt;span class="s"&gt;    path = /path/to/share/folder&lt;/span&gt;
+&lt;span class="s"&gt;    browsable = yes&lt;/span&gt;
+&lt;span class="s"&gt;    guest ok = yes&lt;/span&gt;
+&lt;span class="s"&gt;    read only = no&lt;/span&gt;
+&lt;span class="s"&gt;    create mask = 0755&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Adding a user to the samba user list:&lt;/h2&gt;
+&lt;p&gt;If you want to add a user (adding a dedicated user for server administration is a good security measure), do&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;useradd …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Install smaba and configure&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install samba
+sudo vim /etc/samba/smb.conf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Configuring smb.conf&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;security = user
+
+[homes]
+   comment = Home Directories
+   browseable = yes
+   valid users = %S
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;valid users = %S means that only you, or anyone with your login account, can connect to your own Home folder via Samba.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[share]&lt;/span&gt;
+    &lt;span class="na"&gt;comment&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;New Share Path&lt;/span&gt;
+&lt;span class="s"&gt;    path = /path/to/share/folder&lt;/span&gt;
+&lt;span class="s"&gt;    browsable = yes&lt;/span&gt;
+&lt;span class="s"&gt;    guest ok = yes&lt;/span&gt;
+&lt;span class="s"&gt;    read only = no&lt;/span&gt;
+&lt;span class="s"&gt;    create mask = 0755&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Adding a user to the samba user list:&lt;/h2&gt;
+&lt;p&gt;If you want to add a user (adding a dedicated user for server administration is a good security measure), do&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;useradd &amp;lt;username&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo smbpasswd -a &amp;lt;username&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;restart samba service&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo service smbd restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;or&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo /etc/init.d/smb start
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Open ports if you have iptables enabled&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-A INPUT -s 10.3.1.0/24 -m state --state NEW -m tcp -p tcp --dport 445 -j ACCEPT
+-A INPUT -s 10.3.1.0/24 -m state --state NEW -m udp -p udp --dport 445 -j ACCEPT
+-A INPUT -s 10.3.1.0/24 -m state --state NEW -m udp -p udp --dport 137 -j ACCEPT
+-A INPUT -s 10.3.1.0/24 -m state --state NEW -m udp -p udp --dport 138 -j ACCEPT
+-A INPUT -s 10.3.1.0/24 -m state --state NEW -m tcp -p tcp --dport 139 -j ACCEPT
+
+-A INPUT -s 10.1.40.0/24 -m state --state NEW -m tcp -p tcp --dport 445 -j ACCEPT
+-A INPUT -s 10.1.40.0/24 -m state --state NEW -m udp -p udp --dport 445 -j ACCEPT
+-A INPUT -s 10.1.40.0/24 -m state --state NEW -m udp -p udp --dport 137 -j ACCEPT
+-A INPUT -s 10.1.40.0/24 -m state --state NEW -m udp -p udp --dport 138 -j ACCEPT
+-A INPUT -s 10.1.40.0/24 -m state --state NEW -m tcp -p tcp --dport 139 -j ACCEPT
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Start on boot (for Debian and CentOS)&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;chkconfig --list smb
+chkconfig smb on
+chkconfig --list smb
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;The username or password is incorrect&lt;/h2&gt;
+&lt;p&gt;If Windows throws this error in the credential page, just make sure to tick the "Save the credential" box below.&lt;/p&gt;</content><category term="server"></category></entry><entry><title>Setting Up Linux</title><link href="https://www.4thinker.com/linux-setup.html" rel="alternate"></link><published>2014-02-14T08:00:00-08:00</published><updated>2014-02-14T08:00:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-02-14:/linux-setup.html</id><summary type="html">&lt;h2&gt;Essential&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get update
+sudo apt-get install -y vim git python python-pip tmux zsh python-dev libxml2-dev libxslt-dev ssh
+sudo apt-get install -y default-jre
+sudo pip install virtualenv requests
+sudo npm install -g casperjs coffee-script js2coffee coffeelint uglify-js
+
+# sudo apt-get install gtk2-engines-pixbuf vim-gnome clipit xclip xdotool xdiskusage resolvconf acpitool xmodmap powertop zip unzip curl
+sudo apt-get install openjdk-7-jre openjdk-7-jdk
+# Laptop-specific
+sudo apt-get install lsof
+sudo apt-get purge laptop-mode-tools
+# Extra
+sudo apt-get install ia32-libs eclipse xfce4-settings telnet ntpdate mongodb
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;npm in ubuntu&lt;/h2&gt;
+&lt;p&gt;If linking the nodejs binary to node is not sufficient for …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Essential&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get update
+sudo apt-get install -y vim git python python-pip tmux zsh python-dev libxml2-dev libxslt-dev ssh
+sudo apt-get install -y default-jre
+sudo pip install virtualenv requests
+sudo npm install -g casperjs coffee-script js2coffee coffeelint uglify-js
+
+# sudo apt-get install gtk2-engines-pixbuf vim-gnome clipit xclip xdotool xdiskusage resolvconf acpitool xmodmap powertop zip unzip curl
+sudo apt-get install openjdk-7-jre openjdk-7-jdk
+# Laptop-specific
+sudo apt-get install lsof
+sudo apt-get purge laptop-mode-tools
+# Extra
+sudo apt-get install ia32-libs eclipse xfce4-settings telnet ntpdate mongodb
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;npm in ubuntu&lt;/h2&gt;
+&lt;p&gt;If linking the nodejs binary to node is not sufficient for making npm and bower work, run the following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install nodejs-legacy
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;oh-my-zsh&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+chsh -s $(which zsh)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Copy dotfiles from Dropbox&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cdi ~ &lt;span class="err"&gt;&amp;amp;&amp;amp;&lt;/span&gt; wget --no-check-certificate -O - &amp;quot;https://www.dropbox.com/download?plat=lnx.x86_64&amp;quot; | tar xzf - &lt;span class="err"&gt;&amp;amp;&amp;amp;&lt;/span&gt; ~/.dropbox-dist/dropboxd
+sudo wget -O /usr/local/bin/dropbox &amp;quot;http://www.dropbox.com/download?dl=packages/dropbox.py&amp;quot;
+sudo chmod 755 /usr/local/bin/dropbox
+# /usr/local/bin/dropbox help
+dropbox autostart y
+dropbox start
+find ~/Dropbox/dev/dotfiles/ -maxdepth 1 -type f -name &amp;#39;.??*&amp;#39; -print0 | xargs -0I{} sh -c &amp;#39;base=&amp;quot;$(basename $0)&amp;quot;; if [ -f &lt;span class="nv"&gt;$HOME&lt;/span&gt;/&amp;quot;&lt;span class="nv"&gt;$base&lt;/span&gt;&amp;quot; ]; then  mv &lt;span class="nv"&gt;$HOME&lt;/span&gt;/&amp;quot;&lt;span class="nv"&gt;$base&lt;/span&gt;&amp;quot; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/&amp;quot;&lt;span class="nv"&gt;$base&lt;/span&gt;&amp;quot;.bak; echo &amp;quot;$0&amp;quot; {}; fi; ln -s &amp;quot;$0&amp;quot; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/&amp;quot;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&amp;quot;&amp;#39; {}
+#Copy the .ssh directory
+rm -rf .ssh &lt;span class="err"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo cp -r ~/Dropbox/dev/dotfiles/.ssh .
+#Link other config files
+ln -s ~/Dropbox/dev/dotfiles/.config ~/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;for more information on command-line Dropbox, visit the &lt;a href="http://www.dropboxwiki.com/tips-and-tricks/install-dropbox-in-an-entirely-text-based-linux-environment"&gt;unofficial wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Install vundle and other plugins for vim&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+vim -c &amp;quot;BundleInstall&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Install windows fonts, including Consolas&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install cabextract
+bash &amp;lt;(curl -s http://plasmasturm.org/code/vistafonts-installer/vistafonts-installer)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Power Save&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Follow the instruction from [here](http://okomestudio.net/biboroku/?p=1915#comment-14648)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Turn off the discrete graphics card&lt;/h2&gt;
+&lt;p&gt;This will save a lot of battery. How much? Almost 30% of your battery capacity depending on your graphics card.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo su
+apt-get install dkms
+git clone https://github.com/Bumblebee-Project/bbswitch.git
+cd bbswitch
+# compile and install the module
+make -f Makefile.dkms
+#unload the nouveau driver - has accesses discrete graphics card and prevents from turning it off
+modprobe -r nouveau
+# activate the module
+modprobe bbswitch
+
+# to uninstall the module
+make -f Makefile.dmks uninstall
+# check the status of the NVIDA graphics card
+cat /proc/acpi/bbswitch
+# to turn it on
+tee /proc/acpi/bbswitch &amp;lt;&amp;lt;&amp;lt; ON
+# to turn it off
+tee /proc/acpi/bbswitch &amp;lt;&amp;lt;&amp;lt; OFF
+
+# to check for the error
+dmesg | tail -l
+
+# to auto-distable the card on boot
+echo &amp;quot;blacklist nouveau&amp;quot; &amp;gt;&amp;gt; /etc/modprobe.d/blacklist
+echo &amp;quot;bbswitch load_state=0&amp;quot; &amp;gt;&amp;gt; /etc/modules
+update-initramfs -u
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Korean Font&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;apt-get install nabi im-switch ttf-nanum ttf-nanum-coding ttf-unfonts-core ttf-unfonts-extra ttf-alee ttf-baekmuk
+im-switch
+#select nabi
+#logout and login
+#remove shift-space keybinding because it is annoying
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Theme&lt;/h2&gt;
+&lt;p&gt;I like &lt;a href="http://killhellokitty.deviantart.com/"&gt;delorean theme by killhellokitty&lt;/a&gt; and it is pretty well maintained
+move the files to &lt;code&gt;$HOME/.themes&lt;/code&gt; or &lt;code&gt;/usr/share/themes&lt;/code&gt;.  Select the theme using &lt;code&gt;gtk-chtheme&lt;/code&gt; or &lt;code&gt;lxappearance&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Wireless Driver (Broadcom, Debian)&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get update
+apt-get install linux-headers-$(uname -r|sed &amp;#39;s,[^-]*-[^-]*-,,&amp;#39;) broadcom-sta-dkms
+modprobe -r b44 b43 b43legacy ssb brcmsmac
+modprobe wl
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Clipboard&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Use Primary Selection, Synchronize clipboard
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Wireless&lt;/h2&gt;
+&lt;p&gt;download the driver from from: &lt;code&gt;http://www.broadcom.com/support/802.11/linux_sta.php&lt;/code&gt;
+and read the instruction if you need more details: http://www.broadcom.com/docs/linux_sta/README.txt&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;tar -xvcf *.tar.gz
+make
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To install drive manually (and then lose it after the reboot):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo rmmod wl
+sudo insmod /lib/modules/3.2.0-4-amd64/kernel/net/wireless/cfg80211.ko
+sudo insmod /lib/modules/3.2.0-4-amd64/kernel/net/wireless/wl.ko
+sudo modprobe wl
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To make the change permanent&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo sh -c &amp;#39;echo -e &amp;quot;lib80211\ncfg80211\nwl&amp;quot; &amp;gt;&amp;gt; /etc/modules&amp;#39;
+sudo update-initramfs -u
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The power saving option for wireless may cause problem. I was getting a bunch of errors on my syslog:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;crunchbang kernel: [  130.973790] ERROR @wl_cfg80211_get_station : Wrong Mac address
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To temporarily fix the problem, you can do (First check your device with iwconfig and replace wlan0 appropriately):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo iwconfig wlan0 power off
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To make the change permanent, &lt;a href="http://askubuntu.com/questions/85214/how-can-i-prevent-iwconfig-power-management-from-being-turned-on"&gt;the suggested edit is&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo sh -c &amp;#39;echo -e &amp;quot;HOOK_BLACKLIST=&amp;quot;wireless&amp;quot;&amp;#39; &amp;gt;&amp;gt; /etc/pm/config.d/blacklist
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Install my preferred file manager&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-add-repository ppa:alexx2000/doublecmd
+sudo apt-get update
+sudo apt-get install odt2txt doublecmd-gtk
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Change hostname&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;edit the file /etc/hostname
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Modifying grub&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt-get update
+sudo apt-get install grub-customizer
+sudo grub-customizer
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Openbox Configuration&lt;/h2&gt;
+&lt;p&gt;I am fan of openbox, so I use &lt;a href="https://github.com/tpope/vim-surround"&gt;gobang&lt;/a&gt; as my primary Linux OS. You install it by invoking &lt;code&gt;ubiquity&lt;/code&gt; in the command prompt after booting from the liveCD. Here are some extensive list of custom &lt;a href="http://melp.nl/2011/01/10-must-have-key-and-mouse-binding-configs-in-openbox/"&gt;shortcuts for openbox&lt;/a&gt;.&lt;/p&gt;</content><category term="linux"></category><category term="setup"></category><category term="laptop"></category></entry><entry><title>How I setup my Cygwin</title><link href="https://www.4thinker.com/cygwin-setup.html" rel="alternate"></link><published>2014-02-14T07:23:00-08:00</published><updated>2014-02-14T07:23:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-02-14:/cygwin-setup.html</id><summary type="html">&lt;p&gt;By googling around I found &lt;a href="http://randomartifacts.blogspot.com/2012/10/a-proper-cygwin-environment.html"&gt;a pretty comprehensive guide by Thomas Wheeler&lt;/a&gt;. His instruction on 'Mapping Cygdrive' did not work for me and I decided to fork an instruction on my own, so that I can keep adding stuff if I want to.&lt;/p&gt;
+&lt;h2&gt;Moving your home directory to your Windows profile directory&lt;/h2&gt;
+&lt;p&gt;I found this setup to be consistent with other unix systems. It preserves my sanity in the long run.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkpasswd -l -d -p &amp;quot;$(cygpath -H)&amp;quot; &amp;gt; /etc/passwd
+mkgroup -l -d &amp;gt; /etc/group
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Installing Essential Programs&lt;/h2&gt;
+&lt;p&gt;Download the &lt;a href="http://cygwin.com/setup.exe"&gt;setup.exe&lt;/a&gt; and install it along with wget. We will be …&lt;/p&gt;</summary><content type="html">&lt;p&gt;By googling around I found &lt;a href="http://randomartifacts.blogspot.com/2012/10/a-proper-cygwin-environment.html"&gt;a pretty comprehensive guide by Thomas Wheeler&lt;/a&gt;. His instruction on 'Mapping Cygdrive' did not work for me and I decided to fork an instruction on my own, so that I can keep adding stuff if I want to.&lt;/p&gt;
+&lt;h2&gt;Moving your home directory to your Windows profile directory&lt;/h2&gt;
+&lt;p&gt;I found this setup to be consistent with other unix systems. It preserves my sanity in the long run.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkpasswd -l -d -p &amp;quot;$(cygpath -H)&amp;quot; &amp;gt; /etc/passwd
+mkgroup -l -d &amp;gt; /etc/group
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Installing Essential Programs&lt;/h2&gt;
+&lt;p&gt;Download the &lt;a href="http://cygwin.com/setup.exe"&gt;setup.exe&lt;/a&gt; and install it along with wget. We will be using &lt;code&gt;apt-cyg&lt;/code&gt;, which is similar to &lt;code&gt;apt-get&lt;/code&gt; in Debian-based linux distros. It allows you to specify the packages you want to install right on the terminal:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;wget https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg
+chmod +x apt-cyg
+mv apt-cyg /usr/local/bin/
+if [ $(uname -m) == &amp;#39;i686&amp;#39; ]; then arch=&amp;quot;x86&amp;quot;; else arch=&amp;quot;x86_64&amp;quot;; fi; sed -i &amp;quot;s/\(wget -N \$mirror\)\(\/setup\..*\)/\1\/$arch\2/&amp;quot; /usr/local/bin/apt-cyg
+/usr/local/bin/apt-cyg ctags curl gcc-g++ install make mintty mysql mysqld openssl tar vim vim-common wget which tmux
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The line that starts with &lt;code&gt;if&lt;/code&gt; is to &lt;a href="http://code.google.com/p/apt-cyg/issues/detail?id=26"&gt;fix the bug&lt;/a&gt; introduced by Cygwin distinguishing x86 and x64 in their setup.ini file. I wrote the script so that it does not accidentally make wrong changes in the future.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-m&lt;/code&gt; specifies which server to fetch the installation files from. The default one supplied by &lt;code&gt;apt-cyg&lt;/code&gt; does not work. So I substituted it with &lt;code&gt;ftp://ftp.cygwinports.org/pub/cygwinports/&lt;/code&gt; which is the most popular choice.&lt;/p&gt;
+&lt;h2&gt;Better Terminal&lt;/h2&gt;
+&lt;p&gt;I sticky with mintty and screen, because they emulate the terminal environment in other systems and forces me to practice using screen (no tab), but certainly better options are available. &lt;a href="http://sourceforge.net/projects/console/"&gt;Console&lt;/a&gt; and &lt;a href="http://www.hanselman.com/blog/ConEmuTheWindowsTerminalConsolePromptWeveBeenWaitingFor.aspx"&gt;Conemu&lt;/a&gt; and &lt;a href="http://www.kevwebdev.com/blog/in-search-of-a-better-windows-console-using-ansicon-console2-and-git-bash.html#console2"&gt;Console2&lt;/a&gt;. Now I will let you choose, but just heads up: Scott Hanselman chose ConEmu over Console2.&lt;/p&gt;
+&lt;h2&gt;Changing Shell from Bash to zsh&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;apt-cyg install zsh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;On C:/cygwin/Cygwin.bat file or in your Terminal settings, set:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cygwin\bin\bash --login -i
+
+to
+
+cygwin\bin\zsh -l -i
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;or edit /etc/passwd file so that the shell with your name is set to &lt;code&gt;/bin/bash&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sed -i &amp;quot;s/$USER\:\/bin\/bash/$USER\:\/bin\/zsh/g&amp;quot; /etc/passwd
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Don't use the automatic installer. If you do, you will have to delete the last line in .zshrc, because cygwin populates &lt;code&gt;PATH&lt;/code&gt; for you anyway.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#Don&amp;#39;t use this
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Use this instead:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;git&lt;/span&gt; &lt;span class="nt"&gt;clone&lt;/span&gt; &lt;span class="nt"&gt;git&lt;/span&gt;&lt;span class="o"&gt;://&lt;/span&gt;&lt;span class="nt"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;robbyrussell&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;oh-my-zsh&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;git&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;oh-my-zsh&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;if&lt;/span&gt; &lt;span class="cp"&gt;[&lt;/span&gt; &lt;span class="na"&gt;-f&lt;/span&gt; &lt;span class="err"&gt;~&lt;/span&gt;&lt;span class="p"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;.zshrc&lt;/span&gt; &lt;span class="cp"&gt;]&lt;/span&gt; &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="cp"&gt;[&lt;/span&gt; &lt;span class="na"&gt;-h&lt;/span&gt; &lt;span class="err"&gt;~&lt;/span&gt;&lt;span class="p"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;.zshrc&lt;/span&gt; &lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;then&lt;/span&gt; &lt;span class="nt"&gt;cp&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;zshrc&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;zshrc&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;orig&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;rm&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;zshrc&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="nt"&gt;fi&lt;/span&gt;
+&lt;span class="nt"&gt;cp&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;oh-my-zsh&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;templates&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;zshrc&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;zsh-template&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;zshrc&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Disable bash completion&lt;/h2&gt;
+&lt;p&gt;Bash completion, for some reason creates lag on cd. So I just &lt;a href="http://stackoverflow.com/questions/15536212/slow-load-time-of-bash-in-cygwin"&gt;disable it by renaming the directory.&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mv /etc/bash_completion.d -v /etc/bash_completion.d_bak
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Migration&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;if you are coming from bash shell, you would probably have .bashrc file that you would want to import. In my case importing was pretty easy. I grouped some `export`s and `shopt` under:
+
+if [ -n &amp;quot;$BASH_VERSION&amp;quot; ]; then
+...
+fi
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and then added the following line to .zshrc at the end.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;if [ -f &amp;quot;$HOME/.bashrc&amp;quot; ]; then
+    . &amp;quot;$HOME/.bashrc&amp;quot;
+fi
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I ignore &lt;code&gt;.ntuser*&lt;/code&gt; files in the home directory because there is no way to hide them or move them. I have set the alias in the &lt;code&gt;.bashrc&lt;/code&gt; file, but &lt;code&gt;oh-my-zsh&lt;/code&gt; has &lt;code&gt;alias&lt;/code&gt; to &lt;code&gt;ls&lt;/code&gt; as well. Instead of commenting those out, it is simpler to just load &lt;code&gt;.bashrc&lt;/code&gt; later.&lt;/p&gt;
+&lt;p&gt;Also zsh sources []&lt;code&gt;.zprofile&lt;/code&gt; instead of &lt;code&gt;.profile&lt;/code&gt;](http://superuser.com/questions/187639/zsh-not-hitting-profile). So I include the following line to launch &lt;code&gt;screen&lt;/code&gt; when I open the terminal. (And run it only when screen is not already executing, it's not preference)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;if [[ $(ps | grep screen | wc -l) == 0 &amp;amp;&amp;amp; (-f /usr/bin/screen.exe || -f /usr/bin/scren) ]] ; then
+    screen -S s
+fi
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Customizing Zsh&lt;/h2&gt;
+&lt;p&gt;I am fan of &lt;code&gt;agnoster&lt;/code&gt; as it blends well with the powerline and solarized. Make sure to use &lt;a href="vim-airline.html"&gt;a patched up font though.&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins"&gt;Plugins&lt;/a&gt; for cygwin is a bit limited. Here are the ones I think could be useful:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cake coffee fabric gem npm perl per-directory-history pip rvm scala screen ssh-agent vagrant urlencode urldecode virtualenvwrapper web-search
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I personally only added:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;plugins=(git coffee fabric gem perl per-directory-history pip ssh-agent urlencode urldecode)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Multi-language support&lt;/h2&gt;
+&lt;p&gt;remove the following line in the 'Cygwin.bat' in the cygwin folder&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;set LANG=en_US.UTF-8
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and add something like the following line:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;set LANG=ko_KR.eucKR
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Installing TMux&lt;/h2&gt;
+&lt;p&gt;I have recently switched from &lt;a href="4thinker.com/tmux.md"&gt;GNU screen to tmux&lt;/a&gt;. Four years ago when I was debating between the two, the latter choice was not available. The installation is super simple now, but there is one manual intervention that is necessary. The &lt;code&gt;apt-cyg&lt;/code&gt; assumes that all packages it downloads are in bunzip format, but in case for tmux, the file is in  So find the line that does the uncompression and change it temporarily. Oh and make sure to download the latest &lt;a href="https://cygwin.com/install.html"&gt;setup.exe from the cygwin website&lt;/a&gt; and run it to get the latest libraries.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;vim $(which apt-cyg)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;replace (around line 350)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cat $file | bunzip2 | tar &amp;gt; &amp;quot;/etc/setup/$pkg.lst&amp;quot; xvf - -C /
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;to&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cat $file | tar &amp;gt; &amp;quot;/etc/setup/$pkg.lst&amp;quot; xJf - -C /
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and run&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;apt-cyg install tmux
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Color&lt;/h2&gt;
+&lt;p&gt;I use solarized. The instruction and files are here
+https://github.com/karlin/mintty-colors-solarized&lt;/p&gt;
+&lt;h2&gt;Tips for using Bash&lt;/h2&gt;
+&lt;p&gt;Should you choose to use bash in cygwin, I recommend you to not use &lt;code&gt;bash_completion&lt;/code&gt;. It will slow down your bash a lot. Just comment out a line like this in your &lt;code&gt;.bash_profile&lt;/code&gt; or &lt;code&gt;.bashrc&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#if [ -f /etc/bash_completion ] &amp;amp;&amp;amp; ! shopt -oq posix; then
+#    . /etc/bash_completion
+#fi
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Python pip&lt;/h2&gt;
+&lt;p&gt;wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py&lt;/p&gt;
+&lt;h2&gt;Other quirks&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you use gVim, it is possible that the PATH variable contains path to &lt;code&gt;gVim&lt;/code&gt; earlier than the path to &lt;code&gt;cygwin/bin&lt;/code&gt;. (If you installed gVim manually, it is recommended that you do add gVim to PATH to make your life easier for executing it) In this case when you execute &lt;code&gt;vim&lt;/code&gt; from the command prompt, it will try to execute gvim and it might hang. You can check this by typing &lt;code&gt;alias&lt;/code&gt; and seeing which executable is getting called. You do want &lt;code&gt;gvim&lt;/code&gt; to be selected&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Also make sure you truncate your &lt;code&gt;PATH&lt;/code&gt;, otherwise your cygwin will seemingly hang randomly for a command you execute.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;if [ `uname -o` = &amp;quot;Cygwin&amp;quot; ]; then
+     PATH=/bin:/usr/bin:/usr/sbin:/usr/local/bin/:/cygdrive/c/Windows:/cygdrive/c/Windows/System32
+fi
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;or with the recent cygwin version, there is undocumented &lt;code&gt;CYWGIN_NOWINPATH&lt;/code&gt; that you can set to any value and it will omit windows PATH all together. Set this in your Windows environment variable. You can see the if statment in &lt;code&gt;/etc/profile&lt;/code&gt;&lt;/p&gt;</content><category term="cygwin"></category><category term="zsh"></category><category term="solarized"></category></entry><entry><title>SSH recipes</title><link href="https://www.4thinker.com/ssh.html" rel="alternate"></link><published>2014-01-25T11:23:00-08:00</published><updated>2014-01-25T11:23:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-01-25:/ssh.html</id><summary type="html">&lt;h2&gt;SSH keyless entry does not work&lt;/h2&gt;
+&lt;p&gt;Check the logs on &lt;code&gt;/var/log/auth/log&lt;/code&gt; or &lt;code&gt;/var/log/secure&lt;/code&gt; (CentOS). You probably have a permission issue.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;chmod 700 ~/
+chmod 700 ~/.ssh/
+chmod 600 ~/.ssh/authorized_keys
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;make sure the options are set properly on &lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt; - it needs root permission&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;RSAAuthentication yes
+PubkeyAuthentication yes
+AuthorizedKeysFile      %h/.ssh/authorized_keys
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then restart&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo service sshd restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Diff files over remote&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh &amp;lt;remote-host&amp;gt; &lt;span class="s2"&gt;&amp;quot;cat /path/to/remotefile&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; diff - /path/to/localfile
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Copy over SSH key so you don't have to type password every time:&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sshk&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    ssh-copy-id -i ~/.ssh/id_rsa.pub &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Add keys to ssh …&lt;/h2&gt;</summary><content type="html">&lt;h2&gt;SSH keyless entry does not work&lt;/h2&gt;
+&lt;p&gt;Check the logs on &lt;code&gt;/var/log/auth/log&lt;/code&gt; or &lt;code&gt;/var/log/secure&lt;/code&gt; (CentOS). You probably have a permission issue.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;chmod 700 ~/
+chmod 700 ~/.ssh/
+chmod 600 ~/.ssh/authorized_keys
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;make sure the options are set properly on &lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt; - it needs root permission&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;RSAAuthentication yes
+PubkeyAuthentication yes
+AuthorizedKeysFile      %h/.ssh/authorized_keys
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then restart&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo service sshd restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Diff files over remote&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh &amp;lt;remote-host&amp;gt; &lt;span class="s2"&gt;&amp;quot;cat /path/to/remotefile&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; diff - /path/to/localfile
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Copy over SSH key so you don't have to type password every time:&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sshk&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    ssh-copy-id -i ~/.ssh/id_rsa.pub &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Add keys to ssh so that it is used on certain git repositories:&lt;/h2&gt;
+&lt;p&gt;in &lt;code&gt;.ssh/config&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Host work.com
+HostName work.com
+IdentityFile ~/.ssh/work_rsa
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then add the key to ssh &lt;code&gt;ssh-add ~/.ssh/work_key&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Reverse Tunnel (Login)&lt;/h2&gt;
+&lt;p&gt;Run the following command on a machine (fireWalledServer) you want to run&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh -NR &lt;span class="m"&gt;9999&lt;/span&gt;:localhost:22 user@78.12.255.255
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;SSH from your local machine:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh localhost -p &lt;span class="m"&gt;9999&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Reverse Double Tunneling&lt;/h2&gt;
+&lt;p&gt;Assuming that reverse tunnel is set up from the previous instruction, access the firewalled server from 3rd machine&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh user@78.12.255.255
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;in another shell, run:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh localhost -p &lt;span class="m"&gt;9999&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Reverse Tunnel (non-login, port forwarding)&lt;/h2&gt;
+&lt;p&gt;ssh -nNT -R 8000:local.mydomain.com:9999 remote.mydomain.com
+Open port 8000 for &lt;code&gt;remote.mydomain.com&lt;/code&gt; and send it to &lt;code&gt;local.mydomain.com:9999&lt;/code&gt;
+- The address can be &lt;code&gt;localhost:9999&lt;/code&gt; instead for local routing.
+- the address before &lt;code&gt;8000&lt;/code&gt; is ommited , but it can be specified if there are multiple NICs that can access the internet.
+-n associate standard input with /dev/null
+-N do not prepare the command stream
+-T do not allocate psuedo-tty on the remote system&lt;/p&gt;
+&lt;h2&gt;Skip key checking&lt;/h2&gt;
+&lt;p&gt;This makes you susceptible to Man-in-the-middle attack. I only use it work where the keys change consistently.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Host *
+    StrictHostKeyChecking no
+    UserKnownHostsFile=/dev/null
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Speed up SSH login in&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Host *
+    UseDNS no
+    GSSAPIAuthentication no
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;or add those lines to /etc/ssh/ssh_config for system change.&lt;/p&gt;
+&lt;h2&gt;Execute the command in the background&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh -n -f user@host &amp;quot;sh -c &amp;#39;cd /whereever; nohup ./whatever &amp;gt; /dev/null 2&amp;gt;&amp;amp;1 &amp;amp;&amp;#39;&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="shell"></category></entry><entry><title>PPA in Debian</title><link href="https://www.4thinker.com/ppa-in-debian.html" rel="alternate"></link><published>2014-01-03T01:02:00-08:00</published><updated>2014-01-03T01:02:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-01-03:/ppa-in-debian.html</id><summary type="html">&lt;p&gt;&lt;code&gt;sudo apt-get install python-software-properties&lt;/code&gt; does not work. You get an error like the following when you try to update:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Fetched 563 kB in 8s (63.0 kB/s)
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/source/Sources  404  Not Found
+
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/binary-amd64/Packages  404  Not Found
+
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/binary-i386/Packages  404  Not Found
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As you can see, python script adds debian name &lt;code&gt;wheezy&lt;/code&gt; into the URL, which obvious …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;code&gt;sudo apt-get install python-software-properties&lt;/code&gt; does not work. You get an error like the following when you try to update:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Fetched 563 kB in 8s (63.0 kB/s)
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/source/Sources  404  Not Found
+
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/binary-amd64/Packages  404  Not Found
+
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/binary-i386/Packages  404  Not Found
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As you can see, python script adds debian name &lt;code&gt;wheezy&lt;/code&gt; into the URL, which obvious wouldn't exit on launchpad server, which is dedicated for Ubuntu. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.anantshri.info/howto-add-ppa-in-debian/"&gt;Anant Shrivastava&lt;/a&gt; wrote a script that adds PPA to &lt;code&gt;/etc/apt/sources.list&lt;/code&gt; which uses Ubuntu lucid release to obtain repositories. I have kernel version 3.0.4, which is more close to precise, the next LTS (Lont-Term support version). &lt;a href="http://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Table_of_versions"&gt;Wikipedia has the list nicely&lt;/a&gt;. So I changed the script a bit and now I have a &lt;code&gt;apt-add-repository&lt;/code&gt; that works on Debian waldolf. It does not have &lt;code&gt;--remove&lt;/code&gt; flag, but I find it easier to just open up &lt;code&gt;/etc/apt/sources.list&lt;/code&gt; and edit it.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$#&lt;/span&gt; -eq &lt;span class="m"&gt;1&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;
+&lt;span class="nv"&gt;NM&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="sb"&gt;`&lt;/span&gt;uname -a &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; date&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;span class="nv"&gt;NAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="sb"&gt;`&lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$NM&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; md5sum &lt;span class="p"&gt;|&lt;/span&gt; cut -f1 -d&lt;span class="s2"&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;span class="k"&gt;then&lt;/span&gt;
+    &lt;span class="nv"&gt;ppa_name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="sb"&gt;`&lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; cut -d&lt;span class="s2"&gt;&amp;quot;:&amp;quot;&lt;/span&gt; -f2 -s&lt;span class="sb"&gt;`&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; -z &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ppa_name&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;then&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;PPA name not found&amp;quot;&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Utility to add PPA repositories in your debian machine&amp;quot;&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$0&lt;/span&gt;&lt;span class="s2"&gt; ppa:user/ppa-name&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$ppa_name&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;deb http://ppa.launchpad.net/&lt;/span&gt;&lt;span class="nv"&gt;$ppa_name&lt;/span&gt;&lt;span class="s2"&gt;/ubuntu precise main&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; /etc/apt/sources.list
+        apt-get update &amp;gt;&amp;gt; /dev/null &lt;span class="m"&gt;2&lt;/span&gt;&amp;gt; /tmp/&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;NAME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;_apt_add_key.txt
+        &lt;span class="nv"&gt;key&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="sb"&gt;`&lt;/span&gt;cat /tmp/&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;NAME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;_apt_add_key.txt &lt;span class="p"&gt;|&lt;/span&gt; cut -d&lt;span class="s2"&gt;&amp;quot;:&amp;quot;&lt;/span&gt; -f6 &lt;span class="p"&gt;|&lt;/span&gt; cut -d&lt;span class="s2"&gt;&amp;quot; &amp;quot;&lt;/span&gt; -f3&lt;span class="sb"&gt;`&lt;/span&gt;
+        apt-key adv --keyserver keyserver.ubuntu.com --recv-keys &lt;span class="nv"&gt;$key&lt;/span&gt;
+        rm -rf /tmp/&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;NAME&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;_apt_add_key.txt
+    &lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="k"&gt;else&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Utility to add PPA repositories in your debian machine&amp;quot;&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$0&lt;/span&gt;&lt;span class="s2"&gt; ppa:user/ppa-name&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</content><category term="linux"></category></entry><entry><title>pdbedit to configure samba on linux machine</title><link href="https://www.4thinker.com/user-management.html" rel="alternate"></link><published>2013-12-02T09:53:00-08:00</published><updated>2013-12-02T09:53:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-12-02:/user-management.html</id><summary type="html">&lt;h2&gt;Group&lt;/h2&gt;
+&lt;p&gt;Create a group&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gropuadd groupName
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Delete a group&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;groupdel groupName
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Users&lt;/h2&gt;
+&lt;p&gt;Create a user&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;useradd -m -g groupName -s /sbin/nologin userName
+do
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;-m&lt;/code&gt; create home, &lt;code&gt;-g&lt;/code&gt; specify group, &lt;code&gt;-s'&lt;/code&gt; specify shell&lt;/p&gt;
+&lt;p&gt;Add User to samba and create a new password:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pdbedit -a -u userName
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Remove User from samba (modify the user by adding a new one):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pdbedit -x -u userName
+&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Group&lt;/h2&gt;
+&lt;p&gt;Create a group&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gropuadd groupName
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Delete a group&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;groupdel groupName
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Users&lt;/h2&gt;
+&lt;p&gt;Create a user&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;useradd -m -g groupName -s /sbin/nologin userName
+do
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;-m&lt;/code&gt; create home, &lt;code&gt;-g&lt;/code&gt; specify group, &lt;code&gt;-s'&lt;/code&gt; specify shell&lt;/p&gt;
+&lt;p&gt;Add User to samba and create a new password:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pdbedit -a -u userName
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Remove User from samba (modify the user by adding a new one):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pdbedit -x -u userName
+&lt;/pre&gt;&lt;/div&gt;</content><category term="samba"></category></entry><entry><title>Moving a linux (crunchbang) partition</title><link href="https://www.4thinker.com/moving-partition.html" rel="alternate"></link><published>2013-10-08T05:34:00-07:00</published><updated>2013-10-08T05:34:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-10-08:/moving-partition.html</id><summary type="html">&lt;p&gt;I spent nearly six hours figuring stuff out. In Windows, this is easy. You pick a software of your choice and let it do it for you. With Linux, especially if you are duel booting. It is not as easy as clone and restore.&lt;/p&gt;
+&lt;p&gt;Things to consider
+1. Hardware Drivers - they needed to be stripped down so that they do not create collision when installed
+2. Grub - boot manager needs to figure out the &lt;/p&gt;
+&lt;p&gt;Gparted (if you are moving the partition to a smaller allocation)
+Clonezilla &lt;/p&gt;
+&lt;p&gt;My source partition was &lt;code&gt;sda5&lt;/code&gt;, which roughly translates to fifth partition on the first …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I spent nearly six hours figuring stuff out. In Windows, this is easy. You pick a software of your choice and let it do it for you. With Linux, especially if you are duel booting. It is not as easy as clone and restore.&lt;/p&gt;
+&lt;p&gt;Things to consider
+1. Hardware Drivers - they needed to be stripped down so that they do not create collision when installed
+2. Grub - boot manager needs to figure out the &lt;/p&gt;
+&lt;p&gt;Gparted (if you are moving the partition to a smaller allocation)
+Clonezilla &lt;/p&gt;
+&lt;p&gt;My source partition was &lt;code&gt;sda5&lt;/code&gt;, which roughly translates to fifth partition on the first drive. On my new computer, &lt;code&gt;clonezilla&lt;/code&gt; was trying to install it on sda3, since that was the partition that was available. I could have just changed the clonezilla image's name to match that, but I perused through ubuntuforum and found that someone failed to fixed the problem that way. So I pulled up the &lt;code&gt;partition wizard&lt;/code&gt; and created two additional partitions just to make the numbers match. &lt;code&gt;clonezilla&lt;/code&gt; proceeded without complaining.&lt;/p&gt;
+&lt;p&gt;The next problem was grub. Windows' Boot Manager does not have the ability to boot linux partition (except for Wubi, but they are cheating). So you have to fix it with a Live CD. Just grab a Ubuntu CD/USB and boot from it. &lt;/p&gt;
+&lt;p&gt;http://www.partitionwizard.com&lt;/p&gt;</content></entry><entry><title>Cruncifying-mint</title><link href="https://www.4thinker.com/crunchifying-mint.html" rel="alternate"></link><published>2013-09-30T07:04:00-07:00</published><updated>2013-09-30T07:04:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-09-30:/crunchifying-mint.html</id><summary type="html">&lt;p&gt;I got myself in a situation where I was forced to use mint. I missed Crunchbang and Openbox dearly right off the bat. So I decided to fix this. In order to get &lt;code&gt;crunchbang&lt;/code&gt; specific functionality, you need their exectuable scripts. I copy them to my dropbox so I can just symlink them.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install openbox dmenu tint2 terminator thunar wmctrl conky nitrogen clipit gtk-chtheme xscreensaver vim-gnome
+ln $HOME/Dropbox/linux/crunchbang/openbox/* $HOME/.config/openbox
+ln $HOME/Dropbox/linux/crunchbang/* $HOME/.config/
+sudo chmod 755 /usr/bin/cb*
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Openbox is the window manager itself.&lt;/li&gt;
+&lt;li&gt;Openbox-themes installs some skins …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;I got myself in a situation where I was forced to use mint. I missed Crunchbang and Openbox dearly right off the bat. So I decided to fix this. In order to get &lt;code&gt;crunchbang&lt;/code&gt; specific functionality, you need their exectuable scripts. I copy them to my dropbox so I can just symlink them.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install openbox dmenu tint2 terminator thunar wmctrl conky nitrogen clipit gtk-chtheme xscreensaver vim-gnome
+ln $HOME/Dropbox/linux/crunchbang/openbox/* $HOME/.config/openbox
+ln $HOME/Dropbox/linux/crunchbang/* $HOME/.config/
+sudo chmod 755 /usr/bin/cb*
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Openbox is the window manager itself.&lt;/li&gt;
+&lt;li&gt;Openbox-themes installs some skins for openbox.&lt;/li&gt;
+&lt;li&gt;Dmenu is an excellent and light application launcher.&lt;/li&gt;
+&lt;li&gt;Menumaker finds your applications and makes menu entries for them.&lt;/li&gt;
+&lt;li&gt;Obconf is an openbox configuration gui&lt;/li&gt;
+&lt;li&gt;Obmenu is a menu editor for openbox similar to alacarte.&lt;/li&gt;
+&lt;li&gt;Tint2 is a simple panel in which status icons and windows reside.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nitrogen is a simple wallpaper chooser.&lt;/p&gt;
+&lt;p&gt;ln -s ~/Dropbox/dev/dotfiles/vimperator ~/.vimperator&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Setup firefox sync&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Install Google Chrome
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &amp;amp;&amp;amp; sudo dpkg -i google-chrome*&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Notes&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;lxappearance&lt;/code&gt; did not work well for me, but &lt;code&gt;gtk-chteme&lt;/code&gt; did. Here are the list of problems I experienced with &lt;code&gt;lxappearance&lt;/code&gt;:
+- The theme would not change
+- I do not know if this is due to virtualized environemnt and vmtool supplied by VMWare, but I got a huge font right afer the boot. The first work-around for me was to use &lt;code&gt;gnome-settings-daemon&lt;/code&gt; to reset the setting. I found that I could&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;echo &amp;quot;Xft.dpi: 96&amp;quot; &amp;gt; ~/.Xdefaults
+echo &amp;quot;xrdb -merge ~/.Xdefaults&amp;quot; &amp;gt;&amp;gt; ~/.config/openbox/autostart
+&lt;/pre&gt;&lt;/div&gt;</content><category term="linux"></category></entry><entry><title></title><link href="https://www.4thinker.com/zsh-over-fish.html" rel="alternate"></link><published>2013-09-21T01:43:00-07:00</published><updated>2013-09-21T01:43:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-09-21:/zsh-over-fish.html</id><summary type="html">&lt;h2&gt;Zsh + Oh-My-Zsh&lt;/h2&gt;
+&lt;p&gt;In the order of awesomeness:
+- fast
+- remote auto-completion: &lt;code&gt;scp serverName:&amp;lt;tab&amp;gt;&lt;/code&gt; you can have auto-completion on your server.
+- faster completion compared to &lt;code&gt;bash_completion&lt;/code&gt;
+- auto-correction of commands
+- easy customization with oh-my-zsh. Many themes are available.
+- substantial community support and active development
+- extended globbing
+- shared history (out of the box)
+- improved path expansion
+- variable expansion: &lt;code&gt;$PATH&amp;lt;tab&amp;gt;&lt;/code&gt;
+- Extending globbing: &lt;code&gt;**/*.c&lt;/code&gt; matches directories recursively; &lt;code&gt;zmv '(*).mp3' '$1.wma'&lt;/code&gt; renames extension
+- suffix alias: &lt;code&gt;alias -s c=vim&lt;/code&gt; =&amp;gt; &lt;code&gt;./program.c&lt;/code&gt; now opens the file in vim
+- argument history traversal with &lt;code&gt;Alt-/&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Fish&lt;/h2&gt;
+&lt;p&gt;In the order of painfulness:
+- slow
+- not compatible wish bash
+- development …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Zsh + Oh-My-Zsh&lt;/h2&gt;
+&lt;p&gt;In the order of awesomeness:
+- fast
+- remote auto-completion: &lt;code&gt;scp serverName:&amp;lt;tab&amp;gt;&lt;/code&gt; you can have auto-completion on your server.
+- faster completion compared to &lt;code&gt;bash_completion&lt;/code&gt;
+- auto-correction of commands
+- easy customization with oh-my-zsh. Many themes are available.
+- substantial community support and active development
+- extended globbing
+- shared history (out of the box)
+- improved path expansion
+- variable expansion: &lt;code&gt;$PATH&amp;lt;tab&amp;gt;&lt;/code&gt;
+- Extending globbing: &lt;code&gt;**/*.c&lt;/code&gt; matches directories recursively; &lt;code&gt;zmv '(*).mp3' '$1.wma'&lt;/code&gt; renames extension
+- suffix alias: &lt;code&gt;alias -s c=vim&lt;/code&gt; =&amp;gt; &lt;code&gt;./program.c&lt;/code&gt; now opens the file in vim
+- argument history traversal with &lt;code&gt;Alt-/&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Fish&lt;/h2&gt;
+&lt;p&gt;In the order of painfulness:
+- slow
+- not compatible wish bash
+- development Pace is also slow
+- pOSIX non-compliant&lt;/p&gt;
+&lt;p&gt;Bash: I kind of see zsh as the extended version of bash, but I still found zsh to be faster. Here is one example of the loading time. &lt;code&gt;ls&lt;/code&gt; speed was comparable to &lt;code&gt;bash&lt;/code&gt;
+Timing from bash:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;time&lt;/span&gt; bash -c &lt;span class="nb"&gt;exit&lt;/span&gt;
+real    0m0.282s
+user    0m0.060s
+sys     0m0.180s
+
+$ &lt;span class="nb"&gt;time&lt;/span&gt; zsh -c &lt;span class="nb"&gt;exit&lt;/span&gt;
+real    0m0.040s
+user    0m0.000s
+sys     0m0.031s
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Timing from zsh:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;time bash -c exit
+bash -c exit  0.09s user 0.14s system 78% cpu 0.288 total
+
+time zsh -c exit
+zsh -c exit  0.00s user 0.03s system 93% cpu 0.033 total
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;I cover the steps to &lt;a href="cygwin-setup.html"&gt;install zsh in another article&lt;/a&gt;.&lt;/p&gt;</content><category term="shell"></category></entry></feed>

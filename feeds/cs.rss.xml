@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Forethinker - cs</title><link>https://www.4thinker.com/</link><description></description><lastBuildDate>Sun, 08 Sep 2013 08:42:00 -0700</lastBuildDate><item><title>Design Pattern</title><link>https://www.4thinker.com/design-pattern.html</link><description>&lt;p&gt;I was asked about Factory Design pattern at a game company for a junior developer position. I had a feeling that the interviewer was asking me that question because that was something he was learning at that time. I gave me him an idea of what I think it was, but he wanted me to tell him the details. I could not, so he schooled me there and I had no way of verifying whether what he was saying was right. I failed that interview so I went back so that I do not ever forget what it is, but …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 08 Sep 2013 08:42:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-08:/design-pattern.html</guid><category>software</category></item><item><title>Terminologies</title><link>https://www.4thinker.com/terms.html</link><description>&lt;h2&gt;Memory&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Loitering: holding a reference to an object when it is no longer needed.&lt;/li&gt;
+&lt;li&gt;Shallow memory usage: no content memory is allocated, only the reference&lt;/li&gt;
+&lt;li&gt;Deep memory usage: content memory is allocated, duplicated, or initialized.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Object Oriented Design&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Abstract class: You cannot instantiate an abstract class (make it return an object), although you can call a static method inside of it. It needs at least one abstract method. It is meant to be extended. &lt;/li&gt;
+&lt;li&gt;Abstract method: You cannot make a function call to an abstract method. These can only exist in an abstract class. This cannot have implementation. It is …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 26 Aug 2013 01:23:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-26:/terms.html</guid><category>software</category></item></channel></rss>

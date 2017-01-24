@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li  class="active" >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+    <div class='article'>
+      <div class="row-fluid">
+           <div class="content-title span12">
+             <h1>Preview Markdown from Vim</h1b>
+           </div>
+      </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 08, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/vim.html">#vim</a></span>
+
+  <span>Read in 3 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Preview%20Markdown%20from%20Vim%20 https%3A//www.4thinker.com/vim-markdown-preview.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/vim-markdown-preview.html&p[images][0]=&p[title]=Preview%20Markdown%20from%20Vim%20&p[summary]=%3Cp%3EIn%20the%20beginning%2C%20I%20was%20looking%20for%20a%20solution%20where%20I%20could%20lookup%20markdown%20from%20vim%20with%20python%20or%20ruby%2C%20but%20then%20I%20%3Ca%20href%3D%22http%3A//blog.natesilva.com/post/5256838248/how-to-preview-a-markdown-document-in-vim%22%3Efound%20a%20vim%20script%3C/a%3E%20by%20Nate%20Silva%20that%20does%20this%20and%20it%20works%20well%20across%20many%20different%20platforms.%20I%20had%20to%20make%20minor%20changes.%3C/p%3E%0A%3Ch2%3EInstallation%3C/h2%3E%0A%3Cp%3ESince%20I%20use%20%3Ca%20href%3D%22blogging-on-commandline.html%22%3Epelican%3C/a%3E%20for%20blogging%2C%20I%20have%20python%20markdown%20installed%2C%20so%20I%20use%20that%20and%20make%20a%20symlink%20as%20%3Ccode%3Emarkdown%3C/code%3E%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Epip%20install%20markdown%0Aln%20-s%20/usr/local/bin/markdown_py%20/usr/local/bin/markdown%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3Ethen%20I%20just%20add%20the%20following%20scripts%20and%20I%20can%20get%20a%20markdown%20preview.%20Notice%20that%20I%20hardcoded%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/vim-markdown-preview.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Preview%20Markdown%20from%20Vim%20&body=https%3A//www.4thinker.com/vim-markdown-preview.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      
+      <div class="span10">
+	<p>In the beginning, I was looking for a solution where I could lookup markdown from vim with python or ruby, but then I <a href="http://blog.natesilva.com/post/5256838248/how-to-preview-a-markdown-document-in-vim">found a vim script</a> by Nate Silva that does this and it works well across many different platforms. I had to make minor changes.</p>
+<h2>Installation</h2>
+<p>Since I use <a href="blogging-on-commandline.html">pelican</a> for blogging, I have python markdown installed, so I use that and make a symlink as <code>markdown</code></p>
+<div class="highlight"><pre><span></span>pip install markdown
+ln -s /usr/local/bin/markdown_py /usr/local/bin/markdown
+</pre></div>
+
+
+<p>then I just add the following scripts and I can get a markdown preview. Notice that I hardcoded <code>BROWSER_COMMAND</code> with <code>firefox</code>. This was because when I access files on a network drive, <code>open</code> sometimes did not work, failing to <code>stat</code> the file. </p>
+<div class="highlight"><pre><span></span><span class="nt">function</span><span class="o">!</span><span class="nt">PreviewMarkdown</span><span class="o">()</span>
+    <span class="s2">&quot; **************************************************************</span>
+<span class="s2">    &quot;</span> <span class="nt">Configurable</span> <span class="nt">settings</span>
+
+    <span class="nt">let</span> <span class="nt">MARKDOWN_COMMAND</span> <span class="o">=</span> <span class="s1">&#39;markdown&#39;</span>
+
+    <span class="nt">if</span> <span class="nt">has</span><span class="o">(</span><span class="s1">&#39;win32&#39;</span><span class="o">)</span>
+        <span class="s2">&quot; note important extra pair of double-quotes</span>
+<span class="s2">        let BROWSER_COMMAND = &#39;cmd.exe /c start &#39;</span>
+<span class="s2">    else</span>
+<span class="s2">        let BROWSER_COMMAND = &#39;firefox&#39;</span>
+<span class="s2">    endif</span>
+
+<span class="s2">    &quot;</span> <span class="nt">End</span> <span class="nt">of</span> <span class="nt">configurable</span> <span class="nt">settings</span>
+    <span class="s2">&quot; **************************************************************</span>
+
+<span class="s2">    silent update</span>
+<span class="s2">    let output_name = tempname() . &#39;.html&#39;</span>
+
+<span class="s2">    &quot;</span> <span class="nt">Some</span> <span class="nt">Markdown</span> <span class="nt">implementations</span><span class="o">,</span> <span class="nt">especially</span> <span class="nt">the</span> <span class="nt">Python</span> <span class="nt">one</span><span class="o">,</span>
+    <span class="s2">&quot; work best with UTF-8. If our buffer is not in UTF-8, convert</span>
+<span class="s2">    &quot;</span> <span class="nt">it</span> <span class="nt">before</span> <span class="nt">running</span> <span class="nt">Markdown</span><span class="o">,</span> <span class="nt">then</span> <span class="nt">convert</span> <span class="nt">it</span> <span class="nt">back</span><span class="o">.</span>
+    <span class="nt">let</span> <span class="nt">original_encoding</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nt">fileencoding</span>
+    <span class="nt">let</span> <span class="nt">original_bomb</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nt">bomb</span>
+    <span class="nt">if</span> <span class="nt">original_encoding</span> <span class="o">!=</span> <span class="s1">&#39;utf-8&#39;</span> <span class="o">||</span> <span class="nt">original_bomb</span> <span class="o">==</span> <span class="nt">1</span>
+        <span class="nt">set</span> <span class="nt">nobomb</span>
+        <span class="nt">set</span> <span class="nt">fileencoding</span><span class="o">=</span><span class="nt">utf-8</span>
+        <span class="nt">silent</span> <span class="nt">update</span>
+    <span class="nt">endif</span>
+
+    <span class="s2">&quot; Write the HTML header. Do a CSS reset, followed by setting up</span>
+<span class="s2">    &quot;</span> <span class="nt">some</span> <span class="nt">basic</span> <span class="nt">styles</span> <span class="nt">from</span> <span class="nt">YUI</span><span class="o">,</span> <span class="nt">so</span> <span class="nt">the</span> <span class="nt">output</span> <span class="nt">looks</span> <span class="nt">nice</span><span class="o">.</span>
+    <span class="nt">let</span> <span class="nt">file_header</span> <span class="o">=</span> <span class="cp">[</span><span class="s1">&#39;&lt;html&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;head&gt;&#39;</span><span class="p">,</span>
+        <span class="o">\</span> <span class="s1">&#39;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&#39;</span><span class="p">,</span>
+        <span class="o">\</span> <span class="s1">&#39;&lt;title&gt;Markdown Preview&lt;/title&gt;&#39;</span><span class="p">,</span>
+        <span class="o">\</span> <span class="s1">&#39;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css&quot;&gt;&#39;</span><span class="p">,</span>
+        <span class="o">\</span> <span class="s1">&#39;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://yui.yahooapis.com/3.3.0/build/cssbase/base-min.css&quot;&gt;&#39;</span><span class="p">,</span>
+        <span class="o">\</span> <span class="s1">&#39;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://yui.yahooapis.com/3.3.0/build/cssfonts/fonts-min.css&quot;&gt;&#39;</span><span class="p">,</span>
+        <span class="o">\</span> <span class="s1">&#39;&lt;style&gt;body{padding:20px;}div#container{background-color:#F2F2F2;padding:0 20px;margin:0px;border:solid #D0D0D0 1px;}&lt;/style&gt;&#39;</span><span class="p">,</span>
+        <span class="o">\</span> <span class="s1">&#39;&lt;/head&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;body&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;div id=&quot;container&quot;&gt;&#39;</span><span class="cp">]</span>
+    <span class="nt">call</span> <span class="nt">writefile</span><span class="o">(</span><span class="nt">file_header</span><span class="o">,</span> <span class="nt">output_name</span><span class="o">)</span>
+
+    <span class="nt">let</span> <span class="nt">md_command</span> <span class="o">=</span> <span class="s1">&#39;!&#39;</span> <span class="o">.</span> <span class="nt">MARKDOWN_COMMAND</span> <span class="o">.</span> <span class="s1">&#39; &quot;&#39;</span> <span class="o">.</span> <span class="nt">expand</span><span class="o">(</span><span class="s1">&#39;%:p&#39;</span><span class="o">)</span> <span class="o">.</span> <span class="s1">&#39;&quot; &gt;&gt; &quot;&#39;</span> <span class="o">.</span>
+        <span class="err">\</span> <span class="nt">output_name</span> <span class="o">.</span> <span class="s1">&#39;&quot;&#39;</span>
+    <span class="nt">silent</span> <span class="nt">exec</span> <span class="nt">md_command</span>
+
+    <span class="nt">if</span> <span class="nt">has</span><span class="o">(</span><span class="s1">&#39;win32&#39;</span><span class="o">)</span>
+        <span class="nt">let</span> <span class="nt">footer_name</span> <span class="o">=</span> <span class="nt">tempname</span><span class="o">()</span>
+        <span class="nt">call</span> <span class="nt">writefile</span><span class="o">(</span><span class="cp">[</span><span class="s1">&#39;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&#39;</span><span class="cp">]</span><span class="o">,</span> <span class="nt">footer_name</span><span class="o">)</span>
+        <span class="nt">silent</span> <span class="nt">exec</span> <span class="s1">&#39;!type &quot;&#39;</span> <span class="o">.</span> <span class="nt">footer_name</span> <span class="o">.</span> <span class="s1">&#39;&quot; &gt;&gt; &quot;&#39;</span> <span class="o">.</span> <span class="nt">output_name</span> <span class="o">.</span> <span class="s1">&#39;&quot;&#39;</span>
+        <span class="nt">exec</span> <span class="nt">delete</span><span class="o">(</span><span class="nt">footer_name</span><span class="o">)</span>
+    <span class="nt">else</span>
+        <span class="nt">silent</span> <span class="nt">exec</span> <span class="s1">&#39;!echo &quot;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&quot; &gt;&gt; &quot;&#39;</span> <span class="o">.</span>
+            <span class="err">\</span> <span class="nt">output_name</span> <span class="o">.</span> <span class="s1">&#39;&quot;&#39;</span>
+    <span class="nt">endif</span>
+
+    <span class="s2">&quot; If we changed the encoding, change it back.</span>
+<span class="s2">    if original_encoding != &#39;utf-8&#39; || original_bomb == 1</span>
+<span class="s2">        if original_bomb == 1</span>
+<span class="s2">            set bomb</span>
+<span class="s2">        endif</span>
+<span class="s2">        silent exec &#39;set fileencoding=&#39; . original_encoding</span>
+<span class="s2">        silent update</span>
+<span class="s2">    endif</span>
+
+<span class="s2">    silent exec &#39;!&#39; . BROWSER_COMMAND . &#39; &quot;</span><span class="s1">&#39; . output_name . &#39;</span><span class="s2">&quot;&#39;</span>
+
+<span class="s2">    exec input(&#39;Press ENTER to continue...&#39;)</span>
+<span class="s2">    echo</span>
+<span class="s2">    exec delete(output_name)</span>
+<span class="s2">endfunction</span>
+
+<span class="s2">&quot;</span> <span class="nt">Map</span> <span class="nt">this</span> <span class="nt">feature</span> <span class="nt">to</span> <span class="nt">the</span> <span class="nt">key</span> <span class="nt">sequence</span> <span class="s1">&#39;,p&#39;</span> <span class="o">(</span><span class="nt">comma</span> <span class="nt">lowercase-p</span><span class="o">)</span>
+<span class="nt">map</span> <span class="o">&lt;</span><span class="nt">leader</span><span class="o">&gt;</span><span class="nt">mk</span> <span class="p">:</span><span class="nd">call</span> <span class="nt">PreviewMarkdown</span><span class="o">()&lt;</span><span class="nt">CR</span><span class="o">&gt;</span>
+</pre></div>
+
+
+<h2>Usage</h2>
+<p>Just press <leader>mk (or the keys you have mapped) and see the browser with your markdown.</p>
+<h2>Inserting Links</h2>
+<p>Here are also commands I use to add links on my markdown. This makes things so much easier. </p>
+<div class="highlight"><pre><span></span><span class="c">&quot; uses the clipboard register &#39;+&#39; (|quoteplus|) instead of register &#39;*&#39; for all operations except yank.  Yank shall copy the text into register &#39;+&#39; and also into &#39;*&#39; when &quot;unnamed&quot; is included.</span>
+<span class="k">set</span> <span class="nb">clipboard</span><span class="p">=</span>unnamedplus 
+<span class="c">&quot; put a link to current word</span>
+nmap <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="nb">ml</span> <span class="p">&lt;</span>Plug<span class="p">&gt;</span>Ysurroundiw]%<span class="k">a</span><span class="p">(&lt;</span>C<span class="p">-</span>R<span class="p">&gt;+)&lt;</span>Esc<span class="p">&gt;</span>
+<span class="c">&quot; put a link to current setence</span>
+nmap <span class="p">&lt;</span>leader<span class="p">&gt;</span>ms ^<span class="p">&lt;</span>C<span class="p">-</span><span class="k">v</span><span class="p">&gt;</span>$<span class="p">&lt;</span>Plug<span class="p">&gt;</span>VSurround]%<span class="k">a</span><span class="p">(&lt;</span>C<span class="p">-</span>R<span class="p">&gt;+)&lt;</span>Esc<span class="p">&gt;</span>
+<span class="c">&quot; put a link to current selection</span>
+vmap <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="nb">ml</span> <span class="p">&lt;</span>Plug<span class="p">&gt;</span>VSurround]%<span class="k">a</span><span class="p">(&lt;</span>C<span class="p">-</span>R<span class="p">&gt;+)&lt;</span>Esc<span class="p">&gt;</span>
+</pre></div>
+	<hr />
+      </div>
+
+      <div class="span8 offset2">
+          <h3>Related Posts</h3>
+            <ul>
+                <li><a href="https://www.4thinker.com/vim-fixes.html">Vim Essential Fixes</a></li>
+                <li><a href="https://www.4thinker.com/vim-airline.html">Vim-Airline is here!</a></li>
+                <li><a href="https://www.4thinker.com/vim-plugins-alternatives.html">Vim Plugins I use</a></li>
+                <li><a href="https://www.4thinker.com/vim-shougo.html">Shougo's Neocomplcache + Neosnippet + Vimproc + Vimshell</a></li>
+            </ul>
+      </div>
+
+    </div>
+
+      <h3>Comments</h3>
+    
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'forethinker'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHJwYJKoZIhvcNAQcEoIIHGDCCBxQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAn8m2t0rNgqrECQ0Ud0UKB6eo2OCzD1zyREArewWZuBTSdLyuJzRUkOBkZs6dBGE1AzzofibC3SPr6TtY79qQVPiref0fxL3q6z30ZorivEpfTrmAgQKxuprDVJ4YFecAuzp9DPUk10oScmei3EZv97oq7P+jSFFvJ/K86dP4CpDELMAkGBSsOAwIaBQAwgaQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQI3EUyiIvExciAgYBoiT7A1b73V0Gv8I0njdxrbBIMID/qIyiqhxnxrib3O1QStQENd39kFnxKRR93vmjWS54RH2HFUZVhZeIqJ7CUJmKtLJzUBeOioJNPM4li5J1aO/ki4QQLPCxEey4rUl2/EaQlYJaJaXb/akzTtIYeyEd49ZQnxCeisNzOAP6Nu6CCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE0MDcyMTA4NDMyMVowIwYJKoZIhvcNAQkEMRYEFPjXDRlI/ZBCCXrgNnKWbuk7Pu21MA0GCSqGSIb3DQEBAQUABIGAQ8rt33qN52B9iXzNFsn9sBto4e9iObuwZjMa+fTguCM+Z29Zp2sl7PEE0Eg7xv8gROt9+G2xu8LYwFeZ/TXJlLLGb2qFzgYRIkKP3Qye6ITBOb/0GIbmReKAl7Wavo2sy+4yVObksNS8CiiOi6QHSjXNnGPjFc7GwrLrMLgHsdo=-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

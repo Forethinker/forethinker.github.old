@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Forethinker - web</title><link href="https://www.4thinker.com/" rel="alternate"></link><link href="https://www.4thinker.com/feeds/web.atom.xml" rel="self"></link><id>https://www.4thinker.com/</id><updated>2015-02-14T00:00:00-08:00</updated><entry><title>Grunt makes me smile</title><link href="https://www.4thinker.com/grunt.html" rel="alternate"></link><published>2015-02-14T00:00:00-08:00</published><updated>2015-02-14T00:00:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2015-02-14:/grunt.html</id><summary type="html">&lt;h2&gt;Some setup&lt;/h2&gt;
+&lt;p&gt;sudo iptables -A INPUT -p tcp --dport 9000 -j ACCEPT
+Edit Grunt.js's host from &lt;code&gt;localhost&lt;/code&gt; to &lt;code&gt;0.0.0.0&lt;/code&gt; to access it from outside&lt;/p&gt;
+&lt;h2&gt;Useful packages&lt;/h2&gt;
+&lt;p&gt;They are pretty much all useful.
+These are the settings I put in &lt;code&gt;grunt.initConfig({})&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;wiredep&lt;/h4&gt;
+&lt;p&gt;First add these meta tags to index.html&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- bower:css --&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- endbower --&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- bower:js --&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- endbower --&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;in gruntFile.js:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grunt.loadNpmTasks(&amp;#39;grunt-wiredep&amp;#39;);
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then in grunt.initConfig:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;wiredep: {
+  target: {
+    src: &amp;#39;index.html&amp;#39; // point to your HTML file.
+  }
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and execute it by:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grunt wiredep
+&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Some setup&lt;/h2&gt;
+&lt;p&gt;sudo iptables -A INPUT -p tcp --dport 9000 -j ACCEPT
+Edit Grunt.js's host from &lt;code&gt;localhost&lt;/code&gt; to &lt;code&gt;0.0.0.0&lt;/code&gt; to access it from outside&lt;/p&gt;
+&lt;h2&gt;Useful packages&lt;/h2&gt;
+&lt;p&gt;They are pretty much all useful.
+These are the settings I put in &lt;code&gt;grunt.initConfig({})&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;wiredep&lt;/h4&gt;
+&lt;p&gt;First add these meta tags to index.html&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- bower:css --&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- endbower --&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- bower:js --&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- endbower --&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;in gruntFile.js:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grunt.loadNpmTasks(&amp;#39;grunt-wiredep&amp;#39;);
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then in grunt.initConfig:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;wiredep: {
+  target: {
+    src: &amp;#39;index.html&amp;#39; // point to your HTML file.
+  }
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and execute it by:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grunt wiredep
+&lt;/pre&gt;&lt;/div&gt;</content><category term="grunt"></category><category term="nodejs"></category></entry><entry><title>Coffeescript everwhere</title><link href="https://www.4thinker.com/coffeescript.html" rel="alternate"></link><published>2014-11-18T11:49:00-08:00</published><updated>2014-11-18T11:49:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-11-18:/coffeescript.html</id><summary type="html">&lt;p&gt;parenthesis for function calls are optional.&lt;/p&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Ubuntu has node package, which makes things interesting. Many of the npm modules likes to refer &lt;code&gt;node&lt;/code&gt;, but the actual nodejs binary is installed as &lt;code&gt;nodejs&lt;/code&gt;. First you have to make sure you don't install &lt;code&gt;node&lt;/code&gt; with apt-get, second you have to make a symlink nodejs to node.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo ln -s /usr/bin/nodejs /usr/bin/node
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Phpstorm&lt;/h2&gt;
+&lt;p&gt;Pycharm (3.1.3) does not work with LiveEdit because it does not have &lt;a href="http://youtrack.jetbrains.com/issue/WI-17044"&gt;a native web server&lt;/a&gt;. I just figured that for anything web-related Phpstorm is going to edge over Pycharm.
+The watcher feature …&lt;/p&gt;</summary><content type="html">&lt;p&gt;parenthesis for function calls are optional.&lt;/p&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Ubuntu has node package, which makes things interesting. Many of the npm modules likes to refer &lt;code&gt;node&lt;/code&gt;, but the actual nodejs binary is installed as &lt;code&gt;nodejs&lt;/code&gt;. First you have to make sure you don't install &lt;code&gt;node&lt;/code&gt; with apt-get, second you have to make a symlink nodejs to node.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo ln -s /usr/bin/nodejs /usr/bin/node
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Phpstorm&lt;/h2&gt;
+&lt;p&gt;Pycharm (3.1.3) does not work with LiveEdit because it does not have &lt;a href="http://youtrack.jetbrains.com/issue/WI-17044"&gt;a native web server&lt;/a&gt;. I just figured that for anything web-related Phpstorm is going to edge over Pycharm.
+The watcher feature in Phpstorm is really cool. &lt;a href="http://www.jetbrains.com/phpstorm/webhelp/transpiling-coffeescript-to-javascript.html"&gt;The documentation shows how to use it with coffeescript.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The show two examples to source and output directory resolution, but I think that going to be what you need.&lt;/p&gt;
+&lt;p&gt;Arguments:
+    --bare --output $ProjectFileDir$\js\ --compile --map $FileName$&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ProjectFileDir$\output\$FileNameWithoutExtension$.js:$ProjectFileDir$\output\$FileNameWithoutExtension$.map
+
+--bare --output $ProjectFileDir$\js\$FileDirRelativeToProjectRoot$\ --compile --map $FileName$
+$ProjectFileDir$\js\$FileDirRelativeToProjectRoot$\$FileNameWithoutExtension$.js:$ProjectFileDir$\js\$FileDirRelativeToProjectRoot$\$FileNameWithoutExtension$.map
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I have added &lt;code&gt;--bare&lt;/code&gt;, because by default coffeescript wraps the output in an immediate function. &lt;a href="http://stackoverflow.com/questions/5211638/pattern-for-coffeescript-modules/5212449#5212449"&gt;Immediate functions will provide a namespace protection for the javascripts you concatenate or mingle&lt;/a&gt; and it is considered a good practice.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(function() {
+    Yourcode
+})();
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;So what I should be doing is &lt;a href="http://stackoverflow.com/questions/7082373/coffeescript-wrapping-files-in-a-function"&gt;binding the javascript function to an event handler&lt;/a&gt; instead of calling it directly:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;document.getElementbyId(&amp;quot;theButton&amp;quot;).addEventListener(&amp;#39;onclick&amp;#39;, testing, false)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you feel like a Darth Vader who needs more force, there is &lt;a href="https://github.com/davidbau/see"&gt;a javascript tool called see.js to evaluate these nested javascript scope&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Also don't forget to add an Extra line of &lt;code&gt;return&lt;/code&gt; so that the controller or the module does not explictly return anything. This actually could break the functionality of the web application.&lt;/p&gt;
+&lt;h2&gt;Syntax&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;"#{}"&lt;/code&gt; evaluate the expression within &lt;code&gt;{}&lt;/code&gt; before stringifying it.
+having an explicit &lt;code&gt;return&lt;/code&gt; statement at the end of a function or having &lt;code&gt;(-&amp;gt; )&lt;/code&gt; splat operator. avoids having any value returned.&lt;/p&gt;
+&lt;p&gt;use &lt;code&gt;Casper#evaluate()&lt;/code&gt; to access actual page DOM and manipulate elements.&lt;/p&gt;
+&lt;p&gt;casper.start('http://google.fr/', function() {
+    require('utils').dump(this.getElementInfo('#hplogo'));
+});&lt;/p&gt;</content></entry><entry><title>Javascript Package managers</title><link href="https://www.4thinker.com/javascript-package-managers.html" rel="alternate"></link><published>2014-08-15T13:18:06-07:00</published><updated>2014-08-15T13:18:06-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-08-15:/javascript-package-managers.html</id><summary type="html">&lt;h2&gt;NPM&lt;/h2&gt;
+&lt;p&gt;Node package manager for node modules&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;npm insall --save &amp;lt;moduel&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;will also update &lt;code&gt;package.json&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;npm update -g npm
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Bower&lt;/h2&gt;
+&lt;p&gt;none-Node file manager, including files like .js, .css, .html, .png, .ttf. It can be utlized for other framework (e.g. AnguarlJS). &lt;code&gt;bower install&lt;/code&gt; command can be used on bower resgiry, git, any url, or local directory&lt;/p&gt;
+&lt;p&gt;.bowerrc&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;{
+  &amp;quot;directory&amp;quot; : &amp;quot;components&amp;quot;,
+  &amp;quot;json&amp;quot;      : &amp;quot;bower.json&amp;quot;,
+  &amp;quot;endpoint&amp;quot;  : &amp;quot;https://Bower.herokuapp.com&amp;quot;,
+  &amp;quot;searchpath&amp;quot;  : &amp;quot;&amp;quot;,
+  &amp;quot;shorthand_resolver&amp;quot; : &amp;quot;&amp;quot;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;directory - local directory name and location in which the components will be installed.
+json - name of the json file which contains the values describing (i.e. name, version, main, dependencies …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;NPM&lt;/h2&gt;
+&lt;p&gt;Node package manager for node modules&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;npm insall --save &amp;lt;moduel&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;will also update &lt;code&gt;package.json&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;npm update -g npm
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Bower&lt;/h2&gt;
+&lt;p&gt;none-Node file manager, including files like .js, .css, .html, .png, .ttf. It can be utlized for other framework (e.g. AnguarlJS). &lt;code&gt;bower install&lt;/code&gt; command can be used on bower resgiry, git, any url, or local directory&lt;/p&gt;
+&lt;p&gt;.bowerrc&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;{
+  &amp;quot;directory&amp;quot; : &amp;quot;components&amp;quot;,
+  &amp;quot;json&amp;quot;      : &amp;quot;bower.json&amp;quot;,
+  &amp;quot;endpoint&amp;quot;  : &amp;quot;https://Bower.herokuapp.com&amp;quot;,
+  &amp;quot;searchpath&amp;quot;  : &amp;quot;&amp;quot;,
+  &amp;quot;shorthand_resolver&amp;quot; : &amp;quot;&amp;quot;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;directory - local directory name and location in which the components will be installed.
+json - name of the json file which contains the values describing (i.e. name, version, main, dependencies) a Bower component&lt;/li&gt;
+&lt;li&gt;endpoint - registry that is search, by name, for a component. The default registry is at https://Bower.herokuapp.com and can be viewed as a json object at https://Bower.herokuapp.com/packages.&lt;/li&gt;
+&lt;li&gt;searchpath - an array of additional registries that can be searched if the component is not found at the first registry indicated by endpoint.&lt;/li&gt;
+&lt;li&gt;shorthand_resolver - Define a custom template for shorthand component names.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;name [string] - The name of the component
+version [string] - A semantic version number
+main [string|array] - The main files your component provides for users of the component 
+ignore [array]- An array of paths not needed in production that you want Bower to ignore when installing 
+dependencies [object] - Components your component depends upon in production 
+devDependencies [object] - Components your component depends upon during development&lt;/p&gt;
+&lt;h2&gt;Grunt&lt;/h2&gt;
+&lt;p&gt;javascrip task runner tool. Examples of tasks include: zipping files, linting files with jshint, and compiling less or coffeescript.&lt;/p&gt;</content></entry><entry><title>Pelican Customization</title><link href="https://www.4thinker.com/pelican-customization.html" rel="alternate"></link><published>2014-07-28T01:12:00-07:00</published><updated>2014-07-28T01:12:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-07-28:/pelican-customization.html</id><summary type="html">&lt;p&gt;This weekend you must have had my RSS feed messed up, because I was refreshing my blog with updates, sometimes broken one. Now I am using &lt;a href="https://github.com/jmaister/readtime"&gt;readtime&lt;/a&gt; and &lt;a href="https://github.com/getpelican/pelican-plugins/share_post"&gt;share_post plugins&lt;/a&gt; to show some more stuff in the article side-bar. The other two plugins I use are &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/related_posts"&gt;related_posts&lt;/a&gt; and &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/render_math"&gt;render_math&lt;/a&gt;, formerly 'latex'. I really hesitated on adding the share buttons for various reasons - one of them being I sometimes put inaccurate information inadvertently, but I gave in hoping that my readers would find it useful.&lt;/p&gt;
+&lt;p&gt;Having no &lt;code&gt;www&lt;/code&gt; prepended to &lt;code&gt;CNAME&lt;/code&gt; file will complicate a lot of things for DNS entry …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This weekend you must have had my RSS feed messed up, because I was refreshing my blog with updates, sometimes broken one. Now I am using &lt;a href="https://github.com/jmaister/readtime"&gt;readtime&lt;/a&gt; and &lt;a href="https://github.com/getpelican/pelican-plugins/share_post"&gt;share_post plugins&lt;/a&gt; to show some more stuff in the article side-bar. The other two plugins I use are &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/related_posts"&gt;related_posts&lt;/a&gt; and &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/render_math"&gt;render_math&lt;/a&gt;, formerly 'latex'. I really hesitated on adding the share buttons for various reasons - one of them being I sometimes put inaccurate information inadvertently, but I gave in hoping that my readers would find it useful.&lt;/p&gt;
+&lt;p&gt;Having no &lt;code&gt;www&lt;/code&gt; prepended to &lt;code&gt;CNAME&lt;/code&gt; file will complicate a lot of things for DNS entry record. I was trying different DNS entries and github would still keep on sending me warning emails. This took me hours to figure out.&lt;/p&gt;
+&lt;p&gt;The search box is fixed. This is a static files only website, so I rely on Google for the indexing and searching. It does not contain everything and it takes time for it to update, but I am so far happy with it.&lt;/p&gt;
+&lt;p&gt;By the way, if you ever open up my website on your mobile phone, it does not look too bad.&lt;/p&gt;
+&lt;p&gt;I rarely proof read my articles and I lack the motivation to do so, but for the sacrifice of the quality, you get the quantity! So cheer up! Many of the blogs I have been following got abandoned, but I don't think I will let this blog go away, because I am keeping myself pressure free and trying to do it because it is fun, not because I want to make a name for myself. I guess &lt;a href="anonymity.html"&gt;this is one advantage of being anonymous&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One awesome thing I did over this weekend was to fix the dates on my blog. Before I would be lazy and skip to specify the dates on my posts. Pelican would default to the last modified dates. So whenever I made a small change, it would be be on the first page, because my articles are sorted chronically by default. Unfortunately, linux does not store the creation time of the file - but Windows does. So I &lt;a href="powershell-notes.html"&gt;picked up powershell again&lt;/a&gt; this weekend. And &lt;a href="files/insert_creation_date.ps1"&gt;here is the script&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;param&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="no"&gt;[string]&lt;/span&gt;&lt;span class="nv"&gt;$directory&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="p"&gt;$(&lt;/span&gt;&lt;span class="k"&gt;throw&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;-directory is required.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+    &lt;span class="no"&gt;[string]&lt;/span&gt;&lt;span class="nv"&gt;$include&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;*.md&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nv"&gt;$files&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;Get-ChildItem&lt;/span&gt; &lt;span class="n"&gt;-recurse&lt;/span&gt; &lt;span class="nv"&gt;$directory&lt;/span&gt; &lt;span class="n"&gt;-include&lt;/span&gt; &lt;span class="nv"&gt;$include&lt;/span&gt;
+&lt;span class="k"&gt;foreach&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$file&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;$files&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="nv"&gt;$date&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Date: &amp;quot;&lt;/span&gt; &lt;span class="p"&gt;+&lt;/span&gt; &lt;span class="p"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;Get-ChildItem&lt;/span&gt; &lt;span class="nv"&gt;$file&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;FullName&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; &lt;span class="p"&gt;`&lt;/span&gt;
+    &lt;span class="nb"&gt;Select-Object&lt;/span&gt; &lt;span class="n"&gt;-ExpandProperty&lt;/span&gt; &lt;span class="n"&gt;CreationTime&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; &lt;span class="nb"&gt;Get-Date&lt;/span&gt; &lt;span class="o"&gt;-f&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;yyyy-MM-dd hh:mm&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;Get-Content&lt;/span&gt; &lt;span class="nv"&gt;$file&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;FullName&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; &lt;span class="p"&gt;%&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ReadCount&lt;/span&gt; &lt;span class="o"&gt;-eq&lt;/span&gt; &lt;span class="n"&gt;2&lt;/span&gt; &lt;span class="o"&gt;-and&lt;/span&gt; &lt;span class="nv"&gt;$_&lt;/span&gt; &lt;span class="o"&gt;-notmatch&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Date:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+        &lt;span class="nv"&gt;$date&lt;/span&gt;
+        &lt;span class="nv"&gt;$_&lt;/span&gt;
+        &lt;span class="nb"&gt;Write-Host&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Updating&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$file&lt;/span&gt; &lt;span class="nv"&gt;$date&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt; 
+    &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="nv"&gt;$_&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; &lt;span class="nb"&gt;Set-Content&lt;/span&gt; &lt;span class="nv"&gt;$file&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;FullName&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The catch is that this only looks for the second line of the file to see if there is field &lt;code&gt;Date:&lt;/code&gt;. Since none of my articles had that field, this was not a problem for me, but if your location of &lt;code&gt;Date:&lt;/code&gt; is not consistent, you will need to rewrite the code. &lt;a href="files/insert_creation_date.ps1"&gt;Download it and save it&lt;/a&gt;. Here is how you use it. Open up the powershell and invoke:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;insert_creation_date&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ps1&lt;/span&gt; &lt;span class="n"&gt;-directory&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Directory&lt;/span&gt; &lt;span class="n"&gt;where&lt;/span&gt; &lt;span class="n"&gt;your&lt;/span&gt; &lt;span class="n"&gt;articles&lt;/span&gt; &lt;span class="n"&gt;exist&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;-include&lt;/span&gt; &lt;span class="p"&gt;*.&lt;/span&gt;&lt;span class="n"&gt;md&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Going forward, a better better solution would be to use &lt;a href="https://github.com/sirver/ultisnips"&gt;UltiSnips&lt;/a&gt; or &lt;a href="https://github.com/Shougo/neosnippet.vim"&gt;Neosnippet&lt;/a&gt; to generate header for any file with &lt;code&gt;*.md&lt;/code&gt; extension in a certain directory. I am not a big fan of snippets because I forget to use them and frankly they use up more space on my brain than they are worth. I rarely use the same snippet repeatedly, but I think a template header generation is definitely worthwhile.&lt;/p&gt;
+&lt;p&gt;When I fixed Google Analytics on my blog (you can look it up in the source code of this website), I found that people do read what I write. So I added &lt;code&gt;Donate&lt;/code&gt; button. I don't drink beer, but the sign of appreciation would make my day.&lt;/p&gt;</content><category term="pelican"></category><category term="blogging"></category><category term="powershell"></category><category term="anonymity"></category></entry><entry><title>Learning to use AWS EC2</title><link href="https://www.4thinker.com/aws-ec2.html" rel="alternate"></link><published>2014-07-20T10:11:00-07:00</published><updated>2014-07-20T10:11:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-07-20:/aws-ec2.html</id><summary type="html">&lt;h2&gt;Amazon now offers up to 30GB SSD instead of HDD for free-tier&lt;/h2&gt;
+&lt;p&gt;I didn't check how much hard drive space I had before, but I was using well below 10GB. By default the general purpose SSD is set to 10GB, but the maximum allocation is 30GB for the free-tier t1.micro instance. Before you hit review button, there should be numbered tabs on the top that Amazon setup wizard did not redirect you, go to one of those and make sure to take the full advantage of free-tier service. I definitely noticed the speed up.&lt;/p&gt;
+&lt;h2&gt;There is no password here …&lt;/h2&gt;</summary><content type="html">&lt;h2&gt;Amazon now offers up to 30GB SSD instead of HDD for free-tier&lt;/h2&gt;
+&lt;p&gt;I didn't check how much hard drive space I had before, but I was using well below 10GB. By default the general purpose SSD is set to 10GB, but the maximum allocation is 30GB for the free-tier t1.micro instance. Before you hit review button, there should be numbered tabs on the top that Amazon setup wizard did not redirect you, go to one of those and make sure to take the full advantage of free-tier service. I definitely noticed the speed up.&lt;/p&gt;
+&lt;h2&gt;There is no password here.&lt;/h2&gt;
+&lt;p&gt;The authentication is done by PAM key-pair. By default, for any sudo operation, EC2 instance should not ask you for any password. You cannot change the password with &lt;code&gt;passwd&lt;/code&gt; either. One thing that baffled me was when I press &lt;code&gt;Ctrl-A x&lt;/code&gt; with GNU Screen.  The key binds to &lt;code&gt;lockscreen&lt;/code&gt; and it asks for the password in order to get back in. Well, like I mentioned before, there is no password and you cannot just pass in PAM key here. So you are locked out. So modify your &lt;code&gt;~/.screenrc&lt;/code&gt; so that this does not phappen again:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;bind x
+bind ^X
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can use something else for &lt;a href="http://serverfault.com/questions/169832/password-for-gnu-screen-lockscreen-command"&gt;screen authentication&lt;/a&gt;, but rest assured, you screen session is not open to the internet unless you share it explicitly.&lt;/p&gt;
+&lt;h2&gt;Terminating == Deleting&lt;/h2&gt;
+&lt;p&gt;Where is the delete button? You won't find it, because it is such a harsh word for EC2 instances. They do not get "deleted," but get "terminated" with their dignity held up high. They won't disappear right away either, but when you look for them again in a few minutes, they will be gone.&lt;/p&gt;</content><category term="aws"></category><category term="amazon"></category></entry><entry><title>Web API notes</title><link href="https://www.4thinker.com/web-api.html" rel="alternate"></link><published>2014-07-17T10:33:00-07:00</published><updated>2014-07-17T10:33:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-07-17:/web-api.html</id><summary type="html">&lt;p&gt;stopPropagation() cuts off the flow of capture and bubble at that specified element
+prevenetDefault() allows event propagation but prevents the browser from carrying out its default action (e.g. opening a new tab when a link is clicked)
+addEventListener, removeEventListener, Event.preventDefault and Event.stopPropagation&lt;/p&gt;</summary><content type="html">&lt;p&gt;stopPropagation() cuts off the flow of capture and bubble at that specified element
+prevenetDefault() allows event propagation but prevents the browser from carrying out its default action (e.g. opening a new tab when a link is clicked)
+addEventListener, removeEventListener, Event.preventDefault and Event.stopPropagation&lt;/p&gt;</content></entry><entry><title>nginx is better than apache</title><link href="https://www.4thinker.com/nginx.html" rel="alternate"></link><published>2014-06-15T10:25:00-07:00</published><updated>2014-06-15T10:25:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-06-15:/nginx.html</id><summary type="html">&lt;p&gt;Nginx is an event-driven file server and it is much lighter than apache in resource usage.&lt;/p&gt;
+&lt;p&gt;sudo service nginx start
+update-rc.d nginx defaults&lt;/p&gt;
+&lt;p&gt;There could be two configuration files, but similar to apach, one typically sources another.&lt;/p&gt;
+&lt;p&gt;https://www.digitalocean.com/community/tutorials/how-to-optimize-nginx-configuration&lt;/p&gt;
+&lt;h4&gt;worker_processes:&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grep processor /proc/cpuinfo | wc -l
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;worker_connections:&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ulimit -n
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;override worker_connections&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;events {
+    worker_connections  19000;  # It&amp;#39;s the key to high performance - have a lot of connections available
+}
+worker_rlimit_nofile    20000;  # Each connection needs a filehandle (or 2 if you are proxying)
+# Total amount of users you can serve = worker_processes * worker_connections
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;For most use cases, the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Nginx is an event-driven file server and it is much lighter than apache in resource usage.&lt;/p&gt;
+&lt;p&gt;sudo service nginx start
+update-rc.d nginx defaults&lt;/p&gt;
+&lt;p&gt;There could be two configuration files, but similar to apach, one typically sources another.&lt;/p&gt;
+&lt;p&gt;https://www.digitalocean.com/community/tutorials/how-to-optimize-nginx-configuration&lt;/p&gt;
+&lt;h4&gt;worker_processes:&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grep processor /proc/cpuinfo | wc -l
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;worker_connections:&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ulimit -n
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;override worker_connections&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;events {
+    worker_connections  19000;  # It&amp;#39;s the key to high performance - have a lot of connections available
+}
+worker_rlimit_nofile    20000;  # Each connection needs a filehandle (or 2 if you are proxying)
+# Total amount of users you can serve = worker_processes * worker_connections
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;For most use cases, the official &lt;a href="http://nginx.com/resources/admin-guide/"&gt;Admin Guide&lt;/a&gt; is good. I was trying to use it to serve only large files (&amp;gt; 2.0GB). Here are few things I had to do:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Ditch disk buffereing completely, You might want the size close to your RAM, if you have a large RAM:&lt;/p&gt;
+&lt;p&gt;location / {
+    proxy_max_temp_file_size 0;
+}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;bigger timeout. My options are a bit excessive, but I am nginx internally and there is no chance of DDoS here.&lt;/p&gt;
+&lt;p&gt;client_header_timeout 10m;
+client_body_timeout 10m;
+send_timeout 10m;
+keepalive_timeout 10m;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;root vs alias&lt;/h4&gt;
+&lt;p&gt;In case of the root directive, full path is appended to the root including the location part, whereas in case of the alias directive, only the portion of the path NOT including the location part is appended to the alias. Alias provides more flexibility (wrt to filenames) and it is more apparent the intent of redirection.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;location /static/ {
+        root /var/www/app/static/;
+        autoindex off;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;results in: &lt;code&gt;/var/www/app/static/static&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;location /static/ {
+        alias /var/www/app/static/;
+        autoindex off;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;results in &lt;code&gt;/var/www/app/static&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;exact directives&lt;/h4&gt;
+&lt;p&gt;by default directives are simple match, so &lt;code&gt;/robots.txt&lt;/code&gt;  will also match /roobots.txt111&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;location =/robots.txt { root /home/www/static/;  }
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Serving files via uwsgi&lt;/h2&gt;
+&lt;h2&gt;Serving files via wwsgi except the static home page&lt;/h2&gt;
+&lt;p&gt;sourced from &lt;a href="http://stackoverflow.com/questions/8625199/serving-static-homepage-with-nginx-and-rest-through-uwsgi"&gt;stackoverflow&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;server&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="err"&gt;...&lt;/span&gt;
+ &lt;span class="err"&gt;root&lt;/span&gt;  &lt;span class="err"&gt;/var/www/mysite.com/static&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+ &lt;span class="err"&gt;index&lt;/span&gt;  &lt;span class="err"&gt;index.html&lt;/span&gt; &lt;span class="err"&gt;index.htm&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+ &lt;span class="err"&gt;try_files&lt;/span&gt; &lt;span class="err"&gt;$uri&lt;/span&gt; &lt;span class="err"&gt;@uwsgi&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+ &lt;span class="err"&gt;location&lt;/span&gt; &lt;span class="err"&gt;@uwsgi{&lt;/span&gt;
+    &lt;span class="err"&gt;include&lt;/span&gt; &lt;span class="err"&gt;uwsgi_params&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="err"&gt;uwsgi_pass&lt;/span&gt; &lt;span class="err"&gt;127.0.0.1:3031&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+ &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;https://calomel.org/nginx.html&lt;/p&gt;
+&lt;p&gt;http://stackoverflow.com/questions/7947030/nginx-no-www-to-www-and-www-to-no-www&lt;/p&gt;
+&lt;p&gt;chkconfig nginx --add&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;upstream&lt;/code&gt; groups servers together
+|   | Sytanx                                                                       | context  | notes                                                        |
+|   | upstream name { ... }                                                        | http     | round-robined                                                |
+|   | server address [parameters];                                                 | upstream | port 80                                                      |
+| - | zone name size;                                                              | upstream | configured with upstream_conf                                |
+|   | hash key [consistent];                                                       | upstream | ?                                                            |
+|   | least_conn;                                                                  | upstream | load-balancing                                               |
+|   | ip_hash;                                                                     | upstream | 3 octets for IPv4, entire for IPv6, localizing server-client |
+|   | keepalive connections;                                                       | upstream | activate cache, LRU for exceeding connections limit          |
+| - | health_check;                                                                | location |                                                              |
+| - | match name { ... }                                                           | http     |                                                              |
+| - | queue number [timeout=time];                                                 | upstream | used when max_conns limit is reached def timeout is 60s      |
+| - | sticky cookie name [expires=time] [domain=domain] [path=path];               | upstream |                                                              |
+| - | sticky route $variable ...;                                                  | upstream |                                                              |
+| - | sticky learn create=$variable lookup=$variable zone=name:size [timeout=time] | upstream | session affinity                                             |
+| - | upstream_conf;                                                               | location |&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;server parameters: weight=number, max_fails=number, fail_timeout=time, backup, down&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;commercial server parameters: max_conn=numbers, resolve, route=string, slow_start=time
+&lt;code&gt;resolve&lt;/code&gt; monitors the change of IP address in the DNS server. It needs to be used with the conjunction of &lt;code&gt;resolver&lt;/code&gt; specifying DNS server name.&lt;/p&gt;
+&lt;p&gt;http {
+    resolver 10.0.0.1;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;upstream u {
+    zone ...;
+    ...
+    server example.com resolve;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;health_check parameters: interval=time, fails=number, passes=number, uri=uri, match=name,&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Forward Proxy Server&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;server&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+
+    &lt;span class="err"&gt;listen&lt;/span&gt; &lt;span class="err"&gt;10.10.10.110:8888&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="err"&gt;server_name&lt;/span&gt; &lt;span class="err"&gt;10.10.10.110&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="err"&gt;error_log&lt;/span&gt; &lt;span class="err"&gt;/var/log/frontend-error.log&lt;/span&gt; &lt;span class="err"&gt;debug&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="err"&gt;access_log&lt;/span&gt; &lt;span class="err"&gt;/var/log/frontend-access.log&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="err"&gt;root&lt;/span&gt; &lt;span class="err"&gt;/var/www&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="err"&gt;#index&lt;/span&gt; &lt;span class="err"&gt;index.php&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="err"&gt;location&lt;/span&gt; &lt;span class="err"&gt;/&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+
+        &lt;span class="err"&gt;resolver&lt;/span&gt; &lt;span class="err"&gt;8.8.8.8&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="err"&gt;proxy_pass&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;scheme&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;http_host&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;uri&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;is_args&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title></title><link href="https://www.4thinker.com/chrome-browser-tools.html" rel="alternate"></link><published>2014-05-19T04:37:00-07:00</published><updated>2014-05-19T04:37:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-05-19:/chrome-browser-tools.html</id><summary type="html">&lt;h2&gt;Enabling javascript in the debugger&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;var&lt;/span&gt; &lt;span class="nt"&gt;jq&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nt"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;createElement&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;script&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;jq&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;src&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;getElementsByTagName&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;head&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;appendChild&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;jq&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="nt"&gt;give&lt;/span&gt; &lt;span class="nt"&gt;time&lt;/span&gt; &lt;span class="nt"&gt;for&lt;/span&gt; &lt;span class="nt"&gt;script&lt;/span&gt; &lt;span class="nt"&gt;to&lt;/span&gt; &lt;span class="nt"&gt;load&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;then&lt;/span&gt; &lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;span class="nt"&gt;jQuery&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;noConflict&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;final_query = {
+ "status" : "free",
+ "enabled" : True
+}&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Enabling javascript in the debugger&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;var&lt;/span&gt; &lt;span class="nt"&gt;jq&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nt"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;createElement&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;script&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="nt"&gt;jq&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;src&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;getElementsByTagName&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;head&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;appendChild&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;jq&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="o"&gt;//&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="nt"&gt;give&lt;/span&gt; &lt;span class="nt"&gt;time&lt;/span&gt; &lt;span class="nt"&gt;for&lt;/span&gt; &lt;span class="nt"&gt;script&lt;/span&gt; &lt;span class="nt"&gt;to&lt;/span&gt; &lt;span class="nt"&gt;load&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;then&lt;/span&gt; &lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;span class="nt"&gt;jQuery&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;noConflict&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;final_query = {
+ "status" : "free",
+ "enabled" : True
+}&lt;/p&gt;</content></entry><entry><title>Google Chrome Settings</title><link href="https://www.4thinker.com/google-chrome-settings.html" rel="alternate"></link><published>2014-05-19T03:37:00-07:00</published><updated>2014-05-19T03:37:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-05-19:/google-chrome-settings.html</id><summary type="html">&lt;h2&gt;Block Ads and Facebook iFrames:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom"&gt;AdBlock for Chrome&lt;/a&gt;, but I was keep getting these iFrames that fails to resolve DNS and throwing a huge grey window to block the web page. So I slapped the following line in the AdBlock Options (Under Customize -&amp;gt; Manually edit your filters) and they are no more:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;##IFRAME[src*=&amp;quot;facebook.com&amp;quot;]
+&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Block Ads and Facebook iFrames:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://chrome.google.com/webstore/detail/adblock/gighmmpiobklfepjocnamgkkbiglidom"&gt;AdBlock for Chrome&lt;/a&gt;, but I was keep getting these iFrames that fails to resolve DNS and throwing a huge grey window to block the web page. So I slapped the following line in the AdBlock Options (Under Customize -&amp;gt; Manually edit your filters) and they are no more:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;##IFRAME[src*=&amp;quot;facebook.com&amp;quot;]
+&lt;/pre&gt;&lt;/div&gt;</content><category term="chrome"></category><category term="settings"></category></entry><entry><title>Setting up Pelican for blogging</title><link href="https://www.4thinker.com/blogging-on-commandline.html" rel="alternate"></link><published>2013-09-07T03:53:00-07:00</published><updated>2013-09-07T03:53:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-09-07:/blogging-on-commandline.html</id><summary type="html">&lt;p&gt;At the start of year 2013, I tried to set up a system on a wordpress blog so that I could blog from commandline. The plan became moot when I found out that my web hosting service provider did not have the latest PHP installed and I just could not install &lt;a href="http://wp-cli.org/"&gt;WP-CLI&lt;/a&gt; or &lt;a href="http://wordshell.net/"&gt;wordshell&lt;/a&gt;. Maybe I did not try hard enough, but I had many doubts about its usefulness. Six month after, I gave &lt;a href="ruby-on-cygwin.html"&gt;Jekyll and Octopress&lt;/a&gt; a try. It was quiet easy to set it up. But since I do not use Ruby, I began to worry how much …&lt;/p&gt;</summary><content type="html">&lt;p&gt;At the start of year 2013, I tried to set up a system on a wordpress blog so that I could blog from commandline. The plan became moot when I found out that my web hosting service provider did not have the latest PHP installed and I just could not install &lt;a href="http://wp-cli.org/"&gt;WP-CLI&lt;/a&gt; or &lt;a href="http://wordshell.net/"&gt;wordshell&lt;/a&gt;. Maybe I did not try hard enough, but I had many doubts about its usefulness. Six month after, I gave &lt;a href="ruby-on-cygwin.html"&gt;Jekyll and Octopress&lt;/a&gt; a try. It was quiet easy to set it up. But since I do not use Ruby, I began to worry how much I could customize or create a plugin if I needed one. So the final winner for me was Pelican, which uses Python instead and the setup is as easy as Octopress.&lt;/p&gt;
+&lt;p&gt;Regardless of your &lt;a href="http://nanoc.ws/about/#similar-projects"&gt;choice&lt;/a&gt;, the main attraction about the static blog is that if you have a good relationship with your editor (mine being gVim), blogging can be a easy task for you. Too often I have witnessed many awesome bloggers leaving their blogs because they get too busy. That was the case with my first blog except I was not an awesome blogger.&lt;/p&gt;
+&lt;h2&gt;Prerequisite&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;pip installed&lt;/li&gt;
+&lt;li&gt;git configured with proper user account information&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;p&gt;I make a symlink of markdown_py so I can use it from &lt;a href="vim-markdown-preview.html"&gt;my vim&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pip install pelican Typogrify disqus-python markdown ghp-import shovel beautifulsoup4
+sudo ln -s /usr/local/bin/markdown_py /usr/local/bin/markdown
+&lt;span class="c1"&gt;# go the parent directory where you want your pelican folder to reside&lt;/span&gt;
+pelican-quickstart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Create Post&lt;/h2&gt;
+&lt;p&gt;Add the following before your markdown file
+Example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Welcome&lt;/span&gt; &lt;span class="n"&gt;All&lt;/span&gt;
+&lt;span class="n"&gt;Slug&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;welcome&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;all&lt;/span&gt;
+&lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2013&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;07&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;22&lt;/span&gt; &lt;span class="mi"&gt;19&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;19&lt;/span&gt;
+&lt;span class="n"&gt;Category&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt;
+&lt;span class="n"&gt;Tags&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;publishing&lt;/span&gt;
+&lt;span class="n"&gt;Author&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Josef&lt;/span&gt; &lt;span class="n"&gt;Jezek&lt;/span&gt;
+&lt;span class="n"&gt;Summary&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Short&lt;/span&gt; &lt;span class="n"&gt;version&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;feeds&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;But I only use three meta data. 'Title', because it is required, 'Tags', and 'Status', which are optional, but the latter allow Pelican to skip generating html if the value is 'hidden'. Everything else can be auto-generated by your &lt;code&gt;pelicanconf.py&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Generate blog&lt;/h2&gt;
+&lt;p&gt;By default pelican reads from directory 'content', which is supposed to have either &lt;code&gt;.md&lt;/code&gt; or &lt;code&gt;.rst&lt;/code&gt; files and generates &lt;code&gt;.html&lt;/code&gt; files in 'output'&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pelican -s pelicanconf.py
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Local Test&lt;/h2&gt;
+&lt;p&gt;Blog generation very quick, but I initially worked with small set of articles so that I could make changes quickly and see different features and plugins. Make sure you set &lt;code&gt;SITEURL&lt;/code&gt; to nothing or comment it out in &lt;code&gt;pelicanconf.py&lt;/code&gt;, otherwise, css files and links will not work.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; output
+python -m SimpleHTTPServer &lt;span class="m"&gt;8000&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I do not use &lt;code&gt;make devserver&lt;/code&gt;, because I have placed my output folder somewhere else, and I get an error message.&lt;/p&gt;
+&lt;h2&gt;Deployment&lt;/h2&gt;
+&lt;p&gt;If you are new to Github pages, the concept of Project pages maybe new. &lt;a href="http://jekyllrb.com/docs/github-pages/"&gt;This page&lt;/a&gt; explains it. &lt;code&gt;gh-pages&lt;/code&gt; is branch you make when your &lt;code&gt;master&lt;/code&gt; branch has the source code for your project. Then you can host the contents of &lt;code&gt;gh-pages&lt;/code&gt; to a url of your choice. I am not delving into how-to for this, because I am not using it for this blog, which does not have a project associated with it. I am mentioning it though because coming from Octopress, I thought it was the way I am supposed to deploy Pelican. No, but some manual work is needed here or you need to write a &lt;a href="http://tshepang.net/blogging-with-pelican"&gt;shell script&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Anyway, to deploy, create a git repository on 'output' folder and setting the repository named &lt;code&gt;username.github.com&lt;/code&gt; as the remote branch.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git init
+git add -A
+git commit -m &lt;span class="s2"&gt;&amp;quot;latest&amp;quot;&lt;/span&gt;
+git remote rm origin
+git remote add origin git@github.com:Forethinker/forethinker.github.com.git
+git push -u origin master
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This is what I put in &lt;code&gt;crontab&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(cd ~/Dropbox/web/pelican &amp;amp;&amp;amp; pelican -s pelicanconf.py); (cd ~/pelican &amp;amp;&amp;amp; git add -A &amp;amp;&amp;amp; git commit -am &amp;quot;latest&amp;quot; &amp;amp;&amp;amp; git push)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I was first against auto populating my blog without reviewing it first, but then the updates were getting delayed because I was busy.&lt;/p&gt;
+&lt;h2&gt;Custom Domain&lt;/h2&gt;
+&lt;p&gt;You essentially have to redirect your domain to point to github.io by modifying 'A record' to point to &lt;code&gt;204.232.175.78&lt;/code&gt; on your domain registrar. Detailed info is &lt;a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages"&gt;here&lt;/a&gt;. And follow the instructions below so that CNAME is read from 'extra/CNAME' is copied to 'output' whenever blog is generated and the github server could read the filename CNAME and know which domain to use.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir -p content/extra
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;domain.name&amp;quot;&lt;/span&gt; &amp;gt; content/extra/CNAME
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and edit pelicanconf.py:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;EXTRA_PATH_METADATA&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="s1"&gt;&amp;#39;extra/CNAME&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;path&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;CNAME&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+        &lt;span class="s1"&gt;&amp;#39;extra/readme.md&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;path&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;readme.md&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;'extra' directory resides in 'content' directory and it will not create a new category. I also put my &lt;code&gt;readme.md&lt;/code&gt; in the 'extra' directory. You might find a use for it. But just remember to add each files to &lt;code&gt;EXTRA_PATH_METADATA&lt;/code&gt; variable along with correct &lt;code&gt;apath&lt;/code&gt; so that the web server could read them properly.&lt;/p&gt;
+&lt;h2&gt;Adding scrollbar for overflowing code block&lt;/h2&gt;
+&lt;p&gt;Add the following line to the &lt;code&gt;local.css&lt;/code&gt; or the primary stylesheet of your theme:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;pre&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;overflow&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;white-space&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;pre&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;word-break&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;normal&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;word-wrap&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;normal&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Other Optional, but Almost Essential Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Adding Google search box in the corner. Yeah, you do not have any database to index your articles. So outsource that to Google. I personally think Google search is better than a customized search that most websites offer. jakevdp gave me the idea of &lt;a href="https://github.com/jakevdp/pelican-octopress-theme/commit/c093039290820db69c442aa43b680f69c4aed52e"&gt;modifying&lt;/a&gt; on the theme to get it working. It takes time for google to index your site though.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://disqus.com/"&gt;Disqus&lt;/a&gt;: check that your theme supports this, otherwise, you will have to see other theme to copy the code snippets to make this possible. I probably do not respond to the comments often, but it provides the opportunity for users to interact with each other and point out your mistakes. I think this is indispensable. Also it is very easy to set it up. Just sign-up on diqus.com and specify &lt;code&gt;DISQUS_SITENAME&lt;/code&gt; in &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pygments: Pelican allows you to syntax highlight according to the file type you specify. Just add &lt;code&gt;:::&lt;/code&gt; followed by any of the &lt;a href="http://pygments.org/docs/lexers/"&gt;supported short names&lt;/a&gt; before any code block.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/getpelican/pelican-plugins/pull/21"&gt;Liquid tags&lt;/a&gt;: It's a plug-in that added Liquid-style tags within markdown. I have not felt the need for this now, but I will probably need it in the future. &lt;a href="http://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/"&gt;Examples&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You could do some neat things with fabric to generate and clean up blog files with one command. But I opted to use good-old bash script because fabric does not seem to work in Windows (cygwin).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--
+Blogging on the commandline
+Wordpress has two commmand line interface: [wp-cli][0] and [wordshell][1]. The latter supports multiple site management and it is client-side program (i.e. on your machine, not the web hosting server) without the dependency on PHP. It is cool, but it does not support blog. So it made my choice easy.
+
+Trying to install `wp-cli` with curl gave me an error
+
+    ...
+    curl: (51) SSL: certificate subject name 'dl.packagist.org' does not match target host name 'getcomposer.org'
+
+    Installing the main WP-CLI package...
+    -------------------------------------
+    bash: line 87: composer.phar: command not found
+    ...
+
+So I find that there is a thing called composer[2] that is like pip for python and I need it.
+I tried to to install it:
+
+    curl -sS https://getcomposer.org/installer | php
+and got the following message:
+
+    PHP Deprecated:  Comments starting with '#' are deprecated in /web/conf/php5.ini on line 1256 in Unknown on line 0
+    PHP Deprecated:  Comments starting with '#' are deprecated in /web/conf/php5.ini on line 1257 in Unknown on line 0
+
+    Deprecated: Directive 'magic_quotes_gpc' is deprecated in PHP 5.3 and greater in Unknown on line 0
+    curl: (51) SSL: certificate subject name 'dl.packagist.org' does not match target host name 'getcomposer.org'
+That last lines looks familiar. Apparently `wp-cli` was trying to install `composer` for me, but it failed because my web hosting server has older version of [openssl][3]. So I switch **https** to **http** and everything is good... except my security.
+
+    curl -sS https://getcomposer.org/installer | php
+    php composer.phar
+Now I have Composer. I move it to .composer directory and set the PATH accordingly.
+
+    cd .composer/
+    cp ../composer.phar .
+    export PATH=$PATH:~/.composer
+
+I run the install command for wp-cli:
+
+but now I get the following error
+    Problem 1
+      - Installation request for d11wtq/boris dev-master -&gt; satisfiable by d11wtq/boris[dev-master].
+      - d11wtq/boris dev-master requires ext-readline * -&gt; the requested PHP extension readline is missing from your system.
+
+
+blog for yfunnel (Pelican)
+    (cd ~/Dropbox/web/pelican &amp;&amp; pelican -s pelicanconf.py); (cd ~/pelican &amp;&amp; git add .A &amp;&amp; git commit .am "latest" &amp;&amp; git push)
+
+
+
+--&gt;
+
+&lt;p&gt;&lt;!--[2][http://getcomposer.org/doc/00-intro.md]--&gt;
+&lt;!--[3][https://github.com/composer/composer/issues/1701]--&gt;
+&lt;!--https://github.com/wp-cli/wp-cli/wiki/Alternative-Install-Methods--&gt;&lt;/p&gt;</content><category term="blog"></category><category term="pelican"></category></entry><entry><title>Topography Notes</title><link href="https://www.4thinker.com/typography.html" rel="alternate"></link><published>2013-08-22T12:57:00-07:00</published><updated>2013-08-22T12:57:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-08-22:/typography.html</id><summary type="html">&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Fundamentals of Design&lt;/a&gt; by Tim Dikun @ codeschool.com&lt;/p&gt;
+&lt;h2&gt;Attributes that Influence Design&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Audience: Age, Race, Gender, Cultural Niche&lt;/li&gt;
+&lt;li&gt;Tone: Casual, Formal, Friendly, Sarcastic&lt;/li&gt;
+&lt;li&gt;Purpose: Informational, Conversations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;Serif&lt;/h2&gt;
+&lt;h4&gt;Humanist - Classic &amp;amp; Traditional&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Emulates calligraphy&lt;/li&gt;
+&lt;li&gt;Contrasting Strokes&lt;/li&gt;
+&lt;li&gt;Journalist and Historical Text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Transitional - Strong, Stylish, &amp;amp; Dynamic&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Sharper Serif&lt;/li&gt;
+&lt;li&gt;More contrasting Strokes&lt;/li&gt;
+&lt;li&gt;Academic and Legal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Modern Serif - Structured, Clear, &amp;amp; Elegant&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Thin, horizontal Serif&lt;/li&gt;
+&lt;li&gt;High Contrast Stroke&lt;/li&gt;
+&lt;li&gt;Art and Cultural&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Egyptian (Slab Serif) - Authoritative, yet friendly&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Heavy, boxy, serifs&lt;/li&gt;
+&lt;li&gt;Very Low Contrast Stroke&lt;/li&gt;
+&lt;li&gt;Marketing and Promotional &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Sans-Serif&lt;/h2&gt;
+&lt;h4&gt;Humanist - Perfect vs imperfect&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Emulates calligraphy&lt;/li&gt;
+&lt;li&gt;contrasting strokes&lt;/li&gt;
+&lt;li&gt;Government, Finance, Education&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Transitional - Unassuming &amp;amp; Modern&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Strong strokes&lt;/li&gt;
+&lt;li&gt;Upright, uniform, characters …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Fundamentals of Design&lt;/a&gt; by Tim Dikun @ codeschool.com&lt;/p&gt;
+&lt;h2&gt;Attributes that Influence Design&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Audience: Age, Race, Gender, Cultural Niche&lt;/li&gt;
+&lt;li&gt;Tone: Casual, Formal, Friendly, Sarcastic&lt;/li&gt;
+&lt;li&gt;Purpose: Informational, Conversations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;Serif&lt;/h2&gt;
+&lt;h4&gt;Humanist - Classic &amp;amp; Traditional&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Emulates calligraphy&lt;/li&gt;
+&lt;li&gt;Contrasting Strokes&lt;/li&gt;
+&lt;li&gt;Journalist and Historical Text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Transitional - Strong, Stylish, &amp;amp; Dynamic&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Sharper Serif&lt;/li&gt;
+&lt;li&gt;More contrasting Strokes&lt;/li&gt;
+&lt;li&gt;Academic and Legal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Modern Serif - Structured, Clear, &amp;amp; Elegant&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Thin, horizontal Serif&lt;/li&gt;
+&lt;li&gt;High Contrast Stroke&lt;/li&gt;
+&lt;li&gt;Art and Cultural&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Egyptian (Slab Serif) - Authoritative, yet friendly&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Heavy, boxy, serifs&lt;/li&gt;
+&lt;li&gt;Very Low Contrast Stroke&lt;/li&gt;
+&lt;li&gt;Marketing and Promotional &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Sans-Serif&lt;/h2&gt;
+&lt;h4&gt;Humanist - Perfect vs imperfect&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Emulates calligraphy&lt;/li&gt;
+&lt;li&gt;contrasting strokes&lt;/li&gt;
+&lt;li&gt;Government, Finance, Education&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Transitional - Unassuming &amp;amp; Modern&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Strong strokes&lt;/li&gt;
+&lt;li&gt;Upright, uniform, characters&lt;/li&gt;
+&lt;li&gt;Technology and transportion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Geometric - Strict, Objective, &amp;amp; Universal&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Geometric shape from the backbones of the letters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Script&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Good for styling, but not for the body text.&lt;/li&gt;
+&lt;li&gt;including 'Comic Sans'&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Guidelines&lt;/h2&gt;
+&lt;p&gt;Titles and Subtitles: Serif
+Body: Sans serif
+Do not choose the fonts from the same class, but the same family.
+Seek for contrast over Harmony
+&lt;a href="css"&gt;CSS&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Design Hierarchy&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Differences in Size&lt;/li&gt;
+&lt;li&gt;First choose the font for the Body. 16 px font size is a good rule of thumb&lt;/li&gt;
+&lt;li&gt;HeadLine(200%), Sub-Headline (150%), Navigation (100%), Subtitles &amp;amp; Annotation (75%)&lt;/li&gt;
+&lt;li&gt;Google leading is 120-150% 'line-height'&lt;/li&gt;
+&lt;li&gt;Good number of Characters-per-line (CPL) is 50-70, this may change if the device's viewing width is small. In css, this can be adjusted with &lt;code&gt;max-width&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Helpful Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.smashingmagazine.com/category/design/"&gt;Smashing Magazine Design&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.netmagazine.com/"&gt;Net Magazine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://hackdesign.org/"&gt;Hack Design&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.thinkingwithtype.com/"&gt;Thinking with Type&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881792063"&gt;The Elements of Typographic Style&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.pearsonified.com/typography/"&gt;Typography Calculator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://webdesign.tutsplus.com/articles/design-theory/understanding-the-z-layout-in-web-design/"&gt;Understanding Z layout&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://webdesign.tutsplus.com/articles/design-theory/understanding-the-f-layout-in-web-design/"&gt;Understanding F-layout&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://gridpak.com/"&gt;Responsive Grid Generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.ravelrumba.com/photoshop-grids/"&gt;Photoshop Grids&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>Color Theory Notes</title><link href="https://www.4thinker.com/color-theory.html" rel="alternate"></link><published>2013-08-22T04:51:00-07:00</published><updated>2013-08-22T04:51:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-08-22:/color-theory.html</id><summary type="html">&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Fundamentals of Design&lt;/a&gt; by Tim Dikun @ &lt;a href="http://mbsy.co/7sh6q"&gt;codeschool.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Color Types&lt;/h2&gt;
+&lt;p&gt;Subtractive Color (CMYK): based on the white background, printer, physical&lt;/p&gt;
+&lt;p&gt;Additive Color (RGB): Based on the black background, monitor, virtual&lt;/p&gt;
+&lt;p&gt;Human process color based on Hue, Saturation, and Lightness &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hue (x): can be best represented with a color wheel, which enculates the entire RGB space. (Degree)&lt;/li&gt;
+&lt;li&gt;Saturation (y): the variation of the color to gray (%)&lt;/li&gt;
+&lt;li&gt;Lighness (z): the variation of the color with respect to white (100%) and black (0%)&lt;/li&gt;
+&lt;li&gt;These three properties can be best represented as a cylinder &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;First Choose a Base Color&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Red: Heat, Passion, Excitement, Speed …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Fundamentals of Design&lt;/a&gt; by Tim Dikun @ &lt;a href="http://mbsy.co/7sh6q"&gt;codeschool.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Color Types&lt;/h2&gt;
+&lt;p&gt;Subtractive Color (CMYK): based on the white background, printer, physical&lt;/p&gt;
+&lt;p&gt;Additive Color (RGB): Based on the black background, monitor, virtual&lt;/p&gt;
+&lt;p&gt;Human process color based on Hue, Saturation, and Lightness &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hue (x): can be best represented with a color wheel, which enculates the entire RGB space. (Degree)&lt;/li&gt;
+&lt;li&gt;Saturation (y): the variation of the color to gray (%)&lt;/li&gt;
+&lt;li&gt;Lighness (z): the variation of the color with respect to white (100%) and black (0%)&lt;/li&gt;
+&lt;li&gt;These three properties can be best represented as a cylinder &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;First Choose a Base Color&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Red: Heat, Passion, Excitement, Speed, and Energy&lt;/li&gt;
+&lt;li&gt;Orange: Warmth, Vitality, Reliability, Playfulness&lt;/li&gt;
+&lt;li&gt;Yellow: Optimism, Creativity, Sunshine, Cheer, and Happiness &lt;/li&gt;
+&lt;li&gt;Green: Serenity, Health, Growth, Nature, Freshness&lt;/li&gt;
+&lt;li&gt;Blue: Security, Truth, Stability, Loyalty, Reliability, Open communication&lt;/li&gt;
+&lt;li&gt;Purple, Spirituality, Intelligence, Wealth, Royal, Sentimental, Sophisticated&lt;/li&gt;
+&lt;li&gt;Pink: Youthful intensity, energy, fun, excitement&lt;/li&gt;
+&lt;li&gt;Brown: Durability, Class, Age, Stability, Relaxation&lt;/li&gt;
+&lt;li&gt;Black: Power, Drama, Serious, Bold, Strong&lt;/li&gt;
+&lt;li&gt;White: Simplicity, Cleanliness, Youthful, Mild, Pure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Color Scheme&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Monochromatic: has the same hue across&lt;/li&gt;
+&lt;li&gt;Analogous: Hue change slightly&lt;/li&gt;
+&lt;li&gt;Complementary: Some has a complementary Hue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Contrast - Web Content Accessibility Guidelines (WCAG2)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Contrasting Colors are the best&lt;/li&gt;
+&lt;li&gt;Same Hue, Same high saturation, and high contrasts&lt;/li&gt;
+&lt;li&gt;Red &amp;amp; Green / Blue &amp;amp; Orange are bad for color-blinded people&lt;/li&gt;
+&lt;li&gt;Warm colors (1st half of rainbow) appear closer than cold (2nd half of rainbow) colors&lt;/li&gt;
+&lt;li&gt;Visual Hierarchy: Background colors, therefore, get progressively darker.&lt;/li&gt;
+&lt;li&gt;Avoid drop shadows and strokes on types, place darker, contrasting images to make things pop.&lt;/li&gt;
+&lt;li&gt;Do not place type in an image.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Helpful Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.smashingmagazine.com/2010/01/28/color-theory-for-designers-part-1-the-meaning-of-color/"&gt;Color Theory for Designers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kuler.adobe.com/create/color-wheel/"&gt;Adobe Kuler Color Wheel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.workwithcolor.com/color-converter-01.htm"&gt;Working with Color&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>Mobile Web Notes</title><link href="https://www.4thinker.com/mobile-web.html" rel="alternate"></link><published>2013-08-21T01:17:00-07:00</published><updated>2013-08-21T01:17:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-08-21:/mobile-web.html</id><summary type="html">&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Journey Into Mobile&lt;/a&gt; by Jason Vanlue @ codeschool.com&lt;/p&gt;
+&lt;h2&gt;Fluid Layout: convert &lt;code&gt;px&lt;/code&gt;s to &lt;code&gt;em&lt;/code&gt;s&lt;/h2&gt;
+&lt;p&gt;Default font size is 16 px. &lt;/p&gt;
+&lt;p&gt;Context for .. is ..&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Width: container&lt;/li&gt;
+&lt;li&gt;Margin: container&lt;/li&gt;
+&lt;li&gt;Padding: element itself &lt;/li&gt;
+&lt;li&gt;line-height: font-size&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Adaptive Design using Media Queries:&lt;/h2&gt;
+&lt;p&gt;Break points are determined by viewports in Adaptive Design, so keep in mind the popular device width sizes (e.g. 768px)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;global.css&amp;quot; media=&amp;quot;all&amp;quot; /&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;main.css&amp;quot; media=&amp;quot;screen&amp;quot; /&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;paper.css&amp;quot; media=&amp;quot;print&amp;quot; /&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;mobile.css&amp;quot; media=&amp;quot;handheld&amp;quot;/&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;media&lt;/code&gt; property specifies which media the linked resource …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Journey Into Mobile&lt;/a&gt; by Jason Vanlue @ codeschool.com&lt;/p&gt;
+&lt;h2&gt;Fluid Layout: convert &lt;code&gt;px&lt;/code&gt;s to &lt;code&gt;em&lt;/code&gt;s&lt;/h2&gt;
+&lt;p&gt;Default font size is 16 px. &lt;/p&gt;
+&lt;p&gt;Context for .. is ..&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Width: container&lt;/li&gt;
+&lt;li&gt;Margin: container&lt;/li&gt;
+&lt;li&gt;Padding: element itself &lt;/li&gt;
+&lt;li&gt;line-height: font-size&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Adaptive Design using Media Queries:&lt;/h2&gt;
+&lt;p&gt;Break points are determined by viewports in Adaptive Design, so keep in mind the popular device width sizes (e.g. 768px)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;global.css&amp;quot; media=&amp;quot;all&amp;quot; /&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;main.css&amp;quot; media=&amp;quot;screen&amp;quot; /&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;paper.css&amp;quot; media=&amp;quot;print&amp;quot; /&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;mobile.css&amp;quot; media=&amp;quot;handheld&amp;quot;/&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;media&lt;/code&gt; property specifies which media the linked resource applies to. All CSS files referred by link tags are downloaded, bu only the CSS properties that meet conditions will be applied. This approach quickly diminished in practice, because they do not  target many properties of a device very well.&lt;/p&gt;
+&lt;p&gt;Media Queries, therefore, was introduced as a part of CSS3 specification. The conditions are specified in css files in the following format:  &lt;code&gt;@media type (cond) {...}&lt;/code&gt;. Each conditions are wrapped in parenthesis and the conditions can have logical operators between them, which are &lt;code&gt;not&lt;/code&gt;, &lt;code&gt;only&lt;/code&gt;, &lt;code&gt;and&lt;/code&gt;, &lt;code&gt;or&lt;/code&gt;(&lt;code&gt;,&lt;/code&gt;). Some popular conditions include: &lt;code&gt;min-width&lt;/code&gt;, &lt;code&gt;max-width&lt;/code&gt;, and &lt;code&gt;orientation&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;@media screen and (max-width: 320px) {
+ body {
+  font-size: 100%
+ }
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The &lt;code&gt;font-size&lt;/code&gt;, &lt;code&gt;border&lt;/code&gt;, &lt;code&gt;width&lt;/code&gt; or &lt;code&gt;float&lt;/code&gt; properties may be changed for a better viewing experience. It is a convention to put your media specific stylesheet on the bottom of your css file, for a better organization and load time.&lt;/p&gt;
+&lt;h2&gt;Responsive Design&lt;/h2&gt;
+&lt;p&gt;Responsive is superset of adaptive. Responsive design provides continuity between contexts, are portable, and accessible. Break points are decided by the contents. Other directives include: simplifying contents, prioritizing layout, and optimizing user experience.&lt;/p&gt;
+&lt;h2&gt;Responsive Media&lt;/h2&gt;
+&lt;p&gt;To make a image adjust to the screen instead of staying in a static size, first save a large sized media and set &lt;code&gt;max-width&lt;/code&gt; property to adjust the size for the viewport. IE6 is not supported and for IE7&amp;amp;FF2 in Win7, the use of &lt;a href="http://msdn.microsoft.com/en-us/library/"&gt;AlphaImageLoader&lt;/a&gt; is recommended.&lt;/p&gt;
+&lt;h2&gt;Retina Images&lt;/h2&gt;
+&lt;p&gt;In order to deal with pixelated images in retina displays, first save the larger version of media file with &lt;code&gt;name@2x.png&lt;/code&gt; and apply it based on the device's pixel density. The ratio of 2 is optimal for retina, 1.5 for HD Screen of Android devices.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="n"&gt;media&lt;/span&gt;
+&lt;span class="n"&gt;only&lt;/span&gt; &lt;span class="n"&gt;screen&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;min&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;device&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pixel&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nl"&gt;ratio&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+&lt;span class="n"&gt;only&lt;/span&gt; &lt;span class="n"&gt;screen&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;min&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;device&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pixel&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nl"&gt;ratio&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;1.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;logo&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="err"&gt;   &lt;/span&gt;&lt;span class="n"&gt;background&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nl"&gt;image&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;logo&lt;/span&gt;&lt;span class="mi"&gt;@2&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;png&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="err"&gt;   &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;background&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nl"&gt;size&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="n"&gt;px&lt;/span&gt; &lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="n"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt;   &lt;/span&gt;&lt;span class="n"&gt;background&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nl"&gt;size&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="err"&gt; &lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="n"&gt;px&lt;/span&gt; &lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="n"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This approach works with &lt;code&gt;img&lt;/code&gt;, &lt;code&gt;embed&lt;/code&gt;, &lt;code&gt;object&lt;/code&gt;, &lt;code&gt;video&lt;/code&gt; tags.&lt;/p&gt;
+&lt;p&gt;Other robust options include:
+    - &lt;a href="http://fittextjs.com/"&gt;FitText&lt;/a&gt; to make font-sizing flexible
+    - &lt;a href="http://letteringjs.com/"&gt;Lettering.js&lt;/a&gt; for more robust control over your typography
+    - (FitVids.js)[http://fitvidsjs.com/] for flexible, responsive videos&lt;/p&gt;
+&lt;p&gt;In order to get around files being downloaded unnecessarily, 
+&lt;a href="http://scottjehl.com/picturefill/"&gt;PictureFill&lt;/a&gt; uses javascript to handle alternative image sizes.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;picture&lt;/span&gt; &lt;span class="na"&gt;alt=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Our Camp Site&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- Smallest size first - no @media qualifier --&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;source&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;camp-site.jpeg&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- Large size - send to viewports 800px wide and up --&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;source&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;camp-site-lrg.jpeg&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;media=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;(min-width: 900px)&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="c"&gt;&amp;lt;!-- Fallback content for non-JS or non-media-query-supporting-browsers --&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;noscript&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;img&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;camp-site.jpeg&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;alt=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;our camp site&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/noscript&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/picture&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Helpful Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.abookapart.com/products/responsive-web-design"&gt;Responsive Web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://easy-readers.net/books/adaptive-web-design/"&gt;Adaptive Web Design&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://responsive.is/"&gt;Responsive.is&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.markboulton.co.uk/"&gt;The Personal Disquiet of Mark Boulton&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://futurefriend.ly/resources.html"&gt;Future Friendly Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.lukew.com/"&gt;LukeW Ideation + Design&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://mediaqueri.es/"&gt;Media Queries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://mediaqueri.es/"&gt;Viewport Meta Tag&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://courseware.codeschool.com.s3.amazonaws.com/journey_into_mobile/TheLostWorld.zip"&gt;Example website: The Lost World&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>AJAX notes</title><link href="https://www.4thinker.com/jquery-ajax-notes.html" rel="alternate"></link><published>2013-07-29T05:07:00-07:00</published><updated>2013-07-29T05:07:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-07-29:/jquery-ajax-notes.html</id><summary type="html">&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;jQuery - The Return Flight&lt;/a&gt; by Gregg Pollak @ &lt;a href="codeschool.com"&gt;codeschool.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Basic&lt;/h2&gt;
+&lt;p&gt;Asynchronous Javascript And XML - updates the client page by interacting the server without a refresh. jQuery downloads everything beforehand and manipulates CSS for visual effects, AJAX makes seamless interaction with the user by downloading contents on a need-basis. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$.ajax(URL, options)&lt;/code&gt; - first argument specifies the URL to request data from the server, the second argument is a javascript object with properties mentioned below. It requires &lt;code&gt;success&lt;/code&gt; property.&lt;/p&gt;
+&lt;p&gt;Event Delegation, or specifying &lt;code&gt;&amp;lt;target&amp;gt;&lt;/code&gt; argument for &lt;code&gt;on()&lt;/code&gt;, is often necessary for successful AJAX requests, because the target element might not have existed …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;jQuery - The Return Flight&lt;/a&gt; by Gregg Pollak @ &lt;a href="codeschool.com"&gt;codeschool.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Basic&lt;/h2&gt;
+&lt;p&gt;Asynchronous Javascript And XML - updates the client page by interacting the server without a refresh. jQuery downloads everything beforehand and manipulates CSS for visual effects, AJAX makes seamless interaction with the user by downloading contents on a need-basis. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$.ajax(URL, options)&lt;/code&gt; - first argument specifies the URL to request data from the server, the second argument is a javascript object with properties mentioned below. It requires &lt;code&gt;success&lt;/code&gt; property.&lt;/p&gt;
+&lt;p&gt;Event Delegation, or specifying &lt;code&gt;&amp;lt;target&amp;gt;&lt;/code&gt; argument for &lt;code&gt;on()&lt;/code&gt;, is often necessary for successful AJAX requests, because the target element might not have existed when the page was initially loaded.&lt;/p&gt;
+&lt;h2&gt;Object-Oriented-Programming&lt;/h2&gt;
+&lt;h4&gt;JavaScript object ~== struct&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;javascript variable may contain an object&lt;/li&gt;
+&lt;li&gt;javascript object may contain methods. The key is the name of the method and the value is the function defintion. If these functions are refactored or refer other methods in the current object, they must be referred with &lt;code&gt;this.&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;javascript object may be defined outside of &lt;code&gt;$(document).ready()&lt;/code&gt; function and can still be called. In javascript, the scope is not limited to the parenthesis. So there is not need to redefined it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;JavaScript Function ~== class&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;There is no way to reuse the method defintions with a different variable. &lt;strong&gt;Function&lt;/strong&gt;, provides a real Object-Oriented-Data Structure. It is defined with &lt;code&gt;function Name(parameter){}&lt;/code&gt;. It's instance is created with &lt;code&gt;var name = new Name('parameter')&lt;/code&gt; syntax.&lt;/li&gt;
+&lt;li&gt;if the function is public, it is defined with &lt;code&gt;this.&lt;/code&gt; prefix.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;This and $(this)&lt;/h4&gt;
+&lt;p&gt;Inisde AJAX callbacks, &lt;code&gt;this&lt;/code&gt; is set to the AJAX setting, in order to change it, &lt;code&gt;context&lt;/code&gt; property is used. &lt;code&gt;this&lt;/code&gt; is used to refer the current object, so it is typically used to use the members of that object. &lt;code&gt;this&lt;/code&gt; is not to be confused with &lt;code&gt;$(this)&lt;/code&gt;, which referes to a jQuery object for DOM. When there are multiple matches for a given specifier, then the selector will returned in a array of objects. This array can be iterated with &lt;code&gt;each(function)&lt;/code&gt;, which takes in a function to exexcute for each object. It is possible that &lt;code&gt;this&lt;/code&gt; maybe referring to a DOM objects(s), for example, when using jQuery plugin on a jQuery object. &lt;/p&gt;
+&lt;h2&gt;parameters&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;response&lt;/code&gt;: the contents returned by the specified URL&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;errorType&lt;/code&gt;, &lt;code&gt;errorMessage&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Options&lt;/h2&gt;
+&lt;p&gt;Options here means the javascript object that gets passed into &lt;code&gt;$ajax()&lt;/code&gt;:
+- &lt;code&gt;success&lt;/code&gt;: a function to execute when the request was returned successfully
+- &lt;code&gt;error&lt;/code&gt;: a function to execute when the request has failed
+- &lt;code&gt;data&lt;/code&gt;: a javascript object with string as the key to be appended to the request. (e.g. e.html?q=searchterm). The value may be retrived from HTML's &lt;code&gt;data-name&lt;/code&gt; attribute with jQuery's &lt;code&gt;data()&lt;/code&gt; function. Or in the case with 'POST' type request, it can be set to &lt;code&gt;$('form').serialize()&lt;/code&gt; simplify the syntax. &lt;code&gt;this&lt;/code&gt; variable within &lt;code&gt;data&lt;/code&gt; property is not affected by &lt;code&gt;context&lt;/code&gt;.
+- &lt;code&gt;timeout&lt;/code&gt;: time in ms to determined whether the request has failed. The default value is different for different browsers.
+- &lt;code&gt;beforeSend&lt;/code&gt;: a function to execute before the request is made, typeically used to show the loading status.
+- &lt;code&gt;complete&lt;/code&gt;: a function to execute after the response was returned, regardless of its success, typically used to stop the loading status.
+- &lt;code&gt;context&lt;/code&gt;: a variable that sets the value of &lt;code&gt;this&lt;/code&gt; inside of the AJAX callback. 
+- &lt;code&gt;type&lt;/code&gt;: the value is 'GET' by default, but it can be 'POST' to send the data. &lt;code&gt;event.preventDefault&lt;/code&gt; is necessary is that case.
+- dataType: a type to parse the data as. (e.g 'json')
+- contentType: a type of data to ask the server to respond with. (e.g. 'application/json')&lt;/p&gt;
+&lt;h2&gt;JSON&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;a JSON object always has string as the type for both key and value, while javascript object has a variable as a key.&lt;/li&gt;
+&lt;li&gt;a JSON object is converted to a Javascript object when 'json' is specified as the &lt;code&gt;dataType&lt;/code&gt;. The properties of the object can be accessed with &lt;code&gt;result.propertyName&lt;/code&gt;. These varaibles can be inserted in a jQuery object (with append(), prepend(), etc) and then be appended to DOM.&lt;/li&gt;
+&lt;li&gt;When AJAX request returns an array of jQuery objects, they can be iterated with a jQuery Utility method:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;jQuery Utility&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$.each(result, function(index, object)) {
+}
+
+var newArray = $.map(result, function(item, index)) {
+    return item;
+});
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;$.each&lt;/code&gt; does not modify the array, while &lt;code&gt;$.map&lt;/code&gt; does. &lt;code&gt;html()&lt;/code&gt; jQuery function can handle an array of jQuery nodes by joining them before attaching it to the DOM, but it is recommended to execute &lt;code&gt;detach()&lt;/code&gt; before and &lt;code&gt;appendTo('parentNode')&lt;/code&gt; so that the DOM does not get updated while it is displayed, but rather removed, modifed, then inserted back in. This is more efficient. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$.extend(target[, object1][, objectn])&lt;/code&gt; is used to compress arguments or allow a varying number of arugments for the function making the function call.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nt"&gt;Call&lt;/span&gt;                                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nt"&gt;Result&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;extend&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;days&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;price&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;days&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;price&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;extend&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;days&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;           &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;days&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;           &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;extend&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;days&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;days&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;days&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;           &lt;span class="o"&gt;|&lt;/span&gt;
+
+&lt;span class="nt"&gt;var&lt;/span&gt; &lt;span class="nt"&gt;settings&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;extend&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;defaultObject&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nt"&gt;options&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Often &lt;code&gt;$(this)&lt;/code&gt; and &lt;code&gt;data()&lt;/code&gt; are included in &lt;code&gt;defaultObject&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Other design choice&lt;/h2&gt;
+&lt;p&gt;When displaying the results of the AJAX response, hiding an element, placing the result, and then fading in creates a good effect:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$(&amp;#39;#table&amp;#39;).hide().html(result).fadeIn()
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Form&lt;/h2&gt;
+&lt;p&gt;Using &lt;code&gt;attr('action')&lt;/code&gt; of a form element to specify a jQuery object can make AJAX request to be more genearl and be flexible:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$.ajax($(&amp;#39;form&amp;#39;).attr(&amp;#39;action&amp;#39;), {...});
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Shorthand $.ajax() request&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;`$.get(url, function(result){ ... })`: a simplifed version of `$.ajax()`
+`$.getJSON(url, function(result){ ... })`: a simplifed version of `$.ajax()` JSON Get request.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;examples&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$(document).ready(function() {
+  function showPhotos() {
+    $(this).find(&amp;#39;span&amp;#39;).slideToggle();
+  }
+  $(&amp;#39;.photos&amp;#39;).on(&amp;#39;mouseenter&amp;#39;, &amp;#39;li&amp;#39;, showPhotos).on(&amp;#39;mouseleave&amp;#39;, &amp;#39;li&amp;#39;, showPhotos);
+  var el = $(&amp;quot;#tour&amp;quot;);
+  el.on(&amp;quot;click&amp;quot;, &amp;quot;button&amp;quot;, function() {
+    $.ajax(&amp;#39;/photos.html&amp;#39;, {
+      data: {location: el.data(&amp;#39;location&amp;#39;)},
+      success: function(response) {
+        $(&amp;#39;.photos&amp;#39;).html(response).fadeIn();
+      },
+      error: function() {
+        $(&amp;#39;.photos&amp;#39;).html(&amp;#39;&lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;There was a problem fetching the latest photos. Please try again.&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&amp;#39;);
+      },
+      timeout: 3000,
+      beforeSend: function() {
+        $(&amp;#39;#tour&amp;#39;).addClass(&amp;#39;is-fetching&amp;#39;);
+      },
+      complete: function() {
+        $(&amp;#39;#tour&amp;#39;).removeClass(&amp;#39;is-fetching&amp;#39;);
+      }
+    });
+  });
+});
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;refactors &lt;code&gt;el&lt;/code&gt; to be used within &lt;code&gt;$.ajax()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;data&lt;/code&gt; extracts data attribute form HTML&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;beforeSend&lt;/code&gt; and &lt;code&gt;complete&lt;/code&gt; to do preprocessing and postprocessing&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timeout&lt;/code&gt; to delay the request&lt;/li&gt;
+&lt;li&gt;event delegation on &lt;code&gt;.photos li&lt;/code&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;var tour = {
+  init: function() {
+    $(&amp;quot;#tour&amp;quot;).on(&amp;quot;click&amp;quot;, &amp;quot;button&amp;quot;, this.fetchPhotos);
+  },
+  fetchPhotos:  function () {
+      $.ajax(&amp;#39;/photos.html&amp;#39;, {
+        data: {location: $(&amp;quot;#tour&amp;quot;).data(&amp;#39;location&amp;#39;)},
+        success: function(response) {
+          $(&amp;#39;.photos&amp;#39;).html(response).fadeIn();
+        },
+        error: function() {
+          $(&amp;#39;.photos&amp;#39;).html(&amp;#39;&lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt;There was a problem fetching the latest photos. Please try again.&lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&amp;#39;);
+        },
+        timeout: 3000,
+        beforeSend: function() {
+          $(&amp;#39;#tour&amp;#39;).addClass(&amp;#39;is-fetching&amp;#39;);
+        },
+        complete: function() {
+          $(&amp;#39;#tour&amp;#39;).removeClass(&amp;#39;is-fetching&amp;#39;);
+        }
+      });
+  }
+};
+
+$(document).ready(function() { 
+  tour.init();
+});
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;AJAX request refactored into a javascript. &lt;/li&gt;
+&lt;li&gt;callback function refactored a javascript object. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;Tour&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;el&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;tour&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;el&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;el&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fetchPhotos&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ajax&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/photos.html&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;: &lt;span class="kt"&gt;tour.el.data&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)},&lt;/span&gt;
+      &lt;span class="nx"&gt;context&lt;/span&gt;: &lt;span class="kt"&gt;tour&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="nx"&gt;success&lt;/span&gt;: &lt;span class="kt"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;el&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.photos&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;html&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;fadeIn&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+      &lt;span class="p"&gt;},&lt;/span&gt;
+      &lt;span class="nx"&gt;error&lt;/span&gt;: &lt;span class="kt"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;el&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.photos&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;html&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;li&amp;gt;There was a problem fetching the latest photos. Please try again.&amp;lt;/li&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="p"&gt;},&lt;/span&gt;
+      &lt;span class="nx"&gt;timeout&lt;/span&gt;: &lt;span class="kt"&gt;3000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+      &lt;span class="nx"&gt;beforeSend&lt;/span&gt;: &lt;span class="kt"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;el&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;addClass&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;is-fetching&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="p"&gt;},&lt;/span&gt;
+      &lt;span class="nx"&gt;complete&lt;/span&gt;: &lt;span class="kt"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;el&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;removeClass&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;is-fetching&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;});&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;el&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;button&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fetchPhotos&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;ready&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;paris&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Tour&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#paris&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;london&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Tour&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#london&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;The function(fetchInfo) needs to be defined before it is bound by &lt;code&gt;on&lt;/code&gt; callback.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;context&lt;/code&gt; is used to set &lt;code&gt;this&lt;/code&gt; within the ajax callback to refer to a DOM element. &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;data&lt;/code&gt; is not affect by by &lt;code&gt;context&lt;/code&gt;, so it needs use the alias for &lt;code&gt;this&lt;/code&gt; directly. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$(document).ready(function() {
+  $(&amp;#39;form&amp;#39;).on(&amp;#39;submit&amp;#39;, function(event) {
+    event.preventDefault();
+    var form = $(this);
+    $.ajax(&amp;#39;/book&amp;#39;, {
+      dataType: &amp;#39;json&amp;#39;,
+      type: form.attr(&amp;#39;method&amp;#39;),
+      data: form.serialize(),
+      success: function(r) {
+        $(&amp;#39;.tour&amp;#39;).html(r.description+&amp;#39; &amp;#39;+r.price+&amp;#39; &amp;#39;+r.nights+&amp;#39; &amp;#39;+r.confirmation);
+      }
+    });
+  });
+});
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;refactors &lt;code&gt;form&lt;/code&gt; variable &lt;/li&gt;
+&lt;li&gt;uses &lt;code&gt;serialize()&lt;/code&gt; and &lt;code&gt;attr()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;uses &lt;code&gt;r&lt;/code&gt; instead of &lt;code&gt;response&lt;/code&gt;, because it is not the variable name, but &lt;a href="http://stackoverflow.com/questions/3958197/jquery-e-refer-as-event"&gt;its argument position that matters&lt;/a&gt;. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Plugins&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$.fn.functionName = function(options){}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;the above declation makes the plugin available to all jQuery objects. &lt;code&gt;options&lt;/code&gt; is a javascript object an &lt;code&gt;$.extend()&lt;/code&gt; is often used to make the variables to be consistent regardless of the paramters pass in. &lt;/p&gt;
+&lt;p&gt;An example that uses plugin, &lt;code&gt;$.extend()&lt;/code&gt;, namespace, and trigger. :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;fn&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;photofy&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nt"&gt;function&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;options&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="err"&gt;this.each(function()&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+    &lt;span class="err"&gt;var&lt;/span&gt; &lt;span class="err"&gt;show&lt;/span&gt; &lt;span class="err"&gt;=&lt;/span&gt; &lt;span class="err"&gt;function(e)&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+      &lt;span class="err"&gt;e.preventDefault()&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="err"&gt;settings.tour&lt;/span&gt;
+              &lt;span class="err"&gt;.addClass(&amp;#39;is-showing-photofy&amp;#39;)&lt;/span&gt;
+              &lt;span class="err"&gt;.find(&amp;#39;.photos&amp;#39;)&lt;/span&gt;
+              &lt;span class="err"&gt;.find(&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;li&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nf"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;+(settings.count-1)+&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;)&lt;/span&gt;
+&lt;span class="s1"&gt;              .hide();&lt;/span&gt;
+&lt;span class="s1"&gt;    }&lt;/span&gt;
+&lt;span class="s1"&gt;    var settings = $.extend({&lt;/span&gt;
+&lt;span class="s1"&gt;      count: 3,&lt;/span&gt;
+&lt;span class="s1"&gt;      tour: $(this)&lt;/span&gt;
+&lt;span class="s1"&gt;    }, options);&lt;/span&gt;
+&lt;span class="s1"&gt;    settings.tour.on(&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;photofy&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;see-photos&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;, show);&lt;/span&gt;
+&lt;span class="s1"&gt;    settings.tour.on(&amp;#39;&lt;/span&gt;&lt;span class="kc"&gt;show&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;photofy&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;, show);&lt;/span&gt;
+&lt;span class="s1"&gt;  });&lt;/span&gt;
+&lt;span class="s1"&gt;}&lt;/span&gt;
+
+&lt;span class="s1"&gt;$(document).ready(function() {&lt;/span&gt;
+&lt;span class="s1"&gt;  $(&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tour&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;).photofy({ count: 1});&lt;/span&gt;
+
+&lt;span class="s1"&gt;  $(&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="kc"&gt;show&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;photos&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;).on(&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;click&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;, function(e) {&lt;/span&gt;
+&lt;span class="s1"&gt;    e.preventDefault();&lt;/span&gt;
+&lt;span class="s1"&gt;    $(&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tour&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;).trigger(&amp;#39;&lt;/span&gt;&lt;span class="kc"&gt;show&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;photofy&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Promises&lt;/h2&gt;
+&lt;p&gt;Promise is a way to define a ajax and reuse it in different places. It is common to implement it with closure, &lt;a href="https://gist.github.com/814052/690a6b41dc8445479676b347f1ed49f4fd0b1637"&gt;but that is not necessary&lt;/a&gt;. A promise object is by convention defined with a Capitalized variable and returns the result of a ajax request. The return value is by convention stored in &lt;code&gt;promise&lt;/code&gt; variable. $.ajax request could be stored directly 
+&lt;code&gt;$.Deferred()&lt;/code&gt; is used when the result returned by the ajax callback needs to be changed, or needs different resolution. &lt;code&gt;resovle()&lt;/code&gt; -&amp;gt; &lt;code&gt;done()&lt;/code&gt; and &lt;code&gt;reject()&lt;/code&gt; -&amp;gt; &lt;code&gt;fail()&lt;/code&gt;. These resolutions are chained to the promise object making the call.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;var Vacation = {
+  getPrice: function(location){
+    var promise = $.Deferred();
+    $.ajax({
+      url: &amp;#39;/vacation/prices&amp;#39;,
+      data: {q: location},
+      success: function(result){
+        promise.resolve(result.price);
+      },
+      error: function () {
+        var error = &amp;#39;invalid location&amp;#39;;
+        promise.reject(error);
+      }
+    });
+    return promise;
+  }
+}
+
+$(document).ready(function() {
+  $(&amp;#39;button&amp;#39;).on(&amp;#39;click&amp;#39;, function(){
+    var location = $(&amp;#39;.location&amp;#39;).text();
+    Vacation.getPrice(location).done(function(result){
+      $(&amp;#39;.price&amp;#39;).text(result)
+      }).fail(function(result) { 
+        console.log(result);
+    });
+  });
+});
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;p&gt;When using many different promises, the order in which they are returned may differ. This is a bug due to the concurrency feature of promise.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$.when(&amp;lt;promise1&amp;gt;, &amp;lt;promise2&amp;gt;...)
+.then(function(p1Data, p2Data(){...}))
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;are used to fix this problem. The function calls on promise objects are made by &lt;code&gt;$.when()&lt;/code&gt; and the results and processing is done by &lt;code&gt;then()&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;ready&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;button&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;tour&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;parent&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;location&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;tour&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;location&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;resultDiv&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;tour&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.results&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;empty&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;when&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;Vacation&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getPrice&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="nx"&gt;Photo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getPhoto&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;then&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;priceResult&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;photoResult&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+      &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;p&amp;gt;$&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;priceResult&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;/p&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;appendTo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;resultDiv&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;lt;img /&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;src&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;photoResult&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;appendTo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;resultDiv&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="p"&gt;})&lt;/span&gt;
+  &lt;span class="p"&gt;});&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Helpful Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://api.jquery.com/jQuery.ajax/"&gt;jQuery Ajax Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://learn.jquery.com/plugins/advanced-plugin-concepts/"&gt;Advanced Plugin Concepts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://joseoncode.com/2011/09/26/a-walkthrough-jquery-deferred-and-promise/"&gt;Understanding JQuery.Deferred and Promise&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="javascript"></category></entry><entry><title>jQuery Notes</title><link href="https://www.4thinker.com/jquery-notes.html" rel="alternate"></link><published>2013-07-27T06:35:00-07:00</published><updated>2013-07-27T06:35:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-07-27:/jquery-notes.html</id><summary type="html">&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Try jQuery&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=_iRIPJHrdXg&amp;amp;list=PLBB954DF18DA3F2A5"&gt;jQuery Video Tutorial&lt;/a&gt; by Derek Banas @ &lt;a href="newthinktank.com"&gt;newthinktank.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;The Basic&lt;/h2&gt;
+&lt;p&gt;Get the latest jQuery downloaded:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://code.jquery.com/jquery-latest.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Or Google's version for faster download speed:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;script src=&amp;quot;http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js&amp;quot;&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;jQuery manipulates the DOM, tree-like representation of HTML file. It also handles the difference of JavaScript engine in different browsers.
+The following code waits for the document to finish loading, this is often always used for jQuery:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jQuery(document).ready(function(){
+    &amp;lt;code&amp;gt;
+});
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;jQuery objects are created by surrounding the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://mbsy.co/7sh6q"&gt;Try jQuery&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=_iRIPJHrdXg&amp;amp;list=PLBB954DF18DA3F2A5"&gt;jQuery Video Tutorial&lt;/a&gt; by Derek Banas @ &lt;a href="newthinktank.com"&gt;newthinktank.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;The Basic&lt;/h2&gt;
+&lt;p&gt;Get the latest jQuery downloaded:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;script&lt;/span&gt; &lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://code.jquery.com/jquery-latest.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Or Google's version for faster download speed:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;script src=&amp;quot;http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js&amp;quot;&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;jQuery manipulates the DOM, tree-like representation of HTML file. It also handles the difference of JavaScript engine in different browsers.
+The following code waits for the document to finish loading, this is often always used for jQuery:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jQuery(document).ready(function(){
+    &amp;lt;code&amp;gt;
+});
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;jQuery objects are created by surrounding the HTML element (like &lt;a href="css-notes.html"&gt;CSS&lt;/a&gt;) in &lt;code&gt;$(...)&lt;/code&gt;. They are manipulated by jQuery functions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;text('newContnet')&lt;/code&gt;: changes the content between elements. The argument can be a string or a number&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;attr('attribute', 'value')&lt;/code&gt;: returns the value of the HTML element attribute, or change the value if the second argument is specified.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.css('property', 'value')&lt;/code&gt;: multiple values can be specified with surrounding curly braces and comma as the separate, and colon as the specifier. (i.e. JS object) If only property is specified as a argument, the value is returned. This function should be used sparingly as it is a better practice to store all CSS styles in the stylesheet. &lt;code&gt;toggleClass()&lt;/code&gt; is recommended when possible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;jQuery selector:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$("div:&lt;/code&gt;has(h4)"): gets all div's that has h4 element&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$("div[id]"):&lt;/code&gt; gets all div's that has id attribute&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$("li[class='hero']"):&lt;/code&gt; matches a specific attribute&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$("li[class^='h']"):&lt;/code&gt; matches a attribute with a partial match in the beginning&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$("li[class$='h']"):&lt;/code&gt; matches a attribute with a partial match in the end&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$("li:&lt;/code&gt;contains('Richards')"): &lt;code&gt;contains&lt;/code&gt; searches through the content (val) of the element specified.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$("#numbers tr:odd")&lt;/code&gt;: this is just an example of selecting all odd rows that are decedents of &lt;code&gt;#numbers&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;element:first&lt;/code&gt; - means is this element the first one. There are other pseudo selectors like &lt;code&gt;:last&lt;/code&gt;, &lt;code&gt;:odd&lt;/code&gt;, &lt;code&gt;:even&lt;/code&gt;, &lt;code&gt;:first-child&lt;/code&gt;, &lt;code&gt;:last-child&lt;/code&gt;, &lt;code&gt;:nth-child(2)&lt;/code&gt;, &lt;code&gt;:eq(2)&lt;/code&gt;, &lt;code&gt;:gt(0)&lt;/code&gt;, and &lt;code&gt;:lt(3)&lt;/code&gt;. The index starts at 0, so &lt;code&gt;:even&lt;/code&gt; selects the first one. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Traversing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;find()&lt;/code&gt;: finds the decedent faster than css-style selector&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filter()&lt;/code&gt;: use another element for selection, faster than &lt;code&gt;,&lt;/code&gt; css-style selector&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;first()&lt;/code&gt;: finds the first element --&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;last()&lt;/code&gt;: finds the last element --&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;next()&lt;/code&gt;: traverse to the next sibling&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;prev()&lt;/code&gt;: traverse to the previous sibling &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parent()&lt;/code&gt;: only looks at the immediate ancestor.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;parents()&lt;/code&gt;: looks at all ancestors, and returns all matches.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;closest()&lt;/code&gt;: looks at all ancestors, as well as the originating element, and returns the first match.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;closest()&lt;/code&gt;: traverse up in the hierarchy and return 0 or 1 matching node&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;children()&lt;/code&gt;: direct children&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Modifying an element in DOM&lt;/h2&gt;
+&lt;p&gt;First create a node: &lt;code&gt;$var price = $('&amp;lt;p&amp;gt;From $399.99&amp;lt;/p&amp;gt;');&lt;/code&gt;, then use the variable to refer what to add. It is a convention to start the variable with &lt;code&gt;$&lt;/code&gt; if it is a jQuery node.
+If the node is not created as a variable, then just the string part (enclosed in quote) can be directly placed as a function argument. The element to append may be specified with a selecton, in which case it is moved to the specified anchor node.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$vacation = $(&amp;#39;.vacation&amp;#39;).append(price);
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;append()&lt;/code&gt;: new node is placed as the last child of the anchor node&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;prepend()&lt;/code&gt;: -- first --&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;after()&lt;/code&gt;: new node is placed after the anchor node as a sibling&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;before()&lt;/code&gt;: -- before --&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;remove()&lt;/code&gt;: removes the selection (elements) and its contents&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;empty()&lt;/code&gt;: removes all the contents of the selection&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hasClass()&lt;/code&gt;: checks for the existence of the specified class on the element&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;addClass('className')&lt;/code&gt;: adds class&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;toggleClass('clasName')&lt;/code&gt;: toggles class&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;removeClass('className')&lt;/code&gt;: removes class&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;appendTo()&lt;/code&gt;, &lt;code&gt;preprendTo()&lt;/code&gt;, &lt;code&gt;insertBefore()&lt;/code&gt;, &lt;code&gt;insertAfter()&lt;/code&gt; reverse the syntactic placement of the new node and the anchor node.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;price.appendTo($(&amp;#39;.vacation&amp;#39;));
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;jQuery object&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;this&lt;/code&gt; is not a jQuery object. &lt;code&gt;$(this)&lt;/code&gt; is. 
+Here is an example of creating an user-specified jQuery object&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;var price = $(&amp;#39;&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;From $&amp;#39;+amount+&amp;#39;&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&amp;#39;);
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Refactoring and reuse of jQuery objects can be done by storing it in variable. This is also recommended.&lt;/p&gt;
+&lt;h2&gt;on, off, and namespace&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;on(&amp;lt;event[.namespace]]&amp;gt;, &amp;lt;target&amp;gt;, &amp;lt;event handler&amp;gt;)&lt;/code&gt;: combines &lt;code&gt;bind()&lt;/code&gt; + &lt;code&gt;delegate()&lt;/code&gt; + &lt;code&gt;bind()&lt;/code&gt; and used to specify events to be watched and handlers to invoke. Specifying &lt;code&gt;&amp;lt;target&amp;gt;&lt;/code&gt; is called, "Event delegation". The event handlers do not have &lt;code&gt;()&lt;/code&gt; at the end of the function name because then the function would be executed immediately when the jQuery script is loaded.&lt;/p&gt;
+&lt;p&gt;Events can be specified with namespace, so that they could be referred specifically with &lt;code&gt;off()&lt;/code&gt; later, which is a newer version of 'unbind()'. Namepsace also works with &lt;code&gt;trigger()&lt;/code&gt;. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$(&amp;#39;button&amp;#39;).on(&amp;#39;click.prev&amp;#39;, prev);
+$(&amp;#39;button&amp;#39;).on(&amp;#39;click.next&amp;#39;, next)
+$(&amp;#39;button&amp;#39;).off(&amp;#39;click.prev&amp;#39;, prev)
+$(&amp;#39;button&amp;#39;).on(&amp;#39;.next&amp;#39;, next)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Types of Events:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Forms: blur, change, focus, focusin, focusout, select, submit &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;focus+&lt;/code&gt; bubbles, &lt;code&gt;focus&lt;/code&gt; does not&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Mouse: click, dblclick, focusout, hover, mousedown, mouseenter, mouseleave, mousemove, mouseout, mouseout, mouseup, toggle&lt;/li&gt;
+&lt;li&gt;Keyboard: focusout, keydown, keypress, keyup&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;keypress&lt;/code&gt; returns uppercase of the character pressed (e.g a =&amp;gt; '97'). &lt;code&gt;keydown&lt;/code&gt; and &lt;code&gt;keypress&lt;/code&gt; returns the default value (e.g. a =&amp;gt; '65')&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All events can be used as function. They are syntactic sugars that actually use &lt;code&gt;on()&lt;/code&gt; underneath.&lt;/p&gt;
+&lt;h4&gt;Trigger&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;trigger('event' [,extraArguments])&lt;/code&gt;: try to mimic the event as if the user-triggered it. This provide an alternative trigger point where the events can be linked together. (e.g. show-all button to each photo). See &lt;a href="ajax-notes.html"&gt;plugin in AJAX&lt;/a&gt; for an example.
+    A customer event can be created with extra arguments, which is evaluated at the time the event is triggered&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$(&amp;#39;#foo&amp;#39;).on(&amp;#39;custom&amp;#39;, function(event, param1, param2) {  
+    alert(param1 + &amp;quot;\n&amp;quot; + param2);
+});
+$(&amp;#39;#foo&amp;#39;).trigger(&amp;#39;custom&amp;#39;, [&amp;#39;PassedToParam1&amp;#39;, &amp;#39;PassedToParam2&amp;#39;]);
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;triggerHandler('eventType', [,extraArguments])&lt;/code&gt;: execute all handlers attached to an element for an event
+    does not cause the default behavior, only affects the first matched element, events are not bubbled up&lt;/p&gt;
+&lt;h2&gt;Value&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;data-element-name='value'&lt;/code&gt; in html can be looked up with &lt;code&gt;data('tag-name')&lt;/code&gt; in jQuery and changed with &lt;code&gt;data('tag-name', value)&lt;/code&gt; The value returned is a string, and it can be converted to a number with &lt;code&gt;+&lt;/code&gt; prepended to the $() query.&lt;/p&gt;
+&lt;p&gt;example of using &lt;code&gt;val()&lt;/code&gt;, &lt;code&gt;is()&lt;/code&gt;, &lt;code&gt;fadeIn()&lt;/code&gt;, &lt;code&gt;fadeout()&lt;/code&gt;, &lt;code&gt;fadeToggle()&lt;/code&gt;, &lt;code&gt;hide()&lt;/code&gt;, &lt;code&gt;show()&lt;/code&gt; :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#bringItBack&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#clickToHide&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;is&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;:visible&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="c"&gt;&amp;lt;!--&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#clickToHide&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;hide&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="o"&gt;--&amp;gt;&lt;/span&gt;
+        &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#clickToHide&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;fadeOut&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;val&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Bring Back&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="c"&gt;&amp;lt;!--&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#clickToHide&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;show&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="o"&gt;--&amp;gt;&lt;/span&gt;
+        &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#clickToHide&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;fadeIn&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+        &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;val&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Delete Text&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;There are more transition functions like &lt;code&gt;slideUp()&lt;/code&gt;, &lt;code&gt;slideDown()&lt;/code&gt;, &lt;code&gt;slideToggle()&lt;/code&gt;. They all act on &lt;code&gt;display&lt;/code&gt; CSS property. The animation speed can be adjusted in the second argument with number (ms) or keywords like: 'fast' (200) 'slow' (600). It is 400ms by default. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;animate()&lt;/code&gt; is used like &lt;code&gt;css()&lt;/code&gt;, but make the transition to look animated. Just like &lt;code&gt;toggleClass()&lt;/code&gt; is recommend for &lt;code&gt;css()&lt;/code&gt;, use of CSS3's &lt;code&gt;transition&lt;/code&gt; property is recommend along with &lt;code&gt;toggleClass()&lt;/code&gt; &lt;/p&gt;
+&lt;h2&gt;Event&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;event&lt;/code&gt; is a variable that gets passed to any event handler, just specify it in the argument&lt;/p&gt;
+&lt;p&gt;Any event of jQuery is propagated up to the root of DOM tree. In order to prevent the parents to be triggered by this bubble, &lt;code&gt;stopPropagation()&lt;/code&gt; function is used. And in order to prevent some default actions or event listeners from being triggered the &lt;code&gt;preventDefault()&lt;/code&gt; function is used to stop it. an example is a jQuery button that has &lt;code&gt;href='#'&lt;/code&gt; attribute. When the bubble reaches the DOM root, it triggers the default behavior which would bring the page back to top.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;e.target.nodeName&lt;/code&gt;: contains the name of the element triggered by the latest event&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;e.timeStamp&lt;/code&gt;: contains the time the latest event was triggered&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;e.screenX&lt;/code&gt;: x-coordinate of the mouse&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;e.screenY&lt;/code&gt;: y-coordinate of the mouse&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;e.keyCode&lt;/code&gt;: key in the corresponding ASCII decimal. It can be converted &lt;code&gt;String.fromCharCode(e.keyCode)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;Debugging:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;alert()&lt;/code&gt;: display the message in a pop-up box&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.length&lt;/code&gt;: returns the number of elements matching the specified jQuery object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;text() vs html(): html string could contain the elements which will be displayed according to the HTML spec, while the text will only show the contents between the elements specified.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;'window' can be looked up with jQuery&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;resize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;resizedWindow&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;resizeWindow&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;#second&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;html&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Window was resized W: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;H: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;());&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="javascript"></category></entry></feed>

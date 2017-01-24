@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Forethinker - sysadmin</title><link>https://www.4thinker.com/</link><description></description><lastBuildDate>Tue, 26 Aug 2014 16:15:03 -0700</lastBuildDate><item><title>Sendmail on Ubuntu</title><link>https://www.4thinker.com/hostname.html</link><description>&lt;p&gt;There are several options available for sending emails from your server: SMTP, postfix, and sendmail. I choose sendmail because it is the easiest to setup and I only need it to send out emails. &lt;/p&gt;
+&lt;h2&gt;Changing hostname temporarily for now&lt;/h2&gt;
+&lt;p&gt;This is the name that will end up after &lt;code&gt;@&lt;/code&gt; character in the email. It is also the name that shows up on your command shell prompt. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;hostname NEW_HOST_NAME
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Your prompt will not reflect the change until you reboot.&lt;/p&gt;
+&lt;h2&gt;Changing the hostname for when the system boots:&lt;/h2&gt;
+&lt;p&gt;/etc/hosts&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;127.0.0.1 myhostname localhost.localdomain localhost
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;Just say yes. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo …&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 26 Aug 2014 16:15:03 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-08-26:/hostname.html</guid></item><item><title>CentOS fixes</title><link>https://www.4thinker.com/centos-fixes.html</link><description>&lt;p&gt;My company is forcing me to use CentOS. I was in a state of shock for a few days and pretend it did not happen, but I have to live with it. Here are the fixes I had to go through:&lt;/p&gt;
+&lt;h2&gt;The permission on ~/.ssh&lt;/h2&gt;
+&lt;p&gt;This seems to be a bit more strict. I had to set ~/.ssh permission to 600 and ~/.ssh/authorized_keys to &lt;code&gt;700&lt;/code&gt; to make &lt;code&gt;ssh-copy-id&lt;/code&gt; to make it work&lt;/p&gt;
+&lt;h2&gt;Installing&lt;/h2&gt;
+&lt;h2&gt;Allowing to run commands as sudo&lt;/h2&gt;
+&lt;p&gt;e.g. &lt;code&gt;sudo vim /etc/profile&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo bash -c &amp;quot;echo &amp;#39;%wheel  ALL=(ALL)       SETENV: ALL&amp;#39; &amp;gt;&amp;gt; /etc/sudoer&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="http://superuser.com/questions/548508/why-cant-i-sudo-some-commands-e-g-vim"&gt;explantion here on …&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 13 May 2014 01:53:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-05-13:/centos-fixes.html</guid></item><item><title>Ubuntu configurations and fixes</title><link>https://www.4thinker.com/ubnutu-fixes.html</link><description>&lt;h2&gt;Simplifying the Message of the Day:&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo vim /etc/update-motd.d/50-landscape-sysinfo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;add this flag: &lt;code&gt;--exclude-sysinfo-plugins=LandscapeLink&lt;/code&gt; to&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/usr/bin/landscape-sysinfo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and see the change with: &lt;code&gt;/etc/update-motd.d/50-landscape-sysinfo&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 25 Apr 2014 11:56:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-04-25:/ubnutu-fixes.html</guid></item><item><title>Apache Notes</title><link>https://www.4thinker.com/apache.html</link><description>&lt;p&gt;Apache is pretty well documented, but I can't remember things until I make a note of it&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;UseCanonicalName On
+#DocumentRoot &amp;quot;/var/www/html&amp;quot;
+#&lt;span class="nt"&gt;&amp;lt;Directory&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+#    Options FollowSymLinks
+#    AllowOverride None
+#&lt;span class="nt"&gt;&amp;lt;/Directory&amp;gt;&lt;/span&gt;
+
+#&lt;span class="nt"&gt;&amp;lt;Directory&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;/var/www/html&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+#    Options Indexes FollowSymLinks
+#    AllowOverride None
+#    Order allow,deny
+#    Allow from all
+#&lt;span class="nt"&gt;&amp;lt;/Directory&amp;gt;&lt;/span&gt;
+#ErrorLog logs/error_log 
+#CustomLog logs/access_log combined
+NameVirtualHost *:80
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Error logs that are of relative path are stored under &lt;code&gt;/etc/httpd&lt;/code&gt;. Without the path, the default location of the logs depend:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;RHEL / Red Hat / CentOS / Fedora - /var/log/httpd/
+Debian / Ubuntu - /var/log/apache2/
+FreeBSD - /var/log/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The second argument to CustomLog can be &lt;code&gt;common …&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 08 Mar 2014 05:44:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-03-08:/apache.html</guid></item><item><title>Samba Quick Setup Guide</title><link>https://www.4thinker.com/samba.html</link><description>&lt;h2&gt;Install smaba and configure&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install samba
+sudo vim /etc/samba/smb.conf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Configuring smb.conf&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;security = user
+
+[homes]
+   comment = Home Directories
+   browseable = yes
+   valid users = %S
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;valid users = %S means that only you, or anyone with your login account, can connect to your own Home folder via Samba.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[share]&lt;/span&gt;
+    &lt;span class="na"&gt;comment&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;New Share Path&lt;/span&gt;
+&lt;span class="s"&gt;    path = /path/to/share/folder&lt;/span&gt;
+&lt;span class="s"&gt;    browsable = yes&lt;/span&gt;
+&lt;span class="s"&gt;    guest ok = yes&lt;/span&gt;
+&lt;span class="s"&gt;    read only = no&lt;/span&gt;
+&lt;span class="s"&gt;    create mask = 0755&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Adding a user to the samba user list:&lt;/h2&gt;
+&lt;p&gt;If you want to add a user (adding a dedicated user for server administration is a good security measure), do&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;useradd …&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 21 Feb 2014 07:04:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-21:/samba.html</guid><category>server</category></item><item><title>Setting Up Linux</title><link>https://www.4thinker.com/linux-setup.html</link><description>&lt;h2&gt;Essential&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get update
+sudo apt-get install -y vim git python python-pip tmux zsh python-dev libxml2-dev libxslt-dev ssh
+sudo apt-get install -y default-jre
+sudo pip install virtualenv requests
+sudo npm install -g casperjs coffee-script js2coffee coffeelint uglify-js
+
+# sudo apt-get install gtk2-engines-pixbuf vim-gnome clipit xclip xdotool xdiskusage resolvconf acpitool xmodmap powertop zip unzip curl
+sudo apt-get install openjdk-7-jre openjdk-7-jdk
+# Laptop-specific
+sudo apt-get install lsof
+sudo apt-get purge laptop-mode-tools
+# Extra
+sudo apt-get install ia32-libs eclipse xfce4-settings telnet ntpdate mongodb
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;npm in ubuntu&lt;/h2&gt;
+&lt;p&gt;If linking the nodejs binary to node is not sufficient for …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 14 Feb 2014 08:00:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-14:/linux-setup.html</guid><category>linux</category><category>setup</category><category>laptop</category></item><item><title>How I setup my Cygwin</title><link>https://www.4thinker.com/cygwin-setup.html</link><description>&lt;p&gt;By googling around I found &lt;a href="http://randomartifacts.blogspot.com/2012/10/a-proper-cygwin-environment.html"&gt;a pretty comprehensive guide by Thomas Wheeler&lt;/a&gt;. His instruction on 'Mapping Cygdrive' did not work for me and I decided to fork an instruction on my own, so that I can keep adding stuff if I want to.&lt;/p&gt;
+&lt;h2&gt;Moving your home directory to your Windows profile directory&lt;/h2&gt;
+&lt;p&gt;I found this setup to be consistent with other unix systems. It preserves my sanity in the long run.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkpasswd -l -d -p &amp;quot;$(cygpath -H)&amp;quot; &amp;gt; /etc/passwd
+mkgroup -l -d &amp;gt; /etc/group
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Installing Essential Programs&lt;/h2&gt;
+&lt;p&gt;Download the &lt;a href="http://cygwin.com/setup.exe"&gt;setup.exe&lt;/a&gt; and install it along with wget. We will be …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 14 Feb 2014 07:23:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-14:/cygwin-setup.html</guid><category>cygwin</category><category>zsh</category><category>solarized</category></item><item><title>SSH recipes</title><link>https://www.4thinker.com/ssh.html</link><description>&lt;h2&gt;SSH keyless entry does not work&lt;/h2&gt;
+&lt;p&gt;Check the logs on &lt;code&gt;/var/log/auth/log&lt;/code&gt; or &lt;code&gt;/var/log/secure&lt;/code&gt; (CentOS). You probably have a permission issue.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;chmod 700 ~/
+chmod 700 ~/.ssh/
+chmod 600 ~/.ssh/authorized_keys
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;make sure the options are set properly on &lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt; - it needs root permission&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;RSAAuthentication yes
+PubkeyAuthentication yes
+AuthorizedKeysFile      %h/.ssh/authorized_keys
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then restart&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo service sshd restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Diff files over remote&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh &amp;lt;remote-host&amp;gt; &lt;span class="s2"&gt;&amp;quot;cat /path/to/remotefile&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; diff - /path/to/localfile
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Copy over SSH key so you don't have to type password every time:&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sshk&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    ssh-copy-id -i ~/.ssh/id_rsa.pub &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Add keys to ssh …&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 25 Jan 2014 11:23:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-01-25:/ssh.html</guid><category>shell</category></item><item><title>PPA in Debian</title><link>https://www.4thinker.com/ppa-in-debian.html</link><description>&lt;p&gt;&lt;code&gt;sudo apt-get install python-software-properties&lt;/code&gt; does not work. You get an error like the following when you try to update:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Fetched 563 kB in 8s (63.0 kB/s)
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/source/Sources  404  Not Found
+
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/binary-amd64/Packages  404  Not Found
+
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/binary-i386/Packages  404  Not Found
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As you can see, python script adds debian name &lt;code&gt;wheezy&lt;/code&gt; into the URL, which obvious …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 03 Jan 2014 01:02:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-01-03:/ppa-in-debian.html</guid><category>linux</category></item><item><title>pdbedit to configure samba on linux machine</title><link>https://www.4thinker.com/user-management.html</link><description>&lt;h2&gt;Group&lt;/h2&gt;
+&lt;p&gt;Create a group&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gropuadd groupName
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Delete a group&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;groupdel groupName
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Users&lt;/h2&gt;
+&lt;p&gt;Create a user&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;useradd -m -g groupName -s /sbin/nologin userName
+do
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;-m&lt;/code&gt; create home, &lt;code&gt;-g&lt;/code&gt; specify group, &lt;code&gt;-s'&lt;/code&gt; specify shell&lt;/p&gt;
+&lt;p&gt;Add User to samba and create a new password:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pdbedit -a -u userName
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Remove User from samba (modify the user by adding a new one):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pdbedit -x -u userName
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 02 Dec 2013 09:53:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-12-02:/user-management.html</guid><category>samba</category></item><item><title>Moving a linux (crunchbang) partition</title><link>https://www.4thinker.com/moving-partition.html</link><description>&lt;p&gt;I spent nearly six hours figuring stuff out. In Windows, this is easy. You pick a software of your choice and let it do it for you. With Linux, especially if you are duel booting. It is not as easy as clone and restore.&lt;/p&gt;
+&lt;p&gt;Things to consider
+1. Hardware Drivers - they needed to be stripped down so that they do not create collision when installed
+2. Grub - boot manager needs to figure out the &lt;/p&gt;
+&lt;p&gt;Gparted (if you are moving the partition to a smaller allocation)
+Clonezilla &lt;/p&gt;
+&lt;p&gt;My source partition was &lt;code&gt;sda5&lt;/code&gt;, which roughly translates to fifth partition on the first …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 08 Oct 2013 05:34:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-08:/moving-partition.html</guid></item><item><title>Cruncifying-mint</title><link>https://www.4thinker.com/crunchifying-mint.html</link><description>&lt;p&gt;I got myself in a situation where I was forced to use mint. I missed Crunchbang and Openbox dearly right off the bat. So I decided to fix this. In order to get &lt;code&gt;crunchbang&lt;/code&gt; specific functionality, you need their exectuable scripts. I copy them to my dropbox so I can just symlink them.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install openbox dmenu tint2 terminator thunar wmctrl conky nitrogen clipit gtk-chtheme xscreensaver vim-gnome
+ln $HOME/Dropbox/linux/crunchbang/openbox/* $HOME/.config/openbox
+ln $HOME/Dropbox/linux/crunchbang/* $HOME/.config/
+sudo chmod 755 /usr/bin/cb*
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Openbox is the window manager itself.&lt;/li&gt;
+&lt;li&gt;Openbox-themes installs some skins …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 30 Sep 2013 07:04:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-30:/crunchifying-mint.html</guid><category>linux</category></item><item><title></title><link>https://www.4thinker.com/zsh-over-fish.html</link><description>&lt;h2&gt;Zsh + Oh-My-Zsh&lt;/h2&gt;
+&lt;p&gt;In the order of awesomeness:
+- fast
+- remote auto-completion: &lt;code&gt;scp serverName:&amp;lt;tab&amp;gt;&lt;/code&gt; you can have auto-completion on your server.
+- faster completion compared to &lt;code&gt;bash_completion&lt;/code&gt;
+- auto-correction of commands
+- easy customization with oh-my-zsh. Many themes are available.
+- substantial community support and active development
+- extended globbing
+- shared history (out of the box)
+- improved path expansion
+- variable expansion: &lt;code&gt;$PATH&amp;lt;tab&amp;gt;&lt;/code&gt;
+- Extending globbing: &lt;code&gt;**/*.c&lt;/code&gt; matches directories recursively; &lt;code&gt;zmv '(*).mp3' '$1.wma'&lt;/code&gt; renames extension
+- suffix alias: &lt;code&gt;alias -s c=vim&lt;/code&gt; =&amp;gt; &lt;code&gt;./program.c&lt;/code&gt; now opens the file in vim
+- argument history traversal with &lt;code&gt;Alt-/&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Fish&lt;/h2&gt;
+&lt;p&gt;In the order of painfulness:
+- slow
+- not compatible wish bash
+- development …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 21 Sep 2013 01:43:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-21:/zsh-over-fish.html</guid><category>shell</category></item></channel></rss>

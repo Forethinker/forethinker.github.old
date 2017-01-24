@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Forethinker - algs</title><link href="https://www.4thinker.com/" rel="alternate"></link><link href="https://www.4thinker.com/feeds/algs.atom.xml" rel="self"></link><id>https://www.4thinker.com/</id><updated>2014-02-14T07:23:00-08:00</updated><entry><title>Union Find</title><link href="https://www.4thinker.com/union-find.html" rel="alternate"></link><published>2014-02-14T07:23:00-08:00</published><updated>2014-02-14T07:23:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-02-14:/union-find.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[Algorithms](https://class.coursera.org/algs4partI-003/) by Rob Sedgewick
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;find whether nodes are have a path to another.&lt;/p&gt;
+&lt;h2&gt;Quick-Find (Naïve implementation):&lt;/h2&gt;
+&lt;p&gt;As the nodes get connected, all nodes in the resulting tree are marked with one of the node's id number. After all union operations, if any two selected nodes have the same ID, they are connected. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;public void uinon(int p, int q)
+{
+    int pid = id[p]; //pid must be extracted because id[p] will change to qid
+    int qid = id[q];
+    for (int i = 0; i &amp;lt; id.length; i++)
+        if (id[i] == pid) id[i] = qid;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Weighted Quick-Union …&lt;/h2&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[Algorithms](https://class.coursera.org/algs4partI-003/) by Rob Sedgewick
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;find whether nodes are have a path to another.&lt;/p&gt;
+&lt;h2&gt;Quick-Find (Naïve implementation):&lt;/h2&gt;
+&lt;p&gt;As the nodes get connected, all nodes in the resulting tree are marked with one of the node's id number. After all union operations, if any two selected nodes have the same ID, they are connected. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;public void uinon(int p, int q)
+{
+    int pid = id[p]; //pid must be extracted because id[p] will change to qid
+    int qid = id[q];
+    for (int i = 0; i &amp;lt; id.length; i++)
+        if (id[i] == pid) id[i] = qid;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Weighted Quick-Union:&lt;/h2&gt;
+&lt;p&gt;set the elements' value to its parent's value. And then compare the roots of each roots in question for comparison.
+We make the rule so that the tree with more nodes becomes the parent, in this case, the height of the three is log(N), reducing the time complexity of find by lg(N). No array structure is needed to keep track of the height of the tree, because the heigh can be found when looking for the root.
+root's value is equal to its array index value.&lt;/p&gt;
+&lt;h2&gt;Path Compression:&lt;/h2&gt;
+&lt;p&gt;While looking for a root, make every other node to point to its grand-parent.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;private int root (int i )
+{
+    while (i 1= id[i])
+    {
+        id[i] = id[id[i]];
+        i = id[i];
+    }
+    return i;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&amp;lt;= c(N+Mlg&lt;em&gt;N) array access. 
+lg&lt;/em&gt;N - the number of times to do lg N operator to get one. It is approximately 5 for even a really large number. So it can be considered to be a constant &lt;/p&gt;
+&lt;p&gt;Since a tree at most double whenever it does a union operation. It can only double at most lg(n) times, which would be then equal to N, the size of the entire nodes.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;| algorithm   | initialize | union | find  | complexity |
+| quick-find  | N          | N     | 1     | O(N^2)     |
+| weighted QU | N          | lg N  | lg N  | O(N lg N)  |
+| WQU + PathC | N          | lg* N | lg* N | O(N lg* N) |
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Applications&lt;/h2&gt;
+&lt;p&gt;Percolation, Games, Dynamic Connectivity, Least Common Ancestor, Kruskal's MST problem, image processing&lt;/p&gt;</content><category term="graph"></category></entry><entry><title>Trees</title><link href="https://www.4thinker.com/trees.html" rel="alternate"></link><published>2013-09-16T09:39:00-07:00</published><updated>2013-09-16T09:39:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-09-16:/trees.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;red-black: a self-balancing binary search tree. It is guaranteed to always be balanced, but is complex to implement.&lt;/li&gt;
+&lt;li&gt;B tree: a n-ary search tree in which each node has up to n-1 values and n children.&lt;/li&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;red-black: a self-balancing binary search tree. It is guaranteed to always be balanced, but is complex to implement.&lt;/li&gt;
+&lt;li&gt;B tree: a n-ary search tree in which each node has up to n-1 values and n children.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="graphs"></category></entry><entry><title>Efficient ways to do rotation</title><link href="https://www.4thinker.com/rotation.html" rel="alternate"></link><published>2013-09-13T08:19:00-07:00</published><updated>2013-09-13T08:19:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-09-13:/rotation.html</id><summary type="html">&lt;h2&gt;Single array/list&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Q: rotate an array by a particular index size, k&lt;/li&gt;
+&lt;li&gt;A: rotate the entire array first, then rotate first k elements and rotate the rest of elements&lt;/li&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;Single array/list&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Q: rotate an array by a particular index size, k&lt;/li&gt;
+&lt;li&gt;A: rotate the entire array first, then rotate first k elements and rotate the rest of elements&lt;/li&gt;
+&lt;/ul&gt;</content><category term="algorithm"></category></entry><entry><title>Algorithm Questions regarding integer lists</title><link href="https://www.4thinker.com/integer-list.html" rel="alternate"></link><published>2013-09-10T05:11:00-07:00</published><updated>2013-09-10T05:11:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-09-10:/integer-list.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;All questions are started with "Given a list of integers (not sorted)"&lt;/li&gt;
+&lt;li&gt;All numbers include negative numbers.&lt;/li&gt;
+&lt;li&gt;X is an arbitrary number that is predefined&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Q: find 3 numbers that add up to a given number (a+b+c=d)&lt;/p&gt;
+&lt;p&gt;A: Convert the equation to a+b=d-c, make hash tables representing each side of the question. Iterate through each possible pair of numbers (n^2), see if the sum can be found in the difference hash table or if the difference can be found in the sum table. If true for each case. If the exact numbers are needed …&lt;/p&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;All questions are started with "Given a list of integers (not sorted)"&lt;/li&gt;
+&lt;li&gt;All numbers include negative numbers.&lt;/li&gt;
+&lt;li&gt;X is an arbitrary number that is predefined&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Q: find 3 numbers that add up to a given number (a+b+c=d)&lt;/p&gt;
+&lt;p&gt;A: Convert the equation to a+b=d-c, make hash tables representing each side of the question. Iterate through each possible pair of numbers (n^2), see if the sum can be found in the difference hash table or if the difference can be found in the sum table. If true for each case. If the exact numbers are needed, store the numbers as tuples for the hash table's value. O(n^2)
+A: Sort the list. For each element in the array (i), put pointers to start (j) and end of the array (k) and iterate through i &amp;lt;=j. If the sum A[i]+A[j]+A[k], if the sum is greater, decrement k, if the sum is smaller, increment i. If the sum matches X, return each elements of the list. Include a condition so that i does not equal to j or k.&lt;/p&gt;
+&lt;p&gt;Q: find a pair of numbers in the list whose sum is closest to zero.&lt;/p&gt;
+&lt;p&gt;A: Sort the array, neglecting the signs, and find the smallest difference between each consecutive pair. O(nlogn + n)&lt;/p&gt;
+&lt;p&gt;Q: find 3-tuple of numbers that adds up to zero&lt;/p&gt;
+&lt;p&gt;Q: find a pair of numbers in the list whose sum is X&lt;/p&gt;
+&lt;p&gt;A: sort the list. Insert negated values of integers in a hash, iterate through all possible combination of and see if the value exists in the hash. O(n^2 + nlogn)
+A: sort the list. I &lt;/p&gt;
+&lt;h2&gt;Multiple Integer Lists&lt;/h2&gt;
+&lt;p&gt;Q: Given three sorted lists of integers (different sizes), return a number from each list so that they sum to 0&lt;/p&gt;
+&lt;p&gt;A: &lt;/p&gt;
+&lt;p&gt;Q: Give two sorted lists of integers, return a number from each list so they sum up to X&lt;/p&gt;
+&lt;p&gt;A: Set a pointer (index) to the last element of the first list A, and the first element of the second list B. While the indexes are valid, if the sum of these elements are bigger than X, decrement index on A, if the sum is bigger, increment index on B. If the sum == X, return the elements. At most each element from two lists are iterated. O(n+m)&lt;/p&gt;
+&lt;p&gt;Asked to write a function to determine if numbers were a power of X. &lt;/p&gt;</content></entry></feed>

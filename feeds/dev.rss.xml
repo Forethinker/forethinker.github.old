@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Forethinker - dev</title><link>https://www.4thinker.com/</link><description></description><lastBuildDate>Fri, 17 Oct 2014 00:00:00 -0700</lastBuildDate><item><title>Using git for hg repository.</title><link>https://www.4thinker.com/hg-to-git.html</link><description>&lt;p&gt;I recently had to work with a project that is in mercurial, but I know that git is more powerful and is more widely used. So I looked around and there is a way to use &lt;a href="http://stackoverflow.com/questions/883452/git-interoperability-with-a-mercurial-repository"&gt;git on hg repository.&lt;/a&gt;. Sorry if I am late to the party, but I am so happy. Because seriously, when there are two alternatives, &lt;a href="http://blogs.atlassian.com/2012/03/git-vs-mercurial-why-git/"&gt;I would like to stick to the best one. wink wink.&lt;/a&gt; If you must use mercurial. There is an excellent article written by &lt;a href="http://jamie-wong.com/2012/07/11/my-mercurial-setup-and-workflow-at-khan-academy/"&gt;Jamie Wong about setting up mercurial like pro&lt;/a&gt;, but make sure you check out &lt;a href="https://github.com/ludovicchabant/vim-lawrencium"&gt;lawrencium&lt;/a&gt; instead of …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 17 Oct 2014 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-10-17:/hg-to-git.html</guid><category>versioning</category><category>git</category><category>hg</category></item><item><title>My Pocketbook for Python libraries</title><link>https://www.4thinker.com/python-libraries.html</link><description>&lt;ul&gt;
+&lt;li&gt;gevent: networking library for event loop and execution&lt;/li&gt;
+&lt;li&gt;gevent: monkey. The gevent library would uses standard modules, which are sequential. &lt;a href="http://www.gevent.org/gevent.monkey.html"&gt;monkey&lt;/a&gt; fixes this by patching. (gevent.monkey.patch_all())&lt;/li&gt;
+&lt;li&gt;greenlet:&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 29 Apr 2014 11:06:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-04-29:/python-libraries.html</guid><category>python</category></item><item><title>Learning Latex</title><link>https://www.4thinker.com/latex.html</link><description>&lt;p&gt;LaTeX is a markup language to put diagrams, mathematical equations, and edit documents in a programmatic way. If you are familiar with markdown, LaTex is markdown on steroids and viagra. Latex is safe for adults.&lt;/p&gt;
+&lt;p&gt;If you are in the academia (i.e. Ph.D, Post-Doctocral), you really cannot live without latex. Unfortunately, no body actually teach you to use Latex, you pick it up as you go. But unlike some simple markup language, markdown, the syntax is not something you can pick up in a day (okay, if you have, good for you). Still, It is just a such …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 17 Mar 2014 12:53:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-03-17:/latex.html</guid><category>latex</category></item><item><title>Time synchronization</title><link>https://www.4thinker.com/time.html</link><description>&lt;p&gt;All Operating Systems have time synchronization, because computer clock is not very reliable. Unfortunately the time jumps when the synchronization happens, and with the advent of the age of the Internet, this is not a good thing for most time critical operations. Goolge implemented something called &lt;a href="http://googleblog.blogspot.com/2011/09/time-technology-and-leaping-seconds.html"&gt;leap smear&lt;/a&gt; which slows down the time on the computer to count for the leap second (or extra second) that occurs due to fluctuation in Earth's rotation speed. This got me thinking, what if Google open-sourced this technology so that all the major data centers (and even personal computer) use this technology to correct …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 12 Mar 2014 02:35:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-03-12:/time.html</guid><category>rant</category></item><item><title>Things I had to lookup while using Python</title><link>https://www.4thinker.com/python-fixes.html</link><description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;problem:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;bson.objectid&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;ObjectId&lt;/span&gt;
+&lt;span class="n"&gt;bson&lt;/span&gt; &lt;span class="n"&gt;error&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="ne"&gt;ImportError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt; &lt;span class="n"&gt;module&lt;/span&gt; &lt;span class="n"&gt;named&lt;/span&gt; &lt;span class="n"&gt;objectid&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;solution:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip uninstall bson
+pip install pymongo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 05 Mar 2014 09:01:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-03-05:/python-fixes.html</guid><category>troubleshoot</category></item><item><title>My messy, incomplete programming languages comparison chart</title><link>https://www.4thinker.com/language-comparisons.html</link><description>&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;feature&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;PHP&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Bash&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Javascript&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Perl&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Java&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="c1"&gt;#                       |&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;lanauge&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dyanamic&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dynamic&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dynamic&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dynamic&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;semi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;colon&lt;/span&gt; &lt;span class="p"&gt;(;)&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Only&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;concanated&lt;/span&gt; &lt;span class="n"&gt;stmts&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Only&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;concanated&lt;/span&gt; &lt;span class="n"&gt;stmts&lt;/span&gt;    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;yes&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;yes&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;yes&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;comment&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="sr"&gt;/ /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/ #                  | #                          | #                        | &amp;lt;-- // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/ --&amp;gt;            | =begin cmt  =end cmt  =cut | // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/              | // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/               | // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*/&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;separator&lt;/span&gt; &lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;str&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitespace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;\&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;\&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;\&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;\&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitespace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitespace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitepsace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;None&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;undefined&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;             &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Undef&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;variable&lt;/span&gt; &lt;span class="n"&gt;declartion&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nv"&gt;$varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;my&lt;/span&gt; &lt;span class="nv"&gt;$varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;              &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;scope&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;def&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;cascaded&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;increment&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt; &lt;span class="n"&gt;within&lt;/span&gt; &lt;span class="p"&gt;(())&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;concatenataion&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;implied&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;implied&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                           &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;print&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;echo …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sun, 16 Feb 2014 05:02:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-16:/language-comparisons.html</guid><category>programming</category></item><item><title>Unix Tar</title><link>https://www.4thinker.com/unix-tar.html</link><description>&lt;p&gt;Like &lt;code&gt;ln&lt;/code&gt;, the file that gets creates come first. This for me is confusing. I expect all linux to follow &lt;src&gt; &lt;target&gt; pattern, but free-rider can't be a chooser, I guess. &lt;/p&gt;
+&lt;p&gt;Another thing that bugs about &lt;code&gt;tar&lt;/code&gt; utility is that you have to specify the extension and tar does not do it for you automatically. This probably probably has wasted a lot of time over decades.&lt;/p&gt;
+&lt;p&gt;using &lt;code&gt;.&lt;/code&gt; as &lt;dst&gt; will unpack files to current directory when uncompressed. This is kind of a naughty behavior if you are distributing your files to public, and especially so if there are lots of files. If you …&lt;/dst&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 14 Feb 2014 08:24:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2014-02-14:/unix-tar.html</guid></item><item><title>vSphere Client Quirks</title><link>https://www.4thinker.com/vsphere-quirks.html</link><description>&lt;p&gt;vSphere Client is a client program to monitor and configure VMWare cluster. The configuration options are significantly lacking compared to VMWare Station (Paid) or VMWare Player (Free), a software for the local virtualization. I cannot comment on all features, but I will list some that I thought were lacking&lt;/p&gt;
+&lt;h2&gt;VMWare Tools&lt;/h2&gt;
+&lt;p&gt;VMWare Tool allows a easier VM shutdown, directory/filesystem sharing, clipboard sharing, and much more. VMWare tool installation is a breeze on Station and Player. I had to do manual installation with vSphere.&lt;/p&gt;
+&lt;h2&gt;Clipboard Sharing (fixed)&lt;/h2&gt;
+&lt;p&gt;I had to go to Options-&amp;gt;Advanced-&amp;gt;Configuration Parameter and add following options …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 13 Dec 2013 06:56:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-12-13:/vsphere-quirks.html</guid><category>cloud</category></item><item><title>Global Regular Expression Print</title><link>https://www.4thinker.com/unix-grep.html</link><description>&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grep &amp;quot;.*\.zip$&amp;quot;
+
+find $dir -type f -name &amp;#39;*.log&amp;#39; -exec grep -o $pattern {} \;
+
+grep -r --include=&amp;quot;*.php&amp;quot; &amp;quot;public auction&amp;quot; ./
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;-i  Case insensitive match.
+-c  Count of matches; suppressing normal output. One line per file match.
+-o  Show only the part of a matching line that matches.
+-v  not
+-e or&lt;/p&gt;
+&lt;p&gt;-a processes binary file.
+-f read the matches from a file.
+-o show only the matched portion.
+-z a line is terminated by null byte instead of a new line character.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;grep -E&lt;/code&gt; extends the functionality of grep, allowing the usage of ?, +, {, |, (, and ) wihtout having to have a blackslash in front …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 02 Dec 2013 08:04:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-12-02:/unix-grep.html</guid></item><item><title>Unix Utility Find</title><link>https://www.4thinker.com/unix-find.html</link><description>&lt;h2&gt;Default&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;breadth-first-search&lt;/li&gt;
+&lt;li&gt;search starts from 24 hours ago&lt;/li&gt;
+&lt;li&gt;search the current directory&lt;/li&gt;
+&lt;li&gt;-P: never follow symlink (Default)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; match any characters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Patterns&lt;/h2&gt;
+&lt;p&gt;Each option has optional prefix &lt;code&gt;-i&lt;/code&gt; for case-insensitivity
+- name
+- regex
+- path&lt;/p&gt;
+&lt;h2&gt;Numbers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;inum: inode number&lt;/li&gt;
+&lt;li&gt;links: number of links&lt;/li&gt;
+&lt;li&gt;gid: group ID&lt;/li&gt;
+&lt;li&gt;uid: user ID&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Attributes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;mount: do no search through mounted directories (CD, USB, remote drive)&lt;/li&gt;
+&lt;li&gt;nogroup&lt;/li&gt;
+&lt;li&gt;nouser&lt;/li&gt;
+&lt;li&gt;readable&lt;/li&gt;
+&lt;li&gt;empty&lt;/li&gt;
+&lt;li&gt;exectuable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Others&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;samefile&lt;/li&gt;
+&lt;li&gt;user&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;size&lt;/h2&gt;
+&lt;h2&gt;Negating Search Query&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;!&lt;/code&gt; and &lt;code&gt;-not&lt;/code&gt; does the same thing, except that &lt;code&gt;-not&lt;/code&gt; is POSIX-compliant. The expression that comes after is affected and it needs to be escaped &lt;code&gt;\( ... \)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Expression&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Expressions are logically &lt;code&gt;or&lt;/code&gt;ed …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 02 Dec 2013 06:46:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-12-02:/unix-find.html</guid><category>shell</category></item><item><title>This is Awk. Word.</title><link>https://www.4thinker.com/awk.html</link><description>&lt;h2&gt;conditional&lt;/h2&gt;
+&lt;p&gt;if statement&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;if (cond)
+    expr
+else if(cond)
+    expr
+else
+    expr
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Comparison&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; &amp;gt;=, ==, &amp;lt;=, &amp;gt;, &amp;lt;,
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;boolean&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;amp;&amp;amp;, ||,
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;crement&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;++ --
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Tertiary&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;expr ? expr : expr
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;primitives&lt;/h2&gt;
+&lt;p&gt;variable names, numbers, string
+each statement is ended with semi-colon&lt;/p&gt;
+&lt;h2&gt;variable&lt;/h2&gt;
+&lt;p&gt;var=value
+- &lt;code&gt;$1, $2, $NF&lt;/code&gt;: Arguments - nth value from the line. &lt;code&gt;$&lt;/code&gt; is an operator that can be applied to any number (primitive or variable) and gets the field corresponding to that number.
+- &lt;code&gt;,&lt;/code&gt;: string concatenation 
+- &lt;code&gt;FS&lt;/code&gt;, &lt;code&gt;OFS&lt;/code&gt;, &lt;code&gt;RS&lt;/code&gt; &lt;code&gt;ORS&lt;/code&gt;, &lt;code&gt;NR&lt;/code&gt; &lt;code&gt;NF&lt;/code&gt;: field separator, output field separator, record separator, output record separator, number of records, number of fields. &lt;/p&gt;
+&lt;p&gt;action is by default, &lt;code&gt;print&lt;/code&gt;
+    '/pattern/action'&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;#39;/pattern/
+/pattern/&amp;#39;
+
+&amp;#39;$var ~/pattern/&amp;#39;
+
+&amp;#39;condition&amp;#39;
+
+&amp;#39;function …&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 20 Nov 2013 08:18:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-11-20:/awk.html</guid><category>unix</category></item><item><title>Unix resource management</title><link>https://www.4thinker.com/unix-resource-management.html</link><description>&lt;p&gt;Free memory&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;free -m
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 20 Nov 2013 08:17:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-11-20:/unix-resource-management.html</guid><category>shell</category></item><item><title>Top cheat sheet</title><link>https://www.4thinker.com/unix-top.html</link><description>&lt;p&gt;&lt;code&gt;A&lt;/code&gt; - split (default RES, PID, MEM, USER) 
+&lt;code&gt;a&lt;/code&gt; - iterate
+&lt;code&gt;M&lt;/code&gt; - sort by memory
+&lt;code&gt;O&lt;/code&gt; - sort by something else
+&lt;code&gt;k&lt;/code&gt; - kill the selected process
+&lt;code&gt;r&lt;/code&gt; - renice (asks for pid)
+&lt;code&gt;u&lt;/code&gt; - username
+&lt;code&gt;1&lt;/code&gt; - toggle display of all CPU/cores
+&lt;code&gt;l&lt;/code&gt; - toggle cpu load display
+&lt;code&gt;t&lt;/code&gt; - toggle cpu state display
+&lt;code&gt;m&lt;/code&gt; - toggle memory info display
+&lt;code&gt;n&lt;/code&gt; - limit number of process on display
+&lt;code&gt;c&lt;/code&gt; - toggle command path, argument
+&lt;code&gt;z&lt;/code&gt; - toggle color highlight&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;top -u username&lt;/code&gt; - for a specific user
+&lt;code&gt;top -p pid, pids&lt;/code&gt; - for specific processes&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 20 Nov 2013 08:13:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-11-20:/unix-top.html</guid><category>Administration</category></item><item><title>Unix job management</title><link>https://www.4thinker.com/unix-job-management.html</link><description>&lt;p&gt;&lt;code&gt;&amp;amp;&lt;/code&gt; at the end of the command - run in the background, free up the command prompt
+&lt;code&gt;nohup&lt;/code&gt; - suppress the output to nohup.out 
+&lt;code&gt;nohup&lt;/code&gt; + &lt;code&gt;&amp;amp;&lt;/code&gt; allows user to run the command even after logging out
+&lt;code&gt;C-z&lt;/code&gt; put the running process in the background
+&lt;code&gt;jobs&lt;/code&gt; - list the jobs for the current shell
+&lt;code&gt;kill %1&lt;/code&gt; - kill the job listed by &lt;code&gt;jobs&lt;/code&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 20 Nov 2013 06:31:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-11-20:/unix-job-management.html</guid><category>administration</category></item><item><title>Sed, not sad</title><link>https://www.4thinker.com/sed.html</link><description>&lt;p&gt;The separator can be any character as long as they are consistent&lt;/p&gt;
+&lt;p&gt;sed 'ADDRESS'Command fileName
+sed /PATTERN/AddressCommand fileName&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-i&lt;/code&gt;: makes changes on the file, suppresses output. A file extension &lt;code&gt;.bak&lt;/code&gt; can be used to redirect othe output.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;;&lt;/code&gt;: is to separate command within quotes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-e&lt;/code&gt;: is to connect two separate commands in quotes.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-n&lt;/code&gt;: suppresses output, useful when using custom output commands&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-f&lt;/code&gt;: read the sed script from a file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Line Address&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;#,#&lt;/code&gt;: range
+&lt;code&gt;,#&lt;/code&gt;: range from the matching line
+    -&lt;code&gt;,+#&lt;/code&gt;: # lines after the current ilne
+    -&lt;code&gt;,-#&lt;/code&gt;: # lines before the current line
+&lt;code&gt;,$&lt;/code&gt;: to the end of the matching line
+&lt;code&gt;#!&lt;/code&gt;: negation
+&lt;code&gt;$&lt;/code&gt;: last line
+&lt;code&gt;~#&lt;/code&gt;: every # line …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Wed, 20 Nov 2013 06:21:00 -0800</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-11-20:/sed.html</guid><category>linux</category></item><item><title>Links</title><link>https://www.4thinker.com/links.html</link><description>&lt;p&gt;symlink: for both file and directory; can point to remote directoy (SMB) and different file-system; resolved on the client, replaces Junction.
+hardlink: file only
+junction: directory only; resolved on the server;&lt;/p&gt;
+&lt;p&gt;Unix commands are always followed by src and dest
+Windows commands are always followed by dest and src
+|                    | hardlink    | symlink     | symlink (directory) | junction          |
+| creation (Unix)    | ln          | ln -s       | ln                  |                   |
+| endpoint           | same volume | anywhere    | anywhere            | different volumes |
+| resolution         | local       | local       | local               | remote            |
+| creation (Windows) | mklink /J   | mklink      | mklink /D           | mklink /J         |
+| endpoint           | same volume | same volume | same volume         | different volume  |&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 22 Oct 2013 03:42:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-22:/links.html</guid></item><item><title>PowerShell Notes</title><link>https://www.4thinker.com/powershell-notes.html</link><description>&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;|                           | Powershell                          | Bash             |&lt;/span&gt;
+&lt;span class="x"&gt;| Help page                 | Get-Help                            | man              |&lt;/span&gt;
+&lt;span class="x"&gt;| History Search            | #Str                                | &amp;lt;C-r&amp;gt;str         |&lt;/span&gt;
+&lt;span class="x"&gt;| History Search (num) #Num | #Num                                | !Num             |&lt;/span&gt;
+&lt;span class="x"&gt;| Creating new file         | ni (New-Item)                       | touch            |&lt;/span&gt;
+&lt;span class="x"&gt;| semi-colon                | No                                  | Yes              |&lt;/span&gt;
+&lt;span class="x"&gt;| print file                | cat (Get-Content)                   | cat              |&lt;/span&gt;
+&lt;span class="x"&gt;| print                     | echo (Write-Content)                | echo             |&lt;/span&gt;
+&lt;span class="x"&gt;| Help Page                 | Get-Help                            | man              |&lt;/span&gt;
+&lt;span class="x"&gt;| Array Index Lookup        | $array[0]                           | array[0]         |&lt;/span&gt;
+&lt;span class="x"&gt;| String Concatenation      | . for &amp;#39;&amp;#39;, + for                     | + or nothing     |&lt;/span&gt;
+&lt;span class="x"&gt;|                           | select -First #                     | Head -#          |&lt;/span&gt;
+&lt;span class="x"&gt;|                           | select -Last $                      | Tail -#          |&lt;/span&gt;
+&lt;span class="x"&gt;| check on a log file       | cat -Wait                           | tail -f          |&lt;/span&gt;
+&lt;span class="x"&gt;| While Loop                | while (cond) &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;                     |&lt;/span&gt;
+&lt;span class="x"&gt;| Foreach                   | foreach ($var in $object)           | -                |&lt;/span&gt;
+&lt;span class="x"&gt;| If-statement              | if (cond &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;)                        |&lt;/span&gt;
+&lt;span class="x"&gt;| Number Expansion          | 1..10                               | &lt;/span&gt;&lt;span class="cp"&gt;{&lt;/span&gt;&lt;span class="m"&gt;1.&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;10&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="x"&gt;          |&lt;/span&gt;
+&lt;span class="x"&gt;| Parameter                 | param($arg = Val)                   | $1, $2 ...       |&lt;/span&gt;
+&lt;span class="x"&gt;| function                  | function name &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;                    |                  |&lt;/span&gt;
+&lt;span class="x"&gt;| clipboard                 | pipe to clip                        | pipe to …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Tue, 22 Oct 2013 01:38:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-22:/powershell-notes.html</guid><category>shell</category></item><item><title>Unix Utility DU</title><link>https://www.4thinker.com/unix-du.html</link><description>&lt;p&gt;&lt;code&gt;-s&lt;/code&gt;: output the current directory's size
+&lt;code&gt;-h&lt;/code&gt;: human readable (size in KB, MB or GB)
+&lt;code&gt;-a&lt;/code&gt;: all files, by default, &lt;code&gt;du&lt;/code&gt; shows the size of the directories recursively&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 14 Oct 2013 11:04:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-14:/unix-du.html</guid><category>shell</category></item><item><title>MongoDB Notes</title><link>https://www.4thinker.com/mongodb.html</link><description>&lt;p&gt;MongoDB is dynamically typed, meaning you can insert any data type as long as they are well-formated.
+Each object is associated with an ObjectId.&lt;/p&gt;
+&lt;p&gt;Cursor object is a Python dict once it has been assigned to a variable. &lt;/p&gt;
+&lt;h2&gt;installation&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install ruby1.9.1-dev rubygems
+sudo gem install require genghisapp bson_ext rake
+sudo gem install bson_ext -v 1.9.2
+genghisapp
+genghisapp --kill; genghisapp
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;NOTE: You might run into the following error message:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Invalid gemspec in [/var/lib/gems/1.8/specifications/vegas-0.1.11.gemspec]: invalid date format in specification: &amp;quot;2009-08-30 00:00:00.000000000Z&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To workaround the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Sat, 12 Oct 2013 12:14:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-10-12:/mongodb.html</guid><category>python</category></item><item><title>A collection of useful python scripts</title><link>https://www.4thinker.com/python-tricks.html</link><description>&lt;h4&gt;Mark PDFs with the number from the file name, on the right top corner of the page&lt;/h4&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os.path&lt;/span&gt;
+&lt;span class="nb"&gt;dir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;c:\Users\User\Desktop\Songs&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;listdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;listdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;fullpath&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;command&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;convert &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;fullpath&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; -fill black -gravity South -pointSize 20 -annotate +0+5 &amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;fullpath&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Using defaultdict without importing one:&lt;/h4&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;my_dict&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;some_key&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;my_dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;some_key&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Copying code to Python REPL and avoid Indentation error&lt;/h4&gt;
+&lt;p&gt;REPL stands for &lt;a href="en.wikipedia.org/wiki/Read–eval–print_loop"&gt;Read-eval-print loop&lt;/a&gt; for those who are uninitiated. It the prompt that shows up when you type &lt;code&gt;python&lt;/code&gt; on your command …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Thu, 12 Sep 2013 12:10:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-09-12:/python-tricks.html</guid><category>python</category><category>shell</category></item><item><title>A collection of Useful Shell commands</title><link>https://www.4thinker.com/bash-tricks.html</link><description>&lt;p&gt;Here are some Bash commands that I used&lt;/p&gt;
+&lt;h2&gt;Rename&lt;/h2&gt;
+&lt;p&gt;Rename using &lt;code&gt;find&lt;/code&gt; and &lt;code&gt;sed&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find . -name &amp;quot;*syntax.md&amp;quot; | sed -e &amp;quot;p;s/syntax/notes/&amp;quot; | xargs -n2 mv
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Execute some commands based on the filename or extension &lt;a href="http://stackoverflow.com/questions/10803296/modifying-replace-string-in-xargs"&gt;1&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find . -name &lt;span class="s2"&gt;&amp;quot;*.txt&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; xargs -I&lt;span class="o"&gt;{}&lt;/span&gt; sh -c &lt;span class="s1"&gt;&amp;#39;base=$(basename $0) ; name=${base%.*} ; ext=${base##*.} ; mv &amp;quot;$0&amp;quot; &amp;quot;foo/${name}.bar.${ext}&amp;quot;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;{}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;note: the variable name referenced by -I argument, which in this example is &lt;code&gt;{}&lt;/code&gt; cannot be reference used for variable expansion. It must be assigned to another variable first.&lt;/p&gt;
+&lt;p&gt;Clean up the filename extension so that there is no trailing characters after.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# IFS=&amp;#39;\n …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Mon, 05 Aug 2013 01:54:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-08-05:/bash-tricks.html</guid><category>shell</category></item><item><title>Interviewing for a Software Engineer position is Hard</title><link>https://www.4thinker.com/interviews-are-hard.html</link><description>&lt;p&gt;This pertains to my experience straight out of college. Once you specialize, things may differ.&lt;/p&gt;
+&lt;p&gt;I am first going to admit that I am not competent in program interviews. It is something that I need to work extra hard and people who do well deserves the job. Computer Science interview questions are similar to Science Olympiad, you recall answers to questions or topics that are very broad. Also the questions tend to be ones that you do not think very often in practice. For example, how often do you use recursion in your work? &lt;/p&gt;
+&lt;p&gt;There are so many language variations …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 24 May 2013 02:49:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-05-24:/interviews-are-hard.html</guid><category>career</category></item><item><title>How to install pip, oauth2 on Windows</title><link>https://www.4thinker.com/python-on-window.html</link><description>&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pip&lt;/code&gt; is like &lt;code&gt;apt&lt;/code&gt; of debian-based system for python. It installs and uninstalls packages&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;distribute&lt;/code&gt; is like &lt;code&gt;dpkg&lt;/code&gt; of debian-based system for python. It builds and distribute packages.&lt;/li&gt;
+&lt;li&gt;In short, they make installing packages for python much easier. For a longer explanation, here is a &lt;a href="http://guide.python-distribute.org/installation.html"&gt;stackoverflow answer&lt;/a&gt;, and the official description can be found the &lt;a href="http://guide.python-distribute.org/installation.html"&gt;python website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Some people might be using &lt;code&gt;setuptools&lt;/code&gt; in windows, but it is outdated. &lt;code&gt;setuptools&lt;/code&gt; is not available for Windows 64-bit platform anyway, so the choice is limited for many people out there.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;distribute&lt;/code&gt; replaces &lt;code&gt;setuptools&lt;/code&gt; starting from python3, but it is available for &lt;code&gt;python2 …&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">forethinker</dc:creator><pubDate>Fri, 10 May 2013 11:33:00 -0700</pubDate><guid isPermaLink="false">tag:www.4thinker.com,2013-05-10:/python-on-window.html</guid><category>python</category></item></channel></rss>

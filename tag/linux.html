@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+        
+
+        
+
+    <div class='row-fluid''>
+        <div class="article-title span12">
+            <a href="https://www.4thinker.com/linux-eye-openers.html"><h1>Linux Eye Openers</h1></a>
+        </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>May 02, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/linux.html">#linux</a></span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Linux%20Eye%20Openers%20 https%3A//www.4thinker.com/linux-eye-openers.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/linux-eye-openers.html&p[images][0]=&p[title]=Linux%20Eye%20Openers%20&p[summary]=%3Ch2%3EDrawback%20of%20using%20mount%20--bind%3C/h2%3E%0A%3Cp%3EI%20could%20have%20said%20it%20better%20than%20the%20%3Ca%20href%3D%22http%3A//unix.stackexchange.com/a/49639/16814%22%3Eanswer%20by%20Gilles%20from%20Unix%20staackexchange%3C/a%3E%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/linux-eye-openers.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Linux%20Eye%20Openers%20&body=https%3A//www.4thinker.com/linux-eye-openers.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="article-content span10">
+	<h2>Drawback of using mount --bind</h2>
+<p>I could have said it better than the <a href="http://unix.stackexchange.com/a/49639/16814">answer by Gilles from Unix staackexchange</a></p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/linux-eye-openers.html">
+          <i class="icon-comment"></i> Comment </a>
+	<hr />
+      </div>
+      
+    </div>
+    
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/linux-setup.html"><h1>Setting Up Linux</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>February 14, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/sysadmin.html">sysadmin</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/linux.html">#linux</a>, <a href="https://www.4thinker.com/tag/setup.html">#setup</a>, <a href="https://www.4thinker.com/tag/laptop.html">#laptop</a></span>
+
+  <span>Read in 5 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Setting%20Up%20Linux%20 https%3A//www.4thinker.com/linux-setup.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/linux-setup.html&p[images][0]=&p[title]=Setting%20Up%20Linux%20&p[summary]=%3Ch2%3EEssential%3C/h2%3E%0A%3Cp%3E%3Cp/%3E%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Esudo%20apt-get%20update%0Asudo%20apt-get%20install%20-y%20vim%20git%20python%20python-pip%20tmux%20zsh%20python-dev%20libxml2-dev%20libxslt-dev%20ssh%0Asudo%20apt-get%20install%20-y%20default-jre%0Asudo%20pip%20install%20virtualenv%20requests%0Asudo%20npm%20install%20-g%20casperjs%20coffee-script%20js2coffee%20coffeelint%20uglify-js%0A%0A%23%20sudo%20apt-get%20install%20gtk2-engines-pixbuf%20vim-gnome%20clipit%20xclip%20xdotool%20xdiskusage%20resolvconf%20acpitool%20xmodmap%20powertop%20zip%20unzip%20curl%0Asudo%20apt-get%20install%20openjdk-7-jre%20openjdk-7-jdk%0A%23%20Laptop-specific%0Asudo%20apt-get%20install%20lsof%0Asudo%20apt-get%20purge%20laptop-mode-tools%0A%23%20Extra%0Asudo%20apt-get%20install%20ia32-libs%20eclipse%20xfce4-settings%20telnet%20ntpdate%20mongodb%0Asudo%20ln%20-s%20/usr/bin/nodejs%20/usr/bin/node%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Ch2%3Enpm%20in%20ubuntu%3C/h2%3E%0A%3Cp%3EIf%20linking%20the%20nodejs%20binary%20to%20node%20is%20not%20sufficient%20for%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/linux-setup.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Setting%20Up%20Linux%20&body=https%3A//www.4thinker.com/linux-setup.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<h2>Essential</h2>
+<p><p/></p>
+<div class="highlight"><pre><span></span>sudo apt-get update
+sudo apt-get install -y vim git python python-pip tmux zsh python-dev libxml2-dev libxslt-dev ssh
+sudo apt-get install -y default-jre
+sudo pip install virtualenv requests
+sudo npm install -g casperjs coffee-script js2coffee coffeelint uglify-js
+
+# sudo apt-get install gtk2-engines-pixbuf vim-gnome clipit xclip xdotool xdiskusage resolvconf acpitool xmodmap powertop zip unzip curl
+sudo apt-get install openjdk-7-jre openjdk-7-jdk
+# Laptop-specific
+sudo apt-get install lsof
+sudo apt-get purge laptop-mode-tools
+# Extra
+sudo apt-get install ia32-libs eclipse xfce4-settings telnet ntpdate mongodb
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+</pre></div>
+
+
+<h2>npm in ubuntu</h2>
+<p>If linking the nodejs binary to node is not sufficient for …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/linux-setup.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/ppa-in-debian.html"><h1>PPA in Debian</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>January 03, 2014 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/sysadmin.html">sysadmin</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/linux.html">#linux</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=PPA%20in%20Debian%20 https%3A//www.4thinker.com/ppa-in-debian.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/ppa-in-debian.html&p[images][0]=&p[title]=PPA%20in%20Debian%20&p[summary]=%3Cp%3E%3Ccode%3Esudo%20apt-get%20install%20python-software-properties%3C/code%3E%20does%20not%20work.%20You%20get%20an%20error%20like%20the%20following%20when%20you%20try%20to%20update%3A%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3EFetched%20563%20kB%20in%208s%20%2863.0%20kB/s%29%0AW%3A%20Failed%20to%20fetch%20http%3A//ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/source/Sources%20%20404%20%20Not%20Found%0A%0AW%3A%20Failed%20to%20fetch%20http%3A//ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/binary-amd64/Packages%20%20404%20%20Not%20Found%0A%0AW%3A%20Failed%20to%20fetch%20http%3A//ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/binary-i386/Packages%20%20404%20%20Not%20Found%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cp%3EAs%20you%20can%20see%2C%20python%20script%20adds%20debian%20name%20%3Ccode%3Ewheezy%3C/code%3E%20into%20the%20URL%2C%20which%20obvious%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/ppa-in-debian.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=PPA%20in%20Debian%20&body=https%3A//www.4thinker.com/ppa-in-debian.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p><code>sudo apt-get install python-software-properties</code> does not work. You get an error like the following when you try to update:</p>
+<div class="highlight"><pre><span></span>Fetched 563 kB in 8s (63.0 kB/s)
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/source/Sources  404  Not Found
+
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/binary-amd64/Packages  404  Not Found
+
+W: Failed to fetch http://ppa.launchpad.net/alexx2000/doublecmd/ubuntu/dists/wheezy/main/binary-i386/Packages  404  Not Found
+</pre></div>
+
+
+<p>As you can see, python script adds debian name <code>wheezy</code> into the URL, which obvious …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/ppa-in-debian.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/sed.html"><h1>Sed, not sad</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>November 20, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/dev.html">dev</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/linux.html">#linux</a></span>
+
+  <span>Read in 1 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Sed%2C%20not%20sad%20 https%3A//www.4thinker.com/sed.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/sed.html&p[images][0]=&p[title]=Sed%2C%20not%20sad%20&p[summary]=%3Cp%3EThe%20separator%20can%20be%20any%20character%20as%20long%20as%20they%20are%20consistent%3C/p%3E%0A%3Cp%3Esed%20%27ADDRESS%27Command%20fileName%0Ased%20/PATTERN/AddressCommand%20fileName%3C/p%3E%0A%3Cul%3E%0A%3Cli%3E%3Ccode%3E-i%3C/code%3E%3A%20makes%20changes%20on%20the%20file%2C%20suppresses%20output.%20A%20file%20extension%20%3Ccode%3E.bak%3C/code%3E%20can%20be%20used%20to%20redirect%20othe%20output.%3C/li%3E%0A%3Cli%3E%3Ccode%3E%3B%3C/code%3E%3A%20is%20to%20separate%20command%20within%20quotes%3C/li%3E%0A%3Cli%3E%3Ccode%3E-e%3C/code%3E%3A%20is%20to%20connect%20two%20separate%20commands%20in%20quotes.%3C/li%3E%0A%3Cli%3E%3Ccode%3E-n%3C/code%3E%3A%20suppresses%20output%2C%20useful%20when%20using%20custom%20output%20commands%3C/li%3E%0A%3Cli%3E%3Ccode%3E-f%3C/code%3E%3A%20read%20the%20sed%20script%20from%20a%20file%3C/li%3E%0A%3C/ul%3E%0A%3Ch2%3ELine%20Address%3C/h2%3E%0A%3Cp%3E%3Ccode%3E%23%2C%23%3C/code%3E%3A%20range%0A%3Ccode%3E%2C%23%3C/code%3E%3A%20range%20from%20the%20matching%20line%0A%20%20%20%20-%3Ccode%3E%2C%2B%23%3C/code%3E%3A%20%23%20lines%20after%20the%20current%20ilne%0A%20%20%20%20-%3Ccode%3E%2C-%23%3C/code%3E%3A%20%23%20lines%20before%20the%20current%20line%0A%3Ccode%3E%2C%24%3C/code%3E%3A%20to%20the%20end%20of%20the%20matching%20line%0A%3Ccode%3E%23%21%3C/code%3E%3A%20negation%0A%3Ccode%3E%24%3C/code%3E%3A%20last%20line%0A%3Ccode%3E%7E%23%3C/code%3E%3A%20every%20%23%20line%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/sed.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Sed%2C%20not%20sad%20&body=https%3A//www.4thinker.com/sed.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>The separator can be any character as long as they are consistent</p>
+<p>sed 'ADDRESS'Command fileName
+sed /PATTERN/AddressCommand fileName</p>
+<ul>
+<li><code>-i</code>: makes changes on the file, suppresses output. A file extension <code>.bak</code> can be used to redirect othe output.</li>
+<li><code>;</code>: is to separate command within quotes</li>
+<li><code>-e</code>: is to connect two separate commands in quotes.</li>
+<li><code>-n</code>: suppresses output, useful when using custom output commands</li>
+<li><code>-f</code>: read the sed script from a file</li>
+</ul>
+<h2>Line Address</h2>
+<p><code>#,#</code>: range
+<code>,#</code>: range from the matching line
+    -<code>,+#</code>: # lines after the current ilne
+    -<code>,-#</code>: # lines before the current line
+<code>,$</code>: to the end of the matching line
+<code>#!</code>: negation
+<code>$</code>: last line
+<code>~#</code>: every # line …</p> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/sed.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+
+ 
+        
+
+
+
+    <div class='row-fluid'>
+      <div class='article-title span12'> 
+        <a href="https://www.4thinker.com/crunchifying-mint.html"><h1>Cruncifying-mint</h1></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>September 30, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/sysadmin.html">sysadmin</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/linux.html">#linux</a></span>
+
+  <span>Read in 2 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Cruncifying-mint%20 https%3A//www.4thinker.com/crunchifying-mint.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/crunchifying-mint.html&p[images][0]=&p[title]=Cruncifying-mint%20&p[summary]=%3Cp%3EI%20got%20myself%20in%20a%20situation%20where%20I%20was%20forced%20to%20use%20mint.%20I%20missed%20Crunchbang%20and%20Openbox%20dearly%20right%20off%20the%20bat.%20So%20I%20decided%20to%20fix%20this.%20In%20order%20to%20get%20%3Ccode%3Ecrunchbang%3C/code%3E%20specific%20functionality%2C%20you%20need%20their%20exectuable%20scripts.%20I%20copy%20them%20to%20my%20dropbox%20so%20I%20can%20just%20symlink%20them.%3C/p%3E%0A%3Cdiv%20class%3D%22highlight%22%3E%3Cpre%3E%3Cspan%3E%3C/span%3Esudo%20apt-get%20install%20openbox%20dmenu%20tint2%20terminator%20thunar%20wmctrl%20conky%20nitrogen%20clipit%20gtk-chtheme%20xscreensaver%20vim-gnome%0Aln%20%24HOME/Dropbox/linux/crunchbang/openbox/%2A%20%24HOME/.config/openbox%0Aln%20%24HOME/Dropbox/linux/crunchbang/%2A%20%24HOME/.config/%0Asudo%20chmod%20755%20/usr/bin/cb%2A%0A%3C/pre%3E%3C/div%3E%0A%0A%0A%3Cul%3E%0A%3Cli%3EOpenbox%20is%20the%20window%20manager%20itself.%3C/li%3E%0A%3Cli%3EOpenbox-themes%20installs%20some%20skins%20%E2%80%A6%3C/li%3E%3C/ul%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/crunchifying-mint.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Cruncifying-mint%20&body=https%3A//www.4thinker.com/crunchifying-mint.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      <div class="summary span10">
+	<p>I got myself in a situation where I was forced to use mint. I missed Crunchbang and Openbox dearly right off the bat. So I decided to fix this. In order to get <code>crunchbang</code> specific functionality, you need their exectuable scripts. I copy them to my dropbox so I can just symlink them.</p>
+<div class="highlight"><pre><span></span>sudo apt-get install openbox dmenu tint2 terminator thunar wmctrl conky nitrogen clipit gtk-chtheme xscreensaver vim-gnome
+ln $HOME/Dropbox/linux/crunchbang/openbox/* $HOME/.config/openbox
+ln $HOME/Dropbox/linux/crunchbang/* $HOME/.config/
+sudo chmod 755 /usr/bin/cb*
+</pre></div>
+
+
+<ul>
+<li>Openbox is the window manager itself.</li>
+<li>Openbox-themes installs some skins …</li></ul> 
+	<a class="btn btn-mini xsmall" href="https://www.4thinker.com/crunchifying-mint.html">
+          <i class="icon-plus-sign"></i> Read More </a>
+	<hr />
+      </div>
+      
+    </div>
+      
+<div class="pagination">
+<ul>
+    <li class="prev disabled"><a href="#">&larr; Previous</a></li>
+
+    <li class="active"><a href="https://www.4thinker.com/tag/linux.html">1</a></li>
+
+    <li class="next disabled"><a href="#">&rarr; Next</a></li>
+
+</ul>
+</div>
+ 
+  
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

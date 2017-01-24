@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forethinker</title>
+    <meta name="description" content="">
+    <meta name="author" content="forethinker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="https://www.4thinker.com/theme/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/local.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/pygments.css" rel="stylesheet">
+    <link href="https://www.4thinker.com/theme/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,400italic|Alegreya+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            styles: {
+                ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+            },
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+            });
+            MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+                var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+                VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                });
+                MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+                    var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+                    VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+                    VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+                    VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+                    VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+                    });
+                </script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<body>
+<header class="blog-header">
+  <div class="container">
+    <div class="row-fluid" styel="height: 0px;">
+    	<a href="https://www.4thinker.com" class="brand">Forethinker</a>
+
+
+        <ul class="nav nav-pills pull-right" style="height: 16px; margin-top: 9px;">
+ 
+               <form action="http://google.com/search" method="get"> 
+                   <fieldset role="search"> 
+                       <input type="hidden" name="q" value="site:https://www.4thinker.com" />
+                       <input class="search" type="text" name="q" results="0" value="search" onfocus="if (this.value=='search') this.value = ''" type="text" type="text" maxlength="80" size="28"/> 
+                   </fieldset>
+               </form>
+        </ul>
+
+        <ul class="nav nav-pills pull-right" style="margin-top: 7px;">
+            <li >
+              <a href="https://www.4thinker.com/category/algs.html ">algs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/cs.html ">cs</a>
+            <li >
+              <a href="https://www.4thinker.com/category/dev.html ">dev</a>
+            <li  class="active" >
+              <a href="https://www.4thinker.com/category/hack.html ">hack</a>
+            <li >
+              <a href="https://www.4thinker.com/category/life.html ">life</a>
+            <li >
+              <a href="https://www.4thinker.com/category/sysadmin.html ">sysadmin</a>
+            <li >
+              <a href="https://www.4thinker.com/category/web.html ">web</a>
+
+        </ul>
+
+    </div> <!-- End of fluid row-->
+  </div>   <!-- End of Container-->
+</header>
+    
+<div class="container">
+    <div class="content">
+    <div class="row-fluid">
+
+        <div class="span12">
+    <div class='article'>
+      <div class="row-fluid">
+           <div class="content-title span12">
+             <h1>Serious Internet Filtering (Parental Control) with DD-WRT + OpenDNS + IPTables</h1b>
+           </div>
+      </div>
+    <div class="row-fluid">
+      <div class="span2">
+<div class="article-sidebar">
+
+<span>December 22, 2013 </span>
+
+<span>
+[ <a href="https://www.4thinker.com/category/hack.html">hack</a> ]
+</span>
+
+<span>
+ 
+<a href="https://www.4thinker.com/tag/security.html">#security</a></span>
+
+  <span>Read in 17 min.</span>
+
+    <span id="post-share-links">
+        <a href="http://twitter.com/home?status=Serious%20Internet%20Filtering%20%28Parental%20Control%29%20with%20DD-WRT%20%2B%20OpenDNS%20%2B%20IPTables%20 https%3A//www.4thinker.com/parental-control.html" target="_blank" title="Share on Twitter"><i class="icon-large icon-twitter-sign"></i></a> 
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https%3A//www.4thinker.com/parental-control.html&p[images][0]=&p[title]=Serious%20Internet%20Filtering%20%28Parental%20Control%29%20with%20DD-WRT%20%2B%20OpenDNS%20%2B%20IPTables%20&p[summary]=%3Ch2%3EThe%20story%3C/h2%3E%0A%3Cp%3ESkip%20this%20section%20if%20you%20think%20your%20life%20is%20short.%3C/p%3E%0A%3Cp%3EI%20tried%20to%20block%20myself%20out%20of%20pornography%20ever%20since%20I%20was%20a%20teenager.%20My%20first%20attempt%20was%20using%20%3Ca%20href%3D%22http%3A//www1.k9webprotection.com/%22%3EK9%20Web%20Protection%3C/a%3E.%20I%20took%20a%20lot%20of%20time%20to%20filter%20false-positive%20websites%2C%20but%20I%20was%20not%20satisfied%20for%20long.%20I%20had%20trouble%20connecting%20to%20wifi%20on%20college%20campus%20and%20it%20also%20did%20not%20filter%20SSL%20connections%20properly%2C%20which%20meant%20I%20had%20unprotected%20Google%20images%20access.%20Oh%20my.%20Also%20I%20now%20knew%20Linux%20pretty%20well%2C%20so%20I%20was%20loose%20on%20the%20web.%20They%20have%20improved%20quite%20a%20bit%20when%20%E2%80%A6%3C/p%3E" target="_blank" title="Share on Facebook"><i class="icon-large icon-facebook-sign"></i></a> 
+        <a href="https://plus.google.com/share?url=https%3A//www.4thinker.com/parental-control.html" target="_blank" title="Share on Google Plus"><i class="icon-large icon-google-plus-sign"></i></a> 
+        <!--<a href="" target="_blank" title="Share on Linkedin"><i class="icon-large icon-linkedin-alt"></i></a>-->
+        <a href="mailto:?subject=Serious%20Internet%20Filtering%20%28Parental%20Control%29%20with%20DD-WRT%20%2B%20OpenDNS%20%2B%20IPTables%20&body=https%3A//www.4thinker.com/parental-control.html" target="_blank" title="Share via Email"><i class="icon-large icon-envelope-sign"></i></a>
+    </span>
+
+</div>      </div>
+      
+      <div class="span10">
+	<h2>The story</h2>
+<p>Skip this section if you think your life is short.</p>
+<p>I tried to block myself out of pornography ever since I was a teenager. My first attempt was using <a href="http://www1.k9webprotection.com/">K9 Web Protection</a>. I took a lot of time to filter false-positive websites, but I was not satisfied for long. I had trouble connecting to wifi on college campus and it also did not filter SSL connections properly, which meant I had unprotected Google images access. Oh my. Also I now knew Linux pretty well, so I was loose on the web. They have improved quite a bit when I tested it last month, so I recommend it if you do not want to go through the complicated steps below.</p>
+<p>Then years of exploration began: OpenDNS, Dans-guardian, squidguard, qustodio... and even trying to lock myself out of the administrator's account! They all failed, but I must say, my efforts were not all that wasteful, as I learned about the network security and I started to think like a parent. I also discovered so many loopholes. Now I know that SOCKS Proxy and OpenVPN would pretty much render all parental control moot.</p>
+<p>As with all computer security, there is no perfect parental control, but there is pretty good one: DD-WRT + OpenDNS + iptables. Of course, you have to hand over the password to someone, but as long as you do not know the password, you are relatively safe! It is perfect for me as of now, although I still have to work around some issues and I had to sacrifice some remote capabilities. In the worst case, I just use my family member's computer, with their permission. </p>
+<p>My attempts are listed in chronological order and the ones I current use is noted with *</p>
+<ul>
+<li>
+<p><a href="http://www1.k9webprotection.com/">K9 Web Protection</a>: works by using an application layer filtering, so the encrypted SSL connections are not filtered. There is a way to block it entirely, but it might make your email client and online banking unusable, and also most online transactions. Even though it enforces safe search, it only works on http connection. One could simple add one letter 's' and go on loose.  </p>
+</li>
+<li>
+<p>*<a href="http://www.howtogeek.com/79998/protect-your-kids-online-using-open-dns-2/">OpenDNS</a> - by itself, it is security by obscurity. Changing local <a href="http://en.wikipedia.org/wiki/Dns">DNS</a> is so simple, but paired with DD-WRT, it is truly amazing.</p>
+</li>
+<li>
+<p><a href="http://dansguardian.org/?page=introduction">Dans-guardian</a> is pretty similar to K9 Web Protection, except if you are the root user of your computer, the restriction is solely controlled by your will-power. I have used it with gui on ubuntu, a linux OS. There is level of filtering you can adjust, but it did not filter SSL connection, if I remember correctly.</p>
+</li>
+<li>
+<p>Firefox and Chrome extensions: yeah some are clever, but they can be easily disabled or moved. Also Internet Explorer is wide open, so blocking one web browser won't do the trick.</p>
+</li>
+<li>
+<p><a href="http://lifehacker.com/5817447/how-to-block-unwanted-ads-in-all-applications-and-speed-up-web-browsing-with-the-hosts-file">hosts file</a> and <a href="http://www.focalfilter.com/">focalfilter</a> - this file is also security by obsecurity, it is not useful without a strong will power. But most importantly, it does not block SSL connections. </p>
+</li>
+<li>
+<p><a href="http://www.qustodio.com/">Qustodio</a> - it is less featured than k9 and it gave me blue screen of death too often.</p>
+</li>
+<li>
+<p>*<a href="http://lifehacker.com/how-to-supercharge-your-router-with-dd-wrt-508138224">DD-WRT</a> - it gives you fine grain control over which keyword, website, and device (IP, MAC address) under Access Restriction. It also has the option to enforce the DNS server address. </p>
+</li>
+<li>
+<p>*<a href="http://lifehacker.com/how-to-supercharge-your-router-with-dd-wrt-508138224">Iptables</a> - this is the solution for SSL filtering and the good news is DD-WRT supports it. It seems complicated at first, but learning it will save you from a lot of headaches in the long run.</p>
+</li>
+</ul>
+<p>I was trying to block SSL connection by using a proxy server that has squidguard and dans-guardian. This is a method call Man-In-the-Middle (MITM) attack, which is more of a hack than a solution. This is also a method most organizations cannot implement as it violates the privacy of individuals. It is a fine solution for individuals, though. If I was succesful with this, I would have had the ultimate parental control that has the finest grain control over every aspect of network connectivity on the application layer, both http and https. Unfortunately, there was no <code>iptables</code> ported for my server, which is ARM architecture (e.g. your PC is X86, your android phone is ARM). <code>iptables</code> is necessary to make the latest <code>squid</code> work. Without it, there is no proxy server. Period. In a way, I was relieved that I did not go with <code>squid</code>. Because I would then have to block myself out of my server, which will now be a proxy server. </p>
+<p>I used <code>iptables</code> before, but only for firewall. I do not know why this did not occur in my head. It seems as though not many people know about it. When I google about filtering SSL connections, most of the results (actually all I found) showed up saying that proxy server is the only way to block SSL connections. Well, this turned out to very wrong. After I went back and typed iptables and https filtering together, I finally found some good how-tos. </p>
+<p><code>All links below will lead you to how-to-guides and other useful information.</code></p>
+<h2>OpenDNS Settings</h2>
+<p>After you <a href="http://www.howtogeek.com/79998/protect-your-kids-online-using-open-dns-2/">sign-up</a>, you can go the page called Web Content Filtering and check the boxes for the categories you would like to filter.
+I have the following checkmarks on:</p>
+<div class="highlight"><pre><span></span>Academic Fraud, Gambling, Humor, Lingerie/Bikini, P2P/File Sharing, Sexuality, Sports, Web Spam, Adult Themes, Anime/Manga/Webcomic, Games, Movies, Proxy/Anonymizer, Visual search engines, Adware, Dating, Nudity, Pornography
+</pre></div>
+
+
+<p>Now you can set the DNS address of your machines invidiaully. Not only that is a pain, but it is easy to bypass it just by changing it. You can restrict the access to this option via Group Policy Setting, but it is wortwhile to invest your time in <a href="http://lifehacker.com/how-to-supercharge-your-router-with-dd-wrt-508138224">DD-WRT</a> enabled router, espeically so if want a privileged access to your machine. Yes you can just use your typical <a href="http://www.howtogeek.com/79833/easily-add-opendns-to-your-router/">router to set the DNS address</a> too, but once again, it can be bypassed. You really need a DD-WRT, a custom ROM for your router to make it work.</p>
+<h1>DD-WRT</h1>
+<p>After you have insalled <a href="http://lifehacker.com/how-to-supercharge-your-router-with-dd-wrt-508138224">DD-WRT</a> on your router (the link will leads you to the how-to), go to your DD-WRT administrator's page by typing <code>192.168.1.1</code> in your web-browser.  Change the static DNS under <strong>Basic Setup</strong> page. (Click on the first tab of Setup)</p>
+<div class="highlight"><pre><span></span>Static DNS1 208.67.220.220
+Static DNS2 208.67.222.222
+Static DNS3 208.67.220.220
+</pre></div>
+
+
+<p>Now under <strong>Services</strong> page, enable <code>DNSMasq</code>, disable <code>Local DNS</code>, enable <code>No DNS Rebind</code> and in the <strong>Addtional DNSMasq Options</strong> text box, put</p>
+<div class="highlight"><pre><span></span>strict-order
+</pre></div>
+
+
+<p>Now the DNS server is set for every client in the network and they cannot bypass just by changing on their machine. If you want to restrict certain machines but exclue some other machines, <a href="http://www.dd-wrt.com/wiki/index.php/Static_DHCP">setting static IP address</a> is the way to start. And it can be done on this page as long as you know the <a href="http://compnetworking.about.com/cs/windowsnetworkin1/ht/findaddrwinxp.htm">MAC address of your clients.</a></p>
+<p>So in short, every machine has a unique MAC address, and whenever they connect to a router, they are assigned an IP address. The IP address assigned is random. But you can tell the router, "Hey, if you see this MAC address, give it this IP address". This is called <code>static IP</code>. It reserves an IP address so that only the machine with a certain MAC address gets that IP address.</p>
+<h2>Access Restriction</h2>
+<p>Now time for the real meat, Go to <strong>Access Restriction</strong> tab. 
+You should be able to figure out without reading <a href="http://www.dd-wrt.com/wiki/index.php/Access_Restrictions">the manual</a>. Here you can set the name of the policy, enabled/disabled them, set which clients (identified by either MAC address or IP address) are affected by the policy, and the time for which the policy will be in effective.</p>
+<p>There are three things to watch out for:</p>
+<ol>
+<li>When you try to <strong>Edit List of clients</strong>, the new window that opens up may have boxes out of order. This was confusing for me as I was trying to type in <strong>the IP range of the clients</strong>, but maximizing the window will show the boxes in a proper order.</li>
+<li>The starting time has to be less than the ending time, so if you want to block from 10pm to 6 am, you have to create two restrictions that go from 10pm-12am (22:00-23:59), 12am to 6am(00:00-06:00).</li>
+<li>DD-WRT on my router had implicit restriction of 9 URL addresses and 8 keywords. Which means if they fill up I have to create another policy.</li>
+</ol>
+<p>I have the following settings:</p>
+<ol>
+<li>*Morning Mon-Sat 0:00-12:00 </li>
+<li>*Afternoon Mon-Sat 13:00-19:00</li>
+<li>*Evening Everyday 20:00-23:59 - above three are use to filter out entertainment / shopping / news by keyword.</li>
+<li>All Everyday 24Hours - this is used to filter out adult contents by keywords.</li>
+<li>Extra Everyday 24 - this is used to filter out Google plaintext image search. </li>
+</ol>
+<p><code>*</code> denotes that it only applies to specific computers as configured in the <strong>Edit List of clients</strong></p>
+<p>I have the following keywords to block google's video or image search:</p>
+<div class="highlight"><pre><span></span>site=imghp tbm=isch tbm=vid imgurl
+</pre></div>
+
+
+<p>Also I found it helpful to block following keywords:</p>
+<div class="highlight"><pre><span></span>sex girl xxx
+</pre></div>
+
+
+<p>I have more, but I would really like to keep this website rated G. I also tend to block out foreign websites by their country domain (e.g. co.jp), as they sometimes contain contents that are not well categorized under OpenDNS. Beware of just using it though, as the false-positive rate will rise. For example, when I used '.jp' as a keyboard, my router ended up blocking photos and even youtube! Images were blocked because of their extension (<code>jpg</code>, <code>jpeg</code>), but I do not know exactly why for youtube. (I block youtube anyway, because I end up wasting more time than learning there.)</p>
+<h2>Blocking Secure Connections</h2>
+<p>Now on to blocking SSH and SSL connections. Under <strong>Administration</strong>, change the password and give it your trusted family members. You may also disable <code>SSH</code> connection to the router as well on this page. Then go to <strong>Administration</strong>-&gt;<strong>Commands</strong>
+I have the following line to block SSL connections to certain websites. Notice the <code>/25</code>. This is called <a href="http://en.wikipedia.org/wiki/Netmask">NetMask</a>. Since I set my devices to IP addresses between '192.168.77.0 - 192.168.77.127' (Remember static IP address from before?), my filtering will only affect my devices.</p>
+<div class="highlight"><pre><span></span>for addr in facebook.com 31.13.65.0/24 31.13.66.0/24 31.13.67.0/24 66.220.152.19/27 66.220.152.130/27 67.215.65.130/27 173.252.112.23/27 pinterest.com 107.20.251.43 174.129.17.184 twitter.com tumblr.com quora.com slickdeals.net; do
+iptables -t nat -I PREROUTING -m tcp -p tcp -s 192.168.77.1/25 -d &quot;$addr&quot; --dport 443 -j DROP
+done
+</pre></div>
+
+
+<p>Quora and Slickdeals are blocked solely to keep me productive. Note that these may be accessible in plaintext, so it is important to block them by keywords, as mentioned in 'Access Restrction' section from before. </p>
+<h2>Blocking SSH Tunneling</h2>
+<p>To block ssh access, you need to block port 22, this dwarfs the SSH tunneling. If you do not know what SSH tunneling is, good! You can skip this section without worrying too much about it. You could possible block SSH port entirely, but that is up to you. I found myself this is indispensible for web hosting server management. An if I tried SSH tunneling on those web servers, I would have my contract revoked.</p>
+<div class="highlight"><pre><span></span>iptables -t nat -I PREROUTING -m tcp -p tcp -s 192.168.77.1/25 -d [**address**] --dport 22 -j DROP
+</pre></div>
+
+
+<p>I could have successfully block OpenVPN based on the source port, which would have been easier for me to deal with. But It is very easy to redirect the source port on the client, so I had no choice but to block the destination port of VPN service provider.</p>
+<div class="highlight"><pre><span></span>iptables -t nat -I PREROUTING -m tcp -p tcp -s 192.168.77.1/25 -d [**address**] --dport 80 -j DROP
+</pre></div>
+
+
+<p>Now click <strong>Save Firewall</strong> </p>
+<h2>Time restricted Google</h2>
+<p>Now that we know that the router resets itself at 12pm and 7pm, we can set rules at 1pm and 8pm so that the router starts blocking Google services. In another word, I have access to Google services between 12-1pm and 7-8pm.</p>
+<div class="highlight"><pre><span></span>/bin/sh -c &#39;cat &gt; /tmp/googleOn.sh &lt;&lt;EOF
+#!/bin/sh
+for addr in youtube.com i1.ytimg.com google.com 74.125.20.0/24 173.194.79.0/24 173.125.239.0/24 190.93.245.76 74.125.239.0/24 74.125.224.0/24; do
+iptables -t nat -I PREROUTING -p tcp -s 192.168.1.0/24 -d &quot;\$addr&quot; -m multiport --dport 80,443 -j ACCEPT
+done
+EOF
+&#39;
+chmod a+x /tmp/googleOn.sh
+
+/bin/sh -c &#39;cat &gt; /tmp/googleOff.sh &lt;&lt;EOF
+#!/bin/sh
+for addr in youtube.com i1.ytimg.com google.com 74.125.20.0/24 173.194.79.0/24 173.125.239.0/24 190.93.245.76 74.125.239.0/24 74.125.224.0/24; do
+iptables -t nat -I PREROUTING -p tcp -s 192.168.1.0/24 -d &quot;\$addr&quot; -m multiport --dport 80,443 -j DROP
+done
+for addr in gmail.com mail.google.com www.google.com; do
+iptables -t nat -I PREROUTING -p tcp -s 192.168.1.0/24 -d &quot;\$addr&quot; -m multiport --dport 80,443 -j ACCEPT
+done
+EOF
+&#39;
+chmod a+x /tmp/googleOff.sh
+
+/bin/sh -c &#39;cat &gt; /tmp/internetOff.sh &lt;&lt;EOF
+#!/bin/sh
+iptables -t nat -I PREROUTING -p tcp -s 192.168.1.0/24 -m multiport --dport 80,443 -j DROP
+EOF
+&#39;
+chmod a+x /tmp/internetOff.sh
+
+
+/bin/sh -c &#39;cat &gt; /tmp/internetOn.sh &lt;&lt;EOF
+#!/bin/sh
+iptables -t nat -D PREROUTING -p tcp -s 192.168.1.0/24 -m multiport --dport 80,443 -j DROP
+done
+EOF
+&#39;
+chmod a+x /tmp/internetOn.sh
+
+
+echo &quot;00,01 12 * * * root /tmp/googleOn.sh&quot; &gt; /tmp/cron.d/googleOnNoon
+echo &quot;00,01 19 * * * root /tmp/googleOn.sh&quot; &gt; /tmp/cron.d/googleOnNight
+echo &quot;00 13 * * * root /tmp/googleOff.sh&quot; &gt; /tmp/cron.d/googleOffNoon
+echo &quot;00 20 * * * root /tmp/googleOff.sh&quot; &gt; /tmp/cron.d/googleOffNight
+</pre></div>
+
+
+<h2>IPv6</h2>
+<p>I've noticed Google using IPv6 around the end of year 2013. The ip6tables is not available for all versions of DD-WRT, but thanksfulness, for now, if you use OpenDNS, all DNS translation will happen in IPv4.</p>
+<h2>Problems I faced and inconvenience chose to live with</h2>
+<ul>
+<li><strong>Google Search and Services</strong>: I found out that Google no longer has the plain text search page. That is, <code>www.google.com</code> get redirected to <code>https://www.google.com</code>. To make things worse, all Google services IP addresses change. So it is not possible to block SSL connection solely based on IP addresses even with <code>iptables</code>. So I added <em>74.125.239.0/24</em> and <em>74.125.224.240/29</em> in the above code for this reason. This blocks everything between 74.125.239.0 to 74.125.239.255 and 74.125.224.0 to 74.125.224.7 and basically covers all Google services. So consequently, if I have not been clear, you will not be able to access any of Google Services while Google Search is blocked. Also if a website makes requests a javascript file from Google over SSL, the page will load forever on a web browser without rendering at all. This is because a web browser hangs when a request for a javascript file is not responded. Sometimes turning off javascript helps, sometimes it doesn't. So I chose to make 12-1pm and 7-8pm the most valuable time of my day, forcing myself to get things done when I feel most lazy.</li>
+<li><strong>Google AppEngine</strong>: Another problem I encountered with blocked Google was deploying a Google AppEngine Service. It was keep trying to authenticate via https://www.google.com and if I block even one of addresses that begin with 74.125.224.24X, it would throw an error. <a href="https://developers.google.com/appengine/docs/python/tools/uploadinganapp#oauth">Oauth2</a> came to my rescue and it also saved me from typing password every time. </li>
+<li>
+<p>It is not possible to block Google Image Search while using Google (text) Search. The first ~30 search results are cached on <code>www.google.com</code> and it will be loaded without making any HTTP requests. Subsequent search results are looked up with these addresses:</p>
+<p>encrypted-tbn0.gstatic.com encrypted-tbn1.gstatic.com encrypted-tbn2.gstatic.com encrypted-tbn3.gstatic.com</p>
+</li>
+<li>
+<p>It is not possible to block just search (text, image). If you use even one Google service (with exception to Gmail), Google Search will be redirected to that IP address, and your Google Image Search will be open again. </p>
+</li>
+<li>In summary, you get either all of Google or none of Google. Hence the solution I posted above.</li>
+</ul>
+<h2>Bing Search in the time of desperation</h2>
+<p>Let me warn you, from my test of <a href="bing.com">Bing</a>, it was not even comparable to Google for search results. Any article that praises Bing at this moment down right goes as 'Microsoft-funded advertisement' in my book. You can compare the results yourself if your like with <a href="http://www.bing-vs-google.com/">this website</a>. But they do have plaintext search which I can filter. I just add the following URL to be blocked and I can have image-free search experience on Bing.</p>
+<div class="highlight"><pre><span></span>mm.bing.net
+explicit.bing.net
+</pre></div>
+
+
+<h2>Tools and Advice on Debugging</h2>
+<ul>
+<li>If you want to do the test of how easily loopholes are created, do it around 2AM, because IP address resolutions by Google server seem to be flexible around this time. But for other SSL connections, you could use <a href="https://addons.mozilla.org/en-US/firefox/addon/showip/?src=search">ShowIP</a> Firefox add-on to help you find the IP address.</li>
+<li>If the application you use is not a web browser, you might have to do a little packet sniffing with <a href="wireshark.com">wireshark</a> to find out the IP address. </li>
+</ul>
+<h2>Turning off internet at predetermined time</h2>
+<p>I enjoy the quietness of midnights so I get tempted to work on my computer late. In order to prevent this, I block all internet access from the devices I use.</p>
+<div class="highlight"><pre><span></span>/bin/sh -c &#39;cat &gt; /tmp/internetOff.sh &lt;&lt;EOF
+#!/bin/sh
+iptables -t nat -I PREROUTING -s 192.168.77.1/26 -j DROP
+EOF
+&#39;
+chmod a+x /tmp/internetOff.sh
+
+
+/bin/sh -c &#39;cat &gt; /tmp/internetOn.sh &lt;&lt;EOF
+#!/bin/sh
+iptables -t nat -D PREROUTING -s 192.168.77.1/26 -j DROP
+done
+EOF
+&#39;
+chmod a+x /tmp/internetOn.sh
+
+
+echo &quot;00 00 * * * root /tmp/internetOff.sh&quot; &gt; /tmp/cron.d/internetOff
+echo &quot;00 07 * * * root /tmp/internetOn.sh&quot; &gt; /tmp/cron.d/internetOn
+</pre></div>
+
+
+<p>note that the mask is <code>/26</code> instead of <code>/25</code>. This is allow some computers to not fall under the restriction, such as my server which does the off-site backup.</p>
+<h2>Restarting Router</h2>
+<p>I no longer need these code, but depending on your version of DD-WRT, your <code>iptables</code> may not work properly and you may need to reboot in order for the router to refresh some settings.</p>
+<div class="highlight"><pre><span></span>echo &quot;startservice run_rc_shutdown; /sbin/reboot&quot; &gt; /tmp/restart_router
+chmod a+x /tmp/restart_router
+echo &quot;00 12,19 * * * root /tmp/restart_router&quot; &gt; /tmp/cron.d/restartrouter
+</pre></div>
+
+
+<h2>Conclusion</h2>
+<p>Thanks for reading this article and I hope it was helpful to your endeavors. If you have found a way to bypass this setup, please do not post it on comment section without a good remedy for the bypass. Also please support the developers if you end up using their software! Thanks!</p>
+<p>If you found this guide really difficult to follow, it is not your fault. This is a difficult setup indeed. If you need a professional consulting, email me.</p>
+<h4>Other Software that people recommend, but I have not tried</h4>
+<p>Windows Live Family Safety  - remote controlled access restriction
+<a href="http://code.google.com/p/droidwall/">DroidWall</a> - App (GUI) for Android iptables. I have no smartphone yet, but this probably needs to be used with some parental control app for app restriction.</p>
+	<hr />
+      </div>
+
+      <div class="span8 offset2">
+          <h3>Related Posts</h3>
+            <ul>
+                <li><a href="https://www.4thinker.com/better-without-porn.html">Porn is like cigarettes/cocaine to your psychological health.</a></li>
+                <li><a href="https://www.4thinker.com/truecrypt.html">Trucrypt</a></li>
+                <li><a href="https://www.4thinker.com/openvpn.html">OpenVPN Notes</a></li>
+            </ul>
+      </div>
+
+    </div>
+
+      <h3>Comments</h3>
+    
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'forethinker'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+        </div>
+        
+        
+    </div>     </div> </div>
+
+<!--footer-->
+<div class="container">
+  <div class="well" style="background-color: #E9EFF6">
+    <div id="blog-footer">
+      <div class="row-fluid">
+	<div class="social span4" align="center" id="socialist">
+	  <ul class="nav nav-list">
+	    <li class="nav-header">
+	      Social
+	    </li>
+	    <li><a href="http://stackoverflow.com/users/986067/forethinker"><i class="icon-Stackoverflow" style="color: #1f334b"></i>Stackoverflow</a></li>
+	    <li><a href="http://github.com/forethinker"><i class="icon-Github" style="color: #1f334b"></i>Github</a></li>
+            <li>
+            <a href="mailto:help4thinker@gmail.com"><i class="icon-envelope" style="color: #1f334b" ></i> E-mail</a>
+            </li>
+            <li>
+            <a href="http://www.4thinker.com/pages/aboutme.html"><i class="icon-thumbs-up" style="color: #1f334b" ></i> Me</a>
+            </li>
+            <li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </li>
+
+	  </ul>
+	</div>
+        <div class="links span4" align="center">
+          <ul class="nav nav-list">
+            <li class="nav-header"> 
+              Links
+            </li>
+            
+            <li><a href="http://mbsy.co/7sh6q">Codeschool </a></li>
+            <li><a href="http://coursera.org/">Cousera </a></li>
+            <li><a href="http://howtogeek.com/">How to Geek</a></li>
+            <li><a href="http://lifehacker.com/">Lifehacker</a></li>
+            <li><a href="http://thegeekstuff.com/">The Geek Stuff</a></li>
+            <li><a href="http://vimcasts.org/">Vim Casts</a></li>
+          </ul>
+        </div>
+	<div class="site-nav span4" align="center">
+          <ul class="nav nav-list" id="site-links">
+            <li class="nav-header"> 
+              Site
+            </li>
+            <li><a href="https://www.4thinker.com"><i class="icon-home" style="color: #1f334b">
+                </i>Home</a></li>
+            <li><a href="https://www.4thinker.com/archives.html"><i class="icon-list" style="color: #1f334b">
+                </i>Archives</a></li>
+	    <li><a href="https://www.4thinker.com/tags.html"><i class="icon-tags" style="color: #1f334b">
+                </i>Tags</a></li>
+	    
+	    <li> <a href="https://www.4thinker.com/feeds/all.rss.xml" rel="alternate">
+                <i class="icon-rss" style="color: #1f334b"></i>
+                RSS Feed</a></li>
+            <li><a href="https://www.4thinker.com/feeds/all.atom.xml" rel="alternate">
+                <i class="icon-rss-sign" style="color: #1f334b"></i>
+                Atom Feed</a></li>
+	  </ul>
+
+        </div>
+
+      </div> <!--end of fluid row-->
+    </div> <!--end of blog-footer-->
+    <hr />
+    <p style="text-align: center; margin: 0.1em;"><a href="https://www.4thinker.com">Forethinker</a>
+    &copy; <a href="pages/aboutme.html">forethinker</a>
+
+    <div class="pull-right" style="font-size: 8px">
+    Powered by <a href="http://github.com/getpelican/pelican">Pelican</a> and
+    <a href="https://twitter.github.com/bootstrap">Twitter Bootstrap</a> with <a href="https://github.com/theanalyst/built-texts">built-texts theme</a>. 
+    </div>
+  </div> <!--end of well -->
+</div> <!--end of container -->
+
+<!--/footer-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script>
+
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-53043426-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>

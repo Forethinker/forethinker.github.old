@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Forethinker - dev</title><link href="https://www.4thinker.com/" rel="alternate"></link><link href="https://www.4thinker.com/feeds/dev.atom.xml" rel="self"></link><id>https://www.4thinker.com/</id><updated>2014-10-17T00:00:00-07:00</updated><entry><title>Using git for hg repository.</title><link href="https://www.4thinker.com/hg-to-git.html" rel="alternate"></link><published>2014-10-17T00:00:00-07:00</published><updated>2014-10-17T00:00:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-10-17:/hg-to-git.html</id><summary type="html">&lt;p&gt;I recently had to work with a project that is in mercurial, but I know that git is more powerful and is more widely used. So I looked around and there is a way to use &lt;a href="http://stackoverflow.com/questions/883452/git-interoperability-with-a-mercurial-repository"&gt;git on hg repository.&lt;/a&gt;. Sorry if I am late to the party, but I am so happy. Because seriously, when there are two alternatives, &lt;a href="http://blogs.atlassian.com/2012/03/git-vs-mercurial-why-git/"&gt;I would like to stick to the best one. wink wink.&lt;/a&gt; If you must use mercurial. There is an excellent article written by &lt;a href="http://jamie-wong.com/2012/07/11/my-mercurial-setup-and-workflow-at-khan-academy/"&gt;Jamie Wong about setting up mercurial like pro&lt;/a&gt;, but make sure you check out &lt;a href="https://github.com/ludovicchabant/vim-lawrencium"&gt;lawrencium&lt;/a&gt; instead of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I recently had to work with a project that is in mercurial, but I know that git is more powerful and is more widely used. So I looked around and there is a way to use &lt;a href="http://stackoverflow.com/questions/883452/git-interoperability-with-a-mercurial-repository"&gt;git on hg repository.&lt;/a&gt;. Sorry if I am late to the party, but I am so happy. Because seriously, when there are two alternatives, &lt;a href="http://blogs.atlassian.com/2012/03/git-vs-mercurial-why-git/"&gt;I would like to stick to the best one. wink wink.&lt;/a&gt; If you must use mercurial. There is an excellent article written by &lt;a href="http://jamie-wong.com/2012/07/11/my-mercurial-setup-and-workflow-at-khan-academy/"&gt;Jamie Wong about setting up mercurial like pro&lt;/a&gt;, but make sure you check out &lt;a href="https://github.com/ludovicchabant/vim-lawrencium"&gt;lawrencium&lt;/a&gt; instead of Jamies' &lt;a href="https://github.com/jlfwong/vim-mercenary"&gt;mercenary vim plugin&lt;/a&gt;, because Jamie moved on to git too! Nice move. :). &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://jhw.dreamwidth.org/1868.html"&gt;But seriously please keep using mercurial&lt;/a&gt;, git folks need motivation sometimes. &lt;/p&gt;
+&lt;p&gt;Here is the &lt;a href="https://github.com/felipec/git-remote-hg/blob/master/README.asciidoc"&gt;README&lt;/a&gt; for &lt;code&gt;git-remote-hg&lt;/code&gt;. I do not know if hg-git is better, but &lt;code&gt;git-remote-hg&lt;/code&gt; works fine for me. By the way, don't quote the URL like shown in the README page.&lt;/p&gt;
+&lt;p&gt;And don't forget running &lt;code&gt;git gc --aggressive&lt;/code&gt;&lt;/p&gt;</content><category term="versioning"></category><category term="git"></category><category term="hg"></category></entry><entry><title>My Pocketbook for Python libraries</title><link href="https://www.4thinker.com/python-libraries.html" rel="alternate"></link><published>2014-04-29T11:06:00-07:00</published><updated>2014-04-29T11:06:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-04-29:/python-libraries.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;gevent: networking library for event loop and execution&lt;/li&gt;
+&lt;li&gt;gevent: monkey. The gevent library would uses standard modules, which are sequential. &lt;a href="http://www.gevent.org/gevent.monkey.html"&gt;monkey&lt;/a&gt; fixes this by patching. (gevent.monkey.patch_all())&lt;/li&gt;
+&lt;li&gt;greenlet:&lt;/li&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;gevent: networking library for event loop and execution&lt;/li&gt;
+&lt;li&gt;gevent: monkey. The gevent library would uses standard modules, which are sequential. &lt;a href="http://www.gevent.org/gevent.monkey.html"&gt;monkey&lt;/a&gt; fixes this by patching. (gevent.monkey.patch_all())&lt;/li&gt;
+&lt;li&gt;greenlet:&lt;/li&gt;
+&lt;/ul&gt;</content><category term="python"></category></entry><entry><title>Learning Latex</title><link href="https://www.4thinker.com/latex.html" rel="alternate"></link><published>2014-03-17T12:53:00-07:00</published><updated>2014-03-17T12:53:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-03-17:/latex.html</id><summary type="html">&lt;p&gt;LaTeX is a markup language to put diagrams, mathematical equations, and edit documents in a programmatic way. If you are familiar with markdown, LaTex is markdown on steroids and viagra. Latex is safe for adults.&lt;/p&gt;
+&lt;p&gt;If you are in the academia (i.e. Ph.D, Post-Doctocral), you really cannot live without latex. Unfortunately, no body actually teach you to use Latex, you pick it up as you go. But unlike some simple markup language, markdown, the syntax is not something you can pick up in a day (okay, if you have, good for you). Still, It is just a such …&lt;/p&gt;</summary><content type="html">&lt;p&gt;LaTeX is a markup language to put diagrams, mathematical equations, and edit documents in a programmatic way. If you are familiar with markdown, LaTex is markdown on steroids and viagra. Latex is safe for adults.&lt;/p&gt;
+&lt;p&gt;If you are in the academia (i.e. Ph.D, Post-Doctocral), you really cannot live without latex. Unfortunately, no body actually teach you to use Latex, you pick it up as you go. But unlike some simple markup language, markdown, the syntax is not something you can pick up in a day (okay, if you have, good for you). Still, It is just a such a cool tool that it difficult to ignore even if you don't use it often. So I am going to recommend ways to facilitate the learning process.&lt;/p&gt;
+&lt;p&gt;My motivation to learn Latex came from taking notes for Algorithms and Database (relational algebra). I learn better by taking notes and I got frustrated because I could not take good notes for those topics. My blog now uses &lt;a href="http://haoyan.me/posts/2013/08/how-to-use-latex-in-pelican/"&gt;MathJax&lt;/a&gt; to render latex now. I have written &lt;a href="web/latex-with-mathjax.html"&gt;another article about that.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The best place to start learning is not a wiki page or tutorial (gasp!). You will fall a sleep before you write your first line in Latex. Lo and Behold &lt;a href="http://math.stackexchange.com/"&gt;Mathematics StackExchange page&lt;/a&gt;! You've got everything you need: a simple ediotr (cannot be simpler), examples, topics that interest you (hopefully). Try to write some equations that put you to sleep back in high school to start.  You can click "Improve this answer" or "Edit" to see the "source code" in Latex.&lt;/p&gt;
+&lt;p&gt;When you have basics down but can't find example for things that you want to render in Latex, you are encouraged to look for reference online. Now when you look at a wiki page or tutorials, you can skim over details you don't need.&lt;/p&gt;
+&lt;p&gt;When you are no longer afraid of the syntax and feel its usefulness, you can go ahead and go with more full-featured editor. My editor of choice is &lt;a href="http://www.xm1math.net/texmaker/"&gt;TexMaker&lt;/a&gt;. Watch at &lt;a href="http://www.youtube.com/user/mrskrummel"&gt;Mrs. Krummel's youtube videos&lt;/a&gt; to help you get started.&lt;/p&gt;
+&lt;p&gt;The next step would be to going to &lt;a href="http://tex.stackexchange.com/"&gt;Tex StackExchange page&lt;/a&gt; to ask questions and pick up some obscure features that suit your needs.&lt;/p&gt;
+&lt;h2&gt;Notes&lt;/h2&gt;
+&lt;h4&gt;Preamble&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;\documentclass&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;10pt&lt;span class="nb"&gt;}{&lt;/span&gt;article&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;amasmath&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\title&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;The first &lt;span class="k"&gt;\LateX&lt;/span&gt;&lt;span class="nb"&gt;{}&lt;/span&gt; Document&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\author&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;forethinker&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\maketitle&lt;/span&gt;
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Basic syntax&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;$ .. $&lt;/code&gt; for inline equation
+&lt;code&gt;$$ .. $$&lt;/code&gt; for centered, on-its-own-line equation. 
+Double blank line for a line break - same indentation as the previous sentence.
+&lt;code&gt;\\&lt;/code&gt;: soft break line - no indentation (continued from the previous paragraph) &lt;/p&gt;
+&lt;h4&gt;Basic math notations&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;^&lt;/code&gt;: exponent
+&lt;code&gt;_&lt;/code&gt;: subscript
+&lt;code&gt;\pi&lt;/code&gt;, &lt;code&gt;\alpha&lt;/code&gt;, &lt;code&gt;\sin(x)&lt;/code&gt;, &lt;code&gt;\log{x}&lt;/code&gt;, &lt;code&gt;\ln{x}&lt;/code&gt;, &lt;code&gt;\sqrt{2}&lt;/code&gt;, &lt;code&gt;\sqrt[3]{2}&lt;/code&gt;
+&lt;code&gt;\frac{2}{3}&lt;/code&gt;: divide sign between two equations
+&lt;code&gt;\displacesytle{}&lt;/code&gt;: make the equation look bigger by default
+&lt;code&gt;\{\$\}&lt;/code&gt;
+&lt;code&gt;\left{XXX\right}&lt;/code&gt;: put braces around XXX with matching height
+&lt;code&gt;\left.XXX\right}&lt;/code&gt;: put nothing on one side
+&lt;code&gt;\left{XXX\right.}&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;imports&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;\usepackage&lt;/code&gt;
+amsmath
+amssymb
+graphic&lt;/p&gt;
+&lt;h4&gt;a quick reference for mathematical notations&lt;/h4&gt;
+&lt;p&gt;&lt;a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics#Multiplication_of_two_numbers"&gt;WikiBooks LaTeX/Mathematcis&lt;/a&gt;&lt;/p&gt;</content><category term="latex"></category></entry><entry><title>Time synchronization</title><link href="https://www.4thinker.com/time.html" rel="alternate"></link><published>2014-03-12T02:35:00-07:00</published><updated>2014-03-12T02:35:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-03-12:/time.html</id><summary type="html">&lt;p&gt;All Operating Systems have time synchronization, because computer clock is not very reliable. Unfortunately the time jumps when the synchronization happens, and with the advent of the age of the Internet, this is not a good thing for most time critical operations. Goolge implemented something called &lt;a href="http://googleblog.blogspot.com/2011/09/time-technology-and-leaping-seconds.html"&gt;leap smear&lt;/a&gt; which slows down the time on the computer to count for the leap second (or extra second) that occurs due to fluctuation in Earth's rotation speed. This got me thinking, what if Google open-sourced this technology so that all the major data centers (and even personal computer) use this technology to correct …&lt;/p&gt;</summary><content type="html">&lt;p&gt;All Operating Systems have time synchronization, because computer clock is not very reliable. Unfortunately the time jumps when the synchronization happens, and with the advent of the age of the Internet, this is not a good thing for most time critical operations. Goolge implemented something called &lt;a href="http://googleblog.blogspot.com/2011/09/time-technology-and-leaping-seconds.html"&gt;leap smear&lt;/a&gt; which slows down the time on the computer to count for the leap second (or extra second) that occurs due to fluctuation in Earth's rotation speed. This got me thinking, what if Google open-sourced this technology so that all the major data centers (and even personal computer) use this technology to correct their time? Not just leap year, but to correct like 5 seconds difference in time. It will just slow down the system clock until it is in sync with the actual clock. This way, some time critical operations could continue without worrying about sequence of operations being out of place. Just a wish... but this probably needs to happen soon before our government builds &lt;a href="http://en.wikipedia.org/wiki/Skynet_(Terminator)"&gt;SkyNet&lt;/a&gt;.&lt;/p&gt;</content><category term="rant"></category></entry><entry><title>Things I had to lookup while using Python</title><link href="https://www.4thinker.com/python-fixes.html" rel="alternate"></link><published>2014-03-05T09:01:00-08:00</published><updated>2014-03-05T09:01:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-03-05:/python-fixes.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;problem:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;bson.objectid&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;ObjectId&lt;/span&gt;
+&lt;span class="n"&gt;bson&lt;/span&gt; &lt;span class="n"&gt;error&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="ne"&gt;ImportError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt; &lt;span class="n"&gt;module&lt;/span&gt; &lt;span class="n"&gt;named&lt;/span&gt; &lt;span class="n"&gt;objectid&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;solution:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip uninstall bson
+pip install pymongo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;problem:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;     &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;bson.objectid&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;ObjectId&lt;/span&gt;
+&lt;span class="n"&gt;bson&lt;/span&gt; &lt;span class="n"&gt;error&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="ne"&gt;ImportError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt; &lt;span class="n"&gt;module&lt;/span&gt; &lt;span class="n"&gt;named&lt;/span&gt; &lt;span class="n"&gt;objectid&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;solution:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip uninstall bson
+pip install pymongo
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="troubleshoot"></category></entry><entry><title>My messy, incomplete programming languages comparison chart</title><link href="https://www.4thinker.com/language-comparisons.html" rel="alternate"></link><published>2014-02-16T05:02:00-08:00</published><updated>2014-02-16T05:02:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-02-16:/language-comparisons.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;feature&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;PHP&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Bash&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Javascript&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Perl&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Java&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="c1"&gt;#                       |&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;lanauge&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dyanamic&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dynamic&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dynamic&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dynamic&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;semi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;colon&lt;/span&gt; &lt;span class="p"&gt;(;)&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Only&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;concanated&lt;/span&gt; &lt;span class="n"&gt;stmts&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Only&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;concanated&lt;/span&gt; &lt;span class="n"&gt;stmts&lt;/span&gt;    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;yes&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;yes&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;yes&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;comment&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="sr"&gt;/ /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/ #                  | #                          | #                        | &amp;lt;-- // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/ --&amp;gt;            | =begin cmt  =end cmt  =cut | // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/              | // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/               | // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*/&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;separator&lt;/span&gt; &lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;str&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitespace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;\&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;\&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;\&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;\&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitespace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitespace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitepsace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;None&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;undefined&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;             &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Undef&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;variable&lt;/span&gt; &lt;span class="n"&gt;declartion&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nv"&gt;$varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;my&lt;/span&gt; &lt;span class="nv"&gt;$varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;              &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;scope&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;def&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;cascaded&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;increment&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt; &lt;span class="n"&gt;within&lt;/span&gt; &lt;span class="p"&gt;(())&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;concatenataion&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;implied&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;implied&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                           &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;print&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;echo …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;feature&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;PHP&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Bash&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Javascript&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Perl&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Java&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="c1"&gt;#                       |&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;lanauge&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dyanamic&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dynamic&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dynamic&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dynamic&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;semi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;colon&lt;/span&gt; &lt;span class="p"&gt;(;)&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Only&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;concanated&lt;/span&gt; &lt;span class="n"&gt;stmts&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Only&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;concanated&lt;/span&gt; &lt;span class="n"&gt;stmts&lt;/span&gt;    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;yes&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;yes&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;yes&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;comment&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="sr"&gt;/ /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/ #                  | #                          | #                        | &amp;lt;-- // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/ --&amp;gt;            | =begin cmt  =end cmt  =cut | // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/              | // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="sr"&gt;/               | // /&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*/&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;separator&lt;/span&gt; &lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;str&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitespace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;\&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;\&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;\&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;\&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitespace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitespace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;whitepsace&lt;/span&gt; &lt;span class="n"&gt;agnostic&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;None&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;undefined&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;             &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Undef&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;null&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;variable&lt;/span&gt; &lt;span class="n"&gt;declartion&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nv"&gt;$varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;my&lt;/span&gt; &lt;span class="nv"&gt;$varName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;              &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;scope&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;def&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;cascaded&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;increment&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt; &lt;span class="n"&gt;within&lt;/span&gt; &lt;span class="p"&gt;(())&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;concatenataion&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;implied&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;implied&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                           &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;print&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;echo&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;echo&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;console&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;log&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;print&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;println&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Console&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;WriteLine&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;pass&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nb"&gt;goto&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;pass&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;continue&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;next&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;continue&lt;/span&gt;              &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;continue&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;continue&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;const&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;const&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;readonly&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;declare&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;none&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;const&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;use&lt;/span&gt; &lt;span class="nn"&gt;Readonly&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;const&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;final&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;const&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;heredoc&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;_Tok&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;_TOK&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&amp;quot;                      | uses \ within &amp;quot;&amp;quot; instead    | &amp;lt;&amp;lt;_Tok                     | none                  | none                   | none                     |&lt;/span&gt;
+&lt;span class="s"&gt;| heredoc close           | _Tok                       | _TOK                       | &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;array&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;\n&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;_Tok&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;none&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;none&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;none&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;heredorc&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nv"&gt;$var&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;$var&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;mem&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]}&lt;/span&gt;        &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nv"&gt;%s&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;none&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;none&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;none&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;none&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="nb"&gt;length&lt;/span&gt;           &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;strlen&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;len&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;length&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nb"&gt;scalar&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;length&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;length&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;length&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;function&lt;/span&gt; &lt;span class="n"&gt;reference&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;funcName&lt;/span&gt;           &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;function&lt;/span&gt; &lt;span class="n"&gt;delcation&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;type&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="n"&gt;function&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="p"&gt;(){}&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;def&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;              &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="n"&gt;vN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;sub&lt;/span&gt; &lt;span class="nf"&gt;fN&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;fN&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;fN&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dataType&lt;/span&gt; &lt;span class="n"&gt;fN&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;global&lt;/span&gt; &lt;span class="n"&gt;scope&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;global&lt;/span&gt; &lt;span class="nv"&gt;$var&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;export&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;             &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;global&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;           &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;implicitly&lt;/span&gt; &lt;span class="n"&gt;accessible&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;outside&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;object&lt;/span&gt;              &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nv"&gt;$obj&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;Class&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;obj&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;Class&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;param&lt;/span&gt;&lt;span class="p"&gt;,,)&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt; &lt;span class="n"&gt;obj&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;Class&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;param&lt;/span&gt;&lt;span class="p"&gt;,)&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nv"&gt;$obj&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;Class&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;param&lt;/span&gt;&lt;span class="p"&gt;,)&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dT&lt;/span&gt; &lt;span class="n"&gt;varN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;param&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dT&lt;/span&gt; &lt;span class="n"&gt;varN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;param&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dT&lt;/span&gt; &lt;span class="n"&gt;varN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;param&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt; &lt;span class="n"&gt;declaration&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;object&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;function&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;parameters&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;package&lt;/span&gt; &lt;span class="nn"&gt;cN&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;pub&lt;/span&gt; &lt;span class="n"&gt;pN&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt; &lt;span class="n"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;pN&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;pN&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;default&lt;/span&gt; &lt;span class="n"&gt;constructor&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;__construct&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;paras&lt;/span&gt;&lt;span class="p"&gt;,,)&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;params&lt;/span&gt;&lt;span class="p"&gt;,,)&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;sub&lt;/span&gt; &lt;span class="nf"&gt;new&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;public&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;param&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;public&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;param&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;parent&lt;/span&gt; &lt;span class="n"&gt;constructor&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;parentName&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;super&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;param&lt;/span&gt;&lt;span class="p"&gt;,)&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;param&lt;/span&gt;&lt;span class="p"&gt;,)&lt;/span&gt;             &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;destructor&lt;/span&gt;              &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;__destruct&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;__del__&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;public&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;cN&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;param&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nb"&gt;delete&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;del&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt; &lt;span class="n"&gt;member&lt;/span&gt; &lt;span class="n"&gt;define&lt;/span&gt;    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;without&lt;/span&gt; &lt;span class="n"&gt;any&lt;/span&gt; &lt;span class="n"&gt;qaulifer&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;static&lt;/span&gt; &lt;span class="n"&gt;member&lt;/span&gt; &lt;span class="n"&gt;access&lt;/span&gt;    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nn"&gt;cN&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="nv"&gt;$m&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;$m&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;public&lt;/span&gt; &lt;span class="n"&gt;member&lt;/span&gt;           &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;public&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;default&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;property&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;private&lt;/span&gt; &lt;span class="n"&gt;memeber&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;private&lt;/span&gt; &lt;span class="n"&gt;mN&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;_member&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt; &lt;span class="n"&gt;property&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;none&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;private&lt;/span&gt; &lt;span class="n"&gt;mN&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;private&lt;/span&gt; &lt;span class="n"&gt;mN&lt;/span&gt;             &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;private&lt;/span&gt; &lt;span class="n"&gt;mN&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;protected&lt;/span&gt; &lt;span class="n"&gt;member&lt;/span&gt;        &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;final&lt;/span&gt; &lt;span class="n"&gt;member&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;final&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;default&lt;/span&gt; &lt;span class="nb"&gt;values&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;def&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;def&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;member&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;param&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="n"&gt;defValue&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;an&lt;/span&gt; &lt;span class="n"&gt;obj&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;__toString&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;__str__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;self&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;JSON&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;stringify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;an&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;           &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;parseInt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;member&lt;/span&gt; &lt;span class="n"&gt;access&lt;/span&gt;           &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;             &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;                           &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="n"&gt;object&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nv"&gt;$this&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="nn"&gt;self::&lt;/span&gt;&lt;span class="nv"&gt;$m&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;static&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;casting&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="nv"&gt;$var&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;str&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;toString&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;immutable&lt;/span&gt;        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;datatype&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;typeof&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;type&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;typeof&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;parent&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nn"&gt;parent::&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;super&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ClassName&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;self&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;???&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;vs&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;???&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;literal&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;evaluate&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;???&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;none&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;various&lt;/span&gt; &lt;span class="n"&gt;size&lt;/span&gt; &lt;span class="n"&gt;arguments&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;def&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;unnamed&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;named&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nv"&gt;$&lt;/span&gt;&lt;span class="err"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;extend&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dT&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;param&lt;/span&gt; &lt;span class="n"&gt;dT&lt;/span&gt;&lt;span class="o"&gt;[]&lt;/span&gt; &lt;span class="n"&gt;varName&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;enhanced&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;loop&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dT&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;foreach&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dT&lt;/span&gt; &lt;span class="n"&gt;e&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;loop&lt;/span&gt;              &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;???&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;loop&lt;/span&gt; &lt;span class="n"&gt;condition:&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;loop&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;cond&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;              &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;member&lt;/span&gt; &lt;span class="n"&gt;loop&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;foreach&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$arry&lt;/span&gt; &lt;span class="n"&gt;as&lt;/span&gt; &lt;span class="nv"&gt;$k&lt;/span&gt;&lt;span class="o"&gt;=&amp;gt;&lt;/span&gt;&lt;span class="nv"&gt;$v&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;y:&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;case&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="nv"&gt;$var&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt;  &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;esac&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;break&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;;;&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;modify&lt;/span&gt; &lt;span class="n"&gt;member&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;loop&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nv"&gt;$value&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;make&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;copy&lt;/span&gt; &lt;span class="n"&gt;with&lt;/span&gt; &lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;inheritance&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;function&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;???&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;cN&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;proptotype&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;funt&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;superclass&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;base&lt;/span&gt; &lt;span class="n"&gt;cast&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dynamic_cast&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;pN&lt;/span&gt; &lt;span class="o"&gt;*&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;O&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="n"&gt;as&lt;/span&gt; &lt;span class="n"&gt;Sub&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;instanceof&lt;/span&gt;              &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="n"&gt;dynamic_cast&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pVar&lt;/span&gt; &lt;span class="n"&gt;instanceof&lt;/span&gt; &lt;span class="n"&gt;Sub&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pVar&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;Sub&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;interfaces&lt;/span&gt;              &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;abstract&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;implicit&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;has&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;abstract&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;abstract&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;abstract&lt;/span&gt; &lt;span class="n"&gt;method&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;by&lt;/span&gt; &lt;span class="n"&gt;default&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;all&lt;/span&gt; &lt;span class="n"&gt;virtual&lt;/span&gt;    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;virtual&lt;/span&gt; &lt;span class="n"&gt;fN&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;abstract&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;abstract&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nb"&gt;prototype&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;print&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nb"&gt;sprintf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;%02s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;%var&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;array&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nv"&gt;$N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;(,,);&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[,,],&lt;/span&gt; &lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;list&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt; &lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[,,];&lt;/span&gt;               &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nv"&gt;@arrName&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;();&lt;/span&gt;             &lt;span class="o"&gt;|&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;array&lt;/span&gt; &lt;span class="n"&gt;append&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="nb"&gt;push&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;                     &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;array&lt;/span&gt; &lt;span class="n"&gt;extend&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;extend&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;concat&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;array&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;array&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;DT&lt;/span&gt;&lt;span class="o"&gt;[][]&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Negative&lt;/span&gt; &lt;span class="nb"&gt;index&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                         &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Yes&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;array&lt;/span&gt;             &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;?&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;arrName&lt;/span&gt;            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;?&lt;/span&gt;                           &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;@arrName&amp;quot;&lt;/span&gt;           &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;hash&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;?&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;key:value&lt;/span&gt;&lt;span class="p"&gt;,}&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;my&lt;/span&gt; &lt;span class="nv"&gt;%hN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;key&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;val&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;equal&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;=~&lt;/span&gt; &lt;span class="o"&gt;!~&lt;/span&gt;                      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;regex&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;                             &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sr"&gt;/regex/&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;           &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;callback&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt;                            &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="n"&gt;st&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt; &lt;span class="n"&gt;functions&lt;/span&gt;      &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="n"&gt;st&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt; &lt;span class="n"&gt;functions&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="n"&gt;st&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt; &lt;span class="n"&gt;functions&lt;/span&gt;        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;type&lt;/span&gt; &lt;span class="n"&gt;functors&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;interfaces&lt;/span&gt;             &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;delegates&lt;/span&gt;                &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;feature&lt;/span&gt;                 &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;PHP&lt;/span&gt;                        &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Bash&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Javascript&lt;/span&gt;                  &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Perl&lt;/span&gt;                       &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;Java&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="c1"&gt;#                       |&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I am learning too many languages. Sometimes I just need a quick lookup table to refresh my memory instead of searching through text for a simple syntax of the language.&lt;/p&gt;
+&lt;!--vim: set nowrap:--&gt;</content><category term="programming"></category></entry><entry><title>Unix Tar</title><link href="https://www.4thinker.com/unix-tar.html" rel="alternate"></link><published>2014-02-14T08:24:00-08:00</published><updated>2014-02-14T08:24:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2014-02-14:/unix-tar.html</id><summary type="html">&lt;p&gt;Like &lt;code&gt;ln&lt;/code&gt;, the file that gets creates come first. This for me is confusing. I expect all linux to follow &lt;src&gt; &lt;target&gt; pattern, but free-rider can't be a chooser, I guess. &lt;/p&gt;
+&lt;p&gt;Another thing that bugs about &lt;code&gt;tar&lt;/code&gt; utility is that you have to specify the extension and tar does not do it for you automatically. This probably probably has wasted a lot of time over decades.&lt;/p&gt;
+&lt;p&gt;using &lt;code&gt;.&lt;/code&gt; as &lt;dst&gt; will unpack files to current directory when uncompressed. This is kind of a naughty behavior if you are distributing your files to public, and especially so if there are lots of files. If you …&lt;/dst&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Like &lt;code&gt;ln&lt;/code&gt;, the file that gets creates come first. This for me is confusing. I expect all linux to follow &lt;src&gt; &lt;target&gt; pattern, but free-rider can't be a chooser, I guess. &lt;/p&gt;
+&lt;p&gt;Another thing that bugs about &lt;code&gt;tar&lt;/code&gt; utility is that you have to specify the extension and tar does not do it for you automatically. This probably probably has wasted a lot of time over decades.&lt;/p&gt;
+&lt;p&gt;using &lt;code&gt;.&lt;/code&gt; as &lt;dst&gt; will unpack files to current directory when uncompressed. This is kind of a naughty behavior if you are distributing your files to public, and especially so if there are lots of files. If you don't include the top directory in a tarball but want to specify some other path, &lt;code&gt;-C&lt;/code&gt; does the job.&lt;/p&gt;</content></entry><entry><title>vSphere Client Quirks</title><link href="https://www.4thinker.com/vsphere-quirks.html" rel="alternate"></link><published>2013-12-13T06:56:00-08:00</published><updated>2013-12-13T06:56:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-12-13:/vsphere-quirks.html</id><summary type="html">&lt;p&gt;vSphere Client is a client program to monitor and configure VMWare cluster. The configuration options are significantly lacking compared to VMWare Station (Paid) or VMWare Player (Free), a software for the local virtualization. I cannot comment on all features, but I will list some that I thought were lacking&lt;/p&gt;
+&lt;h2&gt;VMWare Tools&lt;/h2&gt;
+&lt;p&gt;VMWare Tool allows a easier VM shutdown, directory/filesystem sharing, clipboard sharing, and much more. VMWare tool installation is a breeze on Station and Player. I had to do manual installation with vSphere.&lt;/p&gt;
+&lt;h2&gt;Clipboard Sharing (fixed)&lt;/h2&gt;
+&lt;p&gt;I had to go to Options-&amp;gt;Advanced-&amp;gt;Configuration Parameter and add following options …&lt;/p&gt;</summary><content type="html">&lt;p&gt;vSphere Client is a client program to monitor and configure VMWare cluster. The configuration options are significantly lacking compared to VMWare Station (Paid) or VMWare Player (Free), a software for the local virtualization. I cannot comment on all features, but I will list some that I thought were lacking&lt;/p&gt;
+&lt;h2&gt;VMWare Tools&lt;/h2&gt;
+&lt;p&gt;VMWare Tool allows a easier VM shutdown, directory/filesystem sharing, clipboard sharing, and much more. VMWare tool installation is a breeze on Station and Player. I had to do manual installation with vSphere.&lt;/p&gt;
+&lt;h2&gt;Clipboard Sharing (fixed)&lt;/h2&gt;
+&lt;p&gt;I had to go to Options-&amp;gt;Advanced-&amp;gt;Configuration Parameter and add following options in order to get clipboard sharing to work&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;isolation.tools.copy.disable false
+isolation.tools.paste.disable false
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Ctrl+Alt+Shift&lt;/h2&gt;
+&lt;p&gt;I am a power user and &lt;code&gt;ctrl+alt&lt;/code&gt; mappings in my linux setup. I immediately change the default hotkey to &lt;code&gt;ctrl+alt+shift&lt;/code&gt;. There is no way to change this in vSphere, not even in &lt;code&gt;Configuration Parameter&lt;/code&gt;. If you think I am wrong you can try putting the following lines, but it won't work.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pref.hotkey.shift = &amp;quot;true&amp;quot;    
+pref.hotkey.alt = &amp;quot;true&amp;quot;    
+pref.hotkey.control = &amp;quot;true&amp;quot;
+pref.hotkey.gui = &amp;quot;false&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The only workaround is the following: With the guest having the keyboard/mouse focus, you press Ctrl-Alt-Space, release Space (still press Ctrl-Alt), then hit the rest of the shortcut key. (e.g. F1). I am a bit frustrated but I appreciate the workaround. &lt;/p&gt;
+&lt;h2&gt;Repeated Characters (fixed)&lt;/h2&gt;
+&lt;p&gt;Because of the network delay, sometimes I got a repeated key press. This is because while I am waiting my VM to respond, VM is actually running and sees my action in a frozen state. The following assumes that my connection speed will be up to the threshold within 2 seconds.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;keyboard.typematicMinDelay = &amp;quot;2000000&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The delay is in micro seconds&lt;/p&gt;
+&lt;h2&gt;Full Screen Mode Behavior&lt;/h2&gt;
+&lt;p&gt;When you are in a full screen mode, there is no way to minimize the screen. Also it is set to "Always-on-top" mode, which gets pretty inconvenient when &lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;All these problems go away if you use &lt;code&gt;VMWare Workstation&lt;/code&gt; to view the VM on a local machine. It is a shame though, that VMWare is making money out of these features which should I think should be given freely for user-preference.  &lt;/p&gt;
+&lt;h2&gt;P.S.&lt;/h2&gt;
+&lt;p&gt;This may seem a out of space, but I found the DPI settings of Gnome to break sometimes due to VMWare's auto-resolution function that kicks in when maximizing the screen. In this case running the following command helps to fix the problem:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;gnome-settings-daemon
+&lt;/pre&gt;&lt;/div&gt;</content><category term="cloud"></category></entry><entry><title>Global Regular Expression Print</title><link href="https://www.4thinker.com/unix-grep.html" rel="alternate"></link><published>2013-12-02T08:04:00-08:00</published><updated>2013-12-02T08:04:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-12-02:/unix-grep.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grep &amp;quot;.*\.zip$&amp;quot;
+
+find $dir -type f -name &amp;#39;*.log&amp;#39; -exec grep -o $pattern {} \;
+
+grep -r --include=&amp;quot;*.php&amp;quot; &amp;quot;public auction&amp;quot; ./
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;-i  Case insensitive match.
+-c  Count of matches; suppressing normal output. One line per file match.
+-o  Show only the part of a matching line that matches.
+-v  not
+-e or&lt;/p&gt;
+&lt;p&gt;-a processes binary file.
+-f read the matches from a file.
+-o show only the matched portion.
+-z a line is terminated by null byte instead of a new line character.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;grep -E&lt;/code&gt; extends the functionality of grep, allowing the usage of ?, +, {, |, (, and ) wihtout having to have a blackslash in front …&lt;/p&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grep &amp;quot;.*\.zip$&amp;quot;
+
+find $dir -type f -name &amp;#39;*.log&amp;#39; -exec grep -o $pattern {} \;
+
+grep -r --include=&amp;quot;*.php&amp;quot; &amp;quot;public auction&amp;quot; ./
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;-i  Case insensitive match.
+-c  Count of matches; suppressing normal output. One line per file match.
+-o  Show only the part of a matching line that matches.
+-v  not
+-e or&lt;/p&gt;
+&lt;p&gt;-a processes binary file.
+-f read the matches from a file.
+-o show only the matched portion.
+-z a line is terminated by null byte instead of a new line character.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;grep -E&lt;/code&gt; extends the functionality of grep, allowing the usage of ?, +, {, |, (, and ) wihtout having to have a blackslash in front of them.
+&lt;code&gt;grep -F&lt;/code&gt; is a fixed string and matches all characters literally.
+&lt;code&gt;grep -P&lt;/code&gt; uses experimental perl-mode, but &lt;code&gt;pcregrep&lt;/code&gt; is a better choice.
+egrep is deprecated and &lt;code&gt;grep -E&lt;/code&gt; is favored. fgrep is deprecated and &lt;code&gt;grep -F&lt;/code&gt; is favored. Older systems needed these binaries.&lt;/p&gt;
+&lt;h2&gt;AND&lt;/h2&gt;
+&lt;p&gt;and can be achieved in two ways, by using exteneded pattern or by chaining the two &lt;code&gt;grep&lt;/code&gt; operations together.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;grep -E &amp;#39;pattern1.*pattern2|pattern2.*pattern1&amp;#39; filename
+grep -E &amp;#39;pattern1&amp;#39; filename | grep -E &amp;#39;pattern2&amp;#39;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;basic - escaped the special characters: \?, +, {, \|, (, ), &lt;code&gt;grep -E&lt;/code&gt; does the opposite, and uses [{] to match literal {}.&lt;/p&gt;
+&lt;p&gt;[[:digit:]]
+[[:alnum:]]
+[[:alpha:]]&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.greenend.org.uk/rjk/tech/regexp.html#bracketexpression"&gt;Greenend.org&lt;/a&gt; has the best reference for grep.&lt;/p&gt;
+&lt;iframe src="https://docs.google.com/spreadsheets/d/1-Bag4xc2T4fZU4_scL631EFbUg2CKtG6MQaVJuUFkiU/pubhtml?widget=true&amp;amp;headers=false"&gt;&lt;/iframe&gt;</content></entry><entry><title>Unix Utility Find</title><link href="https://www.4thinker.com/unix-find.html" rel="alternate"></link><published>2013-12-02T06:46:00-08:00</published><updated>2013-12-02T06:46:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-12-02:/unix-find.html</id><summary type="html">&lt;h2&gt;Default&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;breadth-first-search&lt;/li&gt;
+&lt;li&gt;search starts from 24 hours ago&lt;/li&gt;
+&lt;li&gt;search the current directory&lt;/li&gt;
+&lt;li&gt;-P: never follow symlink (Default)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; match any characters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Patterns&lt;/h2&gt;
+&lt;p&gt;Each option has optional prefix &lt;code&gt;-i&lt;/code&gt; for case-insensitivity
+- name
+- regex
+- path&lt;/p&gt;
+&lt;h2&gt;Numbers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;inum: inode number&lt;/li&gt;
+&lt;li&gt;links: number of links&lt;/li&gt;
+&lt;li&gt;gid: group ID&lt;/li&gt;
+&lt;li&gt;uid: user ID&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Attributes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;mount: do no search through mounted directories (CD, USB, remote drive)&lt;/li&gt;
+&lt;li&gt;nogroup&lt;/li&gt;
+&lt;li&gt;nouser&lt;/li&gt;
+&lt;li&gt;readable&lt;/li&gt;
+&lt;li&gt;empty&lt;/li&gt;
+&lt;li&gt;exectuable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Others&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;samefile&lt;/li&gt;
+&lt;li&gt;user&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;size&lt;/h2&gt;
+&lt;h2&gt;Negating Search Query&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;!&lt;/code&gt; and &lt;code&gt;-not&lt;/code&gt; does the same thing, except that &lt;code&gt;-not&lt;/code&gt; is POSIX-compliant. The expression that comes after is affected and it needs to be escaped &lt;code&gt;\( ... \)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Expression&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Expressions are logically &lt;code&gt;or&lt;/code&gt;ed …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;Default&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;breadth-first-search&lt;/li&gt;
+&lt;li&gt;search starts from 24 hours ago&lt;/li&gt;
+&lt;li&gt;search the current directory&lt;/li&gt;
+&lt;li&gt;-P: never follow symlink (Default)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; match any characters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Patterns&lt;/h2&gt;
+&lt;p&gt;Each option has optional prefix &lt;code&gt;-i&lt;/code&gt; for case-insensitivity
+- name
+- regex
+- path&lt;/p&gt;
+&lt;h2&gt;Numbers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;inum: inode number&lt;/li&gt;
+&lt;li&gt;links: number of links&lt;/li&gt;
+&lt;li&gt;gid: group ID&lt;/li&gt;
+&lt;li&gt;uid: user ID&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Attributes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;mount: do no search through mounted directories (CD, USB, remote drive)&lt;/li&gt;
+&lt;li&gt;nogroup&lt;/li&gt;
+&lt;li&gt;nouser&lt;/li&gt;
+&lt;li&gt;readable&lt;/li&gt;
+&lt;li&gt;empty&lt;/li&gt;
+&lt;li&gt;exectuable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Others&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;samefile&lt;/li&gt;
+&lt;li&gt;user&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;size&lt;/h2&gt;
+&lt;h2&gt;Negating Search Query&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;!&lt;/code&gt; and &lt;code&gt;-not&lt;/code&gt; does the same thing, except that &lt;code&gt;-not&lt;/code&gt; is POSIX-compliant. The expression that comes after is affected and it needs to be escaped &lt;code&gt;\( ... \)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Expression&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Expressions are logically &lt;code&gt;or&lt;/code&gt;ed with &lt;code&gt;-o&lt;/code&gt; and space is implied and &lt;code&gt;-a&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;types (first letter is the option)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;block, character, directory, pipe, file, link, socket&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;file comparison&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;newer: modified time than the specified file&lt;/li&gt;
+&lt;li&gt;newerXY: XY can be one of the prefix below
+the argument is the filename to use for comparison&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;time&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;prefix&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;c - changed
+a - accessed
+m - modified
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;root&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;min - minutes
+time - days (24 hours)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;space + number&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+ greater
+- less than
+exactly otherwise
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;used: accessedTimes + n*days &amp;gt; modifiedTime&lt;/li&gt;
+&lt;li&gt;anewer: accessedTime &amp;gt; modifiedTime&lt;/li&gt;
+&lt;li&gt;cnewer: changedTime &amp;gt; modifiedTime&lt;/li&gt;
+&lt;li&gt;daystart: measure time from the beginning of today&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Actions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;delete (implies depth)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;prune: do not descend into driectory, cannot use with &lt;code&gt;depth&lt;/code&gt; or &lt;code&gt;delete&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;/b&gt;
+find [path] -type d [conditions to prune] -prune -o [your usual conditions] [actions to perform]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;without &lt;code&gt;-typd d&lt;/code&gt;, &lt;code&gt;prune&lt;/code&gt; will not print the pruned files, but will still print out the directories containing them. &lt;a href="http://stackoverflow.com/a/1489405/986067"&gt;stackoverflow&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;prune is delimited by &lt;code&gt;-o&lt;/code&gt; for its conditional expressions, except when when it is preceded directly next to &lt;code&gt;-o&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Actions (-ls)&lt;/h3&gt;
+&lt;p&gt;if the flag is prefixed with &lt;code&gt;f&lt;/code&gt;, a fileName for output is to be passed as the argument to the flag.
+- ls:
+- print: fullName
+- print0: fullName appended with a null character
+- printf: formatted output&lt;/p&gt;
+&lt;h3&gt;Actions (-exec)&lt;/h3&gt;
+&lt;p&gt;the argument is any executable in the path
+&lt;code&gt;execdir&lt;/code&gt;: excutes the command on the subdirectory where the matching file was found
+&lt;code&gt;ok&lt;/code&gt;: &lt;code&gt;exec&lt;/code&gt; with confirmation
+&lt;code&gt;okdir&lt;/code&gt;: &lt;code&gt;execdir&lt;/code&gt; with confirmation
+&lt;code&gt;"{}"&lt;/code&gt;: is alias for the matched file name(s). Use double quotes for possible spaces between names
+&lt;code&gt;\;&lt;/code&gt;: execute the command on each matched file
+&lt;code&gt;\+&lt;/code&gt;: append all file names then pass to the command&lt;/p&gt;
+&lt;p&gt;only shows the line numbers&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find . -exec grep -Hn hello {} \;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;show also the filename&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find . -exec grep -n hello /dev/null {} \;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Depth&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;it is better to include it early in the options so that you don't get a warning&lt;/li&gt;
+&lt;li&gt;depth: process each directory's contents before the directory itself (Depth First Tree)&lt;/li&gt;
+&lt;li&gt;maxdepth:
+sub-directory level 2 and 4
+-mindepth 3 -maxdepth 5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;symlinks&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;L: follow symlinks&lt;/li&gt;
+&lt;li&gt;H: do not follow symlink except for command line argument processing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Permission&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;perm: permission&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;regex&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;follows the syntax of grep: special characters needs to be escaped and&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Excluding a directory&lt;/h2&gt;
+&lt;p&gt;http://stackoverflow.com/questions/4210042/exclude-directory-from-find-command&lt;/p&gt;</content><category term="shell"></category></entry><entry><title>This is Awk. Word.</title><link href="https://www.4thinker.com/awk.html" rel="alternate"></link><published>2013-11-20T08:18:00-08:00</published><updated>2013-11-20T08:18:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-11-20:/awk.html</id><summary type="html">&lt;h2&gt;conditional&lt;/h2&gt;
+&lt;p&gt;if statement&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;if (cond)
+    expr
+else if(cond)
+    expr
+else
+    expr
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Comparison&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; &amp;gt;=, ==, &amp;lt;=, &amp;gt;, &amp;lt;,
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;boolean&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;amp;&amp;amp;, ||,
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;crement&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;++ --
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Tertiary&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;expr ? expr : expr
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;primitives&lt;/h2&gt;
+&lt;p&gt;variable names, numbers, string
+each statement is ended with semi-colon&lt;/p&gt;
+&lt;h2&gt;variable&lt;/h2&gt;
+&lt;p&gt;var=value
+- &lt;code&gt;$1, $2, $NF&lt;/code&gt;: Arguments - nth value from the line. &lt;code&gt;$&lt;/code&gt; is an operator that can be applied to any number (primitive or variable) and gets the field corresponding to that number.
+- &lt;code&gt;,&lt;/code&gt;: string concatenation 
+- &lt;code&gt;FS&lt;/code&gt;, &lt;code&gt;OFS&lt;/code&gt;, &lt;code&gt;RS&lt;/code&gt; &lt;code&gt;ORS&lt;/code&gt;, &lt;code&gt;NR&lt;/code&gt; &lt;code&gt;NF&lt;/code&gt;: field separator, output field separator, record separator, output record separator, number of records, number of fields. &lt;/p&gt;
+&lt;p&gt;action is by default, &lt;code&gt;print&lt;/code&gt;
+    '/pattern/action'&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;#39;/pattern/
+/pattern/&amp;#39;
+
+&amp;#39;$var ~/pattern/&amp;#39;
+
+&amp;#39;condition&amp;#39;
+
+&amp;#39;function …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;conditional&lt;/h2&gt;
+&lt;p&gt;if statement&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;if (cond)
+    expr
+else if(cond)
+    expr
+else
+    expr
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Comparison&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; &amp;gt;=, ==, &amp;lt;=, &amp;gt;, &amp;lt;,
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;boolean&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;amp;&amp;amp;, ||,
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;crement&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;++ --
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Tertiary&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;expr ? expr : expr
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;primitives&lt;/h2&gt;
+&lt;p&gt;variable names, numbers, string
+each statement is ended with semi-colon&lt;/p&gt;
+&lt;h2&gt;variable&lt;/h2&gt;
+&lt;p&gt;var=value
+- &lt;code&gt;$1, $2, $NF&lt;/code&gt;: Arguments - nth value from the line. &lt;code&gt;$&lt;/code&gt; is an operator that can be applied to any number (primitive or variable) and gets the field corresponding to that number.
+- &lt;code&gt;,&lt;/code&gt;: string concatenation 
+- &lt;code&gt;FS&lt;/code&gt;, &lt;code&gt;OFS&lt;/code&gt;, &lt;code&gt;RS&lt;/code&gt; &lt;code&gt;ORS&lt;/code&gt;, &lt;code&gt;NR&lt;/code&gt; &lt;code&gt;NF&lt;/code&gt;: field separator, output field separator, record separator, output record separator, number of records, number of fields. &lt;/p&gt;
+&lt;p&gt;action is by default, &lt;code&gt;print&lt;/code&gt;
+    '/pattern/action'&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;#39;/pattern/
+/pattern/&amp;#39;
+
+&amp;#39;$var ~/pattern/&amp;#39;
+
+&amp;#39;condition&amp;#39;
+
+&amp;#39;function;&amp;#39;
+&amp;#39;BEGIN{;}, {;},END{;}&amp;#39;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;flags&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;-f&lt;/code&gt; read awk file
+&lt;code&gt;-F&lt;/code&gt;';' specifies the field separator&lt;/p&gt;</content><category term="unix"></category></entry><entry><title>Unix resource management</title><link href="https://www.4thinker.com/unix-resource-management.html" rel="alternate"></link><published>2013-11-20T08:17:00-08:00</published><updated>2013-11-20T08:17:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-11-20:/unix-resource-management.html</id><summary type="html">&lt;p&gt;Free memory&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;free -m
+&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Free memory&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;free -m
+&lt;/pre&gt;&lt;/div&gt;</content><category term="shell"></category></entry><entry><title>Top cheat sheet</title><link href="https://www.4thinker.com/unix-top.html" rel="alternate"></link><published>2013-11-20T08:13:00-08:00</published><updated>2013-11-20T08:13:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-11-20:/unix-top.html</id><summary type="html">&lt;p&gt;&lt;code&gt;A&lt;/code&gt; - split (default RES, PID, MEM, USER) 
+&lt;code&gt;a&lt;/code&gt; - iterate
+&lt;code&gt;M&lt;/code&gt; - sort by memory
+&lt;code&gt;O&lt;/code&gt; - sort by something else
+&lt;code&gt;k&lt;/code&gt; - kill the selected process
+&lt;code&gt;r&lt;/code&gt; - renice (asks for pid)
+&lt;code&gt;u&lt;/code&gt; - username
+&lt;code&gt;1&lt;/code&gt; - toggle display of all CPU/cores
+&lt;code&gt;l&lt;/code&gt; - toggle cpu load display
+&lt;code&gt;t&lt;/code&gt; - toggle cpu state display
+&lt;code&gt;m&lt;/code&gt; - toggle memory info display
+&lt;code&gt;n&lt;/code&gt; - limit number of process on display
+&lt;code&gt;c&lt;/code&gt; - toggle command path, argument
+&lt;code&gt;z&lt;/code&gt; - toggle color highlight&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;top -u username&lt;/code&gt; - for a specific user
+&lt;code&gt;top -p pid, pids&lt;/code&gt; - for specific processes&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;code&gt;A&lt;/code&gt; - split (default RES, PID, MEM, USER) 
+&lt;code&gt;a&lt;/code&gt; - iterate
+&lt;code&gt;M&lt;/code&gt; - sort by memory
+&lt;code&gt;O&lt;/code&gt; - sort by something else
+&lt;code&gt;k&lt;/code&gt; - kill the selected process
+&lt;code&gt;r&lt;/code&gt; - renice (asks for pid)
+&lt;code&gt;u&lt;/code&gt; - username
+&lt;code&gt;1&lt;/code&gt; - toggle display of all CPU/cores
+&lt;code&gt;l&lt;/code&gt; - toggle cpu load display
+&lt;code&gt;t&lt;/code&gt; - toggle cpu state display
+&lt;code&gt;m&lt;/code&gt; - toggle memory info display
+&lt;code&gt;n&lt;/code&gt; - limit number of process on display
+&lt;code&gt;c&lt;/code&gt; - toggle command path, argument
+&lt;code&gt;z&lt;/code&gt; - toggle color highlight&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;top -u username&lt;/code&gt; - for a specific user
+&lt;code&gt;top -p pid, pids&lt;/code&gt; - for specific processes&lt;/p&gt;</content><category term="Administration"></category></entry><entry><title>Unix job management</title><link href="https://www.4thinker.com/unix-job-management.html" rel="alternate"></link><published>2013-11-20T06:31:00-08:00</published><updated>2013-11-20T06:31:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-11-20:/unix-job-management.html</id><summary type="html">&lt;p&gt;&lt;code&gt;&amp;amp;&lt;/code&gt; at the end of the command - run in the background, free up the command prompt
+&lt;code&gt;nohup&lt;/code&gt; - suppress the output to nohup.out 
+&lt;code&gt;nohup&lt;/code&gt; + &lt;code&gt;&amp;amp;&lt;/code&gt; allows user to run the command even after logging out
+&lt;code&gt;C-z&lt;/code&gt; put the running process in the background
+&lt;code&gt;jobs&lt;/code&gt; - list the jobs for the current shell
+&lt;code&gt;kill %1&lt;/code&gt; - kill the job listed by &lt;code&gt;jobs&lt;/code&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;code&gt;&amp;amp;&lt;/code&gt; at the end of the command - run in the background, free up the command prompt
+&lt;code&gt;nohup&lt;/code&gt; - suppress the output to nohup.out 
+&lt;code&gt;nohup&lt;/code&gt; + &lt;code&gt;&amp;amp;&lt;/code&gt; allows user to run the command even after logging out
+&lt;code&gt;C-z&lt;/code&gt; put the running process in the background
+&lt;code&gt;jobs&lt;/code&gt; - list the jobs for the current shell
+&lt;code&gt;kill %1&lt;/code&gt; - kill the job listed by &lt;code&gt;jobs&lt;/code&gt;&lt;/p&gt;</content><category term="administration"></category></entry><entry><title>Sed, not sad</title><link href="https://www.4thinker.com/sed.html" rel="alternate"></link><published>2013-11-20T06:21:00-08:00</published><updated>2013-11-20T06:21:00-08:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-11-20:/sed.html</id><summary type="html">&lt;p&gt;The separator can be any character as long as they are consistent&lt;/p&gt;
+&lt;p&gt;sed 'ADDRESS'Command fileName
+sed /PATTERN/AddressCommand fileName&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-i&lt;/code&gt;: makes changes on the file, suppresses output. A file extension &lt;code&gt;.bak&lt;/code&gt; can be used to redirect othe output.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;;&lt;/code&gt;: is to separate command within quotes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-e&lt;/code&gt;: is to connect two separate commands in quotes.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-n&lt;/code&gt;: suppresses output, useful when using custom output commands&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-f&lt;/code&gt;: read the sed script from a file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Line Address&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;#,#&lt;/code&gt;: range
+&lt;code&gt;,#&lt;/code&gt;: range from the matching line
+    -&lt;code&gt;,+#&lt;/code&gt;: # lines after the current ilne
+    -&lt;code&gt;,-#&lt;/code&gt;: # lines before the current line
+&lt;code&gt;,$&lt;/code&gt;: to the end of the matching line
+&lt;code&gt;#!&lt;/code&gt;: negation
+&lt;code&gt;$&lt;/code&gt;: last line
+&lt;code&gt;~#&lt;/code&gt;: every # line …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The separator can be any character as long as they are consistent&lt;/p&gt;
+&lt;p&gt;sed 'ADDRESS'Command fileName
+sed /PATTERN/AddressCommand fileName&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-i&lt;/code&gt;: makes changes on the file, suppresses output. A file extension &lt;code&gt;.bak&lt;/code&gt; can be used to redirect othe output.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;;&lt;/code&gt;: is to separate command within quotes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-e&lt;/code&gt;: is to connect two separate commands in quotes.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-n&lt;/code&gt;: suppresses output, useful when using custom output commands&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-f&lt;/code&gt;: read the sed script from a file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Line Address&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;#,#&lt;/code&gt;: range
+&lt;code&gt;,#&lt;/code&gt;: range from the matching line
+    -&lt;code&gt;,+#&lt;/code&gt;: # lines after the current ilne
+    -&lt;code&gt;,-#&lt;/code&gt;: # lines before the current line
+&lt;code&gt;,$&lt;/code&gt;: to the end of the matching line
+&lt;code&gt;#!&lt;/code&gt;: negation
+&lt;code&gt;$&lt;/code&gt;: last line
+&lt;code&gt;~#&lt;/code&gt;: every # line&lt;/p&gt;
+&lt;h2&gt;Common commands&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;p&lt;/code&gt;: print
+&lt;code&gt;d&lt;/code&gt;: delete
+&lt;code&gt;a&lt;/code&gt;: append&lt;/p&gt;
+&lt;p&gt;sed '#a\string' fileName&lt;/p&gt;
+&lt;h2&gt;sed vs vim&lt;/h2&gt;
+&lt;p&gt;non-greedy matching does not exist for sed&lt;/p&gt;
+&lt;h2&gt;awk, a.k.a sed++&lt;/h2&gt;
+&lt;p&gt;There are some arcane stuff like 'hold space' and 'pattern space' in sed. Don't worry about, but rather use &lt;code&gt;awk&lt;/code&gt; instead. If things get even more complicated for &lt;code&gt;awk&lt;/code&gt;, you should be using a bash, perl, or python script.&lt;/p&gt;</content><category term="linux"></category></entry><entry><title>Links</title><link href="https://www.4thinker.com/links.html" rel="alternate"></link><published>2013-10-22T03:42:00-07:00</published><updated>2013-10-22T03:42:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-10-22:/links.html</id><summary type="html">&lt;p&gt;symlink: for both file and directory; can point to remote directoy (SMB) and different file-system; resolved on the client, replaces Junction.
+hardlink: file only
+junction: directory only; resolved on the server;&lt;/p&gt;
+&lt;p&gt;Unix commands are always followed by src and dest
+Windows commands are always followed by dest and src
+|                    | hardlink    | symlink     | symlink (directory) | junction          |
+| creation (Unix)    | ln          | ln -s       | ln                  |                   |
+| endpoint           | same volume | anywhere    | anywhere            | different volumes |
+| resolution         | local       | local       | local               | remote            |
+| creation (Windows) | mklink /J   | mklink      | mklink /D           | mklink /J         |
+| endpoint           | same volume | same volume | same volume         | different volume  |&lt;/p&gt;</summary><content type="html">&lt;p&gt;symlink: for both file and directory; can point to remote directoy (SMB) and different file-system; resolved on the client, replaces Junction.
+hardlink: file only
+junction: directory only; resolved on the server;&lt;/p&gt;
+&lt;p&gt;Unix commands are always followed by src and dest
+Windows commands are always followed by dest and src
+|                    | hardlink    | symlink     | symlink (directory) | junction          |
+| creation (Unix)    | ln          | ln -s       | ln                  |                   |
+| endpoint           | same volume | anywhere    | anywhere            | different volumes |
+| resolution         | local       | local       | local               | remote            |
+| creation (Windows) | mklink /J   | mklink      | mklink /D           | mklink /J         |
+| endpoint           | same volume | same volume | same volume         | different volume  |&lt;/p&gt;</content></entry><entry><title>PowerShell Notes</title><link href="https://www.4thinker.com/powershell-notes.html" rel="alternate"></link><published>2013-10-22T01:38:00-07:00</published><updated>2013-10-22T01:38:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-10-22:/powershell-notes.html</id><summary type="html">&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;|                           | Powershell                          | Bash             |&lt;/span&gt;
+&lt;span class="x"&gt;| Help page                 | Get-Help                            | man              |&lt;/span&gt;
+&lt;span class="x"&gt;| History Search            | #Str                                | &amp;lt;C-r&amp;gt;str         |&lt;/span&gt;
+&lt;span class="x"&gt;| History Search (num) #Num | #Num                                | !Num             |&lt;/span&gt;
+&lt;span class="x"&gt;| Creating new file         | ni (New-Item)                       | touch            |&lt;/span&gt;
+&lt;span class="x"&gt;| semi-colon                | No                                  | Yes              |&lt;/span&gt;
+&lt;span class="x"&gt;| print file                | cat (Get-Content)                   | cat              |&lt;/span&gt;
+&lt;span class="x"&gt;| print                     | echo (Write-Content)                | echo             |&lt;/span&gt;
+&lt;span class="x"&gt;| Help Page                 | Get-Help                            | man              |&lt;/span&gt;
+&lt;span class="x"&gt;| Array Index Lookup        | $array[0]                           | array[0]         |&lt;/span&gt;
+&lt;span class="x"&gt;| String Concatenation      | . for &amp;#39;&amp;#39;, + for                     | + or nothing     |&lt;/span&gt;
+&lt;span class="x"&gt;|                           | select -First #                     | Head -#          |&lt;/span&gt;
+&lt;span class="x"&gt;|                           | select -Last $                      | Tail -#          |&lt;/span&gt;
+&lt;span class="x"&gt;| check on a log file       | cat -Wait                           | tail -f          |&lt;/span&gt;
+&lt;span class="x"&gt;| While Loop                | while (cond) &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;                     |&lt;/span&gt;
+&lt;span class="x"&gt;| Foreach                   | foreach ($var in $object)           | -                |&lt;/span&gt;
+&lt;span class="x"&gt;| If-statement              | if (cond &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;)                        |&lt;/span&gt;
+&lt;span class="x"&gt;| Number Expansion          | 1..10                               | &lt;/span&gt;&lt;span class="cp"&gt;{&lt;/span&gt;&lt;span class="m"&gt;1.&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;10&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="x"&gt;          |&lt;/span&gt;
+&lt;span class="x"&gt;| Parameter                 | param($arg = Val)                   | $1, $2 ...       |&lt;/span&gt;
+&lt;span class="x"&gt;| function                  | function name &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;                    |                  |&lt;/span&gt;
+&lt;span class="x"&gt;| clipboard                 | pipe to clip                        | pipe to …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;|                           | Powershell                          | Bash             |&lt;/span&gt;
+&lt;span class="x"&gt;| Help page                 | Get-Help                            | man              |&lt;/span&gt;
+&lt;span class="x"&gt;| History Search            | #Str                                | &amp;lt;C-r&amp;gt;str         |&lt;/span&gt;
+&lt;span class="x"&gt;| History Search (num) #Num | #Num                                | !Num             |&lt;/span&gt;
+&lt;span class="x"&gt;| Creating new file         | ni (New-Item)                       | touch            |&lt;/span&gt;
+&lt;span class="x"&gt;| semi-colon                | No                                  | Yes              |&lt;/span&gt;
+&lt;span class="x"&gt;| print file                | cat (Get-Content)                   | cat              |&lt;/span&gt;
+&lt;span class="x"&gt;| print                     | echo (Write-Content)                | echo             |&lt;/span&gt;
+&lt;span class="x"&gt;| Help Page                 | Get-Help                            | man              |&lt;/span&gt;
+&lt;span class="x"&gt;| Array Index Lookup        | $array[0]                           | array[0]         |&lt;/span&gt;
+&lt;span class="x"&gt;| String Concatenation      | . for &amp;#39;&amp;#39;, + for                     | + or nothing     |&lt;/span&gt;
+&lt;span class="x"&gt;|                           | select -First #                     | Head -#          |&lt;/span&gt;
+&lt;span class="x"&gt;|                           | select -Last $                      | Tail -#          |&lt;/span&gt;
+&lt;span class="x"&gt;| check on a log file       | cat -Wait                           | tail -f          |&lt;/span&gt;
+&lt;span class="x"&gt;| While Loop                | while (cond) &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;                     |&lt;/span&gt;
+&lt;span class="x"&gt;| Foreach                   | foreach ($var in $object)           | -                |&lt;/span&gt;
+&lt;span class="x"&gt;| If-statement              | if (cond &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;)                        |&lt;/span&gt;
+&lt;span class="x"&gt;| Number Expansion          | 1..10                               | &lt;/span&gt;&lt;span class="cp"&gt;{&lt;/span&gt;&lt;span class="m"&gt;1.&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;10&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="x"&gt;          |&lt;/span&gt;
+&lt;span class="x"&gt;| Parameter                 | param($arg = Val)                   | $1, $2 ...       |&lt;/span&gt;
+&lt;span class="x"&gt;| function                  | function name &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;                    |                  |&lt;/span&gt;
+&lt;span class="x"&gt;| clipboard                 | pipe to clip                        | pipe to xclip    |&lt;/span&gt;
+&lt;span class="x"&gt;| diff                      | Compare-Object                      | diff             |&lt;/span&gt;
+&lt;span class="x"&gt;| alias                     | Set-Alias Name CMD                  | alias Name = CMD |&lt;/span&gt;
+&lt;span class="x"&gt;| function                  | Function Name &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;                    | name () &lt;/span&gt;&lt;span class="cp"&gt;{}&lt;/span&gt;&lt;span class="x"&gt;       |&lt;/span&gt;
+&lt;span class="x"&gt;| unset                     | Remove-Variable                     | unset            |&lt;/span&gt;
+&lt;span class="x"&gt;| sort                      | Sort-Object                         | sort             |&lt;/span&gt;
+&lt;span class="x"&gt;| grep                      | Where-Object &lt;/span&gt;&lt;span class="cp"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;$_.Field&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="na"&gt;comp&lt;/span&gt; &lt;span class="na"&gt;cond&lt;/span&gt; &lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="x"&gt; | grep             |&lt;/span&gt;
+&lt;span class="x"&gt;| append                    | Add-Content                         | &amp;gt;&amp;gt;               |&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Characters are escaped with a back trick: &lt;code&gt;`&lt;/code&gt;: 0, a, b, n, r, t, ', " &lt;/li&gt;
+&lt;li&gt;Comparsion: lt, gt, eq, neq, le, ge, like&lt;/li&gt;
+&lt;li&gt;cd, cp, mv, rm, sort, less, more&lt;/li&gt;
+&lt;li&gt;home directory is &lt;code&gt;$home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;backtick outside of string is used to break up a command into multiple lines&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;File manipulation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Out-File&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt;: some frequently used options are &lt;code&gt;-NoClobber&lt;/code&gt;, &lt;code&gt;-Append&lt;/code&gt;, and &lt;code&gt;Encoding&lt;/code&gt;. The output file is encoded in little endian unicode by default.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Add-Content&lt;/code&gt;, &lt;code&gt;Set-Content&lt;/code&gt;: ASCII encoded, read-protect upon writing.
+&lt;a href="http://stackoverflow.com/questions/10655788/powershell-set-content-and-out-file-what-is-the-difference"&gt;Out-File vs Set-Content&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Loop&lt;/h2&gt;
+&lt;p&gt;ForEach-Object {$$&lt;em&gt;.Property}. Or there is a syntax sugar &lt;code&gt;%&lt;/code&gt;.
+$&lt;/em&gt; - object that got passed in via pipe&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;For ($i=0;$i –le $Var.count; ++$i)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Sort&lt;/h2&gt;
+&lt;p&gt;-Descending
+-Property &lt;/p&gt;
+&lt;h2&gt;Help&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Get-Help&lt;/code&gt;:  -Online&lt;/p&gt;
+&lt;h2&gt;Executing&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;.ps1&lt;/code&gt; scripts must be ran with full path or &lt;code&gt;.\&lt;/code&gt; prefix to denote the current directory as the path. With quoted script names (to escape space characters), there must be &lt;code&gt;&amp;amp;&lt;/code&gt; operand &lt;/p&gt;
+&lt;h2&gt;Process Object&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Start-Process procName&lt;/code&gt; : run in the background
+&lt;code&gt;.WaitForExit()&lt;/code&gt; :&lt;/p&gt;
+&lt;h2&gt;Get&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Get-Command&lt;/code&gt;: list cmdlets
+    &lt;code&gt;-Name&lt;/code&gt;, &lt;code&gt;-Module&lt;/code&gt;, 
+&lt;code&gt;Get-Process&lt;/code&gt;: list running processes
+&lt;code&gt;Get-Service&lt;/code&gt;: list services running
+&lt;code&gt;Get-WmiObject&lt;/code&gt;
+    &lt;code&gt;-Class&lt;/code&gt;: Win32_Product - installed software
+&lt;code&gt;| Get-Member&lt;/code&gt;: get the members of the passed in object
+&lt;code&gt;Get-Content&lt;/code&gt; or &lt;code&gt;cat&lt;/code&gt;: &lt;code&gt;$_&lt;/code&gt; becomes an array with the index 
+    &lt;code&gt;-Head #&lt;/code&gt;, &lt;code&gt;-Tail #&lt;/code&gt;, &lt;code&gt;-Wait&lt;/code&gt;
+&lt;code&gt;Get-History&lt;/code&gt;: 
+&lt;code&gt;Get-Host&lt;/code&gt;: version information 
+&lt;code&gt;Get-Childitem&lt;/code&gt;:
+  -recurse
+  FullName, LastWriteTime
+&lt;code&gt;Get-Date&lt;/code&gt;:
+&lt;code&gt;-date&lt;/code&gt;: the default flag. 
+&lt;code&gt;-format&lt;/code&gt; takes both quick formatting and full formatting. &lt;code&gt;-Uformat&lt;/code&gt; takes &lt;code&gt;%j&lt;/code&gt; for day of the year and &lt;code&gt;%V&lt;/code&gt; for the week of the year.
+&lt;code&gt;Get-Content&lt;/code&gt; use &lt;code&gt;-ReadCount 0&lt;/code&gt; for a large file or use &lt;code&gt;foreach&lt;/code&gt; to loop through the line and ditch the piepline altogether for the maximum performace.
+&lt;code&gt;Get-Eventlog&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;select&lt;/code&gt;: &lt;code&gt;-skip&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Date&lt;/h2&gt;
+&lt;p&gt;adddays
+tostring&lt;/p&gt;
+&lt;h2&gt;Write&lt;/h2&gt;
+&lt;p&gt;Write-Warning
+Write-Content
+Write-Host
+Write-Output&lt;/p&gt;
+&lt;h2&gt;Creation&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;New-Item&lt;/code&gt;
+     &lt;code&gt;-Name&lt;/code&gt;, &lt;code&gt;-Path&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Retrival&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Select-Object&lt;/code&gt; or &lt;code&gt;select&lt;/code&gt;: filter with flags
+    &lt;code&gt;-Property&lt;/code&gt;
+&lt;code&gt;| Where-Object {cond}&lt;/code&gt;: filter by condition. Works on a single object. For an array, &lt;code&gt;ForEach-Object&lt;/code&gt; is needed.
+&lt;code&gt;Compare-Object&lt;/code&gt;: compare objects
+    &lt;code&gt;-ReferenceObject (Get-Content %)&lt;/code&gt;, &lt;code&gt;-DifferentObject (Get-Content %))&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Formatting&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;sort&lt;/code&gt;
+    &lt;code&gt;-Property&lt;/code&gt;, &lt;code&gt;-Descending&lt;/code&gt;
+&lt;code&gt;Format-List&lt;/code&gt;: Show properties as list
+&lt;code&gt;Format-Table&lt;/code&gt;: Shows properties as a table (columnized)
+    &lt;code&gt;-AutoSize&lt;/code&gt;
+&lt;code&gt;Format-Wide&lt;/code&gt;: list everything in column from the first property of the object, sorted alphabetically.
+    &lt;code&gt;-Property&lt;/code&gt;, &lt;code&gt;-Column #&lt;/code&gt;: number of columns to display&lt;/p&gt;
+&lt;h2&gt;Conditional&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Get-Help About_If&lt;/code&gt;
+- &lt;code&gt;-and&lt;/code&gt;, &lt;code&gt;-or&lt;/code&gt; &lt;code&gt;-not&lt;/code&gt;, &lt;code&gt;!&lt;/code&gt;
+- &lt;code&gt;test-path&lt;/code&gt;
+-If ElseIf Else&lt;/p&gt;
+&lt;h2&gt;Security&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Get-ExecutionPolicy&lt;/code&gt;
+&lt;code&gt;Set-ExecutionPolicy&lt;/code&gt;
+- Restrict: Default. No scripts can run
+- AllSigned: script must have a local digital signature
+- RemoteSigned: script must have a local or remote digital signature
+- Unrestricted: no digital signature is required&lt;/p&gt;
+&lt;h2&gt;String&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;.Length&lt;/code&gt;
+&lt;code&gt;.Substring(start, indexFromStart)&lt;/code&gt;
+-replace, &lt;code&gt;- match&lt;/code&gt;, &lt;code&gt;-nonmatch&lt;/code&gt;: for replace, &lt;code&gt;`$1&lt;/code&gt; can be used to match () grouped matches.
+&lt;code&gt;.Split('=')&lt;/code&gt;
+&lt;code&gt;.Trim()&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$a = &amp;quot;ThisIsA&amp;quot;
+&amp;quot;=======&amp;quot; + $a + &amp;quot;=======&amp;quot;
+or
+&amp;quot;=======$a=======&amp;quot;
+or
+&amp;quot;=&amp;quot;*7 + $a + &amp;quot;=&amp;quot;*7
+or
+&amp;quot;======{0}=======&amp;quot; -f $a
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;if you want some color you can go with&lt;/h1&gt;
+&lt;p&gt;write-host -fore Red "=======$a======="&lt;/p&gt;
+&lt;h2&gt;Array&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;String Array: [String[]]$array = 'White', 'Purple', 'Green', 'Blue'&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a href="http://stackoverflow.com/a/2157625/986067"&gt;Parameters&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;param&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;
+   &lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;server&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;http://defaultserver&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+   &lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;username&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;$(&lt;/span&gt;&lt;span class="nt"&gt;throw&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;-username is required.&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;),&lt;/span&gt;
+   &lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;password&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;$(&lt;/span&gt; &lt;span class="nt"&gt;Read-Host&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Input password, please&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;)&lt;/span&gt;
+   &lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;switch&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;force&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;false&lt;/span&gt;
+&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="nt"&gt;Write-Host&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Num Args:&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;args&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;Length&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+
+&lt;span class="nt"&gt;if&lt;/span&gt; &lt;span class="o"&gt;($&lt;/span&gt;&lt;span class="nt"&gt;force&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="err"&gt;//deletes&lt;/span&gt; &lt;span class="err"&gt;a&lt;/span&gt; &lt;span class="err"&gt;file&lt;/span&gt; &lt;span class="err"&gt;or&lt;/span&gt; &lt;span class="err"&gt;does&lt;/span&gt; &lt;span class="err"&gt;something&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;bad&amp;quot;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="nt"&gt;yourscript&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;ps1&lt;/span&gt; &lt;span class="nt"&gt;-server&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;http://otherserver&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;-force&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="nt"&gt;yourscript&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;ps1&lt;/span&gt; &lt;span class="nt"&gt;-server&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;http://otherserver&amp;quot;&lt;/span&gt; &lt;span class="nt"&gt;-force&lt;/span&gt;&lt;span class="o"&gt;:$&lt;/span&gt;&lt;span class="nt"&gt;false&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Examples&lt;/h2&gt;
+&lt;p&gt;Get a list of installed software on your pc&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Get-WmiObject -Class Win32_Product | Select-Object -Property Name
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Compare installed software on two different machines:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Compare-Object -ReferenceObject (Get-Content C:\Software\PCapps.txt) -DifferenceObject (Get-Content C:\Software\LAPTOPapps.txt)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Windows &amp;gt;8&lt;/h2&gt;
+&lt;p&gt;http://www.howtogeek.com/112660/how-to-change-your-ip-address-using-powershell/&lt;/p&gt;
+&lt;h2&gt;Setting Up&lt;/h2&gt;
+&lt;p&gt;For Powershell v. 3.0 you need &lt;a href="http://www.microsoft.com/en-us/download/details.aspx?id=34595"&gt;Windows Management Framework 3.0&lt;/a&gt; on a Windows 7 SP1 and &lt;a href="http://www.microsoft.com/en-us/download/details.aspx?id=17851"&gt;.NET Framework 4&lt;/a&gt;. You need PS 3.0 in order to use commands like &lt;code&gt;Update-Help&lt;/code&gt; or &lt;code&gt;Invoke-WebRequest&lt;/code&gt;, but it still will not give you the full cmdlets that Windows 8 has.
+You can check which version of PowerShell you are running by invoking&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Get-Host
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;-Set Execution Policy
+By default you cannot run any script on PowerShell. That sounds pretty dumb, but it is a good security measure considering that 99% of Windows Users will not use it.  &lt;code&gt;Set-ExecutionPolicy RemoteSigned&lt;/code&gt; is a good compromise for security and usability.
+-Create Powershell Profile aka .psrc 
+New-Item –Path $Profile –Type File –Force&lt;/p&gt;
+&lt;p&gt;Map Network Drives&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;New-PSDrive –Name &amp;quot;K&amp;quot; –PSProvider FileSystem –Root &amp;quot;\\server\directory&amp;quot; –Persist
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Where K is the driver letter&lt;/p&gt;
+&lt;p&gt;Display Path directories line by line:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;env&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;path&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;Split&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;execute all scripts in a directory&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;powershell.exe -noexit get-childitem &amp;amp;&amp;#39;c:\my scripts&amp;#39;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;execute powershell in VBScript&lt;/p&gt;
+&lt;p&gt;Set objShell = CreateObject("Wscript.Shell")
+objShell.Run("powershell.exe -noexit c:\scripts\test.ps1")&lt;/p&gt;</content><category term="shell"></category></entry><entry><title>Unix Utility DU</title><link href="https://www.4thinker.com/unix-du.html" rel="alternate"></link><published>2013-10-14T11:04:00-07:00</published><updated>2013-10-14T11:04:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-10-14:/unix-du.html</id><summary type="html">&lt;p&gt;&lt;code&gt;-s&lt;/code&gt;: output the current directory's size
+&lt;code&gt;-h&lt;/code&gt;: human readable (size in KB, MB or GB)
+&lt;code&gt;-a&lt;/code&gt;: all files, by default, &lt;code&gt;du&lt;/code&gt; shows the size of the directories recursively&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;code&gt;-s&lt;/code&gt;: output the current directory's size
+&lt;code&gt;-h&lt;/code&gt;: human readable (size in KB, MB or GB)
+&lt;code&gt;-a&lt;/code&gt;: all files, by default, &lt;code&gt;du&lt;/code&gt; shows the size of the directories recursively&lt;/p&gt;</content><category term="shell"></category></entry><entry><title>MongoDB Notes</title><link href="https://www.4thinker.com/mongodb.html" rel="alternate"></link><published>2013-10-12T12:14:00-07:00</published><updated>2013-10-12T12:14:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-10-12:/mongodb.html</id><summary type="html">&lt;p&gt;MongoDB is dynamically typed, meaning you can insert any data type as long as they are well-formated.
+Each object is associated with an ObjectId.&lt;/p&gt;
+&lt;p&gt;Cursor object is a Python dict once it has been assigned to a variable. &lt;/p&gt;
+&lt;h2&gt;installation&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install ruby1.9.1-dev rubygems
+sudo gem install require genghisapp bson_ext rake
+sudo gem install bson_ext -v 1.9.2
+genghisapp
+genghisapp --kill; genghisapp
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;NOTE: You might run into the following error message:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Invalid gemspec in [/var/lib/gems/1.8/specifications/vegas-0.1.11.gemspec]: invalid date format in specification: &amp;quot;2009-08-30 00:00:00.000000000Z&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To workaround the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;MongoDB is dynamically typed, meaning you can insert any data type as long as they are well-formated.
+Each object is associated with an ObjectId.&lt;/p&gt;
+&lt;p&gt;Cursor object is a Python dict once it has been assigned to a variable. &lt;/p&gt;
+&lt;h2&gt;installation&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install ruby1.9.1-dev rubygems
+sudo gem install require genghisapp bson_ext rake
+sudo gem install bson_ext -v 1.9.2
+genghisapp
+genghisapp --kill; genghisapp
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;NOTE: You might run into the following error message:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Invalid gemspec in [/var/lib/gems/1.8/specifications/vegas-0.1.11.gemspec]: invalid date format in specification: &amp;quot;2009-08-30 00:00:00.000000000Z&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To workaround the above error, run the following cmd:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo sed -i &amp;#39;s/ 00:00:00.000000000Z//&amp;#39; /var/lib/gems/1.8/specifications/*
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Attempt starting genghisapp again by running:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;genghisapp
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;mongo is built-in client to the database&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mongo localhost:27017
+use DATABASE_NAME
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;Ctrl-D&lt;/code&gt; to exit out of the script&lt;/p&gt;
+&lt;h2&gt;term:&lt;/h2&gt;
+&lt;p&gt;database: database
+collections: tables
+documents: rows (objects)&lt;/p&gt;
+&lt;p&gt;The key may have alphanumeric names matching the document or a number matching the index of the element (starts from 0), each nest level is separated by &lt;code&gt;.&lt;/code&gt;, so no names are allowed to have &lt;code&gt;.&lt;/code&gt; in them. The value always match the value of the key referred by the element of the last nested level. 
+The key must be wrapped in double quotes if any of dot operator is used. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;,&lt;/code&gt; implies AND in query, OR must be queried explicitly using &lt;code&gt;$or&lt;/code&gt;
+&lt;code&gt;insert({})&lt;/code&gt;: can take an object or a list of objects and returns the ObjectIds assigned to each element as a list.
+&lt;code&gt;find({})&lt;/code&gt;: takes in objects (comma delimited) as the filter for the search. It returns a Cursor object and must be type casted with &lt;code&gt;list()&lt;/code&gt;. 
+&lt;code&gt;find_one({})&lt;/code&gt;: like &lt;code&gt;find()&lt;/code&gt;, but returns the first result only. Does not need to be casted.
+&lt;code&gt;update({},{},OPT)&lt;/code&gt;:  query, post, and options. &lt;code&gt;upsert=True/False&lt;/code&gt; inserts instead of updating if the query is not found. &lt;code&gt;manipulate=True/False&lt;/code&gt; SOManipulator will be applied before updating and the &lt;code&gt;update&lt;/code&gt;  will return the ID of the newly created document. Just choose False. Used to modify multiple documents
+&lt;code&gt;save({})&lt;/code&gt;: both query and post information is stored in a single object separated by comma, modifies ONE document.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;skip(#)&lt;/code&gt;: skips the first # results.
+&lt;code&gt;limit(#)&lt;/code&gt;: limit the number of the result, return a list as a Cursor object so it must be casted even when the limiting number is 1. 
+&lt;code&gt;sort(field, OPT)&lt;/code&gt;: OPT is either DESCENDING, OR ASCENDING (default). &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ensure_index('')&lt;/code&gt;: takes a key (string) between quotes and creates an index on that key. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;drop()&lt;/code&gt;: drop a collection
+&lt;code&gt;remove({})&lt;/code&gt;: find and then delete.
+&lt;code&gt;update({})&lt;/code&gt;: remove
+&lt;code&gt;count()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;type($opt : {field : value, field : value})&lt;/p&gt;
+&lt;h4&gt;aggregation&lt;/h4&gt;
+&lt;p&gt;$project&lt;/p&gt;
+&lt;p&gt;$inc Increment a numeric field (generalized; can increment by any number)
+$in find an element in the list that matches
+$set Set certain fields to new values
+$unset Remove a field from the document
+$push Append a value onto an array in the document
+$pushAll Append several values onto an array
+$addToSet Add a value to an array if and only if it does not already exist
+$pop Remove the last (or first) value of an array&lt;/p&gt;
+&lt;p&gt;$pull Remove all occurrences of a value from an array
+$pullAll Remove all occurrences of any of a set of values from an array
+$rename Rename a field
+$bit Bitwise updates &lt;/p&gt;
+&lt;h2&gt;genghisapp&lt;/h2&gt;
+&lt;p&gt;The query on &lt;code&gt;genghisapp&lt;/code&gt; is a bit different (or simpler) than that of &lt;code&gt;mongo&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;backup and restore&lt;/h2&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mongodump --host &amp;lt;host_name&amp;gt;:&amp;lt;port&amp;gt; --db=&amp;lt;DB_name&amp;gt; --collection=&amp;lt;collection_name&amp;gt; --query &amp;#39;{}&amp;#39;
+mongorestore --host localhost:27017 --db &amp;lt;DB_name&amp;gt; --collection=&amp;lt;collection_name&amp;gt; --drop &amp;lt;directory to drop to&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;drop&lt;/code&gt; option clears the matching DB / collection before the restoration&lt;/p&gt;
+&lt;h2&gt;example queries&lt;/h2&gt;
+&lt;h4&gt;Regex&lt;/h4&gt;
+&lt;p&gt;Shell:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;{&lt;/span&gt;&lt;span class="nv"&gt;$regex&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.*son.*&amp;quot;&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;username&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;/^.*&lt;/span&gt;&lt;span class="na"&gt;son&lt;/span&gt;&lt;span class="o"&gt;.*&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;username&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="o"&gt;/.*&lt;/span&gt;&lt;span class="na"&gt;son&lt;/span&gt;&lt;span class="o"&gt;.*/&lt;/span&gt;&lt;span class="na"&gt;i&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Javascript:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;son&amp;quot;&lt;/span&gt;
+&lt;span class="nt"&gt;var&lt;/span&gt; &lt;span class="nt"&gt;query&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;Zip&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;new&lt;/span&gt; &lt;span class="nf"&gt;RegExp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;^.*&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;.*&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Date&lt;/h4&gt;
+&lt;p&gt;Python:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt;
+&lt;span class="n"&gt;minDate&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2012&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;35&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;764&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;maxDate&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2012&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;35&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;764&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="s2"&gt;&amp;quot;date_added&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:{&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;minDate&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;lt&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;maxDate&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Javascript:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;var minDate = new Date(2013,10,1)
+var maxDate = new Date(2014,10,1)
+var minDate = ISODate(&amp;quot;2011-11-24&amp;quot;)
+var maxDate ISODate(&amp;quot;2012-01-11T03:34:54Z&amp;quot;)
+&lt;/pre&gt;&lt;/div&gt;</content><category term="python"></category></entry><entry><title>A collection of useful python scripts</title><link href="https://www.4thinker.com/python-tricks.html" rel="alternate"></link><published>2013-09-12T12:10:00-07:00</published><updated>2013-09-12T12:10:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-09-12:/python-tricks.html</id><summary type="html">&lt;h4&gt;Mark PDFs with the number from the file name, on the right top corner of the page&lt;/h4&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os.path&lt;/span&gt;
+&lt;span class="nb"&gt;dir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;c:\Users\User\Desktop\Songs&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;listdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;listdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;fullpath&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;command&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;convert &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;fullpath&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; -fill black -gravity South -pointSize 20 -annotate +0+5 &amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;fullpath&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Using defaultdict without importing one:&lt;/h4&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;my_dict&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;some_key&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;my_dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;some_key&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Copying code to Python REPL and avoid Indentation error&lt;/h4&gt;
+&lt;p&gt;REPL stands for &lt;a href="en.wikipedia.org/wiki/Read–eval–print_loop"&gt;Read-eval-print loop&lt;/a&gt; for those who are uninitiated. It the prompt that shows up when you type &lt;code&gt;python&lt;/code&gt; on your command …&lt;/p&gt;</summary><content type="html">&lt;h4&gt;Mark PDFs with the number from the file name, on the right top corner of the page&lt;/h4&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os.path&lt;/span&gt;
+&lt;span class="nb"&gt;dir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;c:\Users\User\Desktop\Songs&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;listdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;listdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;fullpath&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;command&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;convert &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;fullpath&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot; -fill black -gravity South -pointSize 20 -annotate +0+5 &amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;fullpath&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Using defaultdict without importing one:&lt;/h4&gt;
+&lt;p&gt;&lt;p/&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;my_dict&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;some_key&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;my_dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;some_key&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;Copying code to Python REPL and avoid Indentation error&lt;/h4&gt;
+&lt;p&gt;REPL stands for &lt;a href="en.wikipedia.org/wiki/Read–eval–print_loop"&gt;Read-eval-print loop&lt;/a&gt; for those who are uninitiated. It the prompt that shows up when you type &lt;code&gt;python&lt;/code&gt; on your command line. You might innocuously copy code (like a function) from another website and get frustrated by garbled output with "Indentation error" as soon as you hit the 'paste' key or &lt;code&gt;Shift+Insert&lt;/code&gt;. The solution is simple. Just get rid of the blank lines.&lt;/p&gt;
+&lt;p&gt;cd $TOP/../thirdparty &amp;amp;&amp;amp; git reset --hard &amp;amp;&amp;amp; git pull --rebase &amp;amp;&amp;amp; git reset --hard $(grep TOOLCHAIN_GIT_HASH $TOP/Makefile.toolchain | head -n1 | cut -d'=' -f2) &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install &amp;amp;&amp;amp; cd $TOP &amp;amp;&amp;amp; make BUILD_TYPE=release -j4 CCACHE_DIR=~/.ccache&lt;/p&gt;</content><category term="python"></category><category term="shell"></category></entry><entry><title>A collection of Useful Shell commands</title><link href="https://www.4thinker.com/bash-tricks.html" rel="alternate"></link><published>2013-08-05T01:54:00-07:00</published><updated>2013-08-05T01:54:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-08-05:/bash-tricks.html</id><summary type="html">&lt;p&gt;Here are some Bash commands that I used&lt;/p&gt;
+&lt;h2&gt;Rename&lt;/h2&gt;
+&lt;p&gt;Rename using &lt;code&gt;find&lt;/code&gt; and &lt;code&gt;sed&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find . -name &amp;quot;*syntax.md&amp;quot; | sed -e &amp;quot;p;s/syntax/notes/&amp;quot; | xargs -n2 mv
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Execute some commands based on the filename or extension &lt;a href="http://stackoverflow.com/questions/10803296/modifying-replace-string-in-xargs"&gt;1&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find . -name &lt;span class="s2"&gt;&amp;quot;*.txt&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; xargs -I&lt;span class="o"&gt;{}&lt;/span&gt; sh -c &lt;span class="s1"&gt;&amp;#39;base=$(basename $0) ; name=${base%.*} ; ext=${base##*.} ; mv &amp;quot;$0&amp;quot; &amp;quot;foo/${name}.bar.${ext}&amp;quot;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;{}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;note: the variable name referenced by -I argument, which in this example is &lt;code&gt;{}&lt;/code&gt; cannot be reference used for variable expansion. It must be assigned to another variable first.&lt;/p&gt;
+&lt;p&gt;Clean up the filename extension so that there is no trailing characters after.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# IFS=&amp;#39;\n …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Here are some Bash commands that I used&lt;/p&gt;
+&lt;h2&gt;Rename&lt;/h2&gt;
+&lt;p&gt;Rename using &lt;code&gt;find&lt;/code&gt; and &lt;code&gt;sed&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find . -name &amp;quot;*syntax.md&amp;quot; | sed -e &amp;quot;p;s/syntax/notes/&amp;quot; | xargs -n2 mv
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Execute some commands based on the filename or extension &lt;a href="http://stackoverflow.com/questions/10803296/modifying-replace-string-in-xargs"&gt;1&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find . -name &lt;span class="s2"&gt;&amp;quot;*.txt&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; xargs -I&lt;span class="o"&gt;{}&lt;/span&gt; sh -c &lt;span class="s1"&gt;&amp;#39;base=$(basename $0) ; name=${base%.*} ; ext=${base##*.} ; mv &amp;quot;$0&amp;quot; &amp;quot;foo/${name}.bar.${ext}&amp;quot;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;{}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;note: the variable name referenced by -I argument, which in this example is &lt;code&gt;{}&lt;/code&gt; cannot be reference used for variable expansion. It must be assigned to another variable first.&lt;/p&gt;
+&lt;p&gt;Clean up the filename extension so that there is no trailing characters after.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# IFS=&amp;#39;\n&amp;#39; excludes the whitespace from being Internal Field Separator.&lt;/span&gt;
+$ &lt;span class="nv"&gt;IFS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;$&amp;#39;\n&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; f in *&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; mv &lt;span class="nv"&gt;$f&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;f&lt;/span&gt;&lt;span class="p"&gt;%%.pdf*&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;.pdf&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;done&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Heredoc&lt;/h2&gt;
+&lt;p&gt;If the &lt;a href="http://stackoverflow.com/questions/1167746/how-to-assign-a-heredoc-value-to-a-variable-in-bash"&gt;heredoc&lt;/a&gt; is assigned to a variable, make sure to quote the variable when using it in order to preserve the new line.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;command=$(cat &amp;lt;&amp;lt; _TOK
+...
+_TOK
+)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Create Favicon&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install icotool
+icotool -o favicon.ico -c favicon.png
+&lt;/pre&gt;&lt;/div&gt;</content><category term="shell"></category></entry><entry><title>Interviewing for a Software Engineer position is Hard</title><link href="https://www.4thinker.com/interviews-are-hard.html" rel="alternate"></link><published>2013-05-24T02:49:00-07:00</published><updated>2013-05-24T02:49:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-05-24:/interviews-are-hard.html</id><summary type="html">&lt;p&gt;This pertains to my experience straight out of college. Once you specialize, things may differ.&lt;/p&gt;
+&lt;p&gt;I am first going to admit that I am not competent in program interviews. It is something that I need to work extra hard and people who do well deserves the job. Computer Science interview questions are similar to Science Olympiad, you recall answers to questions or topics that are very broad. Also the questions tend to be ones that you do not think very often in practice. For example, how often do you use recursion in your work? &lt;/p&gt;
+&lt;p&gt;There are so many language variations …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This pertains to my experience straight out of college. Once you specialize, things may differ.&lt;/p&gt;
+&lt;p&gt;I am first going to admit that I am not competent in program interviews. It is something that I need to work extra hard and people who do well deserves the job. Computer Science interview questions are similar to Science Olympiad, you recall answers to questions or topics that are very broad. Also the questions tend to be ones that you do not think very often in practice. For example, how often do you use recursion in your work? &lt;/p&gt;
+&lt;p&gt;There are so many language variations and some of the keywords just do not pop in your mind. I admit, I figure out the syntax mostly by looking at the code I am working with. If I code right now, I will probably mix up appending and extending of a list.  I hardly ever get my code right the first time. I hardly ever get the most efficient solution the first time. But I know how to find a better solution incrementally and with my own projects, this worked out beautifully.&lt;/p&gt;
+&lt;p&gt;So here is what I want to do if I ever hire someone. I will read their resume after they solve a reasonably difficult challenge coding question and comment it thoroughly. Yes they could cheat or hire someone to do the work, but it still shows how serious they about getting the job. It might also demonstrate their skill sets, tool sets, and thought process that actually reflect their work routine. There is no shortage of code and I review it from github or a profile they may send, but with these codes, it is not clear who came up with the design of the program, or who came up with or improved algorithms. I would still review their past work, blog, stackoverflow profile, and github page, but a challenge question reveals something more about an applicant.
+All in all, that is 30 minutes better spent than a "phone screen." If they are interested in working for me, I am sure they could find the relevant information online or in the job description.&lt;/p&gt;
+&lt;p&gt;It is quite discriminating if you reject people because they cannot think on their toes. Some may be slower thinker, and may be not even methodical when under a pressure. But this should not rule out that they can compensate their weaknesses &lt;a href="skill-set.html"&gt;other attributes&lt;/a&gt;. During an interview process, I would look out for these specific attributes more than their technical skills. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;independence: can you work without supervision?&lt;/li&gt;
+&lt;li&gt;attitude: can you put more efforts when necessary?&lt;/li&gt;
+&lt;li&gt;honesty: can you admit your problem quickly so that it does not propagate?&lt;/li&gt;
+&lt;li&gt;passion in learning: is learning a big part of your life?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Still, people could easily fake their personality when on a spot. I do not want to judge someone's personality entirely in an interview setting, so I think I will stick with intern -&amp;gt; full-time position route. This may create an awkard social setting where people do not feel like a part of the team, and that is not an optimal way to start a new job, but I think a bit of social exclusion will help people to focus on their work and build a stronger relationship with their mentors and peer interns.&lt;/p&gt;
+&lt;p&gt;This hiring engineers as interns also helps to filter out novices who ask simple questions all day long and slow everyone down. Any reasonable programmer should be able to work with clear directives and a basic wiki (4 pages of high level concept of how the company technology is structured). A good employee should be a learner at heart and should be eager to explore rather than be fed. One cannot think outside of box and be creative without understanding the box. In order to understand the box, one must have the knowledge. To have knowledge, one must thirst and that is something that cannot be taught easily.&lt;/p&gt;
+&lt;p&gt;ROI on interns may not be good, but that is fine, because one good programmer is usually better than two mediocre programmers.&lt;/p&gt;
+&lt;p&gt;Finally writing this article helped me to understand why companies are so hesitant in hiring inexperienced engineers. Go get an internship, paid or unpaid. Fake it until you make it, because you might be better than you think. Don't fire yourself first before you get fired by your employer. &lt;/p&gt;</content><category term="career"></category></entry><entry><title>How to install pip, oauth2 on Windows</title><link href="https://www.4thinker.com/python-on-window.html" rel="alternate"></link><published>2013-05-10T11:33:00-07:00</published><updated>2013-05-10T11:33:00-07:00</updated><author><name>forethinker</name></author><id>tag:www.4thinker.com,2013-05-10:/python-on-window.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pip&lt;/code&gt; is like &lt;code&gt;apt&lt;/code&gt; of debian-based system for python. It installs and uninstalls packages&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;distribute&lt;/code&gt; is like &lt;code&gt;dpkg&lt;/code&gt; of debian-based system for python. It builds and distribute packages.&lt;/li&gt;
+&lt;li&gt;In short, they make installing packages for python much easier. For a longer explanation, here is a &lt;a href="http://guide.python-distribute.org/installation.html"&gt;stackoverflow answer&lt;/a&gt;, and the official description can be found the &lt;a href="http://guide.python-distribute.org/installation.html"&gt;python website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Some people might be using &lt;code&gt;setuptools&lt;/code&gt; in windows, but it is outdated. &lt;code&gt;setuptools&lt;/code&gt; is not available for Windows 64-bit platform anyway, so the choice is limited for many people out there.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;distribute&lt;/code&gt; replaces &lt;code&gt;setuptools&lt;/code&gt; starting from python3, but it is available for &lt;code&gt;python2 …&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pip&lt;/code&gt; is like &lt;code&gt;apt&lt;/code&gt; of debian-based system for python. It installs and uninstalls packages&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;distribute&lt;/code&gt; is like &lt;code&gt;dpkg&lt;/code&gt; of debian-based system for python. It builds and distribute packages.&lt;/li&gt;
+&lt;li&gt;In short, they make installing packages for python much easier. For a longer explanation, here is a &lt;a href="http://guide.python-distribute.org/installation.html"&gt;stackoverflow answer&lt;/a&gt;, and the official description can be found the &lt;a href="http://guide.python-distribute.org/installation.html"&gt;python website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Some people might be using &lt;code&gt;setuptools&lt;/code&gt; in windows, but it is outdated. &lt;code&gt;setuptools&lt;/code&gt; is not available for Windows 64-bit platform anyway, so the choice is limited for many people out there.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;distribute&lt;/code&gt; replaces &lt;code&gt;setuptools&lt;/code&gt; starting from python3, but it is available for &lt;code&gt;python2&lt;/code&gt; as well&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;a href="http://stackoverflow.com/questions/4750806/how-to-install-pip-on-windows"&gt;Native Windows Installation&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Download Distribute and Pip from the &lt;a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/"&gt;following website&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Make sure you get the right version and platform for your python (i.e. 32 vs 64 bit, 2.7 vs 3.2).  &lt;/li&gt;
+&lt;li&gt;Just click buttons to finish installation, unless you installed Python somewhere other than C:\&lt;/li&gt;
+&lt;li&gt;In the command prompt or Cygwin, run the following:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; C:\Python27\Scripts\pip.exe install oauth
+ /cydrive/c/Python27/Scripts/pip.exe install oauth
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;&lt;a href="http://anythingsimple.blogspot.com/2010/04/using-pip-virtualenv-and.html"&gt;Cygwin Installation&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;First use Cygwin setup to install Python for Cygwin.&lt;/li&gt;
+&lt;li&gt;download and run the &lt;a href="http://peak.telecommunity.com/dist/ez_setup.py"&gt;following file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;easy setup downloads the package for you and installs it, but it is based on &lt;code&gt;setuptools&lt;/code&gt; and &lt;a href="http://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install"&gt;pip is recommended&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python ez_setup.py
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;now you will have easy_install in your excitation path and you can install pip and distribute&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;easy_install distribute distribute pip
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;now you can install anything via pip as you would in other environment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install oauth
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;[Cygwin installation Errors]&lt;/h2&gt;
+&lt;p&gt;If you see an error like this when you install a package with &lt;code&gt;pip&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;ImportError&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;No&lt;/span&gt; &lt;span class="n"&gt;module&lt;/span&gt; &lt;span class="n"&gt;named&lt;/span&gt; &lt;span class="n"&gt;_io&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Make sure you set your Anti-Virus program so that it doesn't delete files in cygwin directory. Then reinstall &lt;code&gt;python&lt;/code&gt; with cygwin and try again. &lt;/p&gt;
+&lt;h2&gt;Linux Installation&lt;/h2&gt;
+&lt;p&gt;I first did&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install python-setuptools python-dev build-essential python-pip
+pip install oauth
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and the installation was successful, but it did not run properly. I got the following error&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="n"&gt;twitterstream&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt; 
+&lt;span class="n"&gt;Traceback&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;most&lt;/span&gt; &lt;span class="n"&gt;recent&lt;/span&gt; &lt;span class="n"&gt;call&lt;/span&gt; &lt;span class="n"&gt;last&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+  &lt;span class="n"&gt;File&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;twitterstream.py&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;module&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;oauth2&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;oauth&lt;/span&gt;
+  &lt;span class="n"&gt;File&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;/usr/local/lib/python2.7/dist-packages/oauth2/__init__.py&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="mi"&gt;32&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;module&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;httplib2&lt;/span&gt;
+  &lt;span class="n"&gt;File&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;/usr/local/lib/python2.7/dist-packages/httplib2/__init__.py&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="mi"&gt;1318&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;key&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;_get_end2end_headers&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;response&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+                                         &lt;span class="o"&gt;^&lt;/span&gt;
+&lt;span class="ne"&gt;SyntaxError&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;invalid&lt;/span&gt; &lt;span class="n"&gt;syntax&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The reason seems to be that python3's &lt;code&gt;httplib2&lt;/code&gt; was &lt;a href="http://code.google.com/p/httplib2/issues/detail?id=172"&gt;getting installed instead.&lt;/a&gt;. So I uninstalled &lt;code&gt;httplib2&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo uninstall httplib2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and download the &lt;a href="https://pypi.python.org/pypi/httplib2/0.8"&gt;file manually&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;tar -xvzf httplib2-*.tar.gz
+cd httplib2*
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and run the following commands in the folder &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python setup.py build
+sudo python setup.py install
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you are done and happy. Watch out for the &lt;code&gt;distutils2&lt;/code&gt; in the future which will eventually be the "hottest thing" over &lt;code&gt;distribute&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;or you can just do:&lt;/p&gt;</content><category term="python"></category></entry></feed>
